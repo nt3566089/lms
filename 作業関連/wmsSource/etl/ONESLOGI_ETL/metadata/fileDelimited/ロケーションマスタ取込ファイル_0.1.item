@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_9PPeoDwsEeerjudB8cjwSg" name="ロケーションマスタ取込ファイル" dataPackage="_9PPeoTwsEeerjudB8cjwSg" Server="Localhost 127.0.0.1" FilePath="C:/TOS_DI-20160510_1709-V6.2.0/workspace/ONESLOGI_ETL/csvFiles/input/ロケーションマスタ.csv" Format="WINDOWS" Encoding="windows-31j" FieldSeparatorValue="&quot;,&quot;" RowSeparatorType="Custom String" RowSeparatorValue="&quot;\r\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_9PPeoTwsEeerjudB8cjwSg" name="default" dataManager="_9PPeoDwsEeerjudB8cjwSg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_9PPeojwsEeerjudB8cjwSg" id="_wUvXEDwsEeerjudB8cjwSg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9PPeozwsEeerjudB8cjwSg" label="ロケーションCD" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9PPepDwsEeerjudB8cjwSg" label="ロケーション名称" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9PPepTwsEeerjudB8cjwSg" label="倉庫" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9PPepjwsEeerjudB8cjwSg" label="ゾーン" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9PPepzwsEeerjudB8cjwSg" label="ロケーション種別" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9PPeqDwsEeerjudB8cjwSg" label="ピックロケフラグ" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9PPeqTwsEeerjudB8cjwSg" label="引当禁止フラグ" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9PPeqjwsEeerjudB8cjwSg" label="ピッキング順序" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9PPeqzwsEeerjudB8cjwSg" label="引当順序" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9PPerDwsEeerjudB8cjwSg" label="補充商品CD" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9PPerTwsEeerjudB8cjwSg" label="補充在庫区分CD" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9PPerjwsEeerjudB8cjwSg" label="補充預託CD" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9PPerzwsEeerjudB8cjwSg" label="補充点荷姿CD" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9PPesDwsEeerjudB8cjwSg" label="補充点" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9PPesTwsEeerjudB8cjwSg" label="最大格納数商品荷姿CD" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9PPesjwsEeerjudB8cjwSg" label="最大格納数" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

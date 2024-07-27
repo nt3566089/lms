@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_pxTYkOOLEeeEpI4KVgLBDg" name="WAS連携ユーザマスタ出力" dataPackage="_pxTYkeOLEeeEpI4KVgLBDg" Server="Localhost 127.0.0.1" FilePath="C:/work/TOS_DI-20160510_1709-V6.2.0/workspace/ONESLOGI_ETL/csvFiles/output/ユーザマスタ.csv" Format="WINDOWS" Encoding="windows-31J" FieldSeparatorValue="&quot;,&quot;" RowSeparatorType="Custom String" RowSeparatorValue="&quot;\r\n&quot;" UseHeader="true" HeaderValue="1" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_pxTYkeOLEeeEpI4KVgLBDg" name="default" dataManager="_pxTYkOOLEeeEpI4KVgLBDg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_pxTYkuOLEeeEpI4KVgLBDg" id="_cPVoYOOLEeeEpI4KVgLBDg" comment="WAS連携ユーザーマスタ出力" label="WAS連携ユーザーマスタ出力">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pxTYk-OLEeeEpI4KVgLBDg" name="USER_CD" label="USER_CD" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pxTYlOOLEeeEpI4KVgLBDg" name="USER_NM" label="USER_NM" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pxTYleOLEeeEpI4KVgLBDg" name="CULTURE_CD" label="CULTURE_CD" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pxTYluOLEeeEpI4KVgLBDg" name="ROLE_GRP_CD" label="ROLE_GRP_CD" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pxTYl-OLEeeEpI4KVgLBDg" name="DEL_FLG" label="DEL_FLG" talendType="id_String"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

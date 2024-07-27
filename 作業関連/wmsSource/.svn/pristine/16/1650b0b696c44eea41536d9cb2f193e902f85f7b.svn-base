@@ -1,0 +1,3 @@
+SCREEN_CD	DICT_NM	ITEM_CD	DICT_NM	ROLE_CD	DICT_NM	VISIBLE	EDITABLE	ROLE_CD	DICT_NM	VISIBLE	EDITABLE	ROLE_CD	DICT_NM	VISIBLE	EDITABLE	ROLE_CD	DICT_NM	VISIBLE	EDITABLE	ROLE_CD	DICT_NM	VISIBLE	EDITABLE	ROLE_CD	DICT_NM	VISIBLE	EDITABLE
+ReportLayoutEdit	帳票レイアウトマスタメンテナンス(編集)	updatable	更新可否	NoSystemMaintenance	システム管理不可	0	0	NoWmsMasterMaintenance	WMSマスタ管理不可	0	0	NoDaily	日次締処理不可	0	0	ViewOnly	閲覧許可	0	0	Workers	管理作業者権限	0	0	NoClientCenterEdit	荷主センタ編集不可	0	0
+PrintRequestList	印刷情報一覧	reprint	再印刷	NoSystemMaintenance	システム管理不可			NoWmsMasterMaintenance	WMSマスタ管理不可			NoDaily	日次締処理不可			ViewOnly	閲覧許可	0		Workers	管理作業者権限			NoClientCenterEdit	荷主センタ編集不可		

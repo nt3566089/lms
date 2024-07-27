@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_tYJqYIRyEea94P-lLwuSqQ" id="_tYJDUIRyEea94P-lLwuSqQ" label="OracleMerge" version="0.1" item="_tYJqYoRyEea94P-lLwuSqQ">
+    <author href="../../../talend.project#_w3NaQZaREearrO37QzOhcQ"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_tYJqYYRyEea94P-lLwuSqQ" path="Oracle/system"/>
+  <TalendProperties:SQLPatternItem xmi:id="_tYJqYoRyEea94P-lLwuSqQ" property="_tYJqYIRyEea94P-lLwuSqQ" state="_tYJqYYRyEea94P-lLwuSqQ" system="true" eltName="Oracle">
+    <content href="OracleMerge_0.1.item#/"/>
+  </TalendProperties:SQLPatternItem>
+</xmi:XMI>

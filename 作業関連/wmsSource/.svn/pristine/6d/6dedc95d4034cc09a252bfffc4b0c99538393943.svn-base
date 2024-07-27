@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_Y3SD0DuMEee5ZNleOnaW3Q" name="在庫問合せ出力ファイル" dataPackage="_Y3SD0TuMEee5ZNleOnaW3Q" Server="Localhost 127.0.0.1" FilePath="C:/TOS_DI-20160510_1709-V6.2.0/workspace/ONESLOGI_ETL/csvFiles/output/在庫問合せ.csv" Format="WINDOWS" Encoding="windows-31j" FieldSeparatorValue="&quot;,&quot;" RowSeparatorType="Custom String" RowSeparatorValue="&quot;\r\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_Y3SD0TuMEee5ZNleOnaW3Q" name="default" dataManager="_Y3SD0DuMEee5ZNleOnaW3Q">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Y3SD0juMEee5ZNleOnaW3Q" id="_M3i7YDuMEee5ZNleOnaW3Q" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_YNNNEeeIxYdms3L5Pg" label="荷主CD" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_YdNNEeeIxYdms3L5Pg" label="荷主名称" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_YtNNEeeIxYdms3L5Pg" label="センタCD" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_Y9NNEeeIxYdms3L5Pg" label="センタ名称" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_ZNNNEeeIxYdms3L5Pg" label="商品CD" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_ZdNNEeeIxYdms3L5Pg" label="商品名称" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_ZtNNEeeIxYdms3L5Pg" label="商品略称" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_Z9NNEeeIxYdms3L5Pg" label="荷姿CD" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_aNNNEeeIxYdms3L5Pg" label="荷姿名称" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_adNNEeeIxYdms3L5Pg" label="ソースCD" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_atNNEeeIxYdms3L5Pg" label="倉庫CD" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_a9NNEeeIxYdms3L5Pg" label="倉庫名称" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_bNNNEeeIxYdms3L5Pg" label="ロケーション名称" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_bdNNEeeIxYdms3L5Pg" label="預託CD" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_btNNEeeIxYdms3L5Pg" label="預託名称" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_b9NNEeeIxYdms3L5Pg" label="在庫区分CD" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_cNNNEeeIxYdms3L5Pg" label="在庫区分名称" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_cdNNEeeIxYdms3L5Pg" label="ロット" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_ctNNEeeIxYdms3L5Pg" label="期限日" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_c9NNEeeIxYdms3L5Pg" label="入庫ラベルNo" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_dNNNEeeIxYdms3L5Pg" label="元入庫ラベルNo" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_ddNNEeeIxYdms3L5Pg" label="仕入先CD" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_dtNNEeeIxYdms3L5Pg" label="仕入先名称" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_d9NNEeeIxYdms3L5Pg" label="仕入先略称" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_eNNNEeeIxYdms3L5Pg" label="在庫総数" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_edNNEeeIxYdms3L5Pg" label="引当可能総数" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_etNNEeeIxYdms3L5Pg" label="引当済総数" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_e9NNEeeIxYdms3L5Pg" label="当日入庫数" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_fNNNEeeIxYdms3L5Pg" label="当日出庫数" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_fdNNEeeIxYdms3L5Pg" label="当日移動数_増加分" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_ftNNEeeIxYdms3L5Pg" label="当日移動数_減少分" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_f9NNEeeIxYdms3L5Pg" label="当日調整数_増加分" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_gNNNEeeIxYdms3L5Pg" label="当日調整数_減少分" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_gdNNEeeIxYdms3L5Pg" label="前日残" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_gtNNEeeIxYdms3L5Pg" label="当月入庫数" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_g9NNEeeIxYdms3L5Pg" label="当月出庫数" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_hNNNEeeIxYdms3L5Pg" label="当月移動数_増加分" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_hdNNEeeIxYdms3L5Pg" label="当月移動数_減少分" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_htNNEeeIxYdms3L5Pg" label="当月調整数_増加分" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_h9NNEeeIxYdms3L5Pg" label="当月調整数_減少分" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_iNNNEeeIxYdms3L5Pg" label="前月残" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_idNNEeeIxYdms3L5Pg" label="_0日残数" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_itNNEeeIxYdms3L5Pg" label="_5日残数" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_i9NNEeeIxYdms3L5Pg" label="_0日残数1" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_jNNNEeeIxYdms3L5Pg" label="末日残数" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_jdNNEeeIxYdms3L5Pg" label="作業中総数" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_jtNNEeeIxYdms3L5Pg" label="積送中総数" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_j9NNEeeIxYdms3L5Pg" label="入数" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_kNNNEeeIxYdms3L5Pg" label="入庫日" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_kdNNEeeIxYdms3L5Pg" label="最新入庫年月日" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_ktNNEeeIxYdms3L5Pg" label="最新出庫年月日" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3qV_k9NNEeeIxYdms3L5Pg" label="登録日時" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

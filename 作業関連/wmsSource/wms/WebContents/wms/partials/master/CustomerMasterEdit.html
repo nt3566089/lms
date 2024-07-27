@@ -1,0 +1,60 @@
+<div ng-controller="CustomerMasterEdit" owd-screen="CustomerMasterEdit">
+	<form id="searchinputform" name="searchinputform" novalidate>
+		<!-- [EC-CT1-051] ヘッダ部の画面レイアウトを他画面にあわせて変更 2015.02.19 kawana Start -->
+		<div  class="well">
+			<div class="row">
+				<owd-select id="clientCd" ng-model="head.mclient.clientCd" owd-models="clientList" owd-repeat-key="clientCd" owd-repeat-value="clientNm" label-text="荷主"></owd-select>
+				<owd-text id="customerCd" ng-model="head.customerCd" label-text="取引先CD"></owd-text>
+				<!-- [新WMS-110-004] 削除フラグの空の選択肢を削除 2015.07.14 kawana Start -->
+				<owd-select id="delFlg" ng-model="head.delFlg" owd-models="delFlgList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="削除" owd-remove-blank></owd-select>
+				<!-- [新WMS-110-004] 削除フラグの空の選択肢を削除 2015.07.14 kawana End -->
+			</div>
+		</div>
+		<div class="well">
+			<div class = "row">
+				<owd-text id="customerNm" ng-model="head.customerNm" label-text="取引先名称" ng-blur="customerNmBlur()">
+					<!-- <owd-info ng-model="head.customerAbbr"></owd-info> -->
+				</owd-text>
+				<owd-text id="customerAbbr" ng-model="head.customerAbbr" label-text="取引先略称"></owd-text>
+				<owd-select id="deliveryFlg" ng-model="head.deliveryFlg" label-text="納品先フラグ" owd-repeat-key="classCd" owd-repeat-value="classNm" owd-models="deliveryFlgList"></owd-select>
+				<owd-select id="vendorFlg" ng-model="head.vendorFlg" label-text="仕入先フラグ" owd-repeat-key="classCd" owd-repeat-value="classNm" owd-models="vendorFlgList"></owd-select>
+				<owd-select id="onetimeFlg" ng-model="head.onetimeFlg" label-text="ワンタイムフラグ" owd-repeat-key="classCd" owd-repeat-value="classNm" owd-models="onetimeFlgList"></owd-select>
+				<owd-select id="depositFlg" ng-model="head.depositFlg" label-text="預託先フラグ" owd-repeat-key="classCd" owd-repeat-value="classNm" owd-models="depositFlgList"></owd-select>
+				<!-- [新WMS-110-033] 郵便番号を住所の前に移動 2015.07.28 kawana Start -->
+				<owd-text id="zipCd" ng-model="head.zipCd" label-text="郵便番号" owd-add-button="showZip()" ng-blur="zipCdBlur()"></owd-text>
+				<!-- [新WMS-110-033] 郵便番号を住所の前に移動 2015.07.28 kawana End -->
+				<owd-text id="address1" ng-model="head.address1" label-text="住所1"></owd-text>
+				<owd-text id="address2" ng-model="head.address2" label-text="住所2"></owd-text>
+				<owd-text id="address3" ng-model="head.address3" label-text="住所3"></owd-text>
+				<!-- [新WMS-110-033] 郵便番号を住所の前に移動(移動元から削除) 2015.07.28 kawana -->
+				<owd-text id="telNo" ng-model="head.telNo" label-text="電話番号"></owd-text>
+				<!-- [EC-CT1-130] 不要な項目削除 2015.3.19 Sakata Start -->
+				<!-- [EC-CT1-130] 不要な項目削除 2015.3.19 Sakata End -->
+				<!-- [C-CWMS-0039] センタ間移動機能を追加 2015.09.16 kawana Start -->
+				<owd-select id="centerCd" ng-model="head.centerCd" label-text="社内入荷センタCD" owd-repeat-key="centerCd" owd-repeat-value="centerNm" owd-models="centerList"></owd-select>
+				<!-- [C-CWMS-0039] センタ間移動機能を追加 2015.09.16 kawana End -->
+				<owd-number id="allocOrder" ng-model="head.allocOrder" label-text="引当順序"></owd-number>
+				<owd-select id="shippingStopFlg" ng-model="head.shippingStopFlg" label-text="出荷停止フラグ" owd-repeat-key="classCd" owd-repeat-value="classNm" owd-models="shippingStopFlgList"></owd-select>
+				<owd-select id="limitDtReverseFlg" ng-model="head.limitDtReverseFlg" label-text="期限日逆転防止フラグ" owd-repeat-key="classCd" owd-repeat-value="classNm" owd-models="limitDtReverseFlgList"></owd-select>
+				<!-- [EC-CT1-130] 不要な項目削除 2015.3.19 Sakata Start -->
+				<!-- [EC-CT1-130] 不要な項目削除 2015.3.19 Sakata End -->
+			</div>
+		</div>
+		<!-- [EC-CT1-051] ヘッダ部の画面レイアウトを他画面にあわせて変更 2015.02.19 kawana End -->
+        <!-- [検査-093] 選択欄にチェックが自動設定 2014.11.27 taoys Start -->
+        <div owd-grid="gridOptions" id="customerList"  owd-select-options="gridSelectOptions" owd-button-options="gridButtonOptions" owd-event-options="gridEventOptions"  owd-form-name="searchinputform" owd-backcolor-option="getClassForRow(row)"></div>
+        <!-- [検査-093] 選択欄にチェックが自動設定 2014.11.27 taoys End -->
+        <br>
+		<div id="content-footer"></div>
+		<div id="content-footer-button" class="container">
+        	<div class="row">
+            	<div class="col-xs-6" style="overflow-x:auto;overflow-y:hidden;">
+                	<!-- [横並-027] 訂正ボタンを削除 2014.11.20 taoys -->
+            	</div>
+            	<div class="col-xs-6" align="right" style="overflow-x:auto;overflow-y:hidden;">
+                	<owd-button id="register" class="btn-success" ng-click="register()">登録</owd-button>
+            	</div>
+        	</div>
+         </div>
+    </form>
+</div>

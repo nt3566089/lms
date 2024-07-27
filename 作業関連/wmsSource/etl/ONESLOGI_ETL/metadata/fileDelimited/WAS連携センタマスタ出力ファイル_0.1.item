@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_a6bq8eOLEeeEpI4KVgLBDg" name="WAS連携センタマスタ出力ファイル" dataPackage="_a6cSAOOLEeeEpI4KVgLBDg" Server="Localhost 127.0.0.1" FilePath="C:/work/TOS_DI-20160510_1709-V6.2.0/workspace/ONESLOGI_ETL/csvFiles/output/センタマスタ.csv" Format="WINDOWS" Encoding="windows-31j" FieldSeparatorValue="&quot;,&quot;" RowSeparatorType="Custom String" RowSeparatorValue="&quot;\r\n&quot;" UseHeader="true" HeaderValue="1" EscapeType="CSV" EscapeChar="&quot;\&quot;&quot;" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_a6cSAOOLEeeEpI4KVgLBDg" name="default" dataManager="_a6bq8eOLEeeEpI4KVgLBDg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_a6cSAeOLEeeEpI4KVgLBDg" id="_CcZ10OOLEeeEpI4KVgLBDg" comment="WAS連携センタマスタ出力" label="WAS連携センタマスタ出力">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_a6cSAuOLEeeEpI4KVgLBDg" name="CENTER_CD" label="CENTER_CD" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_a6cSA-OLEeeEpI4KVgLBDg" name="CENTER_NM" label="CENTER_NM" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_a6cSBOOLEeeEpI4KVgLBDg" name="CENTER_ABBR" label="CENTER_ABBR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_a6cSBeOLEeeEpI4KVgLBDg" name="CULTURE_CD" label="CULTURE_CD" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_a6cSBuOLEeeEpI4KVgLBDg" name="TIME_ZONE_CD" label="TIME_ZONE_CD" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_a6cSB-OLEeeEpI4KVgLBDg" name="DEL_FLG" label="DEL_FLG" talendType="id_String"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_Uk32FOPvEeiA_Nug44YLEw" id="_UkpMkOPvEeiA_Nug44YLEw" label="LmsLinkageParam" purpose="LMS連携用パラメータ群" description="LMS連携に必要なパラメータを設定する" version="0.1" statusCode="" item="_Uk32FuPvEeiA_Nug44YLEw" displayName="LmsLinkageParam">
+    <author href="../talend.project#_w3NaQZaREearrO37QzOhcQ"/>
+    <additionalProperties xmi:id="_Q3VEYBcsEeqLaK2GOeLj_g" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_Q3VEYRcsEeqLaK2GOeLj_g" key="created_product_version" value="6.2.0.20160510_1709"/>
+    <additionalProperties xmi:id="_Q3VEYhcsEeqLaK2GOeLj_g" key="created_date" value="2018-11-09T16:16:05.232+0900"/>
+    <additionalProperties xmi:id="_Q3VrcBcsEeqLaK2GOeLj_g" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_Q3VrcRcsEeqLaK2GOeLj_g" key="modified_product_version" value="7.2.1.20190620_1446"/>
+    <additionalProperties xmi:id="_Q3VrchcsEeqLaK2GOeLj_g" key="modified_date" value="2019-12-05T16:20:15.017+0900"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_Uk32FePvEeiA_Nug44YLEw" path=""/>
+  <TalendProperties:ContextItem xmi:id="_Uk32FuPvEeiA_Nug44YLEw" property="_Uk32FOPvEeiA_Nug44YLEw" state="_Uk32FePvEeiA_Nug44YLEw" defaultContext="Default">
+    <context href="LmsLinkageParam_0.1.item#_Uk32EOPvEeiA_Nug44YLEw"/>
+  </TalendProperties:ContextItem>
+</xmi:XMI>

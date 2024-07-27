@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_unq5sOFeEeerbOghI3qoCg" name="WAS連携荷主マスタ出力ファイル" dataPackage="_unq5seFeEeerbOghI3qoCg" Server="Localhost 127.0.0.1" FilePath="C:/work/TOS_DI-20160510_1709-V6.2.0/workspace/ONESLOGI_ETL/csvFiles/output/荷主マスタ.csv" Format="WINDOWS" Encoding="windows-31j" FieldSeparatorValue="&quot;,&quot;" RowSeparatorType="Custom String" RowSeparatorValue="&quot;\r\n&quot;" UseHeader="true" HeaderValue="1" FooterValue="0" LimitValue="" EscapeType="CSV" EscapeChar="&quot;\&quot;&quot;" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_unq5seFeEeerbOghI3qoCg" name="default" dataManager="_unq5sOFeEeerbOghI3qoCg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_unq5suFeEeerbOghI3qoCg" id="_Pz7xoOFcEeerbOghI3qoCg" comment="WAS連携荷主出力ファイル" label="WAS連携荷主出力ファイル">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_unq5s-FeEeerbOghI3qoCg" name="CLIENT_CD" label="CLIENT_CD" precision="-1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_unq5tOFeEeerbOghI3qoCg" name="CLIENT_NM" label="CLIENT_NM" precision="-1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_unq5teFeEeerbOghI3qoCg" name="CLIENT_ABBR" label="CLIENT_ABBR" precision="-1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_unq5t-FeEeerbOghI3qoCg" name="DEL_FLG" label="DEL_FLG" precision="-1" talendType="id_String"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

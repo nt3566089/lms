@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_oN7pMNr3Eee6B-DUVt12CQ" id="_oN2JoNr3Eee6B-DUVt12CQ" label="WorkLogEMReplenish" purpose="WAS連携用の緊急補充指示データ出力処理" description="WAS連携用の緊急補充指示データ出力処理" version="0.1" statusCode="" item="_oN7pMtr3Eee6B-DUVt12CQ" displayName="WorkLogEMReplenish">
+    <author href="../../talend.project#_w3NaQZaREearrO37QzOhcQ"/>
+    <additionalProperties xmi:id="_SpnhYBcsEeqLaK2GOeLj_g" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_SpnhYRcsEeqLaK2GOeLj_g" key="created_product_version" value="6.2.0.20160510_1709"/>
+    <additionalProperties xmi:id="_SpnhYhcsEeqLaK2GOeLj_g" key="created_date" value="2017-12-07T11:37:54.882+0900"/>
+    <additionalProperties xmi:id="_SpnhYxcsEeqLaK2GOeLj_g" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_SpnhZBcsEeqLaK2GOeLj_g" key="modified_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_SpnhZRcsEeqLaK2GOeLj_g" key="modified_date" value="2022-01-13T09:38:13.513+0900"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_oN7pMdr3Eee6B-DUVt12CQ" path="wasLinkage"/>
+  <TalendProperties:ProcessItem xmi:id="_oN7pMtr3Eee6B-DUVt12CQ" property="_oN7pMNr3Eee6B-DUVt12CQ" state="_oN7pMdr3Eee6B-DUVt12CQ">
+    <process href="WorkLogEMReplenish_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

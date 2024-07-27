@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_LihhsN45EeeCLZErKz_TKQ" name="WAS連携作業実績ファイル" dataPackage="_Lihhsd45EeeCLZErKz_TKQ" Server="Localhost 127.0.0.1" FilePath="C:/TOS_DI-20160510_1709-V6.2.0/workspace/ONESLOGI_ETL/csvFiles/output/WasLinkedResult.csv" Format="WINDOWS" Encoding="windows-31j" FieldSeparatorValue="&quot;,&quot;" RowSeparatorType="Custom String" RowSeparatorValue="&quot;\r\n&quot;" UseHeader="true" HeaderValue="1" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_Lihhsd45EeeCLZErKz_TKQ" name="default" dataManager="_LihhsN45EeeCLZErKz_TKQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Lihhst45EeeCLZErKz_TKQ" id="_pk4-kN44EeeCLZErKz_TKQ" comment="WAS連携作業実績データ" label="WAS連携作業実績データ">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Lihhs945EeeCLZErKz_TKQ" name="WORK_DT" label="WORK_DT" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LihhtN45EeeCLZErKz_TKQ" name="CENTER_CD" label="CENTER_CD" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Lihhtd45EeeCLZErKz_TKQ" name="CLIENT_CD" label="CLIENT_CD" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Lihhtt45EeeCLZErKz_TKQ" name="WORK_CD" label="WORK_CD" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Lihht945EeeCLZErKz_TKQ" name="USER_CD" label="USER_CD" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LihhuN45EeeCLZErKz_TKQ" name="WORK_START_DT" label="WORK_START_DT" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Lihhud45EeeCLZErKz_TKQ" name="WORK_END_DATE" label="WORK_END_DATE" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Lihhut45EeeCLZErKz_TKQ" name="WORK_QTY" label="WORK_QTY" talendType="id_String"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

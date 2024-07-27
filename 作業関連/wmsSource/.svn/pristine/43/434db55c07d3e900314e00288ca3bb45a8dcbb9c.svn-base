@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_MDMdZ4RdEeaoUJ-cs2POpA" id="_MC0p8IRdEeaoUJ-cs2POpA" label="WmsDatabaseConnection" purpose="DB接続を定義します。" version="0.1" statusCode="" item="_MDMdaYRdEeaoUJ-cs2POpA" displayName="WmsDatabaseConnection">
+    <author href="../talend.project#_w3NaQZaREearrO37QzOhcQ"/>
+    <additionalProperties xmi:id="_Q98pwBcsEeqLaK2GOeLj_g" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_Q98pwRcsEeqLaK2GOeLj_g" key="created_product_version" value="6.2.0.20160510_1709"/>
+    <additionalProperties xmi:id="_Q98pwhcsEeqLaK2GOeLj_g" key="created_date" value="2016-09-27T11:50:45.685+0900"/>
+    <additionalProperties xmi:id="_Q98pwxcsEeqLaK2GOeLj_g" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_Q98pxBcsEeqLaK2GOeLj_g" key="modified_product_version" value="7.2.1.20190620_1446"/>
+    <additionalProperties xmi:id="_Q98pxRcsEeqLaK2GOeLj_g" key="modified_date" value="2019-12-20T16:34:35.621+0900"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_MDMdaIRdEeaoUJ-cs2POpA" path=""/>
+  <TalendProperties:ContextItem xmi:id="_MDMdaYRdEeaoUJ-cs2POpA" property="_MDMdZ4RdEeaoUJ-cs2POpA" state="_MDMdaIRdEeaoUJ-cs2POpA" defaultContext="Default">
+    <context href="WmsDatabaseConnection_0.1.item#_K9wSQCL7EeqlgsdRHiC_tg"/>
+  </TalendProperties:ContextItem>
+</xmi:XMI>

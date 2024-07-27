@@ -1,0 +1,42 @@
+開発時のコメントの記載方法
+ 
+コメント記載方法
+・開始行[S]と終了行[E]の２つを入れる
+・処理追加の場合はAdd、処理修正の場合はMod、処理削除の場合はDel
+・修正の場合は、訂正前の処理をコメントアウトで残して、下側に修正した処理を書く
+　＜記載イメージ＞
+　// 修正前の処理
+　修正した処理
+・コメントの先頭には「ミドリ安全様向けカスタマイズ対応」を入れる
+・変更内容の概要を書く　「〇〇を追加」とか「△△の不具合を訂正」など
+ 
+上記の内容で、コメントは下記のようになる
+// ミドリ安全様向けカスタマイズ対応 変更内容のコメント YYYYMMDD アルファベットの自分の名前 Add [S]
+　　PG変更部分
+// ミドリ安全様向けカスタマイズ対応 変更内容のコメント YYYYMMDD アルファベットの自分の名前 Add [E]
+ 
+処理追加の場合、処理修正の場合、処理削除の場合について、
+記載例を送ります。
+ 
+ 
+＜処理追加の場合＞
+ 
+	// ミドリ安全様向けカスタマイズ対応 検索条件に荷主IDを追加 2024.05.30 tamae Add [S]
+	cb.query().queryTInventoryH().setClientId_Equal(header.getClientId());
+	// ミドリ安全様向けカスタマイズ対応 検索条件に荷主IDを追加 2024.05.30 tamae Add [E]
+ 
+ 
+＜処理修正の場合＞
+ 
+	// ミドリ安全様向けカスタマイズ対応 検索条件に荷主IDを追加 2024.05.30 tamae Mod [S]
+//	public List<EWmsInventoryResultList> selectEWmsInventoryResult(TInventoryB body) {
+//	public List<SqlEWmsInventoryResultListDto> selectEWmsInventoryResult(TInventoryB body) {
+	public List<SqlEWmsInventoryResultListDto> selectEWmsInventoryResult(TInventoryH head, TInventoryB body) {
+	// ミドリ安全様向けカスタマイズ対応 検索条件に荷主IDを追加 2024.05.30 tamae Mod [E]
+ 
+ 
+＜処理削除の場合＞
+ 
+	// ミドリ安全様向けカスタマイズ対応 検索条件から棚卸日を削除 2024.05.30 tamae Del [S]
+//	cb.query().setInspectionDt_Equal(head.getInventoryDt());
+	// ミドリ安全様向けカスタマイズ対応 検索条件から棚卸日を削除 2024.05.30 tamae Del [E]

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_gZcGkH7zEeaXzaO0VXsjzg" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_vYpFAH-cEea2M4-QVFVzeA" comment="取込ファイルパス" name="inputPath" prompt="inputPath?" promptNeeded="true" type="id_String" value=""/>
+  <contextParameter xmi:id="_dSuh4IUVEeaya8SrZlqCNw" comment="受信CD" name="receiveCd" prompt="receiveCd?" promptNeeded="true" type="id_String" value=""/>
+  <contextParameter xmi:id="_fZ4r0H-oEea2M4-QVFVzeA" comment="荷主CD" name="clientCd" prompt="clientCd?" promptNeeded="true" type="id_String" value=""/>
+  <contextParameter xmi:id="_fZ4r0X-oEea2M4-QVFVzeA" comment="センターCD" name="centerCd" prompt="centerCd?" promptNeeded="true" type="id_String" value=""/>
+  <contextParameter xmi:id="_QO89QH-pEea2M4-QVFVzeA" comment="ユーザCD" name="userCd" prompt="userCd?" promptNeeded="true" type="id_String" value=""/>
+  <contextParameter xmi:id="_jzgiAH-pEea2M4-QVFVzeA" comment="モジュールCD" name="moduleCd" prompt="moduleCd?" promptNeeded="true" type="id_String" value=""/>
+  <contextParameter xmi:id="_V2nLMIOMEeaVef3UTskWmg" comment="出力ファイルパス" name="outputPath" prompt="outputPath?" promptNeeded="true" type="id_String" value=""/>
+  <contextParameter xmi:id="_7azAAItoEeaWDPN99PiqkA" comment="パスワード" name="password" prompt="password?" promptNeeded="true" type="id_String" value=""/>
+  <contextParameter xmi:id="_PhjJsIunEea0_L3H-U00Mw" comment="クッキー" name="cookie" prompt="cookie?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_qCSg4JTQEeaUMcUAMUpghg" comment="出力日" name="outputDate" prompt="outputDate?" promptNeeded="true" type="id_String" value=""/>
+  <contextParameter xmi:id="_sNw3gPLYEeioqZ9RKaEbpQ" comment="郵便番号種別" name="uploadZipType" prompt="uploadZipType?" promptNeeded="true" type="id_String" value=""/>
+</talendfile:ContextType>

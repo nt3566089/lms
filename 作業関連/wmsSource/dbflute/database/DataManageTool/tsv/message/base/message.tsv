@@ -1,0 +1,208 @@
+メッセージマスタ	メッセージマスタ	メッセージマスタ	メッセージマスタ	メッセージマスタ	メッセージマスタ	HTメッセージマスタ	メッセージマスタ	メッセージマスタ	メッセージマスタ	HTメッセージマスタ	メッセージマスタ	メッセージマスタ	メッセージマスタ	HTメッセージマスタ
+MESSAGE_CD	MESSAGE_TYPE	SYSTEM_TYPE	CULTURE_CD	MESSAGE_NM	MESSAGE_ABBR	MESSAGE_NM	CULTURE_CD_1	MESSAGE_NM_1	MESSAGE_ABBR_1	MESSAGE_NM_1	CULTURE_CD_2	MESSAGE_NM_2	MESSAGE_ABBR_2	MESSAGE_NM_2
+acceptFileTypes	error	base	ja-JP	サーバへ送信できないファイルが含まれています。	送信不可		en-US	Upload contains an invalid file type.	Invalid file		zh-CN	含有无法向服务器发送的文件。	无法发送	
+afterAutoPrintSetting	info	base	ja-JP	自動印刷設定(変更後)			en-US	Automated Print Settings (After)			zh-CN	自动印刷设定(变更后)		
+alreadyDeletedCannotDeleteError	error	base	ja-JP	既に削除されています。	既に削除済		en-US	Data is already deleted.	Already deleted		zh-CN	早已删除。	早已删除	
+alreadyRegisteredCannotRegisterError	error	base	ja-JP	既に登録されています。	既に登録済		en-US	Data has already been registered.	Already registered		zh-CN	已登录。	已登录	
+applyOrderDuplicateError	error	base	ja-JP	適用順序が重複しています。	重複		en-US	Duplicate Order.	Duplicate data		zh-CN	适用顺序重复。	重复	
+authenticationTokenInvalidError	error	base	ja-JP	ログアウトされています。認証画面より再度ログインして下さい。			en-US	You have been logged out. Please log in from the Login screen.			zh-CN	退出完成。请从认证画面再次登录。		
+authFatalError	error	base	ja-JP	認証処理にて致命的エラーが発生しました。[/]管理者に連絡して下さい。			en-US	An unhandled exception occurred in the authentication process. [/]Please contact your administrator.			zh-CN	认证处理发生致命错误。[/]请联络管理者。		
+authorizationError	error	base	ja-JP	システムに対するアクセス権がありません。[/]管理者に連絡して下さい。			en-US	You do not have valid access rights to the system. [/]Please contact your administrator.			zh-CN	没有权限连接该系统。[/]请联络管理者。		
+argMasterError	error	base	ja-JP	引数マスタ取得エラー	取得失敗		en-US	ARG Master acquisition error	Acquisition failure		zh-CN	参数主表取得错误	取得失败	
+beforeAutoPrintSetting	info	base	ja-JP	自動印刷設定(変更前)			en-US	Automated Print Settings (Before)			zh-CN	自动印刷设定(变更前)		
+classCdDuplicateError	error	base	ja-JP	区分値CDが重複しています。	重複		en-US	Duplicate Classification Code.	Duplicate data		zh-CN	区分值CD重复。	重复	
+classDtlCdDuplicateError	error	base	ja-JP	区分値明細CDが重複しています。	重複		en-US	Duplicate Classification Detail Code.	Duplicate data		zh-CN	区分值明细CD重复。	重复	
+classGrpCdDuplicateError	error	base	ja-JP	区分値グループCDが重複しています。	重複		en-US	Duplicate Classification Group Code.	Duplicate data		zh-CN	区分值组CD重复。	重复	
+clear	info	base	ja-JP	クリア			en-US	Clear			zh-CN	清空		
+colCdDuplicateError	error	base	ja-JP	列CDが重複しています。	重複		en-US	Duplicate Column Code.	Duplicate data		zh-CN	列CD重复。	重复	
+colOrderDuplicateError	error	base	ja-JP	列順序が重複しています。	重複		en-US	Duplicate column index.	Duplicate data		zh-CN	列顺序重复。	重复	
+columnMasterError	error	base	ja-JP	列マスタ取得エラー	取得失敗		en-US	Column Master acquisition error	Acquisition failure		zh-CN	列主表取得错误	取得失败	
+confirmDeleteRow	info	base	ja-JP	選択した行を削除しますか？			en-US	Are you sure you want to delete the selected row?			zh-CN	要删除选择的行吗？		
+cultureMasterError	error	base	ja-JP	カルチャマスタ取得エラー	取得失敗		en-US	Culture Master acquisition error	Acquisition failure		zh-CN	区域和语言主表取得错误	取得失败	
+dataDeleteConfirmation	confirm	base	ja-JP	対象データを削除しますか？			en-US	Are you sure you want to delete this data?			zh-CN	要删除对象数据吗？		
+dataNotFoundError	error	base	ja-JP	該当データが存在しません。	未存在		en-US	The search did not return any results.	Does not exist		zh-CN	该数据不存在。	不存在	
+dataRegisterConfirmation	confirm	base	ja-JP	対象データを登録しますか？			en-US	Are you sure you want to register this data?			zh-CN	要登录对象数据吗？		
+dataUpdateConfirmation	confirm	base	ja-JP	対象データを更新しますか？			en-US	Are you sure you want to update this data?			zh-CN	是否更新对象数据？		
+dateError	error	base	ja-JP	日付不正(形式:[0])	日付不正(形式:[0])	[0]は数字8桁の日付(yyyyMMdd)を入力してください。	en-US	Invalid date format: [0]	Invalid date format: [0]	[0] must be of the [/]date format YYYYMMDD.	zh-CN	日期错误(形式:[0])	日期错误(形式:[0])	[0]请输入8位的数字日期(yyyyMMdd)。
+decimalLengthError	error	base	ja-JP	小数[0]桁以内	小数[0]桁以内	[0]は小数[1]桁以下で入力してください。	en-US	Decimal up to [0] place(s)	Decimal up to [0] place(s)	[0] must be within [/][1] Decimal place(s).	zh-CN	小数[0]位以内	小数[0]位以内	[0]请输入[1]位以下的小数。
+integerError	error	base	ja-JP	整数のみ	整数のみ	[0]は整数で入力してください。	en-US	Integers only	Integers only	[0] must be an integer.	zh-CN	仅整数	仅整数	[0]请输入整数。
+delete	info	base	ja-JP	削除			en-US	Remove			zh-CN	删除		
+deleteExceptionError	error	base	ja-JP	削除処理時にエラーが発生しました。(詳細：[0])	削除例外エラー		en-US	An error occurred during deletion. (Details: [0])	Deletion error		zh-CN	删除处理时发生错误。(詳細：[0])	删除例外错误	
+deleteRowErrNotSelect	info	base	ja-JP	削除する行が選択されていません。	未選択		en-US	Line to delete has not been selected.	Not selected		zh-CN	没有选中要删除的行。	未选择	
+deleteRowSuccess	info	base	ja-JP	行を削除しました。			en-US	Line deleted successfully.			zh-CN	行删除完成。		
+developerMessage	error	base	ja-JP	開発者向けメッセージ			en-US	Developers message			zh-CN	给开发者的信息		
+dictNmDuplicateError	error	base	ja-JP	辞書名が重複しています。	重複		en-US	Duplicate Dictionary Name.	Duplicate data		zh-CN	辞典名重复。	重复	
+dictNotFoundError	error	base	ja-JP	辞書マスタに存在しません。	辞書未存在		en-US	Does not exist in Dictionary Master.	Does not exist		zh-CN	在辞典主表中不存在。	辞典不存在	
+dispNmNotFoundInDispMasterError	error	base	ja-JP	画面名称が画面マスタに存在しません。	未存在		en-US	Does not exist in Screen Master.	Does not exist		zh-CN	画面名称在画面主表中不存在。	不存在	
+duplicateClickError	error	base	ja-JP	登録しようとしたデータはすでに登録済みです。	二重送信		en-US	This data is already registered.	Already registered		zh-CN	要登录的数据之前已登录。	二重送信	
+entityAlreadyDeletedError	error	base	ja-JP	他のユーザに変更された可能性があります。内容を確認して下さい。	他ユーザ変更		en-US	This record may have been modified by another user. Please review the contents.	Changed by other user		zh-CN	其他用户可能正在变更。请确认内容。	其他用户变更	
+entityAlreadyExistsError	error	base	ja-JP	データが重複している為、登録できません。管理者に連絡して下さい。	重複		en-US	Duplicate data already exists and cannot be registered. If this is an error, please contact your administrator.	Duplicate data		zh-CN	数据重复，无法登录。请联络管理者。	重复	
+entityAlreadyUpdatedError	error	base	ja-JP	他のユーザに変更されています。内容を確認して下さい。	他ユーザ変更		en-US	This record has been modified by another user. Please review the updated contents.	Changed by other user		zh-CN	其他用户正在更改。请确认内容。	其他用户变更	
+entry	info	base	ja-JP	登録			en-US	Register			zh-CN	登录		
+fileUploadDefineError	error	base	ja-JP	アップロード用の定義情報が不正です。管理者にご連絡下さい。	アップロード定義不正		en-US	Invalid upload file format. Please contact your administrator.	Invalid upload format		zh-CN	上传用的定义信息不正确。请联络管理者。	上传定义错误	
+fileUploadOpenError	error	base	ja-JP	アップロードされたファイルが開けませんでした。ファイルに問題がないか確認して下さい。	ファイルオープン不可		en-US	Could not open the file. Please make sure the file exists and is in a valid format.	Unable to open file		zh-CN	打不开上传的文件。请确认文件是否正常。	文件无法打开	
+fileUploadSetCsvColError	error	base	ja-JP	データの取り込み中にエラーが発生しました。[/]行番号：[0] , 列番号：[1]	取込失敗		en-US	An error occurred while processing the data. [/] Line number: [0], column number: [1]	Acquisition failure		zh-CN	数据读入过程中发生错误。[/]行号码：[0] , 列号码：[1]	读入失败	
+fileUploadSetCsvRowError	error	base	ja-JP	データの取り込み中にエラーが発生しました。[/]行番号：[0]	取込失敗		en-US	An error occurred while processing the data. [/] Line number: [0]	Acquisition failure		zh-CN	数据读入过程中发生错误。[/]行号码：[0]	读入失败	
+fileUploadSetError	error	base	ja-JP	データの取り込み中にエラーが発生しました。	取込失敗		en-US	An error occurred while processing the data.	Acquisition failure		zh-CN	数据读入过程中发生错误。	读入失败	
+fileUploadSetExcelColError	error	base	ja-JP	データの取り込み中にエラーが発生しました。[/]シート名：[0] , 行番号：[1] , 列番号：[2]	取込失敗		en-US	An error occurred while processing the data. [/] Sheet Name: [0], line number: [1], the column number: [2]	Acquisition failure		zh-CN	数据读入过程中发生错误。[/]工作表名：[0] , 行号码：[1] , 列号码：[2]	读入失败	
+fileUploadSetExcelRowError	error	base	ja-JP	データの取り込み中にエラーが発生しました。[/]シート名：[0] , 行番号：[1]	取込失敗		en-US	An error occurred while processing the data. [/] Sheet Name: [0], line number: [1]	Acquisition failure		zh-CN	数据读入过程中发生错误。[/]工作表名：[0] , 行号码：[1]	读入失败	
+fileUploadSetExcelSheetError	error	base	ja-JP	データの取り込み中にエラーが発生しました。[/]シート名：[0]	取込失敗		en-US	An error occurred while processing the data. [/] Sheet Name: [0]	Acquisition failure		zh-CN	数据读入过程中发生错误。[/]工作表名：[0]	读入失败	
+gridColExtDialogDescription_A01_00_Head	info	base	ja-JP	当画面について			en-US	About this screen			zh-CN	关于此画面		
+gridColExtDialogDescription_A01_01_Title	info	base	ja-JP	当画面でできること			en-US	Usage			zh-CN	此画面可以操作的		
+gridColExtDialogDescription_A01_01_Value	info	base	ja-JP	「列の順序」と「列の幅」を変更できます。			en-US	Column width and column order can be edited.			zh-CN	可以变更「列的顺序」和「列的幅」。		
+gridColExtDialogDescription_A01_02_Title	info	base	ja-JP	[blank]			en-US	[blank]			zh-CN	[blank]		
+gridColExtDialogDescription_A01_02_Value	info	base	ja-JP	【登録】ボタンで保存した変更は次のログイン以降も引き継がれます。			en-US	Saved changes will be carried over to the next log in.			zh-CN	【登录】按钮保存的变更在下次登录后也能继承。		
+gridColExtDialogDescription_A02_00_Head	info	base	ja-JP	画面項目について			en-US	Functions			zh-CN	关于画面项目		
+gridColExtDialogDescription_A02_01_Title	info	base	ja-JP	列一覧			en-US	Column Order			zh-CN	列一览		
+gridColExtDialogDescription_A02_01_Value	info	base	ja-JP	列の順序を変更できます。			en-US	Change column order.			zh-CN	可以变更列的顺序。		
+gridColExtDialogDescription_A02_02_Title	info	base	ja-JP	[blank]			en-US	[blank]			zh-CN	[blank]		
+gridColExtDialogDescription_A02_02_Value	info	base	ja-JP	列を選択し、右の移動ボタンで順序を変更します。			en-US	Select a column and use the button on the right to change its order.			zh-CN	选择列、通过右边的移动按钮变更顺序。		
+gridColExtDialogDescription_A02_03_Title	info	base	ja-JP	[blank]			en-US	[blank]			zh-CN	[blank]		
+gridColExtDialogDescription_A02_03_Value	info	base	ja-JP	ボタンは上から「選択列を一番上に移動」「選択列をひとつ上に移動」「選択列をひとつ下に移動」「選択列を一番下に移動」の移動ボタンです。			en-US	From top to bottom, the buttons perform these functions: "Move selected row to the top," "Move selected row up by one," "Move selected row down by one," "Move selected row to the bottom."			zh-CN	按钮从上开始分别是「移动选择列到最上方」「选择列向上移动一个位置」「选择列向下移动一个位置」「选择列移动到最下方」。		
+gridColExtDialogDescription_A02_04_Title	info	base	ja-JP	列幅一覧			en-US	Column Width			zh-CN	列宽一览		
+gridColExtDialogDescription_A02_04_Value	info	base	ja-JP	列の幅を変更できます。			en-US	Change column width.			zh-CN	可以变更列的宽度。		
+gridColExtDialogDescription_A02_05_Title	info	base	ja-JP	[blank]			en-US	[blank]			zh-CN	[blank]		
+gridColExtDialogDescription_A02_05_Value	info	base	ja-JP	列名の下の入力欄に幅の大きさを入力して幅を変更します。			en-US	Edit the value in the input field under the column name to change its width.			zh-CN	列名下方的输入栏中输入宽的大小，可以变更宽度。		
+gridColExtDialogDescription_A02_06_Title	info	base	ja-JP	[blank]			en-US	[blank]			zh-CN	[blank]		
+gridColExtDialogDescription_A02_06_Value	info	base	ja-JP	マウスで境目を直接左右に動かす事でも調整できます。			en-US	The width may also be adjusted by clicking and dragging the borders in between the column names.			zh-CN	通过鼠标在边界上直接左右移动也能调整。		
+gridColExtDialogDescription_A02_07_Title	info	base	ja-JP	【閉じる】ボタン			en-US	[Close] button			zh-CN	【关闭】按钮		
+gridColExtDialogDescription_A02_07_Value	info	base	ja-JP	変更を破棄して当画面を閉じます。変更は保存されません。			en-US	Discard changes and close the screen. Changes will not be saved.			zh-CN	放弃变更，关闭当前画面。不保存变更。		
+gridColExtDialogDescription_A02_08_Title	info	base	ja-JP	【リセット】ボタン			en-US	[Reset] button			zh-CN	【重置】按钮		
+gridColExtDialogDescription_A02_08_Value	info	base	ja-JP	保存した状態を破棄して初期状態に戻ります。初期状態を保存したい場合は【登録】ボタンを押してください。			en-US	Discard changes and restore defaults. In order to keep the default settings click the [Register] button.			zh-CN	保存的状态下放弃变更，回到初始状态。要保存初始状态时请按下【登录】按钮。		
+gridColExtDialogDescription_A02_09_Title	info	base	ja-JP	【登録】ボタン			en-US	[Submit] button			zh-CN	【登录】按钮		
+gridColExtDialogDescription_A02_09_Value	info	base	ja-JP	変更した内容を保存して当画面を閉じます。			en-US	Save changes and close the page.			zh-CN	保存变更的内容，关闭当前页。		
+gridColExtDialogDescription_A03_00_Head	info	base	ja-JP	ヒント			en-US	Tips			zh-CN	提示		
+gridColExtDialogDescription_A03_01_Title	info	base	ja-JP	幅の制限			en-US	Width limit			zh-CN	宽的限制		
+gridColExtDialogDescription_A03_01_Value	info	base	ja-JP	幅に入力できる大きさは、最小が40、最大が2000です。単位はピクセルです。			en-US	The range of widths that may be entered is between 40 and 2000, in pixels.			zh-CN	宽度可以输入的大小为，最小40，最大2000。单位为像素。。		
+gridColExtDialogDescription_A03_02_Title	info	base	ja-JP	幅を戻す			en-US	Revert width			zh-CN	返回宽度		
+gridColExtDialogDescription_A03_02_Value	info	base	ja-JP	列の境目をダブルクリックすると初期状態の幅に戻ります。			en-US	Double clicking the column border returns its width to default.			zh-CN	列的边界上双击后，回到初始状态的宽度。		
+gridColExtDialogDescription_A03_03_Title	info	base	ja-JP	複数列の順序を移動			en-US	Move multiple rows			zh-CN	移动复数列的顺序		
+gridColExtDialogDescription_A03_03_Value	info	base	ja-JP	列一覧 または、列幅一覧でCtrlキーを押しながら列をクリックすることで複数の列を選択できます。			en-US	Additional columns may be selected by holding down the CTRL key and clicking another row.			zh-CN	在列一览或者列宽时，一边按着Ctrl键一边点击列后，即可选择复数条列。		
+gridColExtDialogDescription_A03_04_Title	info	base	ja-JP	[blank]			en-US	[blank]			zh-CN	[blank]		
+gridColExtDialogDescription_A03_04_Value	info	base	ja-JP	選択した列は移動ボタンで順序を変更できます。			en-US	The order of the selected columns can be changed with the Move button.			zh-CN	选择的列可以通过移动按钮来变更顺序。		
+httpConnectionError	error	base	ja-JP	サーバに接続出来ませんでした。  HttpStatus:[0]  接続先:[1]	サーバ接続不可		en-US	Unable to connect to the server. HttpStatus: [0] Destination: [1]	Server connection error		zh-CN	服务器无法连接。  HttpStatus:[0]  接入点:[1]	服务器无法连接	
+httpConnectionErrorTitle	error	base	ja-JP	以下のエラーが発生しました。[/]ネットワークに接続出来るか確認して下さい。[/]それでも解決しない場合、以下の内容を管理者にお伝え下さい。	サーバ接続不可		en-US	The following error occurred. [/]Check your network connectivity. [/]If the problem persists, please notify your administrator with the following content.	Server connection error		zh-CN	发生以下错误。[/]请确认是否已网络连接是否正常。[/]如果仍然无法解决，请把以下内容通知管理员。	服务器无法连接	
+infoMasterError	error	base	ja-JP	お知らせマスタ取得エラー	取得失敗		en-US	Announcement Master acquisition error	Acquisition failure		zh-CN	通知主表取得错误	取得失败	
+infoTitle	info	base	ja-JP	お知らせ			en-US	Information			zh-CN	通知		
+insertProcessNormalEndInformation	info	base	ja-JP	正常に登録されました。	正常終了		en-US	Registered successfully.	Success		zh-CN	正常登录完成。	正常终了	
+integerLengthError	error	base	ja-JP	整数[0]桁以内	整数[0]桁以内	[0]は整数[1]桁以下で入力してください。	en-US	Integer up to [0] digit(s)	Integer up to [0] digit(s)	[0] must be within [/][1] digits.	zh-CN	整数[0]位以内	整数[0]位以内	[0]请输入[1]位以下的整数。
+isMismatchBColAndExtWarn	warn	base	ja-JP	最後に列の順序、幅を変更した後に、列の追加が行われています。設定画面から設定し直してください。			en-US	A new column has been added since the last time column order or width was edited. Please re-configure column settings from the configuration screen.			zh-CN	最后在列的顺序，宽度变更后，进行列的追加。请从设定画面重新设定。		
+itemCdDuplicateError	error	base	ja-JP	項目CDが重複しています。	重複		en-US	Duplicate Item Code.	Duplicate data		zh-CN	项目CD重复。	重复	
+itemEditableCannotSelectExceptionError	error	base	ja-JP	編集不可の項目は編集可を設定できません。	編集不可項目		en-US	Non-editable items can not be set editable.	Not editable		zh-CN	无法编辑的项目不能设定为可以编辑。	编辑不可项目	
+itemMasterError	error	base	ja-JP	項目マスタ取得エラー	取得失敗		en-US	Item Master acquisition error	Acquisition failure		zh-CN	项目主表取得错误	取得失败	
+itemNecessaryableCannotSelectExceptionError	error	base	ja-JP	必須の項目は任意を設定できません。	必須項目		en-US	Required items can not be changed to optional.	Required		zh-CN	必须的项目无法设定为任意。	必须项目	
+itemVisibleCannotSelectExceptionError	error	base	ja-JP	表示不可の項目は表示可を設定できません。	表示不可項目		en-US	Cannot set visibility of non-displayable object.	Invisible		zh-CN	非显示的项目无法设定为显示。	表示不可项目	
+keyDownBackSpaceInfo	info	base	ja-JP	backspaceが押されました。[/]前ページへ移動しますか？			en-US	The Backspace key was pressed. [/]Do you really want to move to the previous page?			zh-CN	按下了backspace。[/]要回到之前页面吗？		
+layoutNmNotFoundError	error	base	ja-JP	指定されたレイアウト名称は辞書マスタに登録されていません。	未登録		en-US	Specified layout name is not registered in Dictionary Master.	Not registered		zh-CN	指定的版面设计名称没有在辞典主表中登录。	未登录	
+liteLoginErrorBecameLockout	error	base	ja-JP	ログインすることができません｡[/]ロックアウトされました。システム管理者に問い合わせてください。			en-US	Unable to log in. [/]Your account has been locked. Please contact your system administrator.			zh-CN	无法登录｡[/]已锁定。请向系统管理者询问。		
+liteLoginErrorLockout	error	base	ja-JP	ログインすることができません｡[/]ロックアウトされています。システム管理者に問い合わせてください。			en-US	Unable to log in. [/]Your account is currently locked. Please contact your system administrator.			zh-CN	无法登录｡[/]已锁定。请向系统管理者询问。		
+liteLoginErrorNoUser	error	base	ja-JP	[0]・[1]に誤りがあるか、登録されていません。			en-US	[0]/[1] are either invalid or not registered.			zh-CN	由于[0]・[1]错误、无法登录。		
+liteLoginErrorUserAvailableOutOfPeriod	error	base	ja-JP	ログインすることができません｡[/]ユーザが利用期間外です。システム管理者に問い合わせてください。			en-US	Unable to log in. User is not activated or has expired. Please contact your system administrator.			zh-CN	无法登录｡[/]用户不在使用期。请向系统管理者询问。		
+liteLoginInfoPasswordExpired	info	base	ja-JP	パスワードの有効期限が切れています。[/]パスワードを変更してください。			en-US	Your password is expired. Please change your password.			zh-CN	密码已过期。[/]请变更密码。		
+liteLoginInfoPasswordReset	info	base	ja-JP	パスワードがリセットされています。[/]パスワードを変更してください。			en-US	Your password has been reset. [/] Please change your password.			zh-CN	密码已重置。[/]请变更密码。		
+logoutTitle	info	base	ja-JP	ログアウト			en-US	LOGOUT			zh-CN	退出		
+mainMenuTitle	info	base	ja-JP	メニュー			en-US	MENU			zh-CN	菜单		
+masterNotFoundError	error	base	ja-JP	マスタ未存在	未存在		en-US	Master does not exist.	Does not exist		zh-CN	主表不存在	不存在	
+maxError	error	base	ja-JP	最大[0]以下	最大[0]以下	[0]は[1]以下で入力してください。	en-US	Must be less than [0]	Must be less than [0]	[0] must be less than or [/]equal to [1].	zh-CN	最大[0]以下	最大[0]以下	[0]请输入[1]以下。
+maxFileSize	error	base	ja-JP	サーバへ送信可能なファイルサイズを超えています。	ファイルサイズ超過		en-US	Upload exceeds the maximum file size allowed.	File size exceeded		zh-CN	超过能向服务器发送的文件尺寸。	超过文件尺寸	
+maxlengthError	error	base	ja-JP	最大[0]文字以下	最大[0]文字以下	[0]は[1]文字以下で入力してください。	en-US	Maximum [0] characters	Maximum [0] characters	[0] must contain at most [/][1] characters.	zh-CN	最大[0]文字以下	最大[0]文字以下	[0]请输入[1]文字以下。
+maxNumberOfFiles	error	base	ja-JP	サーバへ送信可能なファイル数を超えています。	ファイル数超過		en-US	Uploaded number of files exceeds server limits.	Number of files exceeded		zh-CN	超过能向服务器发送的文件数。	超过文件数	
+menuGrpCdDuplicateError	error	base	ja-JP	メニューグループCDが重複しています。	重複		en-US	Duplicate Menu Group Code.	Duplicate data		zh-CN	菜单组CD重复。	重复	
+menuMasterError	error	base	ja-JP	メニューマスタ取得エラー	取得失敗		en-US	Menu Master acquisition error	Acquisition failure		zh-CN	菜单主表取得错误	取得失败	
+messageCdDuplicateError	error	base	ja-JP	メッセージCDが重複しています。	重複		en-US	Duplicate Message Code.	Duplicate data		zh-CN	信息CD重复。	重复	
+messageMasterError	error	base	ja-JP	メッセージマスタ取得エラー	取得失敗		en-US	Message Master acquisition error	Acquisition failure		zh-CN	信息主表取得错误	取得失败	
+messageNotFoundError	error	base	ja-JP	メッセージマスタに存在しません。	未存在		en-US	Does not exist in Message Master.	Does not exist		zh-CN	信息主表中不存在。	不存在	
+minError	error	base	ja-JP	最小[0]以上	最小[0]以上	[0]は[1]以上で入力してください。	en-US	Must be greater than [0]	Must be greater than [0]	[0] must be greater or [/]equal to [1].	zh-CN	最小[0]以上	最小[0]以上	[0]请输入[1]以上。
+minFileSize	error	base	ja-JP	サーバへ送信可能なファイルサイズに達していません。	ファイルサイズ不足		en-US	Upload does not have a valid file size.	Invalid file size		zh-CN	没有达到向服务器发送的文件尺寸。	文件尺寸不足	
+minlengthError	error	base	ja-JP	最小[0]文字以上	最小[0]文字以上	[0]は[1]文字以上で入力してください。	en-US	Minimum [0] character(s)	Minimum [0] character(s)	[0] must contain at least [/][1] characters.	zh-CN	最小[0]文字以上	最小[0]文字以上	[0]请输入[1]文字以上。
+moreInfo	error	base	ja-JP	詳しい情報			en-US	More info			zh-CN	详细信息		
+noDetailsError	error	base	ja-JP	明細が入力されていません。	明細未入力		en-US	Details must be entered.	Required		zh-CN	明细未输入。	明细未输入	
+notBlankError	info	base	ja-JP	[0]を入力してください。			en-US	Please enter [0].			zh-CN	请输入[0]。		
+noUseableReportLayoutError	error	base	ja-JP	使用可能な帳票レイアウトが登録されていません。			en-US	A valid report layout is not registered.			zh-CN	无法登录可以使用的清单布局。		
+numberError	error	base	ja-JP	数値のみ			en-US	Numeric values only			zh-CN	仅数值		
+onlyOneSelect	error	base	ja-JP	一件のみ選択して下さい。	1件のみ選択		en-US	Select one record only.	Select only one		zh-CN	请只选择一件。	只选择一件	
+overSafetySizeError	error	base	ja-JP	検索件数が[0]件を超えています。検索条件を見直し再度処理を実行して下さい。			en-US	Search results exceed [0] records. Review the search conditions and try again.			zh-CN	检索件数超过[0]件。请重新确认检索条件后再次执行处理。		
+overSafetySizeToReportError	error	base	ja-JP	発行データ件数が[0]件を超えています。発行条件を見直し再度処理を実行して下さい。			en-US	Number of data to be issued exceeds [0]. Please review the search conditions before running the process again.			zh-CN	发行数据件数超过[0]件。请重新确认发行条件后再次执行处理。		
+overLimitSizeWarn	warn	base	ja-JP	検索件数が[0]件を超えています。[1]件以降のデータを表示する場合は検索条件を変更して再検索して下さい。			en-US	Search results exceed [0] records. To view data past [1] records, review the search conditions and search again.			zh-CN	检索件数超过了[0]件。[1]件以下的数据显示时，请更改检索条件，再次检索。		
+passwordChangeByMgtSuccess	info	base	ja-JP	パスワードが変更されました｡			en-US	The password has been changed.			zh-CN	密码已变更｡		
+passwordChangeErrorAvailableDateContext	error	base	ja-JP	パスワード変更ができません｡[/][0]には[1]より後の日付を入力してください。			en-US	The password cannot be changed. [/][0] must be later than [1].			zh-CN	无法变更密码｡[/][0]中请输入[1]之后的日期。		
+passwordChangeErrorBecameLockout	error	base	ja-JP	ロックアウトされました。システム管理者に問い合わせてください。[/]ログイン画面に移動します。			en-US	Your account has been locked. Please contact your system administrator. [/]You will be redirected to the Login screen.			zh-CN	已锁定。请向系统管理者询问。[/]移动到登录画面。		
+passwordChangeErrorLockout	error	base	ja-JP	ロックアウトされています。システム管理者に問い合わせてください。[/]ログイン画面に移動します。			en-US	Your account is currently locked. Please contact your system administrator. [/]You will be redirected to the Login screen.			zh-CN	已锁定。请向系统管理者询问。[/]移动到登录画面。		
+passwordChangeErrorMinAlpha	error	base	ja-JP	パスワード変更ができません｡[/]パスワードには[0]桁以上の英字を含めてください。			en-US	The password cannot be changed. [/]The password must contain at least [0] alphabetical characters.			zh-CN	无法变更密码｡[/]密码中请包含[0]位以上的字母。		
+passwordChangeErrorMinLength	error	base	ja-JP	パスワード変更ができません｡[/]パスワードは[0]桁以上を入力してください。			en-US	The password cannot be changed. [/]The password must be at least [0] characters long.			zh-CN	无法变更密码｡[/]请输入[0]位以上的密码。		
+passwordChangeErrorMinLowerCase	error	base	ja-JP	パスワード変更ができません｡[/]パスワードには[0]桁以上の小文字を含めてください。			en-US	The password cannot be changed. [/]The password must contain at least [0] lower case characters.			zh-CN	无法变更密码｡[/]密码中请包含[0]位以上的小写字母。		
+passwordChangeErrorMinNumbers	error	base	ja-JP	パスワード変更ができません｡[/]パスワードには[0]桁以上の数字を含めてください。			en-US	The password cannot be changed. [/]The password must contain at least [0] numbers.			zh-CN	无法变更密码｡[/]密码中请包含[0]位以上的数字。		
+passwordChangeErrorMinSymbol	error	base	ja-JP	パスワード変更ができません｡[/]パスワードには[0]桁以上の半角記号を含めてください。			en-US	The password cannot be changed. [/]The password must contain at least [0] half-width special characters.			zh-CN	无法变更密码｡[/]密码中请包含[0]位以上的半角字符		
+passwordChangeErrorMinUpperCase	error	base	ja-JP	パスワード変更ができません｡[/]パスワードには[0]桁以上の大文字を含めてください。			en-US	The password cannot be changed. [/]The password must contain at least [0] upper case characters.			zh-CN	无法变更密码｡[/]密码中请包含[0]位以上的大写字母。		
+passwordChangeErrorMismatchNewAndReEnter	error	base	ja-JP	パスワード変更ができません｡[/][0]と[1]が一致しません。			en-US	The password cannot be changed. [/][0] and [1] do not match.			zh-CN	无法变更密码｡[/][0]和[1]不一致。		
+passwordChangeErrorMismatchNowAndOld	error	base	ja-JP	パスワード変更ができません｡[/]現在使用しているパスワードと[0]が一致しません。			en-US	The password cannot be changed. [/][0] does not match the current password.			zh-CN	无法变更密码｡[/]现在的密码和[0]不一致。		
+passwordChangeErrorNoSamePasswordNewAndOld	error	base	ja-JP	パスワード変更ができません｡[/]現在使用しているパスワードと[0]が同じパスワードです。異なるパスワードに変更してください。			en-US	The password cannot be changed. [/][0] is identical to the current password. Please enter a new password.			zh-CN	无法变更密码｡[/]現在使用的密码和[0]相同。请输入不同的密码。		
+passwordChangeErrorSamePasswordNewAndOld	error	base	ja-JP	パスワード変更ができません｡[/]現在使用しているパスワードと[0]が同じパスワードです。[/]異なるパスワードに変更してください。			en-US	The password cannot be changed. [/][0] is identical to the current password. [/]Please enter a new password.			zh-CN	无法变更密码｡[/]現在使用的密码和[0]相同。[/]请输入不同的密码。		
+passwordChangeErrorUserAvailableOutOfPeriod	error	base	ja-JP	ユーザが利用期間外です。システム管理者に問い合わせてください。[/]ログイン画面に移動します。			en-US	User is not activated or has expired. Please contact your system administrator. [/]You will be redirected to the Login screen.			zh-CN	用户不在使用期。请向系统管理者询问。[/]移动到登录画面。		
+passwordChangeSuccess	info	base	ja-JP	パスワードが変更されました｡[/]この画面を閉じるとメニューに移動します。			en-US	The password has been changed. [/] You will be redirected to the main menu after closing this page.			zh-CN	密码已变更｡[/]关闭此画面会移动到菜单。		
+passwordTitle	info	base	ja-JP	パスワード変更			en-US	Change Password			zh-CN	密码变更		
+patternError	error	base	ja-JP	入力文字不正			en-US	Invalid character			zh-CN	输入的字符错误		
+pdfMakeInfomation	info	base	ja-JP	ＰＤＦを作成しています。このままお待ち下さい。			en-US	Generating PDF. Please wait.			zh-CN	ＰＤＦ已作成。请稍后。		
+printDataTypeNotAllowedRePrintError	error	base	ja-JP	[0]は再印刷することができません。			en-US	[0] cannot be reprinted.			zh-CN	[0]是无法再打印。		
+printerGroupIdIsUsedInOtherPrintServiceWarn	warn	base	ja-JP	指定されたプリンタグループは、すでに別の印刷サービス情報で使用されています。登録して宜しいですか？			en-US	The selected printer group is already in use by another print service. Are you sure you want to submit?			zh-CN	指定的打印机组已在使用别的印刷服务信息。可以登录吗？		
+printerGroupNmDuplicateError	error	base	ja-JP	プリンタグループ名が重複しています。	重複		en-US	Duplicate printer group names.	Duplicate data		zh-CN	打印机组名重复。	重复	
+printSettingTakeoverConfirm	confirm	base	ja-JP	自動印刷対象が変更されました。変更前のレイアウトから印刷設定を引き継ぎますか？			en-US	Automated print target has been changed. Carry over print settings from previous layout?			zh-CN	自动印刷对象变更。要继承变更前的排版印刷设定吗？		
+processCompleteInformation	info	base	ja-JP	処理は正常終了しました。	正常終了		en-US	Process completed successfully.	Success		zh-CN	处理正常终了。	正常终了	
+processExecuteEndInformation	info	base	ja-JP	処理を終了しました。	処理終了		en-US	Processing completed.	Process completed		zh-CN	处理终了。	处理终了	
+processExecuteStartInformation	info	base	ja-JP	処理を開始しました。	処理開始		en-US	Process started.	Process started		zh-CN	处理开始完成。	处理开始	
+queueAddDtConditionallyRequiredError	error	base	ja-JP	[0]入力時は必須			en-US	Required when entering [0].			zh-CN	[0]输入时必须		
+registerSuccess	info	base	ja-JP	登録しました。			en-US	Registered successfully.			zh-CN	登录完成。		
+reportLayoutNameDuplicateError	error	base	ja-JP	帳票レイアウト名が重複しています。	重複		en-US	Duplicate report layout names.	Duplicate data		zh-CN	清单布局名重复。	重复	
+requiredError	error	base	ja-JP	必須	必須	[0]を入力してください。	en-US	Required	Required	Please enter [0].	zh-CN	必须	必须	[0]请输入。
+roleCodeDuplicateError	error	base	ja-JP	権限CDが重複しています。	重複		en-US	Duplicate Security Code.	Duplicate data		zh-CN	权限CD重复。	重复	
+roleGrpCodeDuplicateError	error	base	ja-JP	権限グループCDが重複しています。	重複		en-US	Duplicate Security Group Code.	Duplicate data		zh-CN	权限组CD重复。	重复	
+screenCdDuplicateError	error	base	ja-JP	画面CDが重複しています。	重複		en-US	Duplicate Screen Code.	Duplicate data		zh-CN	画面CD重复。	重复	
+screenMasterError	error	base	ja-JP	画面マスタ取得エラー	取得失敗		en-US	Screen Master acquisition error	Acquisition failure		zh-CN	画面主表取得错误	取得失败	
+search	info	base	ja-JP	検索			en-US	Search			zh-CN	检索		
+searchCondition	info	base	ja-JP	検索条件			en-US	Search Condition			zh-CN	检索条件		
+searchConditionMain	info	base	ja-JP	主			en-US	Main			zh-CN	主		
+searchConditionOther	info	base	ja-JP	他			en-US	Other			zh-CN	他		
+searchConditionAll	info	base	ja-JP	全			en-US	All			zh-CN	全		
+statusCode	error	base	ja-JP	ステータスコード			en-US	Status code			zh-CN	状态代码		
+systemMasterError	error	base	ja-JP	システム管理マスタ取得エラー	取得失敗		en-US	System Management Master acquisition error	Acquisition failure		zh-CN	系统管理主表取得错误	取得失败	
+unhandledError	error	base	ja-JP	致命的エラーが発生しました。管理者に連絡して下さい。[0]	致命的エラー		en-US	Unhandled exception error. Please contact your administrator. [0]	Unhandled error		zh-CN	发生致命错误。请联络管理者。[0]	致命的错误	
+unknownError	error	base	ja-JP	不明なエラーが発生しました。	不明エラー		en-US	An unknown error has occurred.	Unknown Error		zh-CN	发生未知错误。	不明错误	
+update	info	base	ja-JP	更新			en-US	Update			zh-CN	更新		
+updateProcessNormalEndInformation	info	base	ja-JP	正常に更新されました。	正常終了		en-US	Updated successfully.	Success		zh-CN	正常更新完成。	正常终了	
+updateSuccess	info	base	ja-JP	更新しました。			en-US	Updated successfully.			zh-CN	更新完成。		
+userAutoPrintSetting	info	base	ja-JP	ユーザ別自動印刷設定			en-US	Automated Print Settings (User)			zh-CN	自动印刷设定(用户)		
+terminalAutoPrintSetting	info	base	ja-JP	端末別自動印刷設定			en-US	Automated Print Settings (Terminal)			zh-CN	自动印刷设定(端末)		
+userAutoPrintSettingList	info	base	ja-JP	ユーザ別自動印刷設定(一覧)			en-US	List of Automated Print Settings (User)						
+terminalAutoPrintSettingList	info	base	ja-JP	端末別自動印刷設定(一覧)			en-US	List of Automated Print Settings (Terminal)						
+userAutoPrintSettingEdit	info	base	ja-JP	ユーザ別自動印刷設定(編集)			en-US	Automated Print Settings (User)						
+terminalAutoPrintSettingEdit	info	base	ja-JP	端末別自動印刷設定(編集)			en-US	Automated Print Settings (Terminal)						
+userEditErrorAlreadyRegistered	error	base	ja-JP	ユーザCDは既に登録されています。			en-US	User Code is already registered.			zh-CN	用户CD已登录。		
+userMessage	error	base	ja-JP	メッセージ			en-US	Message			zh-CN	信息		
+viewOrderDuplicateError	error	base	ja-JP	表示順が重複しています。	重複		en-US	Duplicate Display Order.	Duplicate data		zh-CN	表示顺重复。	重复	
+noAutoPrintTargetLayoutError	error	base	ja-JP	自動印刷対象レイアウトが登録されていません。管理者に連絡してください。	印刷設定不備		en-US	Auto-Print Layout is not registered, Please contact the system's administrator.	Print Setting error		zh-CN	自动打印的对象版面未登录。请联络管理员。	打印设定不完备	
+jobQueEntryRemoteAuthConnectError	error	base	ja-JP	非同期処理の起動予約登録に失敗しました。システム管理者に問い合わせてください。[/]認証APIへ接続できません。([0])			en-US	An error occurred while reserving  asynchronous process. Please contact your administrator.[/] Unable to connect to  Authentication API.([0])			zh-CN	非同期处理的启动预约登录失败。请向系统管理者询问。[/]无法连接到认证的API。([0])		
+jobQueEntryRemoteAuthError	error	base	ja-JP	非同期処理の起動予約登録に失敗しました。システム管理者に問い合わせてください。[/]認証に失敗しました。([0])			en-US	An error occurred while reserving  asynchronous process. Please contact your administrator.[/] Authentication failed. ([0])			zh-CN	非同期处理的启动预约登录失败。请向系统管理者询问。[/]认证失败。([0])		
+jobQueEntryRemoteServerConnectError	error	base	ja-JP	非同期処理の起動予約登録に失敗しました。システム管理者に問い合わせてください。[/]ジョブ管理システムへ接続できません。([0])			en-US	An error occurred while reserving  asynchronous process. Please contact your administrator.[/] Unable to connect to JOB Management  System.([0])			zh-CN	非同期处理的启动预约登录失败。请向系统管理者询问。[/]无法连接到作业管理系统。([0])		
+jobQueEntryRemoteFailed	error	base	ja-JP	非同期処理の起動予約登録に失敗しました。システム管理者に問い合わせてください。([0])			en-US	An error occurred while reserving  asynchronous process. Please contact your administrator.			zh-CN	非同期处理的启动预约登录失败。请向系统管理者询问。([0])		
+inputLimitCheckNumericOnlyError	error	base	ja-JP	数字のみ	数字のみ	[0]は数値のみ入力可能です。	en-US	Numeric values only	Numbers only	[0] may only contain [/]Numbers.	zh-CN	仅数值	仅数值	[0]仅可以输入数值。
+inputLimitCheckNumericAndHyphenOnlyError	error	base	ja-JP	数字と-のみ	数字と-のみ	[0]は数字と-のみ入力可能です。	en-US	Numeric values and "-" only	Numbers and "-" only	[0] may only contain [/]Numbers and "-".	zh-CN	仅数字和-	仅数字和-	[0]仅可以输入数字和-。
+inputLimitCheckAlphabetOnlyError	error	base	ja-JP	英字のみ	数字と-のみ	[0]は英字のみ入力可能です。	en-US	Alphabetic characters only	Numbers and "-" only	[0] may only contain [/]Numbers and "-".	zh-CN	仅数字和-	仅数字和-	[0]仅可以输入字母。
+inputLimitCheckAlphabetAndHyphenOnlyError	error	base	ja-JP	英字と-のみ	英字と-のみ	[0]は英字と-のみ入力可能です。	en-US	Alphabetic characters and "-" only	Alphabetic characters and "-" only	[0] may only contain [/]Alphabetic characters and "-".	zh-CN	仅字母和-	仅字母和-	[0]仅可以输入字母和-。
+inputLimitCheckAlphabetAndNumericOnlyError	error	base	ja-JP	英数字のみ	英数字のみ	[0]は英数字のみ入力可能です。	en-US	Alphanumeric characters only	Alphanumeric characters only	[0] may only contain [/]Alphanumeric characters.	zh-CN	仅字母和数字	仅字母和数字	[0]仅可以输入字母数字。
+inputLimitCheckAlphabetAndNumericAndHyphenOnlyError	error	base	ja-JP	英数字と-のみ	英数字と-のみ	[0]は英数字と-のみ入力可能です。	en-US	Alphanumeric characters and "-" only	Alphanumeric characters and "-" only	[0] may only contain [/]Alphanumeric characters and "-".	zh-CN	仅字母数字和-	仅字母数字和-	[0]仅可以输入字母数字和-。
+inputLimitCheckAlphabetAndNumericAndSymbolOnlyError	error	base	ja-JP	英数字と記号のみ	英数字と記号のみ	[0]は英数字と記号のみ入力可能です。	en-US	Alphanumeric characters and symbols only	Alphanumeric characters and symbols only	[0] may only contain [/]Alphanumeric characters and symbols.	zh-CN	仅字母数字和记号	仅字母数字和记号	[0]仅可以输入字母数字和记号。
+inputLimitCheckHalfWidthOnlyError	error	base	ja-JP	半角文字のみ	半角文字のみ	[0]は半角文字のみ入力可能です。	en-US	Half-width characters only	Half-width characters only	[0] may only contain [/]Half-width characters.	zh-CN	仅半角文字	仅半角文字	[0]仅可以输入半角文字。
+inputLimitCheckFullWidthOnlyError	error	base	ja-JP	全角文字のみ	全角文字のみ	[0]は全角文字のみ入力可能です。	en-US	Full-width characters only	Full-width characters only	[0] may only contain [/]Full-width characters.	zh-CN	仅全角文字	仅全角文字	[0]仅可以输入全角文字。
+inputLimitCheckTimeOnlyError	error	base	ja-JP	時刻のみ	時刻のみ	[0]は時刻のみ入力可能です。	en-US	Time Only	Time Only	[0] may only contain [/]Time.	zh-CN	仅时刻	仅时刻	[0]仅可以输入时刻。
+inputLimitCheckTimeHHMMSSOnlyError	error	base	ja-JP	時刻のみ(HH:MM:SS)	時刻のみ(HH:MM:SS)	[0]は時刻のみ(HH:MM:SS)入力可能です。	en-US	Time Only (HH:MM:SS)	Time Only	[0] may only contain [/]Time(HH:MM:SS).	zh-CN	仅时刻	仅时刻	[0]仅可以输入时刻(HH:MM:SS)。
+accessDisableToScreenError	error	base	ja-JP	遷移しようとしている画面を使用する権限がありません。[/]メニューに遷移します。			en-US	You do not have the authority to access target page.[/]Go to menu page.			zh-CN	没有想要迁移画面的使用权限。[/]迁移至菜单。		
+timeError	error	base	ja-JP	時刻不正(形式:[0])			en-US	Invalid time format: [0]			zh-CN	时间错误(形式:[0])		
+timeoutError	error	base	ja-JP	他のユーザが使用中です。少々時間を置いてから再度処理を実行して下さい。			en-US	Other users are in use.Please wait a moment and try it again.			zh-CN	其他用户使用中。请稍等片刻后再次执行处理。		
+reportCdDuplicateError	error	base	ja-JP	帳票CDは既に登録されています。	重複		en-US	Report Code is already registered.	Duplicate data		zh-CN	帐票CD已登录。	重复	
+propertyNmDuplicateError	error	base	ja-JP	項目名は既に登録されています。	重複		en-US	Property Name is already registered.	Duplicate data		zh-CN	项目名称已登录。	重复	
+dataNotFoundTransitionError	error	base	ja-JP	データ未登録のためページ遷移出来ません。			en-US	Data is not registered so cannot do page transition.			zh-CN	因为数据未登录页面不能迁移。		
+terminalSetting	info	base	ja-JP	端末設定	端末設定		en-US	Terminal Setting	Terminal Setting		zh-CN	端末设定		
+termialAlreadySetConfirmation	info	base	ja-JP	既に他の端末で設定済です。他端末の設定は解除されますが、処理を行いますか？			en-US	Already set on another terminal. Setting on other terminal will  be released, but do you want to process it?						
+numberingNotFoundError	error	base	ja-JP	採番マスタが登録されていません。			en-US	Numbering Master is not registered.						
+inputNumberCheckReversalError	error	base	ja-JP	最小値最大値逆転	最小最大逆転		en-US	Minimum Value Maximum Value reversal	Minimum Maximum Reversal					
+inputCharsCheckReversalError	error	base	ja-JP	最小文字数最大文字数逆転	最小最大逆転		en-US	Minimum Character length Maximum Character length reversal	Minimum Maximum Reversal					

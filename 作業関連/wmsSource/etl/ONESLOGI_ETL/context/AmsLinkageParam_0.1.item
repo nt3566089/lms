@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_REb3YItoEeaWDPN99PiqkA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_g4uRoNtmEem0B8goRap_Cg" comment="" name="AMS_HOST_NM" prompt="AMS_HOST_NM?" promptNeeded="false" type="id_String" value="&quot;http://172.28.209.133:4200/ams/&quot;"/>
+  <contextParameter xmi:id="_cxKOkOPmEemxBcSfw5zLsg" comment="" name="amsMoveRequestsApi" prompt="amsMoveRequestsApi?" promptNeeded="false" type="id_String" value="&quot;api/moveRequests&quot;"/>
+  <contextParameter xmi:id="_l_KZwOPnEemxBcSfw5zLsg" comment="" name="mapCd" prompt="mapCd?" promptNeeded="true" type="id_String" value=""/>
+</talendfile:ContextType>

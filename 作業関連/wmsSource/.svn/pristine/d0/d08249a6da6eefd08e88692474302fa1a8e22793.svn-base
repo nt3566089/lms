@@ -1,0 +1,182 @@
+MENU_GRP_CD	DICT_NM	PARENT_MENU_GRP_CD	VIEW_ORDER	VISIBLE_TYPE	SCREEN_CD	DICT_NM	DICT_NM	URL_PATH	TARGET_WINDOW	VIEW_ORDER	DEL_FLG
+ECORDER	EC受注		1	PC	EcOrderBulkInput	EC受注データ一括取込		#/wms/ecorder/EcOrderBulkInput	0	1	0
+ECORDER	EC受注		1	PC	EcOrderList	EC受注データ一覧		#/wms/ecorder/EcOrderList	0	2	0
+ECORDER	EC受注		1	PC	EcShippingTagDataOutput	EC送り状データ出力		#/wms/ecorder/EcShippingTagDataOutput	0	3	0
+RECEIVE	入荷		2	PC	ReceiveStatusProgress	入荷ステータス別進捗		#/wms/receive/ReceiveStatusProgress	0	1	0
+RECEIVE	入荷		2	PC	SlipNoReceiveList	伝票別入荷一覧		#/wms/receive/SlipNoReceiveList	0	2	0
+RECEIVE	入荷		2	PC	ProductReceiveList	商品別入荷一覧		#/wms/receive/ProductReceiveList	0	3	0
+RECEIVE	入荷		3	PC	ReferenceProductReceiveList	商品別入荷一覧(参照)		#/wms/receive/ReferenceProductReceiveList	0	4	0
+RECEIVE	入荷		2	PC	ReceivePartList	入荷未完了一覧		#/wms/receive/ReceivePartList	0	5	0
+RECEIVE	入荷		2	PC	ReceivePlanInput	入荷予定入力		#/wms/receive/ReceivePlanInput	0	6	0
+RECEIVE	入荷		2	PC	ReceivePlanBulkInput	入荷予定一括取込		#/wms/receive/ReceivePlanBulkInput	0	7	0
+RECEIVE	入荷		2	PC	ReceivePlanListPrint	入荷予定リスト発行		#/wms/receive/ReceivePlanListPrint	0	8	0
+RECEIVE	入荷		2	PC	StoreLabelPrint	入庫ラベル発行		#/wms/receive/StoreLabelPrint	0	9	0
+RECEIVE	入荷		2	PC	ClassLabelPrint	汎用ラベル発行		#/wms/receive/ClassLabelPrint	0	10	0
+RECEIVE	入荷		2	PC	ReceiveInputNo	入荷実績入力(予定なし)		#/wms/receive/ReceiveInputNo	0	11	0
+RECEIVE	入荷		2	PC	ReceiveHistory	入荷履歴		#/wms/receive/ReceiveHistory	0	12	0
+SHIPPING	出荷		3	PC	ShippingStatusProgress	出荷ステータス別進捗		#/wms/shipping/ShippingStatusProgress	0	1	0
+SHIPPING	出荷		3	PC	DeliveryCourseShippingList	配送コース別出荷一覧		#/wms/shipping/DeliveryCourseShippingList	0	2	0
+SHIPPING	出荷		3	PC	ShippingInstList	出庫指示一覧		#/wms/shipping/ShippingInstList	0	3	0
+SHIPPING	出荷		3	PC	ProductShippingList	商品別出荷一覧		#/wms/shipping/ProductShippingList	0	4	0
+SHIPPING	出荷		3	PC	ReferenceProductShippingList	商品別出荷一覧(参照)		#/wms/shipping/ReferenceProductShippingList	0	5	0
+SHIPPING	出荷		3	PC	ShippingPlanInput	出荷指示入力		#/wms/shipping/ShippingPlanInput	0	6	0
+SHIPPING	出荷		3	PC	ShippingPlanBulkInput	出荷指示一括取込		#/wms/shipping/ShippingPlanBulkInput	0	7	0
+SHIPPING	出荷		3	PC	ShippingLotList	出荷期限管理一覧		#/wms/shipping/ShippingLotList	0	8	0
+SHIPPING	出荷		3	PC	PickingListPrint	ピッキングリスト発行		#/wms/shipping/PickingListPrint	0	9	0
+SHIPPING	出荷		3	PC	PickingMethodRecommendation	ピッキング提案		#/wms/shipping/PickingMethodRecommendation	0	10	0
+SHIPPING	出荷		3	PC	PieceShippingInspect	出荷検品		#/wms/shipping/PieceShippingInspect	0	11	0
+SHIPPING	出荷		3	PC	SingleRowShippingInspect	単行出荷検品		#/wms/shipping/SingleRowShippingInspect	0	12	0
+SHIPPING	出荷		3	PC	PackingListUpdate	梱包明細修正		#/wms/shipping/PackingListUpdate	0	13	0
+SHIPPING	出荷		3	PC	DeliverySlipListPrint	納品明細発行		#/wms/shipping/DeliverySlipListPrint	0	14	0
+SHIPPING	出荷		3	PC	StwListPrint	積込リスト発行		#/wms/shipping/StwListPrint	0	15	0
+SHIPPING	出荷		3	PC	ShippingInputNoPlan	出荷実績入力(予定なし)		#/wms/shipping/ShippingInputNoPlan	0	16	0
+SHIPPING	出荷		3	PC	ShippingConfirmList	出荷確定一覧		#/wms/shipping/ShippingConfirmList	0	17	0
+SHIPPING	出荷		3	PC	ShippingTagDataOutput	送り状データ出力		#/wms/shipping/ShippingTagDataOutput	0	18	0
+SHIPPING	出荷		3	PC	PackingList	梱包明細一覧		#/wms/shipping/PackingList	0	19	0
+SHIPPING	出荷		3	PC	ShippingHistory	出荷履歴		#/wms/shipping/ShippingHistory	0	20	0
+SHIPPING	出荷		3	PC	PackingHistory	梱包履歴		#/wms/shipping/PackingHistory	0	21	0
+SHIPPING	出荷		3	PC	BillOfLadingPrint	Bill of Lading発行		#/wms/shipping/BillOfLadingPrint	0	22	1
+STOCK	在庫		4	PC	TotalStockList	トータル在庫問合せ		#/wms/stock/TotalStockList	0	1	0
+STOCK	在庫		4	PC	ReferenceTotalStockList	トータル在庫問合せ(参照)		#/wms/stock/ReferenceTotalStockList	0	2	0
+STOCK	在庫		4	PC	StockList	在庫問合せ		#/wms/stock/StockList	0	3	0
+STOCK	在庫		4	PC	ReferenceStockList	在庫問合せ(参照)		#/wms/stock/ReferenceStockList	0	4	0
+STOCK	在庫		4	PC	StockInOutList	在庫受払問合せ		#/wms/stock/StockInOutList	0	5	0
+STOCK	在庫		4	PC	StockMoveList	在庫移動一覧		#/wms/stock/StockMoveList	0	6	0
+STOCK	在庫		4	PC	StockSetInst	セット組指示		#/wms/stock/StockSetInst	0	7	0
+STOCK	在庫		4	PC	StockSetInstListPrint	セット組指示書発行		#/wms/stock/StockSetInstListPrint	0	8	0
+STOCK	在庫		4	PC	StockSetRelease	セット解除指示		#/wms/stock/StockSetRelease	0	9	0
+STOCK	在庫		4	PC	StockSetReleaseListPrint	セット解除指示書発行		#/wms/stock/StockSetReleaseListPrint	0	10	0
+STOCK	在庫		4	PC	ReplenishInstList	補充指示一覧		#/wms/stock/ReplenishInstList	0	11	0
+STOCK	在庫		4	PC	MoveLabelPrint	搬送ラベル発行		#/wms/stock/MoveLabelPrint	0	12	0
+STOCK	在庫		4	PC	StockAdj	在庫調整	在庫調整(新規)	#/wms/stock/StockAdj	0	13	0
+STOCK	在庫		4	PC	StockMoveBodyList	在庫移動明細一覧		#/wms/stock/StockMoveBodyList	0	14	0
+STOCK	在庫		4	PC	StockMoveHistory	在庫移動履歴		#/wms/stock/StockMoveHistory	0	15	0
+STOCK	在庫		4	PC	SerialNoList	シリアルNo.一覧		#/wms/stock/SerialNoList	0	16	0
+STOCK	在庫		4	PC	SerialNoBulkInput	シリアルNo.メンテナンス		#/wms/stock/SerialNoBulkInput	0	17	0
+INVENTORY	棚卸		5	PC	InventoryCreate	棚卸データ作成		#/wms/inventory/InventoryCreate	0	1	0
+INVENTORY	棚卸		5	PC	InventoryWorkListPrint	棚卸作業リスト発行		#/wms/inventory/InventoryWorkListPrint	0	2	0
+INVENTORY	棚卸		5	PC	InventoryInput	棚卸入力		#/wms/inventory/InventoryInput	0	3	0
+INVENTORY	棚卸		5	PC	InventoryHistorySearch	棚卸履歴検索		#/wms/inventory/InventoryHistorySearch	0	4	0
+INVENTORY	棚卸		5	PC	InventoryDiffListPrint	棚卸差異リスト発行		#/wms/inventory/InventoryDiffListPrint	0	5	0
+INVENTORY	棚卸		5	PC	InventoryBulkUpdate	棚卸在庫一括更新		#/wms/inventory/InventoryBulkUpdate	0	6	0
+INVENTORY	棚卸		5	PC	InventoryHistory	棚卸履歴		#/wms/inventory/InventoryHistory	0	7	0
+MASTER	マスタ		6	PC	ClientMaster	荷主マスタメンテナンス		#/wms/master/ClientMaster	0	1	0
+MASTER	マスタ		6	PC	CenterMasterList	センタマスタメンテナンス(一覧)		#/wms/master/CenterMasterList	0	2	0
+MASTER	マスタ		6	PC	WarehouseMaster	倉庫マスタメンテナンス		#/wms/master/WarehouseMaster	0	3	0
+MASTER	マスタ		6	PC	ZoneMaster	ゾーンマスタメンテナンス		#/wms/master/ZoneMaster	0	4	0
+MASTER	マスタ		6	PC	LocationMaster	ロケーションマスタメンテナンス(一覧)		#/wms/master/LocationMaster	0	5	0
+MASTER	マスタ		6	PC	LocationMasterBulkInput	ロケーションマスタ一括取込		#/wms/master/LocationMasterBulkInput	0	6	0
+MASTER	マスタ		6	PC	LocationBarcodeListPrint	ロケーションバーコードリスト発行		#/wms/master/LocationBarcodeListPrint	0	7	0
+MASTER	マスタ		6	PC	CustomerMasterList	取引先マスタメンテナンス(一覧)		#/wms/master/CustomerMasterList	0	8	0
+MASTER	マスタ		6	PC	CustomerMasterBulkInput	取引先マスタ一括取込		#/wms/master/CustomerMasterBulkInput	0	9	0
+MASTER	マスタ		6	PC	CarrierMasterList	運送業者マスタメンテナンス(一覧)		#/wms/master/CarrierMasterList	0	10	0
+MASTER	マスタ		6	PC	DeliveryCourseMasterList	配送コースマスタメンテナンス(一覧)		#/wms/master/DeliveryCourseMasterList	0	11	0
+MASTER	マスタ		6	PC	ProductMasterList	商品マスタメンテナンス(一覧)		#/wms/master/ProductMasterList	0	12	0
+MASTER	マスタ		6	PC	ProductMasterBulkInput	商品マスタ一括取込		#/wms/master/ProductMasterBulkInput	0	13	0
+MASTER	マスタ		6	PC	ProductShapeMasterBulkInput	商品荷姿マスタ一括取込		#/wms/master/ProductShapeMasterBulkInput	0	14	0
+MASTER	マスタ		6	PC	SetStructureSearch	セット品構成マスタメンテナンス(一覧)		#/wms/master/SetStructureSearch	0	15	0
+MASTER	マスタ		6	PC	BoxMaster	荷材マスタメンテナンス		#/wms/master/BoxMaster	0	16	0
+MASTER	マスタ		6	PC	BoxGroupMasterList	荷材グループマスタメンテナンス(一覧)		#/wms/master/BoxGroupMasterList	0	17	0
+MASTER	マスタ		6	PC	StockTypeMaster	在庫区分マスタメンテナンス		#/wms/master/StockTypeMaster	0	18	0
+MASTER	マスタ		6	PC	ShapeMaster	荷姿マスタメンテナンス		#/wms/master/ShapeMaster	0	19	0
+MASTER	マスタ		6	PC	ShapeGroupMasterList	荷姿グループマスタメンテナンス(一覧)		#/wms/master/ShapeGroupMasterList	0	20	0
+MASTER	マスタ		6	PC	ZipMaster	郵便番号マスタメンテナンス(一覧)		#/wms/master/ZipMaster	0	21	0
+MASTER	マスタ		6	PC	ZipMasterBulkInput	郵便番号マスタ一括取込		#/wms/master/ZipMasterBulkInput	0	22	0
+MASTER	マスタ		6	PC	NumberingCenterMaster	センタ採番マスタ		#/wms/master/NumberingCenterMaster	0	23	0
+MASTER	マスタ		6	PC	UserMasterList	ユーザマスタメンテナンス(一覧)		#/wms/master/UserMasterList	0	24	0
+MASTER	マスタ		6	PC	CarrierSlipCESMaster	キャリアEDIシステム送り状マスタメンテナンス(一覧)		#/wms/master/CarrierSlipCESMaster	0	25	1
+DAILY	日次		7	PC	Daily	日次締処理		#/wms/daily/Daily	0	1	0
+OPERATION	運用		8	PC	LogList	ログ一覧		#/base/operation/LogList	0	1	0
+OPERATION	運用		8	PC	InfoMaster	お知らせマスタメンテナンス		#/base/master/InfoMaster	0	2	0
+OPERATION	運用		8	PC	PrintRequestList	印刷情報一覧		#/base/operation/PrintRequestList	0	3	0
+OPERATION	運用		8	PC	BarcodeLabelBulkPrint	バーコードラベル一括出力		#/wms/common/BarcodeLabelBulkPrint	0	4	0
+OPERATION	運用		8	PC	AttendanceEntry	出退勤・休憩入力		simplePage.jsp#/wms/operation/AttendanceEntry	2	5	1
+SYSTEM_MASTER	システム		9	PC	DictMaster	辞書マスタメンテナンス		#/base/master/DictMaster	0	1	0
+SYSTEM_MASTER	システム		9	PC	DictCultureMaster	辞書カルチャマスタメンテナンス		#/base/master/DictCultureMaster	0	2	0
+SYSTEM_MASTER	システム		9	PC	RoleList	権限マスタメンテナンス(一覧)		#/base/master/RoleList	0	3	0
+SYSTEM_MASTER	システム		9	PC	RoleGrpList	権限グループマスタメンテナンス(一覧)		#/base/master/RoleGrpList	0	4	0
+SYSTEM_MASTER	システム		9	PC	UserList	ユーザマスタメンテナンス(一覧)		#/base/master/UserList	0	5	0
+SYSTEM_MASTER	システム		9	PC	ClassList	区分値マスタメンテナンス(一覧)		#/base/master/ClassList	0	6	0
+SYSTEM_MASTER	システム		9	PC	CenterClassList	センタ別区分値マスタメンテナンス(一覧)		#/wms/master/CenterClassList	0	7	0
+SYSTEM_MASTER	システム		9	PC	MessageMaster	メッセージマスタメンテナンス		#/base/master/MessageMaster	0	8	0
+SYSTEM_MASTER	システム		9	PC	ScreenList	画面マスタメンテナンス(一覧)		#/base/master/ScreenList	0	9	0
+SYSTEM_MASTER	システム		9	PC	CenterClientScreenMaster	センタ・荷主別画面マスタメンテナンス		#/wms/master/CenterClientScreenMaster	0	10	0
+SYSTEM_MASTER	システム		9	PC	CenterClientScreenItemMaster	センタ・荷主別画面項目マスタメンテナンス		#/wms/master/CenterClientScreenItemMaster	0	11	0
+SYSTEM_MASTER	システム		9	PC	CenterClientScreenColMaster	センタ・荷主別画面グリッドマスタメンテナンス		#/wms/master/CenterClientScreenColMaster	0	12	0
+SYSTEM_MASTER	システム		9	PC	MenuGrpList	メニューマスタメンテナンス(一覧)		#/base/master/MenuGrpList	0	13	0
+SYSTEM_MASTER	システム		9	PC	ReportMaster	帳票マスタメンテナンス		#/base/master/ReportMaster	0	14	0
+SYSTEM_MASTER	システム		9	PC	ReportLayoutList	帳票レイアウトマスタメンテナンス(一覧)		#/base/master/ReportLayoutList	0	15	0
+SYSTEM_MASTER	システム		9	PC	ProcessTypeMaster	処理区分マスタメンテナンス		#/wms/master/ProcessTypeMaster	0	16	0
+SYSTEM_MASTER	システム		9	PC	CarrierSlipYmtMaster	ヤマト送り状マスタメンテナンス(一覧)		#/wms/master/CarrierSlipYmtMaster	0	17	0
+SYSTEM_MASTER	システム		9	PC	CarrierSlipSgwMaster	佐川送り状マスタメンテナンス(一覧)		#/wms/master/CarrierSlipSgwMaster	0	18	0
+SYSTEM_MASTER	システム		9	PC	CarrierSlipYupkMaster	ゆうパック送り状マスタメンテナンス(一覧)		#/wms/master/CarrierSlipYupkMaster	0	19	0
+SYSTEM_MASTER	システム		9	PC	EdiList	EDIマスタメンテナンス(一覧)		#/wms/master/EdiList	0	20	0
+SYSTEM_MASTER	システム		9	PC	ImportTypeMasterList	取込種別マスタメンテナンス(一覧)		#/wms/master/ImportTypeMasterList	0	21	0
+SYSTEM_MASTER	システム		9	PC	MatchingMaster	マッチングマスタメンテナンス		#/wms/master/MatchingMaster	0	22	0
+SYSTEM_MASTER	システム		9	PC	DataInput	初期データ取込		#/wms/common/DataInput	0	23	0
+SYSTEM_MASTER	システム		9	PC	GridColExtBaseEdit	グリッドヘッダ設定(基本)		#/base/common/GridColExtBaseEdit	0	25	0
+SYSTEM_MASTER	システム		9	PC	PrinterGroupList	プリンタグループマスタメンテナンス		#/base/master/PrinterGroupList	0	26	0
+SYSTEM_MASTER	システム		9	PC	PrintServiceList	印刷サービス情報メンテナンス(一覧)		#/base/master/PrintServiceList	0	27	0
+SYSTEM_MASTER	システム		9	PC	PrinterList	プリンタマスタメンテナンス		#/base/master/PrinterList	0	28	0
+SYSTEM_MASTER	システム		9	PC	PrinterAttributeList	プリンタ属性マスタメンテナンス		#/base/master/PrinterAttributeList	0	29	0
+SYSTEM_MASTER	システム		9	PC	SystemEdit	システム管理マスタメンテナンス		#/base/master/SystemEdit	0	30	0
+SYSTEM_MASTER	システム		9	PC	AutoPrintBulkPrinterChangeList	自動印刷プリンタ一括変更(一覧)		#/base/master/AutoPrintBulkPrinterChangeList	0	31	0
+SYSTEM_MASTER	システム		9	PC	CenterRelatedCopy	センタ関連マスタ作成		#/wms/master/CenterRelatedCopy	0	32	0
+SYSTEM_MASTER	システム		9	PC	HTDictMaster	HT辞書マスタメンテナンス		#/wms/master/HTDictMaster	0	33	0
+SYSTEM_MASTER	システム		9	PC	HTDictCultureMaster	HT辞書カルチャマスタメンテナンス		#/wms/master/HTDictCultureMaster	0	34	0
+SYSTEM_MASTER	システム		9	PC	HTMessageMaster	HTメッセージマスタメンテナンス		#/wms/master/HTMessageMaster	0	35	0
+SYSTEM_MASTER	システム		9	PC	WebHTinfoMaster	HT管理マスタメンテナンス		#/wms/master/WebHTinfoMaster	0	36	0
+SYSTEM_MASTER	システム		9	PC	PropertyMaster	プロパティマスタメンテナンス		#/base/master/PropertyMaster	0	37	0
+HELP	ヘルプ		10	PC	ManualCommon	操作マニュアル(共通操作編)	操作マニュアル(共通操作編)	resources/menu/manual_common.pdf?downloadFile=manual/manual_common.pdf	0	1	0
+HELP	ヘルプ		10	PC	ManualPc	操作マニュアル(PC編)	操作マニュアル(PC編)	resources/menu/manual_pc.pdf?downloadFile=manual/manual_pc.pdf	0	2	0
+HELP	ヘルプ		10	PC	ManualHt	操作マニュアル(HT編)	操作マニュアル(HT編)	resources/menu/manual_ht.pdf?downloadFile=manual/manual_ht.pdf	0	3	0
+HELP	ヘルプ		10	PC	ManualSd	操作マニュアル(SD編)	操作マニュアル(SD編)	resources/menu/manual_ht.pdf?downloadFile=manual/manual_sd.pdf	0	4	0
+HELP	ヘルプ		10	PC	ManualHelp	操作マニュアル(ヘルプ編)	操作マニュアル(ヘルプ編)	resources/menu/manual_help.pdf?downloadFile=manual/manual_help.pdf	0	5	0
+HELP	ヘルプ		10	PC	ManualLabel	操作マニュアル(荷札用紙設定編)	操作マニュアル(荷札用紙設定編)	resources/menu/manual_label.pdf?downloadFile=manual/manual_label.pdf	0	6	0
+HELP	ヘルプ		10	PC	ManualEc	操作マニュアル(EC受注編)	操作マニュアル(EC受注編)	resources/menu/manual_ec.pdf?downloadFile=manual/manual_ec.pdf	0	7	0
+HELP	ヘルプ		10	PC	FormatReceivePlanBulkInput	入荷予定一括取込用Excelダウンロード	入荷予定一括取込用Excelダウンロード	resources/menu/ReceivePlanBulkInput.xlsx?downloadFile=xlsTemplate/ReceivePlanBulkInput.xlsx	0	8	0
+HELP	ヘルプ		10	PC	FormatShippingPlanBulkInput	出荷指示一括取込用Excelダウンロード	出荷指示一括取込用Excelダウンロード	resources/menu/ShippingPlanBulkInput.xlsx?downloadFile=xlsTemplate/ShippingPlanBulkInput.xlsx	0	9	0
+HELP	ヘルプ		10	PC	FormatZoneMasterBulkInput	ゾーンマスタ一括取込用Excelダウンロード	ゾーンマスタ一括取込用Excelダウンロード	resources/menu/CustomerMasterBulkInput.xlsx?downloadFile=xlsTemplate/ZoneMasterBulkInput.xlsx	0	10	0
+HELP	ヘルプ		10	PC	FormatLocationMasterBulkInput	ロケーションマスタ一括取込用Excelダウンロード	ロケーションマスタ一括取込用Excelダウンロード	resources/menu/CustomerMasterBulkInput.xlsx?downloadFile=xlsTemplate/LocationMasterBulkInput.xlsx	0	11	0
+HELP	ヘルプ		10	PC	FormatCustomerMasterBulkInput	取引先マスタ一括取込用Excelダウンロード	取引先マスタ一括取込用Excelダウンロード	resources/menu/CustomerMasterBulkInput.xlsx?downloadFile=xlsTemplate/CustomerMasterBulkInput.xlsx	0	12	0
+HELP	ヘルプ		10	PC	FormatProductMasterBulkInput	商品マスタ一括取込用Excelダウンロード	商品マスタ一括取込用Excelダウンロード	resources/menu/ProductMasterBulkInput.xlsx?downloadFile=xlsTemplate/ProductMasterBulkInput.xlsx	0	13	0
+HELP	ヘルプ		10	PC	FormatMProductShapeBulkInput	商品荷姿マスタ一括取込用Excelダウンロード	商品荷姿マスタ一括取込用Excelダウンロード	resources/menu/ProductShapeMasterBulkInput.xlsx?downloadFile=xlsTemplate/ProductShapeMasterBulkInput.xlsx	0	14	0
+HELP	ヘルプ		10	PC	FormatBarcodeLabelBulkPrint	バーコードラベル一括出力用Excelダウンロード	バーコードラベル一括出力用Excelダウンロード	resources/menu/BarcodeLabelBulkPrint.xlsx?downloadFile=xlsTemplate/BarcodeLabelBulkPrint.xlsx	0	15	0
+HELP	ヘルプ		10	PC	FormatSerialNoBulkInput	シリアルNo.一括取込用Excelダウンロード	シリアルNo.一括取込用Excelダウンロード	resources/menu/SerialNoBulkInput.xlsx?downloadFile=xlsTemplate/SerialNoBulkInput.xlsx	0	16	0
+HELP	ヘルプ		10	PC	ManualCommon	操作マニュアル(共通操作編)	操作マニュアル(共通操作編)(英語)	resources/menu/manual_common.pdf?downloadFile=manual/enUS/manual_common_enUS.pdf	0	17	1
+HELP	ヘルプ		10	PC	ManualPc	操作マニュアル(PC編)	操作マニュアル(PC編)(英語)	resources/menu/manual_pc.pdf?downloadFile=manual/enUS/manual_pc_enUS.pdf	0	18	1
+HELP	ヘルプ		10	PC	ManualHelp	操作マニュアル(ヘルプ編)	操作マニュアル(ヘルプ編)(英語)	resources/menu/manual_help.pdf?downloadFile=manual/enUS/manual_help_enUS.pdf	0	19	1
+HELP	ヘルプ		10	PC	FormatReceivePlanBulkInput	入荷予定一括取込用Excelダウンロード	入荷予定一括取込用Excelダウンロード(英語)	resources/menu/ReceivePlanBulkInput.xlsx?downloadFile=xlsTemplate/enUS/ReceivePlanBulkInput.xlsx	0	20	1
+HELP	ヘルプ		10	PC	FormatShippingPlanBulkInput	出荷指示一括取込用Excelダウンロード	出荷指示一括取込用Excelダウンロード(英語)	resources/menu/ShippingPlanBulkInput.xlsx?downloadFile=xlsTemplate/enUS/ShippingPlanBulkInput.xlsx	0	21	1
+HELP	ヘルプ		10	PC	FormatZoneMasterBulkInput	ゾーンマスタ一括取込用Excelダウンロード	ゾーンマスタ一括取込用Excelダウンロード(英語)	resources/menu/CustomerMasterBulkInput.xlsx?downloadFile=xlsTemplate/enUS/ZoneMasterBulkInput.xlsx	0	22	1
+HELP	ヘルプ		10	PC	FormatLocationMasterBulkInput	ロケーションマスタ一括取込用Excelダウンロード	ロケーションマスタ一括取込用Excelダウンロード(英語)	resources/menu/CustomerMasterBulkInput.xlsx?downloadFile=xlsTemplate/enUS/LocationMasterBulkInput.xlsx	0	23	1
+HELP	ヘルプ		10	PC	FormatCustomerMasterBulkInput	取引先マスタ一括取込用Excelダウンロード	取引先マスタ一括取込用Excelダウンロード(英語)	resources/menu/CustomerMasterBulkInput.xlsx?downloadFile=xlsTemplate/enUS/CustomerMasterBulkInput.xlsx	0	24	1
+HELP	ヘルプ		10	PC	FormatProductMasterBulkInput	商品マスタ一括取込用Excelダウンロード	商品マスタ一括取込用Excelダウンロード(英語)	resources/menu/ProductMasterBulkInput.xlsx?downloadFile=xlsTemplate/enUS/ProductMasterBulkInput.xlsx	0	25	1
+HELP	ヘルプ		10	PC	FormatMProductShapeBulkInput	商品荷姿マスタ一括取込用Excelダウンロード	商品荷姿マスタ一括取込用Excelダウンロード(英語)	resources/menu/ProductShapeMasterBulkInput.xlsx?downloadFile=xlsTemplate/enUS/ProductShapeMasterBulkInput.xlsx	0	26	1
+HELP	ヘルプ		10	PC	ManualCommon	操作マニュアル(共通操作編)	操作マニュアル(共通操作編)(中国語)	resources/menu/manual_common.pdf?downloadFile=manual/zhCN/manual_common_zhCN.pdf	0	27	1
+HELP	ヘルプ		10	PC	ManualPc	操作マニュアル(PC編)	操作マニュアル(PC編)(中国語)	resources/menu/manual_pc.pdf?downloadFile=manual/zhCN/manual_pc_zhCN.pdf	0	28	1
+HELP	ヘルプ		10	PC	ManualHelp	操作マニュアル(ヘルプ編)	操作マニュアル(ヘルプ編)(中国語)	resources/menu/manual_help.pdf?downloadFile=manual/zhCN/manual_help_zhCN.pdf	0	29	1
+SD_RECEIVE	入荷		1	SD	ReceiveInspectionSD	入荷検品		#/wms/receive/ReceiveInspectionSD	0	1	0
+SD_SHIPPING	出荷		2	SD	PickingSD	ピッキング		#/wms/shipping/PickingSD	0	1	0
+SD_SHIPPING	出荷		2	SD	OrderPickingSD	オーダーピッキング		#/wms/shipping/OrderPickingSD	0	2	0
+SD_SHIPPING	出荷		2	SD	CasePickingSD	ケースピッキング		#/wms/shipping/CasePickingSD	0	3	0
+SD_INVENTORY	棚卸		3	SD	InventoryInputSD	棚卸入力		#/wms/inventory/InventoryInputSD	0	1	0
+HT_RECEIVE	入荷管理		1	HT	ReceiveInspectionHT	入荷検品		ReceiveInspectionLabel/load	0	1	0
+HT_RECEIVE	入荷管理		1	HT	ReceiveStoreHT	入庫格納		ReceiveStoreKariLoc/load	0	2	0
+HT_RECEIVE	入荷管理		1	HT	ReceiveNoPlanInspectionHT	予定無し入荷		ReceiveNoPlanInspectionLabel/load	0	3	0
+HT_RECEIVE	入荷管理		1	HT	ReceiveInspecStoreHT	入荷検品格納		ReceiveInspecStoreLabel/load	0	4	0
+HT_RECEIVE	入荷管理		1	HT	SerialReceiveInspectionHT	シリアル登入		SerialReceiveInspectionWorkNo/load	0	5	0
+HT_SHIPPING	出荷管理		2	HT	ShippingPickingHT	オーダピッキング		ShippingPickingStart/start	0	1	0
+HT_SHIPPING	出荷管理		2	HT	ShippingNoPackingHT	出荷検品		ShippingNoPackingWorkNo/load	0	2	0
+HT_SHIPPING	出荷管理		2	HT	SingleRowShippingNoPackingHT	単行出荷検品		SingleRowShippingNoPackingNo/load	0	3	0
+HT_SHIPPING	出荷管理		2	HT	ShippingCasePickingHT	ケースピッキング		ShippingCasePickingNo/load	0	4	0
+HT_SHIPPING	出荷管理		2	HT	ShippingLoadingInspectionHT	積込検品		ShippingLoadingInspectionNo/load	0	5	0
+HT_SHIPPING	出荷管理		2	HT	SerialShippingInspectionHT	シリアル登出		SerialShippingInspectionWorkNo/load	0	6	0
+HT_STOCK	在庫管理		3	HT	StockSearchConditionHT	在庫検索		StockSearchCondition/load	0	1	0
+HT_STOCK	在庫管理		3	HT	StockMoveOutHT	在庫移動出庫		StockMoveOutLoc/load	0	2	0
+HT_STOCK	在庫管理		3	HT	StockMoveInHT	在庫移動入庫		StockMoveInJanCd/load	0	3	0
+HT_STOCK	在庫管理		3	HT	LocationMoveOutHT	ロケ変更	ロケーション一括変更	LocationMoveOutLoc/load	0	4	0
+HT_INVENTORY	棚卸管理		4	HT	InventoryInputProductHT	商品棚卸入力		InventoryInputProductKbn/load	0	1	0
+HT_OPERATION	運用管理		5	HT	AttendanceEntryHT	勤怠入力		AttendanceEntryRegister/load	0	1	1
+HT_SYSTEM	システム		6	HT	PrinterSelectHT	プリンタ選択	ユーザ別自動印刷設定	PrinterSelectReportLayout/load	0	1	0
+HT_SYSTEM	システム		6	HT	PrinterSelectHT	プリンタ選択	端末別自動印刷設定	PrinterSelectReportLayout/loadTerminal	0	2	0

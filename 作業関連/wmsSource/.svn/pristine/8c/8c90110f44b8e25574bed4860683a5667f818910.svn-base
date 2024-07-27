@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_unrgwOFeEeerbOghI3qoCg" id="_unlaIOFeEeerbOghI3qoCg" label="WAS連携荷主マスタ出力ファイル" purpose="WAS連携荷主マスタ出力" description="WAS連携荷主マスタ出力ファイル" version="0.1" statusCode="" item="_unrgwuFeEeerbOghI3qoCg" displayName="WAS連携荷主マスタ出力ファイル">
+    <author href="../../talend.project#_w3NaQZaREearrO37QzOhcQ"/>
+    <additionalProperties xmi:id="_QbHCcBcsEeqLaK2GOeLj_g" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_QbHCcRcsEeqLaK2GOeLj_g" key="created_product_version" value="6.2.0.20160510_1709"/>
+    <additionalProperties xmi:id="_QbHCchcsEeqLaK2GOeLj_g" key="created_date" value="2017-12-15T15:11:02.983+0900"/>
+    <additionalProperties xmi:id="_QbHCcxcsEeqLaK2GOeLj_g" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_QbHCdBcsEeqLaK2GOeLj_g" key="modified_product_version" value="6.2.0.20160510_1709"/>
+    <additionalProperties xmi:id="_QbHCdRcsEeqLaK2GOeLj_g" key="modified_date" value="2017-12-20T18:36:16.850+0900"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_unrgweFeEeerbOghI3qoCg" path=""/>
+  <TalendProperties:DelimitedFileConnectionItem xmi:id="_unrgwuFeEeerbOghI3qoCg" property="_unrgwOFeEeerbOghI3qoCg" state="_unrgweFeEeerbOghI3qoCg">
+    <connection href="WAS連携荷主マスタ出力ファイル_0.1.item#_unq5sOFeEeerbOghI3qoCg"/>
+  </TalendProperties:DelimitedFileConnectionItem>
+</xmi:XMI>

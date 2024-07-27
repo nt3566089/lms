@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_REb3YItoEeaWDPN99PiqkA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_INsPMIwjEeaTz6JQTbwOHg" comment="" name="shippingRecordListApi" prompt="shippingRecordListApi?" promptNeeded="false" type="id_String" value="&quot;resources/shipping/shippingRecordList/search&quot;"/>
+  <contextParameter xmi:id="_-DaLkYtpEeaWDPN99PiqkA" comment="" name="authenticationApi" prompt="authenticationApi?" promptNeeded="false" type="id_String" value="&quot;resources/authentication/common&quot;"/>
+  <contextParameter xmi:id="_-DaLkotpEeaWDPN99PiqkA" comment="" name="logoutApi" prompt="logoutApi?" promptNeeded="false" type="id_String" value="&quot;resources/logout&quot;"/>
+  <contextParameter xmi:id="_INs2QIwjEeaTz6JQTbwOHg" comment="" name="receiveRecordListApi" prompt="receiveRecordListApi?" promptNeeded="false" type="id_String" value="&quot;resources/receive/receiveRecordList/search&quot;"/>
+  <contextParameter xmi:id="_6hcJgNtsEem0B8goRap_Cg" comment="" name="amsMoveRequestsOutputApi" prompt="amsMoveRequestsOutputApi?" promptNeeded="false" type="id_String" value="&quot;resources/shipping/AmsMoveRequestsOutput/search&quot;"/>
+  <contextParameter xmi:id="_vy7wsNtyEem0B8goRap_Cg" comment="" name="amsMoveResultInputApi" prompt="amsMoveResultInputApi?" promptNeeded="false" type="id_String" value="&quot;resources/shipping/AmsMoveResultInput/regist&quot;"/>
+</talendfile:ContextType>

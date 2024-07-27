@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_K9wSQCL7EeqlgsdRHiC_tg" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_K9wSQSL7EeqlgsdRHiC_tg" comment="" name="wms_Port" prompt="wms_Port?" promptNeeded="false" type="id_String" value="3306"/>
+  <contextParameter xmi:id="_K9wSQiL7EeqlgsdRHiC_tg" comment="" name="wms_AdditionalParams" prompt="wms_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true"/>
+  <contextParameter xmi:id="_K9wSQyL7EeqlgsdRHiC_tg" comment="" name="wms_Database" prompt="wms_Database?" promptNeeded="false" type="id_String" value="wmstest"/>
+  <contextParameter xmi:id="_K9wSRCL7EeqlgsdRHiC_tg" comment="" name="wms_Server" prompt="wms_Server?" promptNeeded="false" type="id_String" value="localhost"/>
+  <contextParameter xmi:id="_K9wSRSL7EeqlgsdRHiC_tg" comment="" name="wms_Password" prompt="wms_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1://NFGm28P5IaJOe3sIn6Ls615An2DCA4GNCmgIKX45NPtVxsWFIq"/>
+  <contextParameter xmi:id="_K9wSRiL7EeqlgsdRHiC_tg" comment="" name="wms_Login" prompt="wms_Login?" promptNeeded="false" type="id_String" value="wmstestuser"/>
+</talendfile:ContextType>

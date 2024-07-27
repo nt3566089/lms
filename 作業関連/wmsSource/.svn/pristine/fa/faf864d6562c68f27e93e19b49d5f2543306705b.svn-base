@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="入出庫区分：入庫" name="inoutTypeIn" prompt="inoutTypeIn?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;0&quot;"/>
+    <contextParameter comment="入出庫区分：出庫" name="inoutTypeOut" prompt="inoutTypeOut?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;1&quot;"/>
+    <contextParameter comment="入力区分：HT" name="inputTypeHt" prompt="inputTypeHt?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;30&quot;"/>
+    <contextParameter comment="緊急補充組指示csvファイル名" name="outputEMReplenishFileName" prompt="outputEMReplenishFileName?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;workLogEMReplenish.csv&quot;"/>
+    <contextParameter comment="棚卸csvファイル名" name="outputInventoryCreateFileName" prompt="outputInventoryCreateFileName?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;workLogInventoryCreate.csv&quot;"/>
+    <contextParameter comment="入荷予定csvファイル名" name="outputReceivePlanFileName" prompt="outputReceivePlanFileName?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;workLogReceivePlan.csv&quot;"/>
+    <contextParameter comment="定期補充指示csvファイル名" name="outputRGReplenishFileName" prompt="outputRGReplenishFileName?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;workLogRGReplenish.csv&quot;"/>
+    <contextParameter comment="出荷指示csvファイル名" name="outputShippingPlanFileName" prompt="outputShippingPlanFileName?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;workLogShippingPlan.csv&quot;"/>
+    <contextParameter comment="HT在庫移動出庫csvファイル名" name="outputStockMoveOutHtFileName" prompt="outputStockMoveOutHtFileName?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;workLogStockMoveOutHt.csv&quot;"/>
+    <contextParameter comment="セット組指示csvファイル名" name="outputStockSetInstFileName" prompt="outputStockSetInstFileName?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;workLogStockSetInst.csv&quot;"/>
+    <contextParameter comment="セット組解除指示csvファイル名" name="outputStockSetReleaseFileName" prompt="outputStockSetReleaseFileName?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;workLogStockSetRelease.csv&quot;"/>
+    <contextParameter comment="送信用パス" name="outputWorkLogPlanSend" prompt="outputWorkLogPlanSend?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;./../WasOutputCsv/plan/send/&quot;"/>
+    <contextParameter comment="テンポラリパス" name="outputWorkLogPlanTemp" prompt="outputWorkLogPlanTemp?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;./../WasOutputCsv/plan/tmp/&quot;"/>
+    <contextParameter comment="入荷予定ステータス：削除" name="receivePlanStsDelete" prompt="receivePlanStsDelete?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;90&quot;"/>
+    <contextParameter comment="入荷予定ステータス：エラー有" name="receivePlanStsError" prompt="receivePlanStsError?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;99&quot;"/>
+    <contextParameter comment="小数切り捨て単位" name="roundDownNum" prompt="roundDownNum?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_Integer" value="3"/>
+    <contextParameter comment="出荷指示ステータス：キャンセル" name="shippingInstStsCancel" prompt="shippingInstStsCancel?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;90&quot;"/>
+    <contextParameter comment="出荷指示ステータス：エラー有" name="shippingInstStsErrror" prompt="shippingInstStsErrror?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;99&quot;"/>
+    <contextParameter comment="出荷指示ステータス：出荷停止(取引先)" name="shippingInstStsStopCs" prompt="shippingInstStsStopCs?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;1&quot;"/>
+    <contextParameter comment="出荷指示ステータス：出荷停止(商品)" name="shippingInstStsStopPd" prompt="shippingInstStsStopPd?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;1&quot;"/>
+    <contextParameter comment="在庫移動処理区分：緊急補充" name="stockMoveProcessEMReplenish" prompt="stockMoveProcessEMReplenish?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;33&quot;"/>
+    <contextParameter comment="在庫移動処理区分：移動" name="stockMoveProcessMove" prompt="stockMoveProcessMove?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;21&quot;"/>
+    <contextParameter comment="在庫移動処理区分：定期補充" name="stockMoveProcessRGReplenish" prompt="stockMoveProcessRGReplenish?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;32&quot;"/>
+    <contextParameter comment="在庫移動処理区分：セット組指示" name="stockMoveProcessStockSetInst" prompt="stockMoveProcessStockSetInst?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;30&quot;"/>
+    <contextParameter comment="在庫移動処理区分：セット組解除指示" name="stockMoveProcessStockSetRelease" prompt="stockMoveProcessStockSetRelease?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;31&quot;"/>
+    <contextParameter comment="在庫移動ステータス：取消" name="stockMoveStsCancel" prompt="stockMoveStsCancel?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;99&quot;"/>
+    <contextParameter comment="緊急補充指示作業CD" name="workCdEMReplenish" prompt="workCdEMReplenish?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;EMReplenish&quot;"/>
+    <contextParameter comment="棚卸作業CD" name="workCdInventoryCreate" prompt="workCdInventoryCreate?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;InventoryCreate&quot;"/>
+    <contextParameter comment="入荷予定作業CD" name="workCdReceivePlan" prompt="workCdReceivePlan?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;ReceivePlanInput&quot;"/>
+    <contextParameter comment="定期補充指示作業CD" name="workCdRGReplenish" prompt="workCdRGReplenish?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;RGReplenish&quot;"/>
+    <contextParameter comment="出荷指示作業CD" name="workCdShippingPlan" prompt="workCdShippingPlan?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;ShippingPlanInput&quot;"/>
+    <contextParameter comment="HT在庫移動出庫作業CD" name="workCdStockMoveOuPlantHT" prompt="workCdStockMoveOuPlantHT?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;StockMoveOutPlanHT&quot;"/>
+    <contextParameter comment="セット組指示作業CD" name="workCdStockSetInst" prompt="workCdStockSetInst?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;StockSetInst&quot;"/>
+    <contextParameter comment="セット組解除指示作業CD" name="workCdStockSetRelease" prompt="workCdStockSetRelease?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_String" value="&quot;StockSetRelease&quot;"/>
+    <contextParameter comment="" name="wms_AdditionalParams" prompt="wms_AdditionalParams?" promptNeeded="false" repositoryContextId="_MC0p8IRdEeaoUJ-cs2POpA" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="wms_Database" prompt="wms_Database?" promptNeeded="false" repositoryContextId="_MC0p8IRdEeaoUJ-cs2POpA" type="id_String" value="wmstest"/>
+    <contextParameter comment="" name="wms_Login" prompt="wms_Login?" promptNeeded="false" repositoryContextId="_MC0p8IRdEeaoUJ-cs2POpA" type="id_String" value="wmstestuser"/>
+    <contextParameter comment="" name="wms_Password" prompt="wms_Password?" promptNeeded="false" repositoryContextId="_MC0p8IRdEeaoUJ-cs2POpA" type="id_Password" value="enc:system.encryption.key.v1:n6YUIkgiCx94/vkzJXPrFS9qiNYmjUgEUOjvxuT1zsy3cfC5Vdus"/>
+    <contextParameter comment="" name="wms_Port" prompt="wms_Port?" promptNeeded="false" repositoryContextId="_MC0p8IRdEeaoUJ-cs2POpA" type="id_String" value="3306"/>
+    <contextParameter comment="" name="wms_Server" prompt="wms_Server?" promptNeeded="false" repositoryContextId="_MC0p8IRdEeaoUJ-cs2POpA" type="id_String" value="localhost"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:7RUPIYwmVWV7GZc8ygMbp72lz9H8T4iPSDckaILI" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vIp+7iieikN5b3GtuOipqj1zP39UCVF5O0M019jm" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="true"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_tU3F0IRyEea94P-lLwuSqQ" name="DataOperation"/>
+    <routinesParameter id="_tVD6IIRyEea94P-lLwuSqQ" name="Mathematical"/>
+    <routinesParameter id="_tVHkgIRyEea94P-lLwuSqQ" name="Numeric"/>
+    <routinesParameter id="_tVLO4IRyEea94P-lLwuSqQ" name="Relational"/>
+    <routinesParameter id="_tVOSMIRyEea94P-lLwuSqQ" name="StringHandling"/>
+    <routinesParameter id="_tVR8kIRyEea94P-lLwuSqQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_tVVm8IRyEea94P-lLwuSqQ" name="TalendDate"/>
+    <routinesParameter id="_tVZRUIRyEea94P-lLwuSqQ" name="TalendString"/>
+    <routinesParameter id="_L77dQNi0EeePbp3htV1qTw" name="BigDecimalRoutines"/>
+    <routinesParameter id="_VaUbgBc5EeqIcYquFB0h2g" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tMysqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlRow_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_9LeBIH7rEeaXzaO0VXsjzg" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.wms_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.wms_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.wms_Database"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.wms_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:o4gGWlKdEZUJ9DECgTOYCY0R74Wjk+BGYuBBVSCOKPZ7Ffy9s5ePJxAVPVnktMAc"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;t_move_inst_b&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT&#xD;&#xA;  t_move_inst_h.INST_DT AS WORK_DT&#xD;&#xA;  , m_center.CENTER_CD AS CENTER_CD&#xD;&#xA;  , m_client.CLIENT_CD AS CLIENT_CD&#xD;&#xA;  , ? AS WORK_CD&#xD;&#xA;  , SUM(t_move_inst_b.INST_NUM) AS WORK_QTY &#xD;&#xA;FROM&#xD;&#xA;  t_move_inst_b &#xD;&#xA;  INNER JOIN t_move_inst_h &#xD;&#xA;    ON t_move_inst_h.MOVE_INST_H_ID = t_move_inst_b.MOVE_INST_H_ID &#xD;&#xA;    AND t_move_inst_h.DEL_FLG = '0' &#xD;&#xA;  LEFT JOIN m_client_center &#xD;&#xA;    ON m_client_center.CLIENT_ID = t_move_inst_h.CLIENT_ID &#xD;&#xA;    AND m_client_center.CENTER_ID = t_move_inst_h.CENTER_ID &#xD;&#xA;    AND m_client_center.DEL_FLG = '0' &#xD;&#xA;  LEFT JOIN m_client &#xD;&#xA;    ON t_move_inst_h.CLIENT_ID = m_client.CLIENT_ID &#xD;&#xA;    AND m_client.DEL_FLG = '0' &#xD;&#xA;  LEFT JOIN m_center &#xD;&#xA;    ON t_move_inst_h.CENTER_ID = m_center.CENTER_ID &#xD;&#xA;    AND m_center.DEL_FLG = '0' &#xD;&#xA;  LEFT JOIN m_process_type &#xD;&#xA;    ON t_move_inst_h.PROCESS_TYPE_ID = m_process_type.PROCESS_TYPE_ID &#xD;&#xA;    AND m_process_type.DEL_FLG = '0' &#xD;&#xA;WHERE&#xD;&#xA;  t_move_inst_h.MOVE_INST_STATUS not in (?)&#xD;&#xA;  AND m_process_type.PROCESS_TYPE_CD = ?&#xD;&#xA;  AND t_move_inst_b.INOUT_TYPE = ?&#xD;&#xA;  AND t_move_inst_h.INST_DT >= m_client_center.SYSTEM_DT&#xD;&#xA;GROUP BY&#xD;&#xA;  m_client.CLIENT_CD&#xD;&#xA;  , m_center.CENTER_CD&#xD;&#xA;  , t_move_inst_h.INST_DT&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.wms_AdditionalParams"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="true"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="resultSet"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="true"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS">
+      <elementValue elementRef="PARAMETER_INDEX" value="1"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="context.workCdStockSetInst"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="2"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="context.stockMoveStsCancel"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="3"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="context.stockMoveProcessStockSetInst"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="4"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="context.inoutTypeOut"/>
+    </elementParameter>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="t_shipping_inst_b" name="tMysqlRow_1">
+      <column comment="" key="false" length="-1" name="WORK_DT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CENTER_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CLIENT_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WORK_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WORK_QTY" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="resultSet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
+      <additionalProperties key="Comment" value="出荷指示ボディ"/>
+    </metadata>
+    <metadata connector="REJECT" label="t_shipping_inst_b" name="REJECT">
+      <column comment="出荷指示ボディID" key="true" length="19" name="SHIPPING_INST_B_ID" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value="出荷指示ボディID"/>
+      </column>
+      <column comment="出荷指示ヘッダID" key="false" length="19" name="SHIPPING_INST_H_ID" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value="出荷指示ヘッダID"/>
+      </column>
+      <column comment="行No." key="false" length="19" name="LINE_NO" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value="行No."/>
+      </column>
+      <column comment="指定倉庫ID" key="false" length="19" name="WAREHOUSE_ID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value="指定倉庫ID"/>
+      </column>
+      <column comment="指定倉庫CD" key="false" length="30" name="WAREHOUSE_CD" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="指定倉庫CD"/>
+      </column>
+      <column comment="商品ID" key="false" length="19" name="PRODUCT_ID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value="商品ID"/>
+      </column>
+      <column comment="商品CD" key="false" length="100" name="PRODUCT_CD" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="商品CD"/>
+      </column>
+      <column comment="在庫区分ID" key="false" length="19" name="STOCK_TYPE_ID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value="在庫区分ID"/>
+      </column>
+      <column comment="在庫区分CD" key="false" length="30" name="STOCK_TYPE_CD" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="在庫区分CD"/>
+      </column>
+      <column comment="指定ロケーションID" key="false" length="19" name="LOCATION_ID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value="指定ロケーションID"/>
+      </column>
+      <column comment="指定ロケーションCD" key="false" length="30" name="LOCATION_CD" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="指定ロケーションCD"/>
+      </column>
+      <column comment="預託ID" key="false" length="19" name="DEPOSIT_ID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value="預託ID"/>
+      </column>
+      <column comment="預託CD" key="false" length="30" name="DEPOSIT_CD" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="預託CD"/>
+      </column>
+      <column comment="指定ロットID" key="false" length="19" name="LOT_ID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value="指定ロットID"/>
+      </column>
+      <column comment="指定ロット" key="false" length="30" name="LOT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="指定ロット"/>
+      </column>
+      <column comment="指定期限日" key="false" length="8" name="LIMIT_DT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="指定期限日"/>
+      </column>
+      <column comment="指定入庫No.ID" key="false" length="19" name="STORE_NO_ID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value="指定入庫No.ID"/>
+      </column>
+      <column comment="指定入庫ラベルNo." key="false" length="30" name="STORE_LABEL_NO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="指定入庫ラベルNo."/>
+      </column>
+      <column comment="指定荷姿ID" key="false" length="19" name="SHAPE_ID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value="指定荷姿ID"/>
+      </column>
+      <column comment="指定荷姿CD" key="false" length="30" name="SHAPE_CD" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="指定荷姿CD"/>
+      </column>
+      <column comment="指定入数" key="false" length="19" name="UNIT_NUM" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value="指定入数"/>
+      </column>
+      <column comment="指示数" defaultValue="0" key="false" length="19" name="INST_NUM" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value="指示数"/>
+      </column>
+      <column comment="エラーフラグ" key="false" length="1" name="ERROR_FLG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="エラーフラグ"/>
+      </column>
+      <column comment="エラーメッセージCD" key="false" length="100" name="ERROR_MESSAGE_CD" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="エラーメッセージCD"/>
+      </column>
+      <column comment="引当指示ボディID" key="false" length="19" name="ALLOC_INST_B_ID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value="引当指示ボディID"/>
+      </column>
+      <column comment="引当済数" defaultValue="0" key="false" length="19" name="ALLOC_NUM" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value="引当済数"/>
+      </column>
+      <column comment="欠品フラグ" key="false" length="1" name="STOCK_OUT_FLG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="欠品フラグ"/>
+      </column>
+      <column comment="削除フラグ" defaultValue="'0'" key="false" length="1" name="DEL_FLG" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="削除フラグ"/>
+      </column>
+      <column comment="バージョンNo." defaultValue="1" key="false" length="19" name="VERSION_NO" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value="バージョンNo."/>
+      </column>
+      <column comment="コントロールNo." key="false" length="19" name="CONTROL_NO" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value="コントロールNo."/>
+      </column>
+      <column comment="登録日時" key="false" length="19" name="ADD_DT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="登録日時"/>
+      </column>
+      <column comment="登録ユーザ" key="false" length="60" name="ADD_USER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="登録ユーザ"/>
+      </column>
+      <column comment="登録プロセス" key="false" length="200" name="ADD_PROCESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="登録プロセス"/>
+      </column>
+      <column comment="更新日時" key="false" length="19" name="UPD_DT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="更新日時"/>
+      </column>
+      <column comment="更新ユーザ" key="false" length="60" name="UPD_USER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="更新ユーザ"/>
+      </column>
+      <column comment="更新プロセス" key="false" length="200" name="UPD_PROCESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="更新プロセス"/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value="出荷指示ボディ"/>
+    </metadata>
+  </node>
+  <node componentName="tParseRecordSet" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tParseRecordSet_1" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="RECORDSET_FIELD" value="resultSet"/>
+    <elementParameter field="TABLE" name="ATTRIBUTE_TABLE">
+      <elementValue elementRef="SCHEMA_COLUMN" value="WORK_DT"/>
+      <elementValue elementRef="VALUE" value="&quot;WORK_DT&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CENTER_CD"/>
+      <elementValue elementRef="VALUE" value="&quot;CENTER_CD&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CLIENT_CD"/>
+      <elementValue elementRef="VALUE" value="&quot;CLIENT_CD&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WORK_CD"/>
+      <elementValue elementRef="VALUE" value="&quot;WORK_CD&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WORK_QTY"/>
+      <elementValue elementRef="VALUE" value="&quot;WORK_QTY&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="resultSet"/>
+      <elementValue elementRef="VALUE" value=""/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="t_shipping_inst_b" name="tParseRecordSet_1">
+      <column comment="" key="false" length="-1" name="WORK_DT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CENTER_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CLIENT_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WORK_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WORK_QTY" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="resultSet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
+      <additionalProperties key="Comment" value="出荷指示ボディ"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_rI_C4NroEee6B-DUVt12CQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="outputShippingPlan">
+      <column comment="" key="false" length="0" name="作業日" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="センタCD" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="荷主CD" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="作業CD" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="作業数" nullable="true" pattern="" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="outputShippingPlan">
+        <mapperTableEntries name="作業日" expression="row2.WORK_DT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="センタCD" expression="row2.CENTER_CD " type="id_String" nullable="true"/>
+        <mapperTableEntries name="荷主CD" expression="row2.CLIENT_CD " type="id_String" nullable="true"/>
+        <mapperTableEntries name="作業CD" expression="row2.WORK_CD " type="id_String" nullable="true"/>
+        <mapperTableEntries name="作業数" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(row2.WORK_QTY,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="WORK_DT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CENTER_CD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CLIENT_CD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="WORK_CD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="WORK_QTY" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="resultSet" type="id_Object" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.outputWorkLogPlanTemp+context.outputStockSetInstFileName"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\r\n&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\r\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;windows-31j&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="true"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="WAS連携作業予定ファイル"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="0" name="作業日" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="センタCD" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="荷主CD" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="作業CD" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="作業数" nullable="true" pattern="" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_1" show="false"/>
+    <elementParameter field="FILE" name="FILE_NAME" value="context.outputWorkLogPlanSend+context.outputStockSetInstFileName"/>
+    <elementParameter field="TEXT" name="LABEL" value="前回作成ファイル存在チェック"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileCopy_1" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.outputWorkLogPlanTemp+context.outputStockSetInstFileName"/>
+    <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
+    <elementParameter field="DIRECTORY" name="SOURCE_DERECTORY" value="&quot;C:/TOS_DI-20160510_1709-V6.2.0/workspace&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="DESTINATION" value="context.outputWorkLogPlanSend"/>
+    <elementParameter field="CHECK" name="RENAME" value="false"/>
+    <elementParameter field="TEXT" name="DESTINATION_RENAME" value="&quot;NewName.temp&quot;" show="false"/>
+    <elementParameter field="CHECK" name="REMOVE_FILE" value="true"/>
+    <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
+    <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
+    <elementParameter field="CHECK" name="FAILON" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="ファイルのrename"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileCopy_1"/>
+  </node>
+  <node componentName="tFileCompare" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileCompare_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="COMPARISON_MODE" value="BINARY_CMP"/>
+    <elementParameter field="FILE" name="FILE" value="context.outputWorkLogPlanTemp+context.outputStockSetInstFileName"/>
+    <elementParameter field="FILE" name="FILE_REF" value="context.outputWorkLogPlanSend+context.outputStockSetInstFileName"/>
+    <elementParameter field="TEXT" name="DIFFER_MESSAGE" value="&quot;[job &quot; + jobName + &quot;] Files differ&quot;"/>
+    <elementParameter field="TEXT" name="NO_DIFFER_MESSAGE" value="&quot;[job &quot; + jobName + &quot;] Files are identical&quot;"/>
+    <elementParameter field="CHECK" name="PRINT" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="新旧ファイル比較"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileCompare_1">
+      <column defaultValue="" key="false" length="255" name="file" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="file_ref" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="component" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1" name="differ" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileCopy_2" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.outputWorkLogPlanTemp+context.outputStockSetInstFileName"/>
+    <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
+    <elementParameter field="DIRECTORY" name="SOURCE_DERECTORY" value="&quot;C:/TOS_DI-20160510_1709-V6.2.0/workspace&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="DESTINATION" value="context.outputWorkLogPlanSend"/>
+    <elementParameter field="CHECK" name="RENAME" value="false"/>
+    <elementParameter field="TEXT" name="DESTINATION_RENAME" value="&quot;NewName.temp&quot;" show="false"/>
+    <elementParameter field="CHECK" name="REMOVE_FILE" value="true"/>
+    <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
+    <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
+    <elementParameter field="CHECK" name="FAILON" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="ファイルのrename"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileCopy_2"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;作成対象データが0件です。処理を終了します。&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="2"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="4"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="対象データ無し"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TWARN" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TACTIONFAILURE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="tDieにて設定されたメッセージを受信いし、ログ書き込み処理に受信した情報を渡す。"/>
+    <metadata connector="FLOW" name="tLogCatcher_1">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="moment"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pid"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="root_pid"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="father_pid"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="project"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="job"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="context"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="priority"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="origin"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="message"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="code"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;作成対象データが0件です。処理を終了します。&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="2"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="4"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="対象データ無し"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_2"/>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMysqlRow_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlRow_1" target="tParseRecordSet_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="CENTER_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="WORK_QTY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="WORK_DT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="WORK_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CLIENT_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="resultSet"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tParseRecordSet_1" offsetLabelX="0" offsetLabelY="0" source="tParseRecordSet_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="outputShippingPlan" lineStyle="0" metaname="outputShippingPlan" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="outputShippingPlan" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="isPositive" lineStyle="6" metaname="tFileOutputDelimited_1" offsetLabelX="-43" offsetLabelY="0" outputId="1" source="tFileOutputDelimited_1" target="tFileExist_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileOutputDelimited_1_NB_LINE&quot;)) > 0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="isPositive" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="isNegative" lineStyle="6" metaname="tFileOutputDelimited_1" offsetLabelX="0" offsetLabelY="-28" outputId="2" source="tFileOutputDelimited_1" target="tDie_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileOutputDelimited_1_NB_LINE&quot;)) &lt;= 0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="isNegative" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="NotExists" lineStyle="6" metaname="tFileExist_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileExist_1" target="tFileCopy_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="!((Boolean)globalMap.get(&quot;tFileExist_1_EXISTS&quot;))"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="NotExists" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="Exists" lineStyle="6" metaname="tFileExist_1" offsetLabelX="1" offsetLabelY="1" outputId="2" source="tFileExist_1" target="tFileCompare_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Boolean)globalMap.get(&quot;tFileExist_1_EXISTS&quot;))"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Exists" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="Difference" lineStyle="6" metaname="tFileCompare_1" offsetLabelX="0" offsetLabelY="-21" outputId="1" source="tFileCompare_1" target="tFileCopy_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="!((Boolean)globalMap.get(&quot;tFileCompare_1_DIFFERENCE&quot;))"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Difference" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="NotDifference" lineStyle="6" metaname="tFileCompare_1" offsetLabelX="-23" offsetLabelY="12" outputId="2" source="tFileCompare_1" target="tDie_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Boolean)globalMap.get(&quot;tFileCompare_1_DIFFERENCE&quot;))"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="NotDifference" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlRow_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileCopy_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileCompare_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileCopy_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

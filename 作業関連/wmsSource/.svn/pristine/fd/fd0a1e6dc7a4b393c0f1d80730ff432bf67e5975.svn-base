@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_pprHUNpbEeegapk989j16g" id="_ppgvQNpbEeegapk989j16g" label="WorkLogShippingPlan" purpose="WAS連携出荷指示データ" description="WAS連携出荷指示データ" version="0.1" statusCode="" item="_pprHUtpbEeegapk989j16g" displayName="WorkLogShippingPlan">
+    <author href="../../talend.project#_w3NaQZaREearrO37QzOhcQ"/>
+    <additionalProperties xmi:id="_TEeRYBcsEeqLaK2GOeLj_g" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_TEeRYRcsEeqLaK2GOeLj_g" key="created_product_version" value="6.2.0.20160510_1709"/>
+    <additionalProperties xmi:id="_TEeRYhcsEeqLaK2GOeLj_g" key="created_date" value="2017-12-06T17:01:23.012+0900"/>
+    <additionalProperties xmi:id="_TEeRYxcsEeqLaK2GOeLj_g" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_TEeRZBcsEeqLaK2GOeLj_g" key="modified_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_TEeRZRcsEeqLaK2GOeLj_g" key="modified_date" value="2022-01-13T09:38:14.091+0900"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_pprHUdpbEeegapk989j16g" path="wasLinkage"/>
+  <TalendProperties:ProcessItem xmi:id="_pprHUtpbEeegapk989j16g" property="_pprHUNpbEeegapk989j16g" state="_pprHUdpbEeegapk989j16g">
+    <process href="WorkLogShippingPlan_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

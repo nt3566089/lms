@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_LVly4ISREeazV9_Ckl1boA" id="_HQ7tYDwqEeerjudB8cjwSg" label="CustomerMasterBulkInput" purpose="取引先マスタファイル取込" description="CSV→EDIテーブル" version="0.1" statusCode="" item="_LVly4oSREeazV9_Ckl1boA" displayName="CustomerMasterBulkInput">
+    <author href="../../talend.project#_w3NaQZaREearrO37QzOhcQ"/>
+    <additionalProperties xmi:id="_RhmJYBcsEeqLaK2GOeLj_g" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_RhmJYRcsEeqLaK2GOeLj_g" key="created_product_version" value="6.2.0.20160510_1709"/>
+    <additionalProperties xmi:id="_RhmJYhcsEeqLaK2GOeLj_g" key="created_date" value="2016-09-30T09:19:44.924+0900"/>
+    <additionalProperties xmi:id="_RhmJYxcsEeqLaK2GOeLj_g" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_RhmJZBcsEeqLaK2GOeLj_g" key="modified_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_RhmJZRcsEeqLaK2GOeLj_g" key="modified_date" value="2022-01-13T09:36:55.888+0900"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_HRfuEDwqEeerjudB8cjwSg" path="master"/>
+  <TalendProperties:ProcessItem xmi:id="_LVly4oSREeazV9_Ckl1boA" property="_LVly4ISREeazV9_Ckl1boA" state="_HRfuEDwqEeerjudB8cjwSg">
+    <process href="CustomerMasterBulkInput_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+template_bat_script=%~d0\ncd %~dp0\njava -Dtalend.component.manager.m2.repository\="%cd%/../lib" -cp ${talend.job.bat.classpath} ${talend.job.class} ${talend.job.bat.addition} %*
+template_ps_script=$fileDir \= Split-Path -Parent $MyInvocation.MyCommand.Path\ncd $fileDir\njava '-Dtalend.component.manager.m2.repository\=%cd%/../lib' -cp ${talend.job.ps1.classpath} ${talend.job.class} ${talend.job.bat.addition} %*
+template_sh_script=\#\!/bin/sh\ncd `dirname $0`\nROOT_PATH\=`pwd`\njava -Dtalend.component.manager.m2.repository\=$ROOT_PATH/../lib -cp ${talend.job.sh.classpath} ${talend.job.class} ${talend.job.sh.addition} "$@"

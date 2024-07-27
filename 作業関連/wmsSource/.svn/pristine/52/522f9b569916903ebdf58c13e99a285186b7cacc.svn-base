@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_REb3YYtoEeaWDPN99PiqkA" id="_mkQ8UNtfEem0B8goRap_Cg" label="AmsLinkageParam" purpose="AMS連携用パラメータ群" description="AMS連携に必要なパラメータを設定する" version="0.1" statusCode="" item="_REb3Y4toEeaWDPN99PiqkA" displayName="AmsLinkageParam">
+    <author href="../talend.project#_w3NaQZaREearrO37QzOhcQ"/>
+    <additionalProperties xmi:id="_Q0VawBcsEeqLaK2GOeLj_g" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_Q0VawRcsEeqLaK2GOeLj_g" key="created_product_version" value="6.2.0.20160510_1709"/>
+    <additionalProperties xmi:id="_Q0VawhcsEeqLaK2GOeLj_g" key="created_date" value="2016-10-06T10:57:41.974+0900"/>
+    <additionalProperties xmi:id="_Q0VawxcsEeqLaK2GOeLj_g" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_Q0VaxBcsEeqLaK2GOeLj_g" key="modified_product_version" value="7.2.1.20190620_1446"/>
+    <additionalProperties xmi:id="_Q0VaxRcsEeqLaK2GOeLj_g" key="modified_date" value="2019-12-05T16:20:10.380+0900"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_mkSKcNtfEem0B8goRap_Cg" path=""/>
+  <TalendProperties:ContextItem xmi:id="_REb3Y4toEeaWDPN99PiqkA" property="_REb3YYtoEeaWDPN99PiqkA" state="_mkSKcNtfEem0B8goRap_Cg" defaultContext="Default">
+    <context href="AmsLinkageParam_0.1.item#_REb3YItoEeaWDPN99PiqkA"/>
+  </TalendProperties:ContextItem>
+</xmi:XMI>

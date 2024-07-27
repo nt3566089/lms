@@ -1,0 +1,1198 @@
+DICT_CULTURE_ID	DICT_NM
+1	メインメニュー
+2	Main Menu
+3	主菜单
+10	プリンタ
+11	Printer
+12	打印机
+22	帳票レイアウト
+23	Document Layout
+24	报表版面设计
+82	ログイン
+83	Login
+84	登录
+88	パスワード
+89	Password
+90	密码
+208	プリンタグループ
+209	Printer Group
+210	打印机组
+232	プリンタ属性
+233	Printer Properties
+234	打印机属性
+424	権限制御区分
+425	Access Control Class
+426	权限控制区分
+427	権限制御区分CD
+428	Access Control Class Code
+429	权限控制区分CD
+430	権限制御区分名称
+431	Access Control Class Name
+432	权限控制区分名称
+433	許可を指定
+434	Specify Permissions
+435	指定许可
+436	拒否を指定
+437	Specify Lack of Permissions
+438	指定拒绝
+466	ユーザ別プリンタ
+467	Printer(User)
+468	打印(用户)
+469	端末別プリンタ
+470	Printer(Terminal)
+471	打印(端末)
+481	在庫
+482	INVENTORY
+483	库存
+486	货主选择
+489	用户名
+490	荷主選択
+491	Select Shipper
+492	货主选择
+495	荷材CD
+498	顾客收货指示No.
+501	供应方名称
+504	指示数
+507	发货打包No.
+510	出库作业No.
+513	出库作业信息
+516	入数
+519	预定数
+522	选择
+525	处理区分
+528	在库区分
+531	总预定数
+538	ｿｰｽCD
+539	UPC
+540	代码CD
+649	ﾋﾟｯｷﾝｸﾞｸﾞﾙｰﾌﾟNo
+650	Picking Group No.
+651	选货组No.
+727	メニュー
+728	Menu
+729	菜单
+739	ユーザCD
+740	User Code
+741	用户CD
+754	ユーザ名
+755	User Name
+756	用户名
+796	ロット
+797	Lot
+798	批号
+871	仮置No
+873	临放置No.
+874	荷材CD
+875	Box Code
+876	荷材CD
+943	期限日
+944	Expiration Date
+945	期限日
+1057	顧客入荷指示No
+1058	Customer Rcv. No.
+1059	顾客收货指示No.
+1186	仕入先名称
+1187	Supplier Name
+1188	供应方名称
+1198	指示数
+1199	Instruction Qty
+1200	指示数
+1327	出荷梱包No
+1328	Shipping Packing No.
+1329	发货打包No.
+1363	出庫作業No
+1364	Pick No.
+1365	出库作业No.
+1366	出庫作業メッセージ
+1368	出库作业信息
+1735	入庫No
+1736	Receiving No.
+1737	入库No
+1771	入数
+1772	Unit Qty
+1773	入数
+1882	予数
+1883	Plan Qty
+1884	预定数
+2236	選択
+2237	Select
+2238	选择
+2242	荷主
+2243	Shipper
+2244	货主
+2251	処理区分
+2252	Process Class
+2253	处理区分
+2254	処区
+2255	Proc Cls
+2256	住区
+2326	預託
+2327	Cons
+2328	寄售
+2329	在庫区分
+2330	Inventory Class
+2331	在库区分
+2332	在区
+2333	Inv Cls
+2334	在区
+2335	商品
+2336	Item
+2337	商品
+2368	ロケ
+2369	Location
+2370	库位
+2443	総予定数
+2444	Total Plan Qty
+2445	总预定数
+2455	削除
+2456	Delete
+2457	删除
+2530	仕入先
+2531	Supplier
+2532	收货方
+2641	出荷検品
+2642	Shipping Inspection
+2643	出库检品
+2710	検品数
+2711	Inspection Qty
+2712	检品数
+2713	検数
+2714	Insp qty
+2715	检数
+2719	総検品数
+2720	Total Inspection Qty
+2721	总检品数
+2725	箱登録
+2726	Input Box
+2727	箱登录
+2734	ステータス
+2735	Status
+2736	状态
+2917	在庫数
+2918	Inventory Qty
+2919	在库数
+2926	移動数
+2927	Transfer Qty
+2928	移动数
+2941	検品残数
+2942	Uninspected Qty
+2943	检品剩余数
+2944	個口番号
+2945	Package No.
+2946	箱编号
+2977	Ｃ数
+2978	cases
+2979	箱数
+2980	配送コース
+2981	Carrier Service Level
+2982	配送方案
+2983	配送C
+2984	Carrier S.
+2985	配送C
+3022	納品先
+3023	Ship To
+3024	供货方
+3034	Ｐ数
+3035	pieces
+3036	单件数
+3400	確認
+3401	Check
+3402	确认
+3421	数量
+3422	Qty
+3423	数量
+3493	ピース
+3494	Piece
+3495	散件
+3496	ps
+3497	pc
+3498	ps
+3499	ボール
+3500	Carton
+3501	bl
+3502	bl
+3503	ct
+3504	bl
+3505	ケース
+3506	Case
+3507	箱
+3508	cs
+3509	cs
+3510	cs
+3511	グラム
+3512	Gram
+3513	克
+3514	g
+3515	g
+3516	g
+4519	出庫作業No/梱包No
+4520	Pick No./Packing No.
+4521	出库作业No./出库打包No.
+4809	在庫管理
+4810	Inventory
+4811	在库管理
+5259	入庫格納
+5260	Put-away
+5261	入库格纳
+5337	エラー
+5338	Error
+5339	错误
+5583	未検品
+5584	Uninspected
+5585	未检品
+5586	検品済
+5587	Inspected
+5588	检品完
+5607	作業中
+5608	In Progress
+5609	作业中
+5610	完了
+5611	Complete
+5612	完了
+5718	正常終了
+5719	Terminated Normally
+5720	正常终了
+7683	入荷検品
+7684	Receiving Inspection
+7685	收货检品
+7695	ケースピッキングNo
+7696	Case Order Picking No.
+7697	箱检品No.
+7701	オーダピッキング
+7702	Order Picking
+7703	订货拣品
+7707	伝票No
+7708	Doc. No
+7709	单据No
+7710	仮ロケ
+7711	Temp Loc
+7712	临时库位
+7713	汎用ラベルNo
+7714	Generic Label No
+7715	通用标签No
+7716	汎用No
+7717	Generic No.
+7718	通用No
+7737	バラ数
+7738	Piece Qty
+7739	散件数
+7743	出庫ロケ
+7744	Pick Loc
+7745	出库库位
+7746	先ロケ
+7747	From Loc
+7748	抵达库位
+7749	入庫ロケ
+7750	Put-away Loc
+7751	入库库位
+7764	追跡No/梱包No
+7765	Tracking No./Packing No.
+7766	货物追迹No./出货捆包No.
+7767	ケースピッキング
+7768	Case Picking
+7769	箱拣品
+7977	入荷管理
+7978	Receiving
+7979	收货管理
+7980	出荷管理
+7981	Shipping
+7982	发货管理
+7983	棚卸管理
+7984	Inventory Count
+7985	盘点管理
+7986	運用管理
+7987	Operation
+7988	运用管理
+7989	送信
+7990	Send
+7991	送信
+7992	戻る
+7993	Back
+7994	返回
+7995	次
+7996	Next
+7997	次
+7998	前
+7999	Prev.
+8000	前
+8001	在庫区分選択
+8002	Select Inventory Class
+8003	库存区分选择
+8004	在庫検索
+8005	Inventory Search
+8006	库存检索
+8007	在庫検索(一覧)
+8008	Inventory List
+8009	库存检索(一览)
+8010	在庫移動出庫
+8011	Transfer Out
+8012	库存移动出库
+8013	在庫移動入庫
+8014	Transfer In
+8015	库存移动入库
+8016	入荷検品格納
+8017	Put-away Inspection
+8018	收货检品上架
+8019	予定無し入荷
+8020	Quick Receiving
+8021	无预定收货
+8022	積込検品
+8023	Loading Inspection
+8024	装载检品
+8025	シリアル登入
+8026	Input Serial (Rcv)
+8027	序列登入
+8028	シリアル登出
+8029	Input Serial (Shp)
+8030	序列登出
+8031	商品棚卸入力
+8032	Item Inv. Count Input
+8033	商品盘点输入
+8034	ロケ変更
+8035	Location Transfer
+8036	库位变更
+8037	ロケ一括変更
+8038	Bulk Location Transfer
+8039	库位批量变更
+8040	プリンタ選択
+8041	Select Printer
+8042	打印选择
+8043	いいえ
+8044	No
+8045	否
+8046	はい
+8047	Yes
+8048	是
+8049	致命的エラー
+8050	Fatal Error
+8051	致命的错误
+8052	終了
+8053	End
+8054	终了
+8055	継続
+8056	Continue
+8057	继续
+8058	削除しますか？
+8059	Delete?
+8060	要删除吗？
+8061	中断しますか？
+8062	Suspend?
+8063	要中断吗？
+8064	入力補助
+8065	Input Breakdown
+8066	输入辅助
+8067	商品荷姿
+8068	Item UOM
+8069	商品包装
+8070	OK
+8071	OK
+8072	OK
+8073	[0]([1])
+8074	[0]([1])
+8075	[0]([1])
+8076	入荷検品(数量)
+8077	Receiving Inspection (Qty)
+8078	收货检品(数量)
+8079	…
+8080	…
+8081	…
+8082	一覧
+8083	List
+8084	一览
+8085	内訳
+8086	Breakdown
+8087	明细
+8101	Not subject to
+8104	Subject to
+8106	ロケ変更を
+8107	End Location Transfer?
+8108	库位变更
+8109	終了しますか？
+8110	 
+8111	要终了吗？
+8112	在庫移動入庫を
+8113	End Inventory Transfer In?
+8114	库存移动入库
+8115	続けて入庫作業し
+8116	Continue to Inventory Transfer In?
+8117	继续入库作业
+8118	ますか？
+8119	 
+8120	做吗？
+8121	在庫移動出庫を
+8122	End Inventory Transfer Out?
+8123	库存移动出库
+8124	中断データが
+8125	Suspended data
+8126	中断数据
+8127	存在します。
+8128	exists.
+8129	存在。
+8130	再開しますか？
+8131	Resume?
+8132	要再开吗？
+8133	再開
+8134	Resume
+8135	再开
+8136	再開します。
+8137	Resuming
+8138	再开。
+8139	在庫移動入庫(終了)
+8140	Transfer In (End)
+8141	在库移动入库(终了)
+8142	在庫移動出庫(終了)
+8143	Transfer Out (End)
+8144	在库移动出库(终了)
+8145	在庫移動出庫(確認)
+8146	Transfer Out (Confirm)
+8147	在库移动出库(确认)
+8148	入数内訳
+8149	Unit Qty Breakdown
+8150	入数明细
+8151	予定単位
+8152	Plan Unit
+8153	预定单位
+8154	予定内訳
+8155	Plan Breakdown
+8156	预定明细
+8157	入庫単位
+8158	Put-away Unit
+8159	入库单位
+8160	入庫内訳
+8161	Put-away Breakdown
+8162	入库明细
+8163	棚卸前内訳
+8164	Pre-Inventory Count Breakdown
+8165	盘点前明细
+8166	調整前総数荷姿
+8167	Pre-adjustment Qty UOM
+8168	调整前总数包装
+8169	調整後総数荷姿
+8170	Post-adjustment Qty UOM
+8171	调整后总数包装
+8172	調整総数荷姿
+8173	Adjustment Qty UOM
+8174	调整总数包装
+8175	商品数
+8176	Item Qty
+8177	商品数
+8178	ロケ変更(出庫ロケ)
+8179	Location Transfer (From)
+8180	库位变更(出库库位)
+8181	ロケ変更(一覧)
+8182	Location Transfer (List)
+8183	库位变更(一览)
+8184	ロケ変更(入庫ロケ)
+8185	Location Transfer (To)
+8186	库位变更(入库库位)
+8187	ロケ変更(確認)
+8188	Location Transfer (Confirm)
+8189	库位变更(确认)
+8190	データを登録します。
+8191	Process is completed.
+8192	数据登陆了。
+8193	よろしいですか？
+8194	Register this data?
+8195	可以吗？
+8196	ロケ変更(終了)
+8197	Location Transfer (End)
+8198	库位变更(终了)
+8199	ｽｷｯﾌﾟ
+8200	Skip
+8201	跳过
+8202	ケースピッキングを
+8203	End Case Picking?
+8204	箱分拣
+8205	ピッキングNo
+8206	Picking No.
+8207	分拣No
+8208	ケースピック(No)
+8209	Case Pick (No)
+8210	箱分拣(No)
+8211	ケースピック(ｿｰｽCD)
+8212	Case Pick (UPC)
+8213	箱分拣(代码No)
+8214	ケースピック(入庫No)
+8215	Case Pick (Receiving No.)
+8216	箱分拣(入库No)
+8217	ケースピック(数量)
+8218	Case Pick (Qty)
+8219	箱分拣(数量)
+8220	ケースピック(一覧)
+8221	Case Pick (List)
+8222	箱分拣(一览)
+8223	ケースピック(終了)
+8224	Case Pick (End)
+8225	箱分拣(终了)
+8226	選択後、[ENT]で確定
+8227	Press [ENT] to confirm
+8228	选择后，用[ENT]确定
+8229	積込検品(確認)
+8230	Loading Inspection (Confirm)
+8231	装载检品(确认)
+8232	積込検品(一覧)
+8233	Loading Inspection (List)
+8234	装载检品(一览)
+8235	配送コース選択
+8236	Select Service Level
+8237	配送路线选择
+8238	積込検品(終了)
+8239	Loading Inspection (End)
+8240	装载检品(终了)
+8241	積込検品(No)
+8242	Loading Inspection (No)
+8243	装载检品(No)
+8244	の積込検品が
+8245	Loading Inspection is complete.
+8246	的装载检品
+8247	終了しました。
+8248	 
+8249	已终了。
+8250	積込検品を
+8251	End Loading Inspection?
+8252	装载检品
+8253	使用した荷材CDを
+8254	Enter the used Box Code
+8255	使用的荷材CD
+8256	入力してください。
+8257	 
+8258	请输入。
+8259	決定
+8260	Confirm
+8261	决定
+8262	出荷検品キャンセル
+8263	Cancel Shipping Inspection?
+8264	发货检品取消
+8265	しますか？
+8266	 
+8267	做吗？
+8268	合計個口数
+8269	Packed Qty
+8270	合计个体数
+8271	中断
+8272	Suspend
+8273	中断
+8274	総個口数
+8275	Packed Qty
+8276	总个体数
+8277	シリアル登出を
+8278	End Input Serial (Shipping)?
+8279	序列登出
+8280	出荷検品(箱登録)
+8281	Shipping Inspection (Box)
+8282	发货检品(箱登陆)
+8283	出荷検品(終了)
+8284	Shipping Inspection (End)
+8285	发货检品(终了)
+8286	出荷検品(ｿｰｽCD)
+8287	Shipping Inspection (UPC)
+8288	发货检品(代码CD)
+8289	出荷検品(一覧)
+8290	Shipping Inspection (List)
+8291	发货检品(一览)
+8292	出荷検品(数量)
+8293	Shipping Inspection (Qty)
+8294	发货检品(数量)
+8295	出荷検品(確認)
+8296	Shipping Inspection (Confirm)
+8297	发货检品(确认)
+8298	出荷検品(No)
+8299	Shipping Inspection (No)
+8300	发货检品(No)
+8301	ｼﾘｱﾙ登出(終了)
+8302	Input Shp Serial (End)
+8303	序列登出(终了)
+8304	ｼﾘｱﾙ登出(ｿｰｽCD)
+8305	Input Shp Serial (UPC)
+8306	序列登出(代码CD)
+8307	ｼﾘｱﾙ登出(範囲)
+8308	Input Shp Serial (Range)
+8309	序列登出(范围)
+8310	ｼﾘｱﾙ登出(確認)
+8311	Input Shp Serial (Confirm)
+8312	序列登出(确认)
+8313	ｼﾘｱﾙｸﾘｱ確認
+8314	Confirm Serial Clear
+8315	序列清空确认
+8316	ｼﾘｱﾙ登出(ｼﾘｱﾙ)
+8317	Input Shp Serial (Serial)
+8318	序列登出(序列)
+8319	納品先選択
+8320	Select Ship-To
+8321	收货方选择
+8322	ｼﾘｱﾙ登出(No)
+8323	Input Shp Serial (No)
+8324	序列登出(No)
+8325	ｽﾀｰﾄｼﾘｱﾙ
+8326	Start Serial
+8327	开始序列
+8328	ｼﾘｱﾙ
+8329	Serial
+8330	序列
+8331	入力したシリアルを
+8332	Clear the
+8333	输入的序列
+8334	クリアしますか？
+8335	entered serial?
+8336	要清空吗？
+8337	範囲
+8338	Range
+8339	范围
+8340	オーダピッキングを
+8341	End Order Picking?
+8342	订单分拣
+8343	オーダピック(No)
+8344	Order Pick (No)
+8345	订单分拣(No)
+8346	オーダピック(入庫No)
+8347	Order Pick (Receiving No.)
+8348	订单分拣(入库No)
+8349	オーダピック(確認)
+8350	Order Pick (Confirm)
+8351	订单分拣(确认)
+8352	オーダピック(数量)
+8353	Order Pick (Qty)
+8354	订单分拣(数量)
+8355	オーダピック(一覧)
+8356	Order Pick (List)
+8357	订单分拣(一览)
+8358	オーダピック(終了)
+8359	Order Pick (End)
+8360	订单分拣(终了)
+8361	オーダピック(ｿｰｽCD)
+8362	Order Pick (UPC)
+8363	订单分拣(代码CD)
+8364	移動入庫(ｿｰｽCD)
+8365	Inventory Transfer (UPC)
+8366	移动入库(代码CD)
+8367	移動入庫(入庫No)
+8368	Inventory Transfer (Receiving No.)
+8369	移动入库(入库No)
+8370	移動入庫(ロケ)
+8371	Inventory Transfer (Location)
+8372	移动入库(库位)
+8373	移動入庫(選択)
+8374	Inventory Transfer (Select)
+8375	移动入库(选择)
+8376	移動入庫確認
+8377	Confirm Inventory Transfer
+8378	移动入库确认
+8379	プリンタ選択を
+8380	Cancel printer selection?
+8381	打印选择
+8382	キャンセルしますか？
+8383	 
+8384	要取消吗？
+8385	トレイ
+8386	Tray
+8387	支架
+8388	Pｸﾞﾙｰﾌﾟ
+8389	Prnt Grp
+8390	P组
+8391	ﾌﾟﾘﾝﾀ
+8392	Printer
+8393	打印
+8394	帳票L
+8395	Report L.
+8396	帐票L
+8397	同じ帳票レイアウトが
+8398	This report layout is already
+8399	相同帐票布局
+8400	登録されています。
+8401	registered. Update?
+8402	已登陆。
+8403	更新しますか？
+8404	 
+8405	要更新吗？
+8406	プリンタ選択(終了)
+8407	Select Printer (End)
+8408	打印选择(终了)
+8409	選択プリンタ一覧
+8410	Printer Select List
+8411	选择打印一览
+8412	プリンタグループ選択
+8413	Select Printer Group
+8414	打印机组选择
+8415	帳票レイアウト選択
+8416	Select Report Layout
+8417	帐票布局选择
+8418	プリンタ選択(確認)
+8419	Select Printer (Confirm)
+8420	打印选择(确认)
+8421	トレイ選択
+8422	Select Tray
+8423	支架选择
+8424	更新確認
+8425	Confirm Update
+8426	更新确认
+8427	移動出庫(入庫No)
+8428	Transfer Out (Receiving No.)
+8429	移动出库(入库No)
+8430	移動出庫(ロケ)
+8431	Transfer Out (Location)
+8432	移动出库(库位)
+8433	移動出庫(ｿｰｽCD)
+8434	Transfer Out (UPC)
+8435	移动出库(代码CD)
+8436	移動出庫(選択)
+8437	Transfer Out (Select)
+8438	移动出库(选择)
+8439	移動出庫(数量)
+8440	Transfer Out (Qty)
+8441	移动出库(数量)
+8442	移動出庫確認
+8443	Confirm Transfer Out
+8444	移动出库确认
+8445	商品棚卸(終了)
+8446	Product Inventory Count (End)
+8447	商品盘点(终了)
+8448	商品棚卸を
+8449	End Product Inventory Count?
+8450	商品盘点
+8451	預託選択
+8452	Select Consignment
+8453	寄售选择
+8454	商品棚卸(ｿｰｽCD)
+8455	Product Inventory Count (UPC)
+8456	商品盘点(代码CD)
+8457	商品棚卸(在区)
+8458	Product Inventory Count (Inv Cls)
+8459	商品盘点(在区)
+8460	商品棚卸(詳細)
+8461	Product Inventory Count (Details)
+8462	商品盘点(详细)
+8463	商品棚卸(一覧)
+8464	Product Inventory Count (List)
+8465	商品盘点(一览)
+8466	商品棚卸(ロケ)
+8467	Product Inventory Count (Location)
+8468	商品盘点(库位)
+8469	商品棚卸(数量)
+8470	Product Inventory Count (Qty)
+8471	商品盘点(数量)
+8472	商品棚卸完了
+8473	Product Inventory Count Complete.
+8474	商品盘点完了
+8475	か？
+8476	 
+8477	吗？
+8478	商品棚卸(確認)
+8479	Product Inventory Count (Confirm)
+8480	商品盘点(确认)
+8481	入庫格納(終了)
+8482	Put-away (End)
+8483	入库上架(终了)
+8484	入庫格納を
+8485	End Put-away?
+8486	入库上架
+8487	入庫格納(ｿｰｽCD)
+8488	Put-away (UPC)
+8489	入库上架(代码CD)
+8490	入庫格納(仮ロケ)
+8491	Put-away (Temporary Location)
+8492	入库上架(临时库位)
+8493	入庫格納(入庫No)
+8494	Put-away (Receiving No.)
+8495	入库上架(入库No)
+8496	入庫格納(詳細)
+8497	Put-away (Details)
+8498	入库上架(详细)
+8499	入庫格納(一覧)
+8500	Put-away (List)
+8501	入库上架(一览)
+8502	入荷数
+8503	Received Qty
+8504	收货数
+8505	格納数
+8506	Put-away Qty
+8507	上架数
+8508	入庫格納(ロケ)
+8509	Put-away (Location)
+8510	入库上架(库位)
+8511	入庫格納(数量)
+8512	Put-away (Qty)
+8513	入库上架(数量)
+8514	入庫格納(選択)
+8515	Put-away (Select)
+8516	入库上架(选择)
+8517	入庫格納確認
+8518	Confirm Put-away
+8519	入库上架确认
+8520	入庫格納完了
+8521	Put-away Complete.
+8522	入库上架完了
+8523	データを登録
+8524	Register data?
+8525	数据登陆
+8526	シリアル登入を
+8527	End Input Serial (Receiving)?
+8528	序列登入
+8529	予定無し入荷(終了)
+8530	Quick Receiving (End)
+8531	无预定收货(终了)
+8532	予定無し入荷を
+8533	End Quick Receiving?
+8534	无预定收货
+8535	予定無し入荷(ｿｰｽCD)
+8536	Quick Receiving (UPC)
+8537	无预定收货(代码CD)
+8538	予定無し入荷完了
+8539	Quick Receiving Complete.
+8540	无预定收货完了
+8541	期限日が過ぎています
+8542	The expiration date has passed.
+8543	过了期限日了
+8544	登録しますか？
+8545	Register?
+8546	要登陆吗？
+8547	検品を完了しますか？
+8548	Complete inspection?
+8549	完成检品了吗？
+8550	予定無し入荷(区分)
+8551	Quick Receiving (Inv Cls)
+8552	无预定收货(区分)
+8553	ラベル選択
+8554	Select Label
+8555	标签选择
+8556	予定無し入荷(汎用)
+8557	Quick Receiving (Generic)
+8558	无预定收货(通用)
+8559	予定無し入荷(詳細)
+8560	Quick Receiving (Details)
+8561	无预定收货(详细)
+8562	予定無し入荷(一覧)
+8563	Quick Receiving (List)
+8564	无预定收货(一览)
+8565	予定無し入荷(ロケ)
+8566	Quick Receiving (Location)
+8567	无预定收货(库位)
+8568	処理区分選択
+8569	Select Process Class
+8570	处理区分选择
+8571	完了確認(商品)
+8572	Confirm Completion (Item)
+8573	完了确认(商品)
+8574	予定無し入荷(数量)
+8575	Quick Receiving (Qty)
+8576	无预定收货(数量)
+8577	予定無し入荷確認
+8578	Confirm Quick Receiving
+8579	无预定收货确认
+8580	期限日確認
+8581	Confirm Expiration Date
+8582	期限日确认
+8583	予定無し入荷(仕入先)
+8584	Quick Receiving (Supplier)
+8585	无预定收货(供应商)
+8586	仕入先選択
+8587	Select Supplier
+8588	供应商选择
+8589	予定無し入荷(確認)
+8590	Quick Receiving (Confirm)
+8591	无预定收货(确认)
+8592	入荷検品(終了)
+8593	Receiving Inspection (End)
+8594	收货检品(终了)
+8595	入荷検品(詳細)
+8596	Receiving Inspection (Details)
+8597	收货检品(详细)
+8598	入荷検品(ｿｰｽCD)
+8599	Receiving Inspection (UPC)
+8600	收货检品(代码CD)
+8601	入荷検品(一覧)
+8602	Receiving Inspection (List)
+8603	收货检品(一览)
+8604	入荷検品確認
+8605	Confirm Receiving Inspection
+8606	收货检品确认
+8607	検品数確認
+8608	Confirm Inspected Qty
+8609	检品数确认
+8610	完了確認(伝票No)
+8611	Confirm Completion (Doc No)
+8612	完了确认(单据No)
+8613	入荷検品(伝票No)
+8614	Receiving Inspection (Doc No)
+8615	收货检品(单据No)
+8616	入荷検品を
+8617	End Receiving Inspection?
+8618	收货检品
+8619	済数
+8620	Inspected
+8621	完成数
+8622	残数
+8623	Remaining
+8624	残数
+8625	入荷検品完了
+8626	Receiving Inspection Complete.
+8627	收货检品完了
+8628	差異がありますが
+8629	There is a discrepancy.
+8630	有差异
+8631	予定数を超えています
+8632	Exceeds Plan Qty.\nSubmit?
+8633	超过预定数
+8634	が登録しますか？
+8635	 
+8636	要登陆吗？
+8637	ｼﾘｱﾙ登入(伝票No)
+8638	Input Rcv Serial (Doc No)
+8639	序列登入(单据No)
+8640	ｼﾘｱﾙ登入(終了)
+8641	Input Rcv Serial (End)
+8642	序列登入(终了)
+8643	ｼﾘｱﾙ登入(ｿｰｽCD)
+8644	Input Rcv Serial (UPC)
+8645	序列登入(代码CD)
+8646	ｼﾘｱﾙ登入(範囲)
+8647	Input Rcv Serial (Range)
+8648	序列登入(范围)
+8649	ｼﾘｱﾙ登入(確認)
+8650	Input Rcv Serial (Confirm)
+8651	序列登入(确认)
+8652	ｼﾘｱﾙ登入(ｼﾘｱﾙ)
+8653	Input Rcv Serial (Serial)
+8654	序列登入(序列)
+8655	登録数
+8656	Registered Qty
+8657	登陆数
+8658	入荷検品格納を
+8659	Complete Put-away Inspection?
+8660	收货检品上架
+8661	入荷検品格納を
+8662	End Put-away Inspection?
+8663	收货检品上架
+8664	入庫ラベル使用
+8665	Use Receiving Label
+8666	入库标签使用
+8667	汎用ラベル使用
+8668	Use Generic Label
+8669	通用标签使用
+8670	入荷検品格納完了
+8671	Put-away Inspection Complete.
+8672	收货检品上架完了
+8673	完了しますか？
+8674	 
+8675	要完成吗？
+8676	検品格納(終了)
+8677	Put-away Inspection (End)
+8678	检品上架(终了)
+8679	検品格納(詳細)
+8680	Put-away Inspection (Details)
+8681	检品上架(详细)
+8682	検品格納(ｿｰｽCD)
+8683	Put-away Inspection (UPC)
+8684	检品上架(代码CD)
+8685	検品格納(汎用)
+8686	Put-away Inspection (Generic)
+8687	检品上架(通用)
+8688	検品格納(一覧)
+8689	Put-away Inspection (List)
+8690	检品上架(一览)
+8691	検品格納(ロケ)
+8692	Put-away Inspection (Location)
+8693	检品上架(库位)
+8694	検品格納(数量)
+8695	Put-away Inspection (Qty)
+8696	检品上架(数量)
+8697	検品格納確認
+8698	Confirm Put-away Inspection
+8699	检品上架确认
+8700	検品格納(伝票No)
+8701	Put-away Inspection (Doc No)
+8702	检品上架(单据No)
+8703	入荷検品(汎用)
+8704	Receiving Inspection (Generic)
+8705	收货检品(通用)
+8706	データを登録します
+8707	Register data?
+8708	数据登陆
+8709	計算数値
+8710	Calculated Number
+8711	计算数值
+8712	棚卸数量荷姿
+8713	Inventory Count Qty UOM
+8714	盘点数量包装
+8715	センタ(権限)
+8716	Center (Permission)
+8717	中心(权限)
+8718	荷主(権限)
+8719	Shipper (Permission)
+8720	货主(权限)
+8733	出荷内訳
+8734	Shipping Breakdown
+8735	发货明细
+8736	引当内訳
+8737	Allocation Breakdown
+8738	分配明细
+8772	小数有無フラグ
+8773	Decimal Flag
+8774	小数有无标识
+8807	预定数包装
+8808	予定数荷姿
+8809	Plan UOM
+8810	预定数包装
+8811	指示数荷姿
+8812	Instruction UOM
+8813	指示数包装
+8814	指示出庫内訳
+8815	Instruct Picking Breakdown
+8816	指示出库明细
+8817	指示入庫内訳
+8818	Instruction Put-away Breakdown
+8819	指示入库明细
+8820	棚卸内訳
+8821	Inventory Count Breakdown
+8822	盘点明细
+8823	総数
+8824	Total Qty
+8825	总数
+8826	検品数荷姿
+8827	Inspection UOM
+8828	検品数荷姿
+8829	指示内訳
+8830	Instruction Breakdown
+8831	指示明细
+8835	在庫内訳
+8836	Inventory Breakdown
+8837	库存明细
+8838	引当可能内訳
+8839	Available Breakdown
+8840	分配可能明细
+8841	引当済内訳
+8842	Allocated Breakdown
+8843	已分配明细
+8844	作業中内訳
+8845	In-Progress Breakdown
+8846	作业中明细
+8847	積送中内訳
+8848	In-Transit Breakdown
+8849	装运中明细
+8850	現時点内訳
+8851	Current Qty Breakdown
+8852	现时点明细
+8868	在庫数荷姿
+8869	Inventory UOM
+8870	库存数包装
+8871	総在庫数荷姿
+8872	Total Inventory UOM
+8873	总库存数包装
+8874	移動先総在庫数荷姿
+8875	Total Qty (To) UOM
+8876	移动先总在库数荷姿
+8877	移動総数荷姿
+8878	Total Transfer UOM
+8879	移动总数荷姿
+8880	前残内訳
+8881	Previous Breakdown
+8882	前残明细
+8883	受入内訳
+8884	Received Breakdown
+8885	受入明细
+8886	払出内訳
+8887	Shipped Breakdown
+8888	付出明细
+8889	当日在庫内訳
+8890	Current Inventory Breakdown
+8891	当日库存明细
+8892	在庫管理単位CD
+8893	Inventory Management Unit Code
+8894	库存管理单位CD
+8895	在庫管理単位名称
+8896	Inventory Management Unit Name
+8897	库存管理单位名称
+8898	差異数(以上)
+8899	Discrepancy Qty (Minimum)
+8900	差异数(以上)
+8901	棚卸数荷姿
+8902	Inventory Count UOM
+8903	盘点数包装
+8904	入数単位
+8905	Unit Qty UOM
+8906	入数单位
+8910	梱包No.
+8911	Packing No.
+8912	捆包No.
+8913	(From)
+8914	(From)
+8915	(From)
+8916	(To)
+8917	(To)
+8918	(To)
+8943	Bill of lading No
+8944	Bill of Lading No.
+8945	Bill of lading No
+8946	Bill of Lading発行フラグ
+8947	Bill of Lading Print Flag
+8948	Bill of Lading发行标志
+8949	Bill of Lading発行フラグ名称
+8950	Bill of Lading Print Flag Name
+8951	Bill of Lading发行标志名称
+8952	Bill of Lading発行対象フラグ
+8953	Bill of Lading Print Target Flag
+8954	Bill of Lading发行对象标志
+8955	Bill of Lading発行対象フラグ名称
+8956	Bill of Lading Print Target Flag Name
+8957	Bill of Lading发行对象标志名称
+8958	Bill of Lading発行対象
+8959	Bill of Lading Print Target
+8960	Bill of Lading发行对象
+8961	Payment Term
+8962	Payment Term
+8963	Payment Term
+8964	Payment Term名称
+8965	Payment Term Name
+8966	Payment Term名称
+8967	PrePaid
+8968	PrePaid
+8969	PrePaid
+8970	PrePaid & Bill
+8971	PrePaid & Bill
+8972	PrePaid & Bill
+8973	Collect
+8974	Collect
+8975	Collect
+8976	COD Bill FRT
+8977	COD Bill FRT
+8978	COD Bill FRT
+8979	COD NOT Bill FRT
+8980	COD NOT Bill FRT
+8981	COD NOT Bill FRT
+8985	貨物追跡番号登録
+8986	Register Cargo Tracking No.
+8987	货物跟踪编号登陆
+8988	貨物追跡No
+8989	Cargo Tracking No
+8990	货物跟踪No
+9669	単行出荷検品
+9670	Single Inspection
+9671	单行发货检品
+9699	単行出荷検品(No)
+9700	         Single Inspection (No)
+9701	单行发货检品(No)
+9702	単行出荷検品(商品)
+9703	      Single Inspection (Product)
+9704	单行发货检品(商品)
+9705	作業指示数選択
+9706	    Operation Instruct Qty Select
+9707	作业指示数选择
+9708	単行出荷検品(箱登録)
+9709	   Single Inspection (Box Register)
+9710	单行发货检品(箱登陆)
+9711	単行出荷検品(ｿｰｽCD)
+9712	   Single Inspection (Source Code)
+9713	单行发货检品(代码CD)
+9714	作業指示数
+9715	         Operation Instruct Qty
+9716	作业指示数
+9717	伝票残数
+9718	Remaining Number of slips
+9719	单据残数
+10091	日付…
+10092	Date…
+10093	時刻…
+10094	Time…
+10095	勤怠入力(結果)
+10096	Attendance Imput (Result)
+10097	しました。
+10098	 

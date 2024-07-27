@@ -1,0 +1,8 @@
+ROLE_GRP_CD	DICT_NM	ROLE_CONTROL_CLASS
+SystemAdministrator	システム管理者	2
+Administrators	管理者	2
+Users	標準ユーザ	2
+Viewers	閲覧ユーザ	1
+Workers	管理作業者	2
+Owners	荷主閲覧ユーザ	1
+DepositViewers	預託閲覧ユーザ	1

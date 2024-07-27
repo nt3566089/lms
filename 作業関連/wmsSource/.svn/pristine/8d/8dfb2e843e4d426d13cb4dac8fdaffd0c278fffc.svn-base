@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="小数切り捨て単位" name="roundDownNum" prompt="roundDownNum?" promptNeeded="false" repositoryContextId="_RMK8sNlVEee2o-9kUqgXbg" type="id_Integer" value="3"/>
+    <contextParameter comment="" name="wms_AdditionalParams" prompt="wms_AdditionalParams?" promptNeeded="false" repositoryContextId="_MC0p8IRdEeaoUJ-cs2POpA" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="wms_Database" prompt="wms_Database?" promptNeeded="false" repositoryContextId="_MC0p8IRdEeaoUJ-cs2POpA" type="id_String" value="wmstest"/>
+    <contextParameter comment="" name="wms_Login" prompt="wms_Login?" promptNeeded="false" repositoryContextId="_MC0p8IRdEeaoUJ-cs2POpA" type="id_String" value="wmstestuser"/>
+    <contextParameter comment="" name="wms_Password" prompt="wms_Password?" promptNeeded="false" repositoryContextId="_MC0p8IRdEeaoUJ-cs2POpA" type="id_Password" value="enc:system.encryption.key.v1:bSO6j1jnxmRtU9HPoX/TdrUKfMM6euTEyClSiWCVM2X2mXqMRfIq"/>
+    <contextParameter comment="" name="wms_Port" prompt="wms_Port?" promptNeeded="false" repositoryContextId="_MC0p8IRdEeaoUJ-cs2POpA" type="id_String" value="3306"/>
+    <contextParameter comment="" name="wms_Server" prompt="wms_Server?" promptNeeded="false" repositoryContextId="_MC0p8IRdEeaoUJ-cs2POpA" type="id_String" value="localhost"/>
+    <contextParameter comment="センターCD" name="centerCd" prompt="centerCd?" promptNeeded="true" repositoryContextId="_gY1poH7zEeaXzaO0VXsjzg" type="id_String" value=""/>
+    <contextParameter comment="荷主CD" name="clientCd" prompt="clientCd?" promptNeeded="true" repositoryContextId="_gY1poH7zEeaXzaO0VXsjzg" type="id_String" value=""/>
+    <contextParameter comment="出力ファイルパス" name="outputPath" prompt="outputPath?" promptNeeded="true" repositoryContextId="_gY1poH7zEeaXzaO0VXsjzg" type="id_String" value=""/>
+    <contextParameter comment="ユーザCD" name="userCd" prompt="userCd?" promptNeeded="true" repositoryContextId="_gY1poH7zEeaXzaO0VXsjzg" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:0Hs+7bV7YfKcXqF9bA5mrK5GkCf2Ec74sje2kgfC" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:9+qJPRxzOjRqcuFimqXb+wKAu4yUySP1MwBsYPP6" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="true"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_tU3F0IRyEea94P-lLwuSqQ" name="DataOperation"/>
+    <routinesParameter id="_tVD6IIRyEea94P-lLwuSqQ" name="Mathematical"/>
+    <routinesParameter id="_tVHkgIRyEea94P-lLwuSqQ" name="Numeric"/>
+    <routinesParameter id="_tVLO4IRyEea94P-lLwuSqQ" name="Relational"/>
+    <routinesParameter id="_tVOSMIRyEea94P-lLwuSqQ" name="StringHandling"/>
+    <routinesParameter id="_tVR8kIRyEea94P-lLwuSqQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_tVVm8IRyEea94P-lLwuSqQ" name="TalendDate"/>
+    <routinesParameter id="_tVZRUIRyEea94P-lLwuSqQ" name="TalendString"/>
+    <routinesParameter id="_sZlm8NiqEeePbp3htV1qTw" name="BigDecimal"/>
+    <routinesParameter id="_L77dQNi0EeePbp3htV1qTw" name="BigDecimalRoutines"/>
+    <routinesParameter id="_VaUbgBc5EeqIcYquFB0h2g" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tMysqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlRow_1" show="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_9LeBIH7rEeaXzaO0VXsjzg" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.wms_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.wms_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.wms_Database"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.wms_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XYhVO88HLY43odCZtH/TSr97jasl5uziF2mM9uK0NECqju6SSOmL+p99gtXmhEcF"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="t_stock_report"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select&#xD;&#xA;     m_client.CLIENT_CD as CLIENT_CD&#xD;&#xA;    , m_client.CLIENT_NM as CLIENT_NM&#xD;&#xA;&#x9;, m_center.CENTER_CD as CENTER_CD&#xD;&#xA;&#x9;, m_center.CENTER_NM as CENTER_NM&#xD;&#xA;&#x9;, m_product.PRODUCT_CD as PRODUCT_CD&#xD;&#xA;&#x9;, m_product.PRODUCT_NM as PRODUCT_NM&#xD;&#xA;&#x9;, m_product.PRODUCT_ABBR as PRODUCT_ABBR&#xD;&#xA;&#x9;# [#3005]最小在庫単位の荷姿を追加 2017.11.27 sampei Add&#xD;&#xA;&#x9;, m_shape.SHAPE_CD as SHAPE_CD&#xD;&#xA;&#x9;, v_dict_shape_cd.DICT_NM as SHAPE_NM&#xD;&#xA;&#x9;# [#3005]最小在庫単位の荷姿を追加 2017.11.27 sampei End&#xD;&#xA;&#x9;, m_product.JAN_CD as JAN_CD&#xD;&#xA;&#x9;, m_warehouse.WAREHOUSE_CD as WAREHOUSE_CD&#xD;&#xA;&#x9;, m_warehouse.WAREHOUSE_NM as WAREHOUSE_NM&#xD;&#xA;&#x9;, m_location.LOCATION_NM as LOCATION_NM&#xD;&#xA;&#x9;, m_customer_deposit.CUSTOMER_CD as DEPOSIT_CUSTOMER_CD&#xD;&#xA;&#x9;, m_customer_deposit.CUSTOMER_NM as DEPOSIT_CUSTOMER_NM&#xD;&#xA;&#x9;, m_stock_type.STOCK_TYPE_CD as STOCK_TYPE_CD&#xD;&#xA;&#x9;, v_dict_stock_type.DICT_NM as STOCK_TYPE_NM&#xD;&#xA;&#x9;, t_lot.LOT as LOT&#xD;&#xA;&#x9;, t_lot.LIMIT_DT as LIMIT_DT&#xD;&#xA;&#x9;, t_store_no.STORE_LABEL_NO as STORE_LABEL_NO&#xD;&#xA;&#x9;, t_store_no_old.STORE_LABEL_NO as OLD_STORE_LABEL_NO&#xD;&#xA;&#x9;, m_customer_supplier.CUSTOMER_CD as SUPPLIER_CUSTOMER_CD&#xD;&#xA;&#x9;, m_customer_supplier.CUSTOMER_NM as SUPPLIER_CUSTOMER_NM&#xD;&#xA;&#x9;, m_customer_supplier.CUSTOMER_ABBR as SUPPLIER_CUSTOMER_ABBR&#xD;&#xA;&#x9;, t_stock.CHARGE_NUM + t_stock.ALLOC_NUM + t_stock.MOVE_NUM as STOCK_NUM #在庫総数&#xD;&#xA;&#x9;, t_stock.CHARGE_NUM #引当可能数&#xD;&#xA;&#x9;, t_stock.ALLOC_NUM as ALLOC_NUM&#xD;&#xA;&#x9;, t_stock_report.STORE_NUM_DAY as STORE_NUM_DAY&#xD;&#xA;&#x9;, t_stock_report.PICKING_NUM_DAY as PICKING_NUM_DAY&#xD;&#xA;&#x9;, t_stock_report.MOVE_PLS_NUM_DAY as MOVE_PLS_NUM_DAY&#xD;&#xA;&#x9;, t_stock_report.MOVE_MNS_NUM_DAY as MOVE_MNS_NUM_DAY&#xD;&#xA;&#x9;, t_stock_report.ADJ_PLS_NUM_DAY as ADJ_PLS_NUM_DAY&#xD;&#xA;&#x9;, t_stock_report.ADJ_MNS_NUM_DAY as ADJ_MNS_NUM_DAY&#xD;&#xA;&#x9;, t_stock_report.P_CHARGE_NUM_DAY as P_CHARGE_NUM_DAY&#xD;&#xA;&#x9;, t_stock_report.STORE_NUM_MONTH as STORE_NUM_MONTH&#xD;&#xA;&#x9;, t_stock_report.PICKING_NUM_MONTH as PICKING_NUM_MONTH&#xD;&#xA;&#x9;, t_stock_report.MOVE_PLS_NUM_MONTH as MOVE_PLS_NUM_MONTH&#xD;&#xA;&#x9;, t_stock_report.MOVE_MNS_NUM_MONTH as MOVE_MNS_NUM_MONTH&#xD;&#xA;&#x9;, t_stock_report.ADJ_PLS_NUM_MONTH as ADJ_PLS_NUM_MONTH&#xD;&#xA;&#x9;, t_stock_report.ADJ_MNS_NUM_MONTH as ADJ_MNS_NUM_MONTH&#xD;&#xA;&#x9;, t_stock_report.P_CHARGE_NUM_MONTH as P_CHARGE_NUM_MONTH&#xD;&#xA;&#x9;, t_stock_report.CHARGE_NUM_10 as CHARGE_NUM_10&#xD;&#xA;&#x9;, t_stock_report.CHARGE_NUM_15 as CHARGE_NUM_15&#xD;&#xA;&#x9;, t_stock_report.CHARGE_NUM_20 as CHARGE_NUM_20&#xD;&#xA;&#x9;, t_stock_report.CHARGE_NUM_LAST as CHARGE_NUM_LAST&#xD;&#xA;&#x9;, t_stock.MOVE_NUM&#xD;&#xA;&#x9;, t_stock.TRANSIT_NUM&#xD;&#xA;&#x9;, t_store_no.STORE_DT&#xD;&#xA;&#x9;, t_stock_report.LAST_STORE_DT as LAST_STORE_DT&#xD;&#xA;&#x9;, t_stock_report.LAST_PICKING_DT as LAST_PICKING_DT&#xD;&#xA;&#x9;, t_stock_report.ADD_DT as ADD_DT&#xD;&#xA;from&#xD;&#xA; &#x9;#在庫日報&#xD;&#xA; &#x9;t_stock_report as t_stock_report &#xD;&#xA; &#x9;#在庫日報->在庫&#xD;&#xA; &#x9;inner join t_stock as t_stock &#xD;&#xA;&#x9;&#x9;on t_stock_report.STOCK_ID = t_stock.STOCK_ID &#xD;&#xA;&#x9;&#x9;and t_stock.DEL_FLG = '0'&#xD;&#xA;&#x9;&#x9;# [#426][2.1.0-CT-081]センタ・荷主を指定しないとデータ抽出ができない 2016.12.12 shimizu Add Start&#xD;&#xA;&#x9;&#x9;#and t_stock.CLIENT_ID = (SELECT CLIENT_ID from m_client where CLIENT_CD = ?)&#xD;&#xA;&#x9;&#x9;and&#xD;&#xA;&#x9;&#x9;&#x9;case when ? != '' then&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;t_stock.CLIENT_ID = (SELECT CLIENT_ID from m_client where CLIENT_CD = ?)&#xD;&#xA;&#x9;&#x9;&#x9;else&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;1 = 1&#xD;&#xA;&#x9;&#x9;&#x9;end&#xD;&#xA;&#x9;&#x9;  # [#426][2.1.0-CT-081]センタ・荷主を指定しないとデータ抽出ができない 2016.12.12 shimizu Add End&#xD;&#xA;&#x9;#在庫->商品&#xD;&#xA;&#x9;inner join m_product as m_product &#xD;&#xA;&#x9;&#x9;on t_stock.PRODUCT_ID = m_product.PRODUCT_ID &#xD;&#xA;&#x9;&#x9;and m_product.DEL_FLG = '0' &#xD;&#xA; &#x9;#在庫->ロケーション&#xD;&#xA; &#x9;left outer join m_location as m_location &#xD;&#xA;&#x9;&#x9;on t_stock.LOCATION_ID = m_location.LOCATION_ID &#xD;&#xA;&#x9;&#x9;and m_location.DEL_FLG = '0' &#xD;&#xA;&#x9;#在庫->荷主&#xD;&#xA;&#x9;left outer join m_client as m_client &#xD;&#xA;&#x9;&#x9;on t_stock.CLIENT_ID = m_client.CLIENT_ID &#xD;&#xA;&#x9;&#x9;and m_client.DEL_FLG = '0' &#xD;&#xA;&#x9;#在庫->倉庫&#xD;&#xA;&#x9;inner join m_warehouse as m_warehouse &#xD;&#xA;&#x9;&#x9;on t_stock.WAREHOUSE_ID = m_warehouse.WAREHOUSE_ID &#xD;&#xA;&#x9;&#x9;and m_warehouse.DEL_FLG = '0' &#xD;&#xA;&#x9;#在庫 - センター&#xD;&#xA;&#x9;inner join m_center as m_center &#xD;&#xA;&#x9;&#x9;on m_warehouse.CENTER_ID = m_center.CENTER_ID &#xD;&#xA;&#x9;&#x9;and m_center.DEL_FLG = '0' &#xD;&#xA;&#x9;&#x9;# [#426][2.1.0-CT-081]センタ・荷主を指定しないとデータ抽出ができない 2016.12.12 shimizu Add Start&#xD;&#xA;&#x9;&#x9;#and m_center.CENTER_ID = (SELECT CENTER_ID from m_center where CENTER_CD = ?)&#xD;&#xA;&#x9;&#x9;and&#xD;&#xA;&#x9;&#x9;&#x9;case when ? != '' then&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;m_center.CENTER_ID = (SELECT CENTER_ID from m_center where CENTER_CD = ?)&#xD;&#xA;&#x9;&#x9;&#x9;else&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;1 = 1&#xD;&#xA;&#x9;&#x9;&#x9;end&#xD;&#xA;&#x9;&#x9;# [#426][2.1.0-CT-081]センタ・荷主を指定しないとデータ抽出ができない 2016.12.12 shimizu Add End&#xD;&#xA;&#x9;#センタ区分値取得（引当禁止フラグ）&#xD;&#xA;&#x9;left outer join ( &#xD;&#xA;&#x9;&#x9;select&#xD;&#xA;&#x9;# [#1899] [1.33 品質向上対応] [ver2.2.1] 値の取得先をセンタ区分値マスタから区分値マスタに変更 2017.07.26 miyabe Start&#xD;&#xA;&#x9;&#x9;&#x9;b_class_dtl.CLASS_DTL_CD&#xD;&#xA;&#x9;&#x9;&#x9;,b_class_dtl.DEL_FLG&#xD;&#xA;&#x9;&#x9;&#x9;,b_class_dtl.DICT_ID&#xD;&#xA;&#x9;&#x9;from&#xD;&#xA;&#x9;&#x9;&#x9;b_class_dtl as b_class_dtl &#xD;&#xA;&#x9;&#x9;&#x9;left outer join b_class as b_class &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;on b_class_dtl.CLASS_ID = b_class.CLASS_ID &#xD;&#xA;&#x9;&#x9;where&#xD;&#xA;&#x9;&#x9;&#x9;b_class.CLASS_CD = 'ALLC_NG_FLG'&#xD;&#xA;&#x9;) as w_allc_ng_flg &#xD;&#xA;&#x9;&#x9;on m_location.ALLOC_NG_FLG = w_allc_ng_flg.CLASS_DTL_CD #&#xD;&#xA;&#x9;&#x9;and w_allc_ng_flg.DEL_FLG = '0'&#xD;&#xA;&#x9;# [#1899] [1.33 品質向上対応] [ver2.2.1] 値の取得先をセンタ区分値マスタから区分値マスタに変更 2017.07.26 miyabe End&#xD;&#xA; &#x9;#センタ区分値取得（引当禁止フラグ）->辞書マスタ&#xD;&#xA; &#x9;left outer join v_dict as v_dict_allc_ng_flg &#xD;&#xA;&#x9;&#x9;on w_allc_ng_flg.DICT_ID = v_dict_allc_ng_flg.DICT_ID &#xD;&#xA;&#x9;&#x9;and v_dict_allc_ng_flg.CULTURE_ID = (select CULTURE_ID from b_user where USER_CD = ?)&#xD;&#xA;&#x9;#ロケーション->ゾーン&#xD;&#xA;&#x9;left outer join m_zone as m_zone &#xD;&#xA;&#x9;&#x9;on m_location.ZONE_ID = m_zone.ZONE_ID &#xD;&#xA;&#x9;&#x9;and m_zone.DEL_FLG = '0' &#xD;&#xA;&#x9;#在庫->カスタマー(預託先)&#xD;&#xA;&#x9;left outer join m_customer as m_customer_deposit&#xD;&#xA;&#x9;&#x9;on t_stock.DEPOSIT_ID = m_customer_deposit.CUSTOMER_ID &#xD;&#xA;&#x9;&#x9;and m_customer_deposit.DEL_FLG = '0' &#xD;&#xA;&#x9;#在庫->在庫区分マスタ&#xD;&#xA;&#x9;left outer join m_stock_type as m_stock_type &#xD;&#xA;&#x9;&#x9;on t_stock.STOCK_TYPE_ID = m_stock_type.STOCK_TYPE_ID &#xD;&#xA;&#x9;&#x9;and m_stock_type.DEL_FLG = '0' &#xD;&#xA;&#x9;#在庫区分->辞書マスタ&#xD;&#xA;&#x9;left outer join v_dict as v_dict_stock_type &#xD;&#xA;&#x9;&#x9;on m_stock_type.DICT_ID = v_dict_stock_type.DICT_ID &#xD;&#xA;&#x9;&#x9;and v_dict_stock_type.CULTURE_ID = (select CULTURE_ID from b_user where USER_CD = ?)&#xD;&#xA;&#x9;#在庫->ロット&#xD;&#xA; &#x9;left outer join t_lot as t_lot &#xD;&#xA;&#x9;&#x9;on t_stock.LOT_ID = t_lot.LOT_ID &#xD;&#xA;&#x9;&#x9;and t_lot.DEL_FLG = '0' &#xD;&#xA;&#x9;#在庫->入庫№&#xD;&#xA;&#x9;left outer join t_store_no as t_store_no &#xD;&#xA;&#x9;&#x9;on t_stock.STORE_NO_ID = t_store_no.STORE_NO_ID &#xD;&#xA;&#x9;&#x9;and t_store_no.DEL_FLG = '0' &#xD;&#xA;&#x9;#入庫№->旧入庫№&#xD;&#xA;&#x9;left outer join t_store_no as t_store_no_old &#xD;&#xA;&#x9;&#x9;on t_store_no.OLD_STORE_NUM_ID = t_store_no_old.STORE_NO_ID &#xD;&#xA;&#x9;&#x9;and t_store_no_old.DEL_FLG = '0' &#xD;&#xA;&#x9;#入庫№->仕入先&#xD;&#xA;&#x9;left outer join m_customer as m_customer_supplier &#xD;&#xA;&#x9;&#x9;on t_store_no.SUPPLIER_ID = m_customer_supplier.CUSTOMER_ID &#xD;&#xA;&#x9;&#x9;and m_customer_supplier.DEL_FLG = '0' &#xD;&#xA;&#x9;#入庫№->入庫№帳票&#xD;&#xA;&#x9;left outer join t_store_no_r as t_store_no_r &#xD;&#xA;&#x9;&#x9;on t_store_no.STORE_NO_ID = t_store_no_r.STORE_NO_ID &#xD;&#xA;&#x9;&#x9;and t_store_no_r.DEL_FLG = '0' &#xD;&#xA;&#x9;#荷主センタマスタ&#xD;&#xA;&#x9;left outer join m_client_center as m_client_center&#xD;&#xA;&#x9;&#x9;on m_client.CLIENT_ID = m_client_center.CLIENT_ID&#xD;&#xA;&#x9;&#x9;and m_center.CENTER_ID = m_client_center.CENTER_ID&#xD;&#xA;&#x9;&#x9;and m_client_center.DEL_FLG = '0'&#xD;&#xA;&#x9;#パラメータマスタ&#xD;&#xA;&#x9;left outer join m_param as m_param&#xD;&#xA;&#x9;&#x9;on m_client_center.CLIENT_CENTER_ID = m_param.CLIENT_CENTER_ID&#xD;&#xA;&#x9;&#x9;and m_param.DEL_FLG = '0'&#xD;&#xA;&#x9;# [#3005]最小在庫単位の荷姿を追加 2017.11.27 sampei Add&#xD;&#xA;&#x9;#商品荷姿マスタ&#xD;&#xA;&#x9;left outer join m_product_shape as m_product_shape&#xD;&#xA;&#x9;&#x9;on m_product.PRODUCT_ID = m_product_shape.PRODUCT_ID&#xD;&#xA;&#x9;&#x9;and m_product_shape.DEL_FLG = '0'&#xD;&#xA;&#x9;#荷姿グループ明細マスタ&#xD;&#xA;&#x9;inner join m_shape_grp_dtl as m_shape_grp_dtl&#xD;&#xA;&#x9;&#x9;on m_product_shape.SHAPE_GRP_DTL_ID = m_shape_grp_dtl.SHAPE_GRP_DTL_ID&#xD;&#xA;&#x9;&#x9;and m_shape_grp_dtl.SHAPE_SORT = '1'&#xD;&#xA;&#x9;&#x9;and m_product_shape.DEL_FLG = '0'&#xD;&#xA;&#x9;#荷姿マスタ&#xD;&#xA;&#x9;inner join m_shape as m_shape&#xD;&#xA;&#x9;&#x9;on m_shape_grp_dtl.SHAPE_ID = m_shape.SHAPE_ID&#xD;&#xA;&#x9;&#x9;and m_shape.DEL_FLG = '0'&#xD;&#xA;&#x9;#辞書マスタ&#xD;&#xA;&#x9;left outer join v_dict as v_dict_shape_cd &#xD;&#xA;&#x9;&#x9;on m_shape.SHAPE_DICT_ID = v_dict_shape_cd.DICT_ID&#xD;&#xA;&#x9;&#x9;and v_dict_shape_cd .CULTURE_ID = (select CULTURE_ID from b_user where USER_CD = ?)&#xD;&#xA;&#x9;# [#3005]最小在庫単位の荷姿を追加 2017.11.27 sampei End&#xD;&#xA;&#xD;&#xA;where&#xD;&#xA;&#x9;( &#xD;&#xA;&#x9;&#x9;t_stock.CHARGE_NUM &lt;> 0 &#xD;&#xA;&#x9;&#x9;or t_stock.ALLOC_NUM &lt;> 0 &#xD;&#xA;&#x9;&#x9;or t_stock.MOVE_NUM &lt;> 0 &#xD;&#xA;&#x9;&#x9;or t_stock_report.STORE_NUM_DAY &lt;> 0 &#xD;&#xA;&#x9;&#x9;or t_stock_report.PICKING_NUM_DAY &lt;> 0 &#xD;&#xA;&#x9;&#x9;or t_stock_report.MOVE_PLS_NUM_DAY &lt;> 0 &#xD;&#xA;&#x9;&#x9;or t_stock_report.MOVE_MNS_NUM_DAY &lt;> 0 &#xD;&#xA;&#x9;&#x9;or t_stock_report.ADJ_PLS_NUM_DAY &lt;> 0 &#xD;&#xA;&#x9;&#x9;or t_stock_report.ADJ_MNS_NUM_DAY &lt;> 0 &#xD;&#xA;&#x9;&#x9;or t_stock_report.STORE_NUM_MONTH &lt;> 0 &#xD;&#xA;&#x9;&#x9;or t_stock_report.PICKING_NUM_MONTH &lt;> 0 &#xD;&#xA;&#x9;&#x9;or t_stock_report.MOVE_PLS_NUM_MONTH &lt;> 0 &#xD;&#xA;&#x9;&#x9;or t_stock_report.MOVE_MNS_NUM_MONTH &lt;> 0 &#xD;&#xA;&#x9;&#x9;or t_stock_report.ADJ_PLS_NUM_MONTH &lt;> 0 &#xD;&#xA;&#x9;&#x9;or t_stock_report.ADJ_MNS_NUM_MONTH &lt;> 0&#xD;&#xA;&#x9;) &#xD;&#xA;&#x9;and m_product.DEL_FLG = '0' &#xD;&#xA;&#x9;and t_stock_report.DEL_FLG = '0' &#xD;&#xA;order by&#xD;&#xA;&#x9;m_client.CLIENT_CD asc&#xD;&#xA;&#x9;, m_center.CENTER_CD asc&#xD;&#xA;&#x9;, m_product.PRODUCT_CD asc&#xD;&#xA;&#x9;, m_customer_deposit.CUSTOMER_CD asc&#xD;&#xA;&#x9;, m_stock_type.STOCK_TYPE_CD asc&#xD;&#xA;&#x9;, m_warehouse.WAREHOUSE_CD asc&#xD;&#xA;&#x9;, m_location.LOCATION_CD asc&#xD;&#xA;&#x9;, t_lot.LOT asc&#xD;&#xA;&#x9;, t_lot.LIMIT_DT asc&#xD;&#xA;&#x9;, t_store_no.STORE_LABEL_NO asc&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.wms_AdditionalParams"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="true"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="resultSet"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="true"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS">
+      <elementValue elementRef="PARAMETER_INDEX" value="1"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="context.clientCd"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="2"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="context.clientCd"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="3"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="context.centerCd"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="4"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="context.centerCd"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="5"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="context.userCd"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="6"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="context.userCd"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="7"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="context.userCd"/>
+    </elementParameter>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="tStockReportRow"/>
+    <metadata connector="FLOW" label="t_stock_report" name="tMysqlRow_1">
+      <column comment="荷主CD" key="false" length="30" name="CLIENT_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="荷主名称" key="false" length="60" name="CLIENT_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="センタCD" key="false" length="30" name="CENTER_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="センタ名称" key="false" length="60" name="CENTER_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="商品CD" key="false" length="100" name="PRODUCT_CD" nullable="true" pattern="" precision="-1" sourceType="BIGINT" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="当日入庫数"/>
+      </column>
+      <column comment="商品名称" key="false" length="200" name="PRODUCT_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="商品略称" key="false" length="200" name="PRODUCT_ABBR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="ソースCD" key="false" length="30" name="JAN_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="荷姿CD" key="false" length="30" name="SHAPE_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="荷姿名称" key="false" length="60" name="SHAPE_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="倉庫CD" key="false" length="30" name="WAREHOUSE_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="倉庫名称" key="false" length="60" name="WAREHOUSE_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="ロケーション名称" key="false" length="60" name="LOCATION_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="預託CD" key="false" length="30" name="DEPOSIT_CUSTOMER_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="預託名称" key="false" length="60" name="DEPOSIT_CUSTOMER_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="在庫区分CD" key="false" length="30" name="STOCK_TYPE_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="在庫区分名称" key="false" length="100" name="STOCK_TYPE_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="ロット" key="false" length="30" name="LOT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="期限日" key="false" length="8" name="LIMIT_DT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="入庫ラベルNo." key="false" length="30" name="STORE_LABEL_NO" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="元入庫ラベルNo." key="false" length="30" name="OLD_STORE_LABEL_NO" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="仕入先CD" key="false" length="30" name="SUPPLIER_CUSTOMER_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="仕入先名称" key="false" length="60" name="SUPPLIER_CUSTOMER_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="仕入先略称" key="false" length="60" name="SUPPLIER_CUSTOMER_ABBR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="在庫総数" defaultValue="" key="false" length="20" name="STOCK_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="引当可能総数" defaultValue="" key="false" length="20" name="CHARGE_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="引当済総数" defaultValue="" key="false" length="20" name="ALLOC_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当日入庫数" defaultValue="" key="false" length="20" name="STORE_NUM_DAY" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当日出庫数" defaultValue="" key="false" length="20" name="PICKING_NUM_DAY" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当日移動数＋" defaultValue="" key="false" length="20" name="MOVE_PLS_NUM_DAY" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当日移動数－" defaultValue="" key="false" length="20" name="MOVE_MNS_NUM_DAY" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当日調整数＋" defaultValue="" key="false" length="20" name="ADJ_PLS_NUM_DAY" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当日調整数－" defaultValue="" key="false" length="20" name="ADJ_MNS_NUM_DAY" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="前日残" defaultValue="" key="false" length="20" name="P_CHARGE_NUM_DAY" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当月入庫数" defaultValue="" key="false" length="20" name="STORE_NUM_MONTH" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当月出庫数" defaultValue="" key="false" length="20" name="PICKING_NUM_MONTH" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当月移動数＋" defaultValue="" key="false" length="20" name="MOVE_PLS_NUM_MONTH" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当月移動数－" defaultValue="" key="false" length="20" name="MOVE_MNS_NUM_MONTH" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当月調整数＋" defaultValue="" key="false" length="20" name="ADJ_PLS_NUM_MONTH" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当月調整数－" defaultValue="" key="false" length="20" name="ADJ_MNS_NUM_MONTH" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="前月残" defaultValue="" key="false" length="20" name="P_CHARGE_NUM_MONTH" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="10日残数" defaultValue="" key="false" length="20" name="CHARGE_NUM_10" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="15日残数" defaultValue="" key="false" length="20" name="CHARGE_NUM_15" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="20日残数" key="false" length="20" name="CHARGE_NUM_20" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="末日残数" defaultValue="" key="false" length="20" name="CHARGE_NUM_LAST" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="作業中総数" defaultValue="" key="false" length="20" name="MOVE_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="積送中総数" defaultValue="" key="false" length="20" name="TRANSIT_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="入数" defaultValue="" key="false" length="20" name="UNIT_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="入庫日" key="false" length="8" name="STORE_DT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="最新入庫年月日" key="false" length="8" name="LAST_STORE_DT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="最新出庫年月日" key="false" length="8" name="LAST_PICKING_DT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="登録日時" key="false" length="-1" name="ADD_DT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="resultSet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
+      <additionalProperties key="Comment" value="在庫日報"/>
+    </metadata>
+    <metadata connector="REJECT" label="t_stock_report" name="REJECT">
+      <column comment="荷主CD" key="false" length="30" name="CLIENT_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="荷主名称" key="false" length="60" name="CLIENT_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="センタCD" key="false" length="30" name="CENTER_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="センタ名称" key="false" length="60" name="CENTER_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="商品CD" key="false" length="100" name="PRODUCT_CD" nullable="true" pattern="" precision="-1" sourceType="BIGINT" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="当日入庫数"/>
+      </column>
+      <column comment="商品名称" key="false" length="200" name="PRODUCT_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="商品略称" key="false" length="200" name="PRODUCT_ABBR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="ソースCD" key="false" length="30" name="JAN_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="倉庫CD" key="false" length="30" name="WAREHOUSE_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="倉庫名称" key="false" length="60" name="WAREHOUSE_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="ロケーション名称" key="false" length="60" name="LOCATION_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="預託CD" key="false" length="30" name="DEPOSIT_CUSTOMER_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="預託名称" key="false" length="60" name="DEPOSIT_CUSTOMER_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="在庫区分CD" key="false" length="30" name="STOCK_TYPE_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="在庫区分名称" key="false" length="100" name="STOCK_TYPE_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="ロット" key="false" length="30" name="LOT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="期限日" key="false" length="8" name="LIMIT_DT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="入庫ラベルNo." key="false" length="30" name="STORE_LABEL_NO" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="元入庫ラベルNo." key="false" length="30" name="OLD_STORE_LABEL_NO" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="仕入先CD" key="false" length="30" name="SUPPLIER_CUSTOMER_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="仕入先名称" key="false" length="60" name="SUPPLIER_CUSTOMER_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="仕入先略称" key="false" length="60" name="SUPPLIER_CUSTOMER_ABBR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="在庫ケース数" defaultValue="" key="false" length="20" name="CASE_STOCK_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="在庫ピース数" defaultValue="" key="false" length="20" name="PIECE_STOCK_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="在庫総数" defaultValue="" key="false" length="20" name="STOCK_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="引当可能ケース数" defaultValue="" key="false" length="20" name="CASE_CHARGE_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="引当可能ピース数" defaultValue="" key="false" length="20" name="PIECE_CHARGE_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="引当可能総数" defaultValue="" key="false" length="20" name="CHARGE_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="引当済ケース数" defaultValue="" key="false" length="20" name="CASE_ALLOC_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="引当済ピース数" defaultValue="" key="false" length="20" name="PIECE_ALLOC_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="引当済総数" defaultValue="" key="false" length="20" name="ALLOC_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="当日入庫数" defaultValue="" key="false" length="20" name="STORE_NUM_DAY" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="当日出庫数" defaultValue="" key="false" length="20" name="PICKING_NUM_DAY" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="当日移動数＋" defaultValue="" key="false" length="20" name="MOVE_PLS_NUM_DAY" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="当日移動数－" defaultValue="" key="false" length="20" name="MOVE_MNS_NUM_DAY" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="当日調整数＋" defaultValue="" key="false" length="20" name="ADJ_PLS_NUM_DAY" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="当日調整数－" defaultValue="" key="false" length="20" name="ADJ_MNS_NUM_DAY" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="前日残" defaultValue="" key="false" length="20" name="P_CHARGE_NUM_DAY" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="当月入庫数" defaultValue="" key="false" length="20" name="STORE_NUM_MONTH" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="当月出庫数" defaultValue="" key="false" length="20" name="PICKING_NUM_MONTH" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="当月移動数＋" defaultValue="" key="false" length="20" name="MOVE_PLS_NUM_MONTH" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="当月移動数－" defaultValue="" key="false" length="20" name="MOVE_MNS_NUM_MONTH" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="当月調整数＋" defaultValue="" key="false" length="20" name="ADJ_PLS_NUM_MONTH" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="当月調整数－" defaultValue="" key="false" length="20" name="ADJ_MNS_NUM_MONTH" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="前月残" defaultValue="" key="false" length="20" name="P_CHARGE_NUM_MONTH" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="10日残数" defaultValue="" key="false" length="20" name="CHARGE_NUM_10" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="15日残数" defaultValue="" key="false" length="20" name="CHARGE_NUM_15" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="20日残数" key="false" length="20" name="CHARGE_NUM_20" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="末日残数" defaultValue="" key="false" length="20" name="CHARGE_NUM_LAST" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="作業中ケース数" defaultValue="" key="false" length="20" name="CASE_MOVE_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="作業中ピース数" defaultValue="" key="false" length="20" name="PIECE_MOVE_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="作業中総数" defaultValue="" key="false" length="20" name="MOVE_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="積送中ケース数" defaultValue="" key="false" length="20" name="CASE_TRANSIT_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="積送中ピース数" defaultValue="" key="false" length="20" name="PEICE_TRANSIT_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="積送中総数" defaultValue="" key="false" length="20" name="TRANSIT_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="入数" defaultValue="" key="false" length="20" name="UNIT_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="20" usefulColumn="true"/>
+      <column comment="入庫日" key="false" length="8" name="STORE_DT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="最新入庫年月日" key="false" length="8" name="LAST_STORE_DT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="最新出庫年月日" key="false" length="8" name="LAST_PICKING_DT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="登録日時" key="false" length="-1" name="ADD_DT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="resultSet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value="在庫日報"/>
+    </metadata>
+  </node>
+  <node componentName="tParseRecordSet" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tParseRecordSet_1" show="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="RECORDSET_FIELD" value="resultSet"/>
+    <elementParameter field="TABLE" name="ATTRIBUTE_TABLE">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CLIENT_CD"/>
+      <elementValue elementRef="VALUE" value="&quot;CLIENT_CD&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CLIENT_NM"/>
+      <elementValue elementRef="VALUE" value="&quot;CLIENT_NM&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CENTER_CD"/>
+      <elementValue elementRef="VALUE" value="&quot;CENTER_CD&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CENTER_NM"/>
+      <elementValue elementRef="VALUE" value="&quot;CENTER_NM&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT_CD"/>
+      <elementValue elementRef="VALUE" value="&quot;PRODUCT_CD&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT_NM"/>
+      <elementValue elementRef="VALUE" value="&quot;PRODUCT_NM&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT_ABBR"/>
+      <elementValue elementRef="VALUE" value="&quot;PRODUCT_ABBR&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHAPE_CD"/>
+      <elementValue elementRef="VALUE" value="&quot;SHAPE_CD&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHAPE_NM"/>
+      <elementValue elementRef="VALUE" value="&quot;SHAPE_NM&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JAN_CD"/>
+      <elementValue elementRef="VALUE" value="&quot;JAN_CD&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WAREHOUSE_CD"/>
+      <elementValue elementRef="VALUE" value="&quot;WAREHOUSE_CD&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WAREHOUSE_NM"/>
+      <elementValue elementRef="VALUE" value="&quot;WAREHOUSE_NM&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOCATION_NM"/>
+      <elementValue elementRef="VALUE" value="&quot;LOCATION_NM&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEPOSIT_CUSTOMER_CD"/>
+      <elementValue elementRef="VALUE" value="&quot;DEPOSIT_CUSTOMER_CD&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEPOSIT_CUSTOMER_NM"/>
+      <elementValue elementRef="VALUE" value="&quot;DEPOSIT_CUSTOMER_NM&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STOCK_TYPE_CD"/>
+      <elementValue elementRef="VALUE" value="&quot;STOCK_TYPE_CD&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STOCK_TYPE_NM"/>
+      <elementValue elementRef="VALUE" value="&quot;STOCK_TYPE_NM&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOT"/>
+      <elementValue elementRef="VALUE" value="&quot;LOT&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIMIT_DT"/>
+      <elementValue elementRef="VALUE" value="&quot;LIMIT_DT&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STORE_LABEL_NO"/>
+      <elementValue elementRef="VALUE" value="&quot;STORE_LABEL_NO&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OLD_STORE_LABEL_NO"/>
+      <elementValue elementRef="VALUE" value="&quot;OLD_STORE_LABEL_NO&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUPPLIER_CUSTOMER_CD"/>
+      <elementValue elementRef="VALUE" value="&quot;SUPPLIER_CUSTOMER_CD&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUPPLIER_CUSTOMER_NM"/>
+      <elementValue elementRef="VALUE" value="&quot;SUPPLIER_CUSTOMER_NM&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUPPLIER_CUSTOMER_ABBR"/>
+      <elementValue elementRef="VALUE" value="&quot;SUPPLIER_CUSTOMER_ABBR&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STOCK_NUM"/>
+      <elementValue elementRef="VALUE" value="&quot;STOCK_NUM&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHARGE_NUM"/>
+      <elementValue elementRef="VALUE" value="&quot;CHARGE_NUM&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ALLOC_NUM"/>
+      <elementValue elementRef="VALUE" value="&quot;ALLOC_NUM&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STORE_NUM_DAY"/>
+      <elementValue elementRef="VALUE" value="&quot;STORE_NUM_DAY&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PICKING_NUM_DAY"/>
+      <elementValue elementRef="VALUE" value="&quot;PICKING_NUM_DAY&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MOVE_PLS_NUM_DAY"/>
+      <elementValue elementRef="VALUE" value="&quot;MOVE_PLS_NUM_DAY&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MOVE_MNS_NUM_DAY"/>
+      <elementValue elementRef="VALUE" value="&quot;MOVE_MNS_NUM_DAY&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ADJ_PLS_NUM_DAY"/>
+      <elementValue elementRef="VALUE" value="&quot;ADJ_PLS_NUM_DAY&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ADJ_MNS_NUM_DAY"/>
+      <elementValue elementRef="VALUE" value="&quot;ADJ_MNS_NUM_DAY&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="P_CHARGE_NUM_DAY"/>
+      <elementValue elementRef="VALUE" value="&quot;P_CHARGE_NUM_DAY&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STORE_NUM_MONTH"/>
+      <elementValue elementRef="VALUE" value="&quot;STORE_NUM_MONTH&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PICKING_NUM_MONTH"/>
+      <elementValue elementRef="VALUE" value="&quot;PICKING_NUM_MONTH&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MOVE_PLS_NUM_MONTH"/>
+      <elementValue elementRef="VALUE" value="&quot;MOVE_PLS_NUM_MONTH&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MOVE_MNS_NUM_MONTH"/>
+      <elementValue elementRef="VALUE" value="&quot;MOVE_MNS_NUM_MONTH&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ADJ_PLS_NUM_MONTH"/>
+      <elementValue elementRef="VALUE" value="&quot;ADJ_PLS_NUM_MONTH&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ADJ_MNS_NUM_MONTH"/>
+      <elementValue elementRef="VALUE" value="&quot;ADJ_MNS_NUM_MONTH&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="P_CHARGE_NUM_MONTH"/>
+      <elementValue elementRef="VALUE" value="&quot;P_CHARGE_NUM_MONTH&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHARGE_NUM_10"/>
+      <elementValue elementRef="VALUE" value="&quot;CHARGE_NUM_10&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHARGE_NUM_15"/>
+      <elementValue elementRef="VALUE" value="&quot;CHARGE_NUM_15&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHARGE_NUM_20"/>
+      <elementValue elementRef="VALUE" value="&quot;CHARGE_NUM_20&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHARGE_NUM_LAST"/>
+      <elementValue elementRef="VALUE" value="&quot;CHARGE_NUM_LAST&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MOVE_NUM"/>
+      <elementValue elementRef="VALUE" value="&quot;MOVE_NUM&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRANSIT_NUM"/>
+      <elementValue elementRef="VALUE" value="&quot;TRANSIT_NUM&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STORE_DT"/>
+      <elementValue elementRef="VALUE" value="&quot;STORE_DT&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LAST_STORE_DT"/>
+      <elementValue elementRef="VALUE" value="&quot;LAST_STORE_DT&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LAST_PICKING_DT"/>
+      <elementValue elementRef="VALUE" value="&quot;LAST_PICKING_DT&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ADD_DT"/>
+      <elementValue elementRef="VALUE" value="&quot;ADD_DT&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="resultSet"/>
+      <elementValue elementRef="VALUE" value=""/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="tRarseRecordSetRow"/>
+    <metadata connector="FLOW" label="t_stock_report" name="tParseRecordSet_1">
+      <column comment="荷主CD" key="false" length="30" name="CLIENT_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="荷主名称" key="false" length="60" name="CLIENT_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="センタCD" key="false" length="30" name="CENTER_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="センタ名称" key="false" length="60" name="CENTER_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="商品CD" key="false" length="100" name="PRODUCT_CD" nullable="true" pattern="" precision="-1" sourceType="BIGINT" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="当日入庫数"/>
+      </column>
+      <column comment="商品名称" key="false" length="200" name="PRODUCT_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="商品略称" key="false" length="200" name="PRODUCT_ABBR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="荷姿CD" key="false" length="30" name="SHAPE_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="荷姿名称" key="false" length="60" name="SHAPE_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="ソースCD" key="false" length="30" name="JAN_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="倉庫CD" key="false" length="30" name="WAREHOUSE_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="倉庫名称" key="false" length="60" name="WAREHOUSE_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="ロケーション名称" key="false" length="60" name="LOCATION_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="預託CD" key="false" length="30" name="DEPOSIT_CUSTOMER_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="預託名称" key="false" length="60" name="DEPOSIT_CUSTOMER_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="在庫区分CD" key="false" length="30" name="STOCK_TYPE_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="在庫区分名称" key="false" length="100" name="STOCK_TYPE_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="ロット" key="false" length="30" name="LOT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="期限日" key="false" length="8" name="LIMIT_DT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="入庫ラベルNo." key="false" length="30" name="STORE_LABEL_NO" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="元入庫ラベルNo." key="false" length="30" name="OLD_STORE_LABEL_NO" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="仕入先CD" key="false" length="30" name="SUPPLIER_CUSTOMER_CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="仕入先名称" key="false" length="60" name="SUPPLIER_CUSTOMER_NM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="仕入先略称" key="false" length="60" name="SUPPLIER_CUSTOMER_ABBR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="在庫総数" defaultValue="" key="false" length="20" name="STOCK_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="引当可能総数" defaultValue="" key="false" length="20" name="CHARGE_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="引当済総数" defaultValue="" key="false" length="20" name="ALLOC_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当日入庫数" defaultValue="" key="false" length="20" name="STORE_NUM_DAY" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当日出庫数" defaultValue="" key="false" length="20" name="PICKING_NUM_DAY" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当日移動数＋" defaultValue="" key="false" length="20" name="MOVE_PLS_NUM_DAY" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当日移動数－" defaultValue="" key="false" length="20" name="MOVE_MNS_NUM_DAY" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当日調整数＋" defaultValue="" key="false" length="20" name="ADJ_PLS_NUM_DAY" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当日調整数－" defaultValue="" key="false" length="20" name="ADJ_MNS_NUM_DAY" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="前日残" defaultValue="" key="false" length="20" name="P_CHARGE_NUM_DAY" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当月入庫数" defaultValue="" key="false" length="20" name="STORE_NUM_MONTH" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当月出庫数" defaultValue="" key="false" length="20" name="PICKING_NUM_MONTH" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当月移動数＋" defaultValue="" key="false" length="20" name="MOVE_PLS_NUM_MONTH" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当月移動数－" defaultValue="" key="false" length="20" name="MOVE_MNS_NUM_MONTH" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当月調整数＋" defaultValue="" key="false" length="20" name="ADJ_PLS_NUM_MONTH" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="当月調整数－" defaultValue="" key="false" length="20" name="ADJ_MNS_NUM_MONTH" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="前月残" defaultValue="" key="false" length="20" name="P_CHARGE_NUM_MONTH" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="10日残数" defaultValue="" key="false" length="20" name="CHARGE_NUM_10" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="15日残数" defaultValue="" key="false" length="20" name="CHARGE_NUM_15" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="20日残数" key="false" length="20" name="CHARGE_NUM_20" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="末日残数" defaultValue="" key="false" length="20" name="CHARGE_NUM_LAST" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="作業中総数" defaultValue="" key="false" length="20" name="MOVE_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="積送中総数" defaultValue="" key="false" length="20" name="TRANSIT_NUM" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="20" usefulColumn="true"/>
+      <column comment="入庫日" key="false" length="8" name="STORE_DT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="最新入庫年月日" key="false" length="8" name="LAST_STORE_DT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="最新出庫年月日" key="false" length="8" name="LAST_PICKING_DT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="登録日時" key="false" length="-1" name="ADD_DT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="resultSet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
+      <additionalProperties key="Comment" value="在庫日報"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_LZ9HkDuCEee5B7uRwj_1mw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="outputStockList">
+      <column comment="" key="false" length="-1" name="荷主CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="荷主名称" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="センタCD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="センタ名称" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="商品CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="商品名称" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="商品略称" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="荷姿CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="荷姿名称" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ソースCD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="倉庫CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="倉庫名称" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ロケーション名称" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="預託CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="預託名称" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="在庫区分CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="在庫区分名称" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ロット" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="期限日" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="入庫ラベルNo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="元入庫ラベルNo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="仕入先CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="仕入先名称" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="仕入先略称" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="在庫総数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="引当可能総数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="引当済総数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当日入庫数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当日出庫数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当日移動数_増加分" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当日移動数_減少分" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当日調整数_増加分" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当日調整数_減少分" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="前日残" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当月入庫数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当月出庫数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当月移動数_増加分" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当月移動数_減少分" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当月調整数_増加分" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当月調整数_減少分" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="前月残" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="_10日残数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="_15日残数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="_20日残数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="末日残数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="作業中総数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="積送中総数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="入庫日" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="最新入庫年月日" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="最新出庫年月日" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="登録日時" nullable="true" pattern="" precision="-1" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="outputStockList">
+        <mapperTableEntries name="荷主CD" expression="tRarseRecordSetRow1.CLIENT_CD " type="id_String" nullable="true"/>
+        <mapperTableEntries name="荷主名称" expression="tRarseRecordSetRow1.CLIENT_NM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="センタCD" expression="tRarseRecordSetRow1.CENTER_CD " type="id_String" nullable="true"/>
+        <mapperTableEntries name="センタ名称" expression="tRarseRecordSetRow1.CENTER_NM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="商品CD" expression="tRarseRecordSetRow1.PRODUCT_CD " type="id_String" nullable="true"/>
+        <mapperTableEntries name="商品名称" expression="tRarseRecordSetRow1.PRODUCT_NM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="商品略称" expression="tRarseRecordSetRow1.PRODUCT_ABBR " type="id_String" nullable="true"/>
+        <mapperTableEntries name="荷姿CD" expression="tRarseRecordSetRow1.SHAPE_CD " type="id_String" nullable="true"/>
+        <mapperTableEntries name="荷姿名称" expression="tRarseRecordSetRow1.SHAPE_NM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ソースCD" expression="tRarseRecordSetRow1.JAN_CD " type="id_String" nullable="true"/>
+        <mapperTableEntries name="倉庫CD" expression="tRarseRecordSetRow1.WAREHOUSE_CD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="倉庫名称" expression="tRarseRecordSetRow1.WAREHOUSE_NM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ロケーション名称" expression="tRarseRecordSetRow1.LOCATION_NM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="預託CD" expression="tRarseRecordSetRow1.DEPOSIT_CUSTOMER_CD " type="id_String" nullable="true"/>
+        <mapperTableEntries name="預託名称" expression="tRarseRecordSetRow1.DEPOSIT_CUSTOMER_NM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="在庫区分CD" expression="tRarseRecordSetRow1.STOCK_TYPE_CD " type="id_String" nullable="true"/>
+        <mapperTableEntries name="在庫区分名称" expression="tRarseRecordSetRow1.STOCK_TYPE_NM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ロット" expression="tRarseRecordSetRow1.LOT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="期限日" expression="tRarseRecordSetRow1.LIMIT_DT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="入庫ラベルNo" expression="tRarseRecordSetRow1.STORE_LABEL_NO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="元入庫ラベルNo" expression="tRarseRecordSetRow1.OLD_STORE_LABEL_NO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="仕入先CD" expression="tRarseRecordSetRow1.SUPPLIER_CUSTOMER_CD " type="id_String" nullable="true"/>
+        <mapperTableEntries name="仕入先名称" expression="tRarseRecordSetRow1.SUPPLIER_CUSTOMER_NM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="仕入先略称" expression="tRarseRecordSetRow1.SUPPLIER_CUSTOMER_ABBR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="在庫総数" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.STOCK_NUM,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="引当可能総数" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.CHARGE_NUM,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="引当済総数" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.ALLOC_NUM,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="当日入庫数" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.STORE_NUM_DAY,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="当日出庫数" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.PICKING_NUM_DAY,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="当日移動数_増加分" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.MOVE_PLS_NUM_DAY,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="当日移動数_減少分" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.MOVE_MNS_NUM_DAY,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="当日調整数_増加分" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.ADJ_PLS_NUM_DAY,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="当日調整数_減少分" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.ADJ_MNS_NUM_DAY,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="前日残" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.P_CHARGE_NUM_DAY,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="当月入庫数" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.STORE_NUM_MONTH,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="当月出庫数" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.PICKING_NUM_MONTH,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="当月移動数_増加分" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.MOVE_PLS_NUM_MONTH,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="当月移動数_減少分" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.MOVE_MNS_NUM_MONTH,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="当月調整数_増加分" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.ADJ_PLS_NUM_MONTH,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="当月調整数_減少分" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.ADJ_MNS_NUM_MONTH,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="前月残" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.P_CHARGE_NUM_MONTH,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="_10日残数" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.CHARGE_NUM_10,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="_15日残数" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.CHARGE_NUM_15,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="_20日残数" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.CHARGE_NUM_20,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="末日残数" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.CHARGE_NUM_LAST,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="作業中総数" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.MOVE_NUM,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="積送中総数" expression="BigDecimalRoutines.stripTrailingZeros(BigDecimalRoutines.roundDown(tRarseRecordSetRow1.TRANSIT_NUM,context.roundDownNum))" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="入庫日" expression="tRarseRecordSetRow1.STORE_DT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="最新入庫年月日" expression="tRarseRecordSetRow1.LAST_STORE_DT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="最新出庫年月日" expression="tRarseRecordSetRow1.LAST_PICKING_DT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="登録日時" expression="tRarseRecordSetRow1.ADD_DT " type="id_Date" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="tRarseRecordSetRow1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="CLIENT_CD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CLIENT_NM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CENTER_CD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CENTER_NM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRODUCT_CD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRODUCT_NM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRODUCT_ABBR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SHAPE_CD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SHAPE_NM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="JAN_CD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="WAREHOUSE_CD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="WAREHOUSE_NM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LOCATION_NM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DEPOSIT_CUSTOMER_CD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DEPOSIT_CUSTOMER_NM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="STOCK_TYPE_CD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="STOCK_TYPE_NM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LOT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LIMIT_DT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="STORE_LABEL_NO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OLD_STORE_LABEL_NO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SUPPLIER_CUSTOMER_CD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SUPPLIER_CUSTOMER_NM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SUPPLIER_CUSTOMER_ABBR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="STOCK_NUM" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="CHARGE_NUM" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ALLOC_NUM" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="STORE_NUM_DAY" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="PICKING_NUM_DAY" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MOVE_PLS_NUM_DAY" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MOVE_MNS_NUM_DAY" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ADJ_PLS_NUM_DAY" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ADJ_MNS_NUM_DAY" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="P_CHARGE_NUM_DAY" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="STORE_NUM_MONTH" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="PICKING_NUM_MONTH" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MOVE_PLS_NUM_MONTH" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MOVE_MNS_NUM_MONTH" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ADJ_PLS_NUM_MONTH" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ADJ_MNS_NUM_MONTH" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="P_CHARGE_NUM_MONTH" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="CHARGE_NUM_10" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="CHARGE_NUM_15" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="CHARGE_NUM_20" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="CHARGE_NUM_LAST" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MOVE_NUM" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="TRANSIT_NUM" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="STORE_DT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LAST_STORE_DT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LAST_PICKING_DT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ADD_DT" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="resultSet" type="id_Object" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.outputPath"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\r\n&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\r\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;windows-31j&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="在庫問合せ出力ファイル"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="-1" name="荷主CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="荷主名称" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="センタCD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="センタ名称" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="商品CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="商品名称" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="商品略称" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="荷姿CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="荷姿名称" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ソースCD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="倉庫CD" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="倉庫名称" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ロケーション名称" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="預託CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="預託名称" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="在庫区分CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="在庫区分名称" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ロット" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="期限日" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="入庫ラベルNo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="元入庫ラベルNo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="仕入先CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="仕入先名称" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="仕入先略称" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="在庫総数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="引当可能総数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="引当済総数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当日入庫数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当日出庫数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当日移動数_増加分" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当日移動数_減少分" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当日調整数_増加分" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当日調整数_減少分" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="前日残" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当月入庫数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当月出庫数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当月移動数_増加分" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当月移動数_減少分" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当月調整数_増加分" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="当月調整数_減少分" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="前月残" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="_10日残数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="_15日残数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="_20日残数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="末日残数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="作業中総数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="積送中総数" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="入庫日" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="最新入庫年月日" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="最新出庫年月日" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="登録日時" nullable="true" pattern="" precision="-1" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="tStockReportRow1" lineStyle="0" metaname="tMysqlRow_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlRow_1" target="tParseRecordSet_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="ALLOC_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADJ_MNS_NUM_MONTH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PICKING_NUM_DAY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DEPOSIT_CUSTOMER_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADJ_MNS_NUM_DAY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADJ_PLS_NUM_DAY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PIECE_CHARGE_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MOVE_MNS_NUM_DAY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHARGE_NUM_LAST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PICKING_NUM_MONTH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SUPPLIER_CUSTOMER_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CASE_MOVE_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STOCK_TYPE_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PEICE_TRANSIT_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LIMIT_DT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="OLD_STORE_LABEL_NO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MOVE_MNS_NUM_MONTH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PIECE_STOCK_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADJ_PLS_NUM_MONTH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LOT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CASE_CHARGE_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LOCATION_NM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LAST_PICKING_DT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MOVE_PLS_NUM_DAY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STOCK_TYPE_NM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SUPPLIER_CUSTOMER_NM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CASE_STOCK_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MOVE_PLS_NUM_MONTH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHARGE_NUM_20"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STORE_LABEL_NO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADD_DT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRODUCT_NM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PIECE_ALLOC_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STORE_NUM_MONTH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STORE_DT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PIECE_MOVE_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DEPOSIT_CUSTOMER_NM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CASE_TRANSIT_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TRANSIT_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="JAN_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHARGE_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="P_CHARGE_NUM_DAY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="P_CHARGE_NUM_MONTH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="WAREHOUSE_NM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STOCK_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STORE_NUM_DAY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CASE_ALLOC_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHARGE_NUM_10"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHARGE_NUM_15"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="UNIT_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SUPPLIER_CUSTOMER_ABBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LAST_STORE_DT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRODUCT_ABBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MOVE_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="WAREHOUSE_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CENTER_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CENTER_NM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CLIENT_NM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CLIENT_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRODUCT_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="resultSet"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SHAPE_NM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SHAPE_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tStockReportRow1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="tRarseRecordSetRow1" lineStyle="0" metaname="tParseRecordSet_1" offsetLabelX="0" offsetLabelY="0" source="tParseRecordSet_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="SHAPE_NM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SHAPE_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CLIENT_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CLIENT_NM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CENTER_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CENTER_NM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRODUCT_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRODUCT_NM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRODUCT_ABBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="JAN_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="WAREHOUSE_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="WAREHOUSE_NM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LOCATION_NM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DEPOSIT_CUSTOMER_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DEPOSIT_CUSTOMER_NM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STOCK_TYPE_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STOCK_TYPE_NM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LOT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LIMIT_DT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STORE_LABEL_NO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="OLD_STORE_LABEL_NO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SUPPLIER_CUSTOMER_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SUPPLIER_CUSTOMER_NM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SUPPLIER_CUSTOMER_ABBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STOCK_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHARGE_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ALLOC_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STORE_NUM_DAY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PICKING_NUM_DAY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MOVE_PLS_NUM_DAY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MOVE_MNS_NUM_DAY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADJ_PLS_NUM_DAY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADJ_MNS_NUM_DAY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="P_CHARGE_NUM_DAY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STORE_NUM_MONTH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PICKING_NUM_MONTH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MOVE_PLS_NUM_MONTH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MOVE_MNS_NUM_MONTH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADJ_PLS_NUM_MONTH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADJ_MNS_NUM_MONTH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="P_CHARGE_NUM_MONTH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHARGE_NUM_10"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHARGE_NUM_15"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHARGE_NUM_20"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHARGE_NUM_LAST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MOVE_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TRANSIT_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="UNIT_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STORE_DT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LAST_STORE_DT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LAST_PICKING_DT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADD_DT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="resultSet"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRarseRecordSetRow1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="outputStockList" lineStyle="0" metaname="outputStockList" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="センタCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="荷主名称"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="荷主CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="センタ名称"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="入庫ラベルNo"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="商品CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="商品名称"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="商品略称"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ソースCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="倉庫CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="倉庫名称"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ロケーション名称"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="預託CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="預託名称"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="在庫区分CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="在庫区分名称"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ロット"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="期限日"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="元入庫ラベルNo"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="仕入先CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="仕入先名称"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="仕入先略称"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="在庫総数"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="引当可能総数"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="引当済総数"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="当日入庫数"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="当日出庫数"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="当日移動数_増加分"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="当日移動数_減少分"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="当日調整数_増加分"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="当日調整数_減少分"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="前日残"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="当月入庫数"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="当月出庫数"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="当月移動数_増加分"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="当月移動数_減少分"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="当月調整数_増加分"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="当月調整数_減少分"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="前月残"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_10日残数"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_15日残数"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_20日残数"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="末日残数"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="作業中総数"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="積送中総数"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="入数"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="入庫日"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="最新入庫年月日"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="最新出庫年月日"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="登録日時"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="荷姿名称"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="荷姿CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="outputStockList" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlRow_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

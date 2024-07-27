@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_Lihhu945EeeCLZErKz_TKQ" id="_LiVUcN45EeeCLZErKz_TKQ" label="WAS連携作業実績ファイル" purpose="WAS連携作業実績ファイル" description="WAS連携作業実績ファイル" version="0.1" statusCode="" item="_Lihhvd45EeeCLZErKz_TKQ" displayName="WAS連携作業実績ファイル">
+    <author href="../../talend.project#_w3NaQZaREearrO37QzOhcQ"/>
+    <additionalProperties xmi:id="_QV4kMBcsEeqLaK2GOeLj_g" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_QV4kMRcsEeqLaK2GOeLj_g" key="created_product_version" value="6.2.0.20160510_1709"/>
+    <additionalProperties xmi:id="_QV4kMhcsEeqLaK2GOeLj_g" key="created_date" value="2017-12-11T15:04:42.683+0900"/>
+    <additionalProperties xmi:id="_QV4kMxcsEeqLaK2GOeLj_g" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_QV4kNBcsEeqLaK2GOeLj_g" key="modified_product_version" value="6.2.0.20160510_1709"/>
+    <additionalProperties xmi:id="_QV4kNRcsEeqLaK2GOeLj_g" key="modified_date" value="2017-12-11T15:07:31.060+0900"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_LihhvN45EeeCLZErKz_TKQ" path=""/>
+  <TalendProperties:DelimitedFileConnectionItem xmi:id="_Lihhvd45EeeCLZErKz_TKQ" property="_Lihhu945EeeCLZErKz_TKQ" state="_LihhvN45EeeCLZErKz_TKQ">
+    <connection href="WAS連携作業実績ファイル_0.1.item#_LihhsN45EeeCLZErKz_TKQ"/>
+  </TalendProperties:DelimitedFileConnectionItem>
+</xmi:XMI>

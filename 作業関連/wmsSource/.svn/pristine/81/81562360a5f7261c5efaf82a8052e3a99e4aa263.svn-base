@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_Y3SEDzuMEee5ZNleOnaW3Q" id="_Y3RcwDuMEee5ZNleOnaW3Q" label="在庫問合せ出力ファイル" purpose="在庫問合せ出力処理で使用" description="文字コード:Shift_JIS" version="0.1" statusCode="" item="_Y3SEETuMEee5ZNleOnaW3Q" displayName="在庫問合せ出力ファイル">
+    <author href="../../talend.project#_w3NaQZaREearrO37QzOhcQ"/>
+    <additionalProperties xmi:id="_QrhdABcsEeqLaK2GOeLj_g" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_QrhdARcsEeqLaK2GOeLj_g" key="created_product_version" value="6.2.0.20160510_1709"/>
+    <additionalProperties xmi:id="_QrhdAhcsEeqLaK2GOeLj_g" key="created_date" value="2017-05-18T14:39:40.812+0900"/>
+    <additionalProperties xmi:id="_QrhdAxcsEeqLaK2GOeLj_g" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_QrhdBBcsEeqLaK2GOeLj_g" key="modified_product_version" value="6.2.0.20160510_1709"/>
+    <additionalProperties xmi:id="_QrhdBRcsEeqLaK2GOeLj_g" key="modified_date" value="2017-11-28T11:58:20.860+0900"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_Y3SEEDuMEee5ZNleOnaW3Q" path=""/>
+  <TalendProperties:DelimitedFileConnectionItem xmi:id="_Y3SEETuMEee5ZNleOnaW3Q" property="_Y3SEDzuMEee5ZNleOnaW3Q" state="_Y3SEEDuMEee5ZNleOnaW3Q">
+    <connection href="在庫問合せ出力ファイル_0.1.item#_Y3SD0DuMEee5ZNleOnaW3Q"/>
+  </TalendProperties:DelimitedFileConnectionItem>
+</xmi:XMI>

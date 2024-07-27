@@ -1,0 +1,22 @@
+画面マスタ	画面マスタ	画面マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ拡張基本	列マスタ拡張基本
+SCREEN_CD	DICT_NM	SYSTEM_TYPE	ITEM_CD	DICT_NM	ITEM_TYPE	VISIBLE	EDITABLE	TEXT_ALIGN	NECESSARY	DISPLAY_REQUIRED	COL_CD	DICT_NM	COL_ORDER	COL_TYPE	VISIBLE	EDITABLE	TEXT_ALIGN	NECESSARY	COL_WIDTH	IN_COL_INDEX	IN_COL_DEFAULT_VALUE	COL_ORDER	COL_WIDTH
+BoxMaster	荷材マスタメンテナンス	wms	boxCd	荷材CD		1	1		0	1													
+BoxMaster	荷材マスタメンテナンス	wms	boxNm	荷材名称		1	1		0	1													
+BoxMaster	荷材マスタメンテナンス	wms	search	検索		1	1		0	1													
+BoxMaster	荷材マスタメンテナンス	wms	excelOutput	Excel出力		1	1		0	1													
+BoxMaster	荷材マスタメンテナンス	wms	list	荷材マスタメンテナンスグリッド	grid	1	1		0	1	mcenter.centerCd	センタ	1	dropdown	1	1		1	200			1	
+BoxMaster	荷材マスタメンテナンス	wms	list	荷材マスタメンテナンスグリッド	grid	1	1		0	1	boxCd	荷材CD	2	text	1	1		1	160			2	160
+BoxMaster	荷材マスタメンテナンス	wms	list	荷材マスタメンテナンスグリッド	grid	1	1		0	1	boxNm	荷材名称	3	text	1	1		1	300			3	400
+BoxMaster	荷材マスタメンテナンス	wms	list	荷材マスタメンテナンスグリッド	grid	1	1		0	1	length	縦(mm)	4	number	1	1	right	1	170			4	170
+BoxMaster	荷材マスタメンテナンス	wms	list	荷材マスタメンテナンスグリッド	grid	1	1		0	1	width	横(mm)	5	number	1	1	right	1	170			5	170
+BoxMaster	荷材マスタメンテナンス	wms	list	荷材マスタメンテナンスグリッド	grid	1	1		0	1	height	高さ(mm)	6	number	1	1	right	1	170			6	170
+BoxMaster	荷材マスタメンテナンス	wms	list	荷材マスタメンテナンスグリッド	grid	1	1		0	1	volume	容積(mm3)	7	number	1	1	right	1	170			7	170
+BoxMaster	荷材マスタメンテナンス	wms	list	荷材マスタメンテナンスグリッド	grid	1	1		0	1	volumeRate	容積率(%)	8	number	1	1	right	1	170			8	170
+BoxMaster	荷材マスタメンテナンス	wms	list	荷材マスタメンテナンスグリッド	grid	1	1		0	1	permitVolume	許容容積(mm3)	9	number	1	1	right	1	170			9	220
+BoxMaster	荷材マスタメンテナンス	wms	list	荷材マスタメンテナンスグリッド	grid	1	1		0	1	permitWeight	許容重量(g)	10	number	1	1	right	1	170			10	170
+BoxMaster	荷材マスタメンテナンス	wms	list	荷材マスタメンテナンスグリッド	grid	1	1		0	1	delFlg	削除	11	dropdown	1	1		1	110			11	110
+BoxMaster	荷材マスタメンテナンス	wms	centerCd	センタ		1	1		1	1													
+BoxMaster	荷材マスタメンテナンス	wms	delFlg	削除		1	1		0	1													
+BoxMaster	荷材マスタメンテナンス	wms	addRow	行追加		1	1		0	1													
+BoxMaster	荷材マスタメンテナンス	wms	removeRow	行削除		1	1		0	1													
+BoxMaster	荷材マスタメンテナンス	wms	register	登録		1	1		0	1													

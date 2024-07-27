@@ -1,0 +1,13 @@
+SCREEN_CD	DICT_NM	ITEM_CD	DICT_NM	COL_CD	DICT_NM	ROLE_CD	DICT_NM	VISIBLE	EDITABLE	ROLE_CD	DICT_NM	VISIBLE	EDITABLE
+ClientMaster	荷主マスタメンテナンス	clientList	荷主マスタメンテナンスグリッド	clientCd	荷主CD	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限		0
+ClientMaster	荷主マスタメンテナンス	clientList	荷主マスタメンテナンスグリッド	clientNm	荷主名称	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限		0
+ClientMaster	荷主マスタメンテナンス	clientList	荷主マスタメンテナンスグリッド	clientAbbr	荷主略称	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限		0
+ClientMaster	荷主マスタメンテナンス	clientList	荷主マスタメンテナンスグリッド	delFlg	削除	NoClientCenterEdit	荷主センタ編集不可	0		Workers	管理作業者権限		0
+CenterMasterList	センタマスタメンテナンス(一覧)	centerMasterList	センタマスタ一覧グリッド	delFlg	削除フラグCD	NoClientCenterEdit	荷主センタ編集不可	0	0				
+CenterMasterList	センタマスタメンテナンス(一覧)	centerMasterList	センタマスタ一覧グリッド	bclassDtlByDelFlg.vdict.dictNm	削除フラグ名称	NoClientCenterEdit	荷主センタ編集不可	0	0				
+WarehouseMaster	倉庫マスタメンテナンス	warehouseList	倉庫マスタメンテナンスグリッド	mcenter.centerCd	センタ	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限		0
+WarehouseMaster	倉庫マスタメンテナンス	warehouseList	倉庫マスタメンテナンスグリッド	warehouseCd	倉庫CD	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限		0
+WarehouseMaster	倉庫マスタメンテナンス	warehouseList	倉庫マスタメンテナンスグリッド	warehouseNm	倉庫名称	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限		0
+WarehouseMaster	倉庫マスタメンテナンス	warehouseList	倉庫マスタメンテナンスグリッド	warehouseAbbr	倉庫略称	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限		0
+WarehouseMaster	倉庫マスタメンテナンス	warehouseList	倉庫マスタメンテナンスグリッド	foreignFlg	外貨フラグ	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限		0
+WarehouseMaster	倉庫マスタメンテナンス	warehouseList	倉庫マスタメンテナンスグリッド	delFlg	削除	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限		0

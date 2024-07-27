@@ -1,0 +1,64 @@
+<div ng-controller="LocationMaster" owd-screen="LocationMaster">
+	<form id="searchform" name="searchform" novalidate>
+	<!-- [#2719] アコーディオン拡張版の適用 2017.09.26 fujiwara Start  -->
+			<owd-accordion>
+				<owd-accordion-group is-open="isopen">
+	<!-- [#2719] アコーディオン拡張版の適用 2017.09.26 fujiwara End  -->
+
+			<fieldset>
+				<div class="row">
+					<!-- [ON推-品向-829] ゾーンは倉庫に紐づいたゾーンのみを表示 2015.06.24 kawana Start -->
+					<owd-select id="centerCd" ng-model="mLocationSearch.mcenter.centerCd" owd-models="centerList" owd-repeat-key="centerCd" owd-repeat-value="centerNm" label-text="センタ" ng-change="centerChange()"></owd-select>
+					<!-- [ON推-品向-829] ゾーンは倉庫に紐づいたゾーンのみを表示 2015.06.24 kawana End -->
+					<owd-select id="warehouseCd" ng-model="mLocationSearch.mzone.mwarehouse.warehouseCd" owd-models="warehouseList" owd-repeat-key="warehouseCd" owd-repeat-value="warehouseNm" label-text="倉庫" ng-focus="warehouseFocus()" ng-change="warehouseChange()" ng-blur="warehouseBlur()"></owd-select>
+					<owd-select id="zoneCd" ng-model="mLocationSearch.mzone.zoneCd" owd-models="zoneCdList" owd-repeat-key="zoneCd" owd-repeat-value="zoneNm" label-text="ゾーン"></owd-select>
+					<owd-text id="locationCd" ng-model="mLocationSearch.locationCd" label-text="ロケーションCD"></owd-text>
+					<owd-select id="pickingLocationFlg" ng-model="mLocationSearch.pickingLocationFlg" owd-models="pickingLocationFlgList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="ピックロケフラグ"></owd-select>
+					<!-- [1.1.4-CT-061] 検索条件に補充商品CDと補充商品未設定を追加 2016.06.03 ichikawa Start -->
+					<owd-text id="replenishProductCd" ng-model="mLocationSearch.mproduct.productCd" label-text="補充商品CD" owd-add-button="modalProduct()" ng-blur="ProductBlur()">
+						 <owd-info ng-model="mLocationSearch.mproduct.productNm"></owd-info>
+					</owd-text>
+					<owd-select id="replenishProductCdUnset" ng-model="mLocationSearch.replenishProductCdUnset" owd-models="replenishProductCdUnsetList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="補充商品CD未設定"></owd-select>
+					<!-- [1.1.4-CT-061] 検索条件に補充商品CDと補充商品未設定を追加 2016.06.03 ichikawa End -->
+					<owd-select id="delFlg" ng-model="mLocationSearch.delFlg" owd-models="delFlgList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="削除"></owd-select>
+				</div>
+			</fieldset>
+	<!-- [#2719] アコーディオン拡張版の適用 2017.09.26 fujiwara Start  -->
+			</owd-accordion-group>
+				</owd-accordion>
+	<!-- [#2719] アコーディオン拡張版の適用 2017.09.26 fujiwara End  -->
+			<div class="row">
+				<div class="col-xs-12">
+					<owd-button id="search" class="btn-info" ng-disabled="searchform.$invalid" ng-click="search()">検索</owd-button>
+					<owd-button id="excelOutput" class="btn-info" ng-disabled="searchform.$invalid" ng-click="excelOutput()">Excel出力</owd-button>
+				</div>
+			</div>
+	</form>
+	<form id="searchinputform" name="searchinputform" novalidate>
+			<br>
+			<div owd-grid="gridOptions" id="locationList" owd-select-options="gridSelectOptions" owd-button-options="gridButtonOptions" owd-event-options="gridEventOptions" owd-form-name="searchinputform" owd-backcolor-option="getClassForRow(row)" owd-dblclick-option="gridDblClick(row)"></div>
+			<br>
+			<div id="content-footer"></div>
+			<div id="content-footer-button" class="container">
+				<div class="row">
+					<div class="col-xs-6" style="overflow-x:auto;overflow-y:hidden;">
+<!-- 2016.02.26 Pan 一覧編集 ※4 Start -->
+<!-- 						<owd-file id="excelUpload" class="btn-info" owd-before-upload="excelBeforeUpload" owd-success="excelUploadSuccess" owd-options="fileOptions">Excel取込</owd-file> -->
+<!-- 						<owd-button id="addRow" class="btn-info" ng-click="addRow()">行追加</owd-button> -->
+<!-- 						<owd-button id="removeRow" class="btn-danger" ng-click="removeRow()">行削除</owd-button> -->
+<!-- 2016.02.26 Pan 一覧編集 ※4 End -->
+					</div>
+					<div class="col-xs-6" align="right" style="overflow-x:auto;overflow-y:hidden;">
+						<!-- コピー機能追加 ロケーションマスタ画面修正 2016.6.20 Kudo Add Start -->
+						<owd-button id="copy" class="btn-info" ng-disabled="!gridOptions.gridApi.selection.getSelectedRows().length" ng-click="copy()">コピー</owd-button>
+						<!-- コピー機能追加 ロケーションマスタ画面修正 2016.6.20 Kudo Add End -->
+<!-- 2016.02.26 Pan 一覧編集 ※4 Start -->
+<!-- 						<owd-button id="register" class="btn-success" ng-click="register()">登録</owd-button> -->
+						<owd-button id="new" class="btn-info"  ng-click="initNew()">新規</owd-button>
+						<owd-button id="update" class="btn-info" ng-disabled="!gridOptions.gridApi.selection.getSelectedRows().length" ng-click="update()">修正</owd-button>
+<!-- 2016.02.26 Pan 一覧編集 ※4 End -->
+					</div>
+				</div>
+			</div>
+	</form>
+</div>

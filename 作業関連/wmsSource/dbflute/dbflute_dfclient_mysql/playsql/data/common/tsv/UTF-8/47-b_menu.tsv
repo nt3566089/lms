@@ -1,0 +1,182 @@
+MENU_ID	MENU_GRP_ID	SCREEN_ID	DICT_ID	URL_PATH	TARGET_WINDOW	VIEW_ORDER	DEL_FLG
+1	1	302		#/wms/ecorder/EcOrderBulkInput	0	1	0
+2	1	303		#/wms/ecorder/EcOrderList	0	2	0
+3	1	304		#/wms/ecorder/EcShippingTagDataOutput	0	3	0
+4	2	382		#/wms/receive/ReceiveStatusProgress	0	1	0
+5	2	410		#/wms/receive/SlipNoReceiveList	0	2	0
+6	2	371		#/wms/receive/ProductReceiveList	0	3	0
+7	2	383		#/wms/receive/ReferenceProductReceiveList	0	4	0
+8	2	378		#/wms/receive/ReceivePartList	0	5	0
+9	2	380		#/wms/receive/ReceivePlanInput	0	6	0
+10	2	379		#/wms/receive/ReceivePlanBulkInput	0	7	0
+11	2	381		#/wms/receive/ReceivePlanListPrint	0	8	0
+12	2	425		#/wms/receive/StoreLabelPrint	0	9	0
+13	2	286		#/wms/receive/ClassLabelPrint	0	10	0
+14	2	376		#/wms/receive/ReceiveInputNo	0	11	0
+15	2	374		#/wms/receive/ReceiveHistory	0	12	0
+16	3	405		#/wms/shipping/ShippingStatusProgress	0	1	0
+17	3	297		#/wms/shipping/DeliveryCourseShippingList	0	2	0
+18	3	401		#/wms/shipping/ShippingInstList	0	3	0
+19	3	373		#/wms/shipping/ProductShippingList	0	4	0
+20	3	384		#/wms/shipping/ReferenceProductShippingList	0	5	0
+21	3	404		#/wms/shipping/ShippingPlanInput	0	6	0
+22	3	403		#/wms/shipping/ShippingPlanBulkInput	0	7	0
+23	3	402		#/wms/shipping/ShippingLotList	0	8	0
+24	3	357		#/wms/shipping/PickingListPrint	0	9	0
+25	3	358		#/wms/shipping/PickingMethodRecommendation	0	10	0
+26	3	361		#/wms/shipping/PieceShippingInspect	0	11	0
+27	3	409		#/wms/shipping/SingleRowShippingInspect	0	12	0
+28	3	355		#/wms/shipping/PackingListUpdate	0	13	0
+29	3	300		#/wms/shipping/DeliverySlipListPrint	0	14	0
+30	3	426		#/wms/shipping/StwListPrint	0	15	0
+31	3	399		#/wms/shipping/ShippingInputNoPlan	0	16	0
+32	3	396		#/wms/shipping/ShippingConfirmList	0	17	0
+33	3	406		#/wms/shipping/ShippingTagDataOutput	0	18	0
+34	3	354		#/wms/shipping/PackingList	0	19	0
+35	3	398		#/wms/shipping/ShippingHistory	0	20	0
+36	3	353		#/wms/shipping/PackingHistory	0	21	0
+37	3	261		#/wms/shipping/BillOfLadingPrint	0	22	1
+38	4	427		#/wms/stock/TotalStockList	0	1	0
+39	4	386		#/wms/stock/ReferenceTotalStockList	0	2	0
+40	4	414		#/wms/stock/StockList	0	3	0
+41	4	385		#/wms/stock/ReferenceStockList	0	4	0
+42	4	413		#/wms/stock/StockInOutList	0	5	0
+43	4	419		#/wms/stock/StockMoveList	0	6	0
+44	4	420		#/wms/stock/StockSetInst	0	7	0
+45	4	421		#/wms/stock/StockSetInstListPrint	0	8	0
+46	4	422		#/wms/stock/StockSetRelease	0	9	0
+47	4	423		#/wms/stock/StockSetReleaseListPrint	0	10	0
+48	4	387		#/wms/stock/ReplenishInstList	0	11	0
+49	4	350		#/wms/stock/MoveLabelPrint	0	12	0
+50	4	411	1200	#/wms/stock/StockAdj	0	13	0
+51	4	416		#/wms/stock/StockMoveBodyList	0	14	0
+52	4	417		#/wms/stock/StockMoveHistory	0	15	0
+53	4	390		#/wms/stock/SerialNoList	0	16	0
+54	4	389		#/wms/stock/SerialNoBulkInput	0	17	0
+55	5	323		#/wms/inventory/InventoryCreate	0	1	0
+56	5	330		#/wms/inventory/InventoryWorkListPrint	0	2	0
+57	5	327		#/wms/inventory/InventoryInput	0	3	0
+58	5	326		#/wms/inventory/InventoryHistorySearch	0	4	0
+59	5	324		#/wms/inventory/InventoryDiffListPrint	0	5	0
+60	5	322		#/wms/inventory/InventoryBulkUpdate	0	6	0
+61	5	325		#/wms/inventory/InventoryHistory	0	7	0
+62	6	287		#/wms/master/ClientMaster	0	1	0
+63	6	284		#/wms/master/CenterMasterList	0	2	0
+64	6	432		#/wms/master/WarehouseMaster	0	3	0
+65	6	439		#/wms/master/ZoneMaster	0	4	0
+66	6	332		#/wms/master/LocationMaster	0	5	0
+67	6	333		#/wms/master/LocationMasterBulkInput	0	6	0
+68	6	331		#/wms/master/LocationBarcodeListPrint	0	7	0
+69	6	290		#/wms/master/CustomerMasterList	0	8	0
+70	6	288		#/wms/master/CustomerMasterBulkInput	0	9	0
+71	6	266		#/wms/master/CarrierMasterList	0	10	0
+72	6	294		#/wms/master/DeliveryCourseMasterList	0	11	0
+73	6	367		#/wms/master/ProductMasterList	0	12	0
+74	6	365		#/wms/master/ProductMasterBulkInput	0	13	0
+75	6	372		#/wms/master/ProductShapeMasterBulkInput	0	14	0
+76	6	392		#/wms/master/SetStructureSearch	0	15	0
+77	6	264		#/wms/master/BoxMaster	0	16	0
+78	6	263		#/wms/master/BoxGroupMasterList	0	17	0
+79	6	424		#/wms/master/StockTypeMaster	0	18	0
+80	6	395		#/wms/master/ShapeMaster	0	19	0
+81	6	394		#/wms/master/ShapeGroupMasterList	0	20	0
+82	6	434		#/wms/master/ZipMaster	0	21	0
+83	6	435		#/wms/master/ZipMasterBulkInput	0	22	0
+84	6	351		#/wms/master/NumberingCenterMaster	0	23	0
+85	6	429		#/wms/master/UserMasterList	0	24	0
+86	6	267		#/wms/master/CarrierSlipCESMaster	0	25	1
+87	7	291		#/wms/daily/Daily	0	1	0
+88	8	218		#/base/operation/LogList	0	1	0
+89	8	213		#/base/master/InfoMaster	0	2	0
+90	8	229		#/base/operation/PrintRequestList	0	3	0
+91	8	260		#/wms/common/BarcodeLabelBulkPrint	0	4	0
+92	8	259		simplePage.jsp#/wms/operation/AttendanceEntry	2	5	1
+93	9	210		#/base/master/DictMaster	0	1	0
+94	9	209		#/base/master/DictCultureMaster	0	2	0
+95	9	241		#/base/master/RoleList	0	3	0
+96	9	240		#/base/master/RoleGrpList	0	4	0
+97	9	254		#/base/master/UserList	0	5	0
+98	9	208		#/base/master/ClassList	0	6	0
+99	9	279		#/wms/master/CenterClassList	0	7	0
+100	9	222		#/base/master/MessageMaster	0	8	0
+101	9	247		#/base/master/ScreenList	0	9	0
+102	9	282		#/wms/master/CenterClientScreenMaster	0	10	0
+103	9	281		#/wms/master/CenterClientScreenItemMaster	0	11	0
+104	9	280		#/wms/master/CenterClientScreenColMaster	0	12	0
+105	9	221		#/base/master/MenuGrpList	0	13	0
+106	9	238		#/base/master/ReportMaster	0	14	0
+107	9	236		#/base/master/ReportLayoutList	0	15	0
+108	9	364		#/wms/master/ProcessTypeMaster	0	16	0
+109	9	271		#/wms/master/CarrierSlipYmtMaster	0	17	0
+110	9	269		#/wms/master/CarrierSlipSgwMaster	0	18	0
+111	9	273		#/wms/master/CarrierSlipYupkMaster	0	19	0
+112	9	306		#/wms/master/EdiList	0	20	0
+113	9	321		#/wms/master/ImportTypeMasterList	0	21	0
+114	9	345		#/wms/master/MatchingMaster	0	22	0
+115	9	292		#/wms/common/DataInput	0	23	0
+116	9	211		#/base/common/GridColExtBaseEdit	0	25	0
+117	9	225		#/base/master/PrinterGroupList	0	26	0
+118	9	232		#/base/master/PrintServiceList	0	27	0
+119	9	226		#/base/master/PrinterList	0	28	0
+120	9	224		#/base/master/PrinterAttributeList	0	29	0
+121	9	250		#/base/master/SystemEdit	0	30	0
+122	9	204		#/base/master/AutoPrintBulkPrinterChangeList	0	31	0
+123	9	285		#/wms/master/CenterRelatedCopy	0	32	0
+124	9	317		#/wms/master/HTDictMaster	0	33	0
+125	9	316		#/wms/master/HTDictCultureMaster	0	34	0
+126	9	318		#/wms/master/HTMessageMaster	0	35	0
+127	9	433		#/wms/master/WebHTinfoMaster	0	36	0
+128	9	233		#/base/master/PropertyMaster	0	37	0
+129	10	337	1214	resources/menu/manual_common.pdf?downloadFile=manual/manual_common.pdf	0	1	0
+130	10	343	1218	resources/menu/manual_pc.pdf?downloadFile=manual/manual_pc.pdf	0	2	0
+131	10	341	1222	resources/menu/manual_ht.pdf?downloadFile=manual/manual_ht.pdf	0	3	0
+132	10	344	1224	resources/menu/manual_ht.pdf?downloadFile=manual/manual_sd.pdf	0	4	0
+133	10	340	1226	resources/menu/manual_help.pdf?downloadFile=manual/manual_help.pdf	0	5	0
+134	10	342	1260	resources/menu/manual_label.pdf?downloadFile=manual/manual_label.pdf	0	6	0
+135	10	338	1258	resources/menu/manual_ec.pdf?downloadFile=manual/manual_ec.pdf	0	7	0
+136	10	312	1230	resources/menu/ReceivePlanBulkInput.xlsx?downloadFile=xlsTemplate/ReceivePlanBulkInput.xlsx	0	8	0
+137	10	314	1232	resources/menu/ShippingPlanBulkInput.xlsx?downloadFile=xlsTemplate/ShippingPlanBulkInput.xlsx	0	9	0
+138	10	315	1240	resources/menu/CustomerMasterBulkInput.xlsx?downloadFile=xlsTemplate/ZoneMasterBulkInput.xlsx	0	10	0
+139	10	309	1238	resources/menu/CustomerMasterBulkInput.xlsx?downloadFile=xlsTemplate/LocationMasterBulkInput.xlsx	0	11	0
+140	10	308	1236	resources/menu/CustomerMasterBulkInput.xlsx?downloadFile=xlsTemplate/CustomerMasterBulkInput.xlsx	0	12	0
+141	10	311	1234	resources/menu/ProductMasterBulkInput.xlsx?downloadFile=xlsTemplate/ProductMasterBulkInput.xlsx	0	13	0
+142	10	310	1242	resources/menu/ProductShapeMasterBulkInput.xlsx?downloadFile=xlsTemplate/ProductShapeMasterBulkInput.xlsx	0	14	0
+143	10	307	1639	resources/menu/BarcodeLabelBulkPrint.xlsx?downloadFile=xlsTemplate/BarcodeLabelBulkPrint.xlsx	0	15	0
+144	10	313	2588	resources/menu/SerialNoBulkInput.xlsx?downloadFile=xlsTemplate/SerialNoBulkInput.xlsx	0	16	0
+145	10	337	1216	resources/menu/manual_common.pdf?downloadFile=manual/enUS/manual_common_enUS.pdf	0	17	1
+146	10	343	1220	resources/menu/manual_pc.pdf?downloadFile=manual/enUS/manual_pc_enUS.pdf	0	18	1
+147	10	340	1228	resources/menu/manual_help.pdf?downloadFile=manual/enUS/manual_help_enUS.pdf	0	19	1
+148	10	312	1231	resources/menu/ReceivePlanBulkInput.xlsx?downloadFile=xlsTemplate/enUS/ReceivePlanBulkInput.xlsx	0	20	1
+149	10	314	1233	resources/menu/ShippingPlanBulkInput.xlsx?downloadFile=xlsTemplate/enUS/ShippingPlanBulkInput.xlsx	0	21	1
+150	10	315	1241	resources/menu/CustomerMasterBulkInput.xlsx?downloadFile=xlsTemplate/enUS/ZoneMasterBulkInput.xlsx	0	22	1
+151	10	309	1239	resources/menu/CustomerMasterBulkInput.xlsx?downloadFile=xlsTemplate/enUS/LocationMasterBulkInput.xlsx	0	23	1
+152	10	308	1237	resources/menu/CustomerMasterBulkInput.xlsx?downloadFile=xlsTemplate/enUS/CustomerMasterBulkInput.xlsx	0	24	1
+153	10	311	1235	resources/menu/ProductMasterBulkInput.xlsx?downloadFile=xlsTemplate/enUS/ProductMasterBulkInput.xlsx	0	25	1
+154	10	310	1243	resources/menu/ProductShapeMasterBulkInput.xlsx?downloadFile=xlsTemplate/enUS/ProductShapeMasterBulkInput.xlsx	0	26	1
+155	10	337	1217	resources/menu/manual_common.pdf?downloadFile=manual/zhCN/manual_common_zhCN.pdf	0	27	1
+156	10	343	1221	resources/menu/manual_pc.pdf?downloadFile=manual/zhCN/manual_pc_zhCN.pdf	0	28	1
+157	10	340	1229	resources/menu/manual_help.pdf?downloadFile=manual/zhCN/manual_help_zhCN.pdf	0	29	1
+158	11	377		#/wms/receive/ReceiveInspectionSD	0	1	0
+159	12	360		#/wms/shipping/PickingSD	0	1	0
+160	12	352		#/wms/shipping/OrderPickingSD	0	2	0
+161	12	275		#/wms/shipping/CasePickingSD	0	3	0
+162	13	329		#/wms/inventory/InventoryInputSD	0	1	0
+163	14	71		ReceiveInspectionLabel/load	0	1	0
+164	14	109		ReceiveStoreKariLoc/load	0	2	0
+165	14	89		ReceiveNoPlanInspectionLabel/load	0	3	0
+166	14	52		ReceiveInspecStoreLabel/load	0	4	0
+167	14	123		SerialReceiveInspectionWorkNo/load	0	5	0
+168	15	163		ShippingPickingStart/start	0	1	0
+169	15	156		ShippingNoPackingWorkNo/load	0	2	0
+170	15	177		SingleRowShippingNoPackingNo/load	0	3	0
+171	15	141		ShippingCasePickingNo/load	0	4	0
+172	15	150		ShippingLoadingInspectionNo/load	0	5	0
+173	15	132		SerialShippingInspectionWorkNo/load	0	6	0
+174	16	201		StockSearchCondition/load	0	1	0
+175	16	192		StockMoveOutLoc/load	0	2	0
+176	16	184		StockMoveInJanCd/load	0	3	0
+177	16	28	2680	LocationMoveOutLoc/load	0	4	0
+178	17	15		InventoryInputProductKbn/load	0	1	0
+179	18	2		AttendanceEntryRegister/load	0	1	1
+180	19	37	156	PrinterSelectReportLayout/load	0	1	0
+181	19	37	157	PrinterSelectReportLayout/loadTerminal	0	2	0

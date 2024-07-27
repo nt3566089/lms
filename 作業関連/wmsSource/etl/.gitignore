@@ -1,0 +1,12 @@
+
+*.bak
+*.old
+
+/ONESLOGI_ETL/businessProcess
+/ONESLOGI_ETL/businessProcessSVG
+/ONESLOGI_ETL/components
+/ONESLOGI_ETL/documentations
+/ONESLOGI_ETL/images
+/ONESLOGI_ETL/poms
+/ONESLOGI_ETL/temp
+

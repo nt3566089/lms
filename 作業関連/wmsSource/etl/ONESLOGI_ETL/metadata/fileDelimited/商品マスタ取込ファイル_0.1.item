@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_lWS3EDwtEeerjudB8cjwSg" name="商品マスタ取込ファイル" dataPackage="_lWS3ETwtEeerjudB8cjwSg" Server="Localhost 127.0.0.1" FilePath="C:/TOS_DI-20160510_1709-V6.2.0/workspace/ONESLOGI_ETL/csvFiles/input/商品マスタ.csv" Format="WINDOWS" Encoding="windows-31j" FieldSeparatorValue="&quot;,&quot;" RowSeparatorType="Custom String" RowSeparatorValue="&quot;\r\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_lWS3ETwtEeerjudB8cjwSg" name="default" dataManager="_lWS3EDwtEeerjudB8cjwSg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_lWS3EjwtEeerjudB8cjwSg" id="_c5oMwDwtEeerjudB8cjwSg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kqa_gMs7EeeENb-qqYqVxQ" label="商品CD" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kqa_gcs7EeeENb-qqYqVxQ" label="商品名称" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kqa_gss7EeeENb-qqYqVxQ" label="商品略称" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kqa_g8s7EeeENb-qqYqVxQ" label="JANCD" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kqa_hMs7EeeENb-qqYqVxQ" label="ロット管理フラグ" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kqa_hcs7EeeENb-qqYqVxQ" label="ロット逆転防止フラグ" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kqa_hss7EeeENb-qqYqVxQ" label="期限日管理フラグ" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kqa_h8s7EeeENb-qqYqVxQ" label="期限日逆転防止フラグ" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kqa_iMs7EeeENb-qqYqVxQ" label="入荷期限日数" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kqa_ics7EeeENb-qqYqVxQ" label="出荷期限日数" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kqa_iss7EeeENb-qqYqVxQ" label="入庫No_マージ区分" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kqa_i8s7EeeENb-qqYqVxQ" label="出荷停止フラグ" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kqa_jMs7EeeENb-qqYqVxQ" label="定点" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kqa_jcs7EeeENb-qqYqVxQ" label="在庫管理単位" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kqa_jss7EeeENb-qqYqVxQ" label="ピース縦_mm_" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kqa_j8s7EeeENb-qqYqVxQ" label="ピース横_mm_" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kqa_kMs7EeeENb-qqYqVxQ" label="ピース高さ_mm_" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kqa_kcs7EeeENb-qqYqVxQ" label="ピース容積_mm3_" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kqa_kss7EeeENb-qqYqVxQ" label="ピース商品重量_g_" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kqa_k8s7EeeENb-qqYqVxQ" label="ピース総重量_g_" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

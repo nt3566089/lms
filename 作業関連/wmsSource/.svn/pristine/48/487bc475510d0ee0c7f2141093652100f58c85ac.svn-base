@@ -1,0 +1,9 @@
+
+*.bak
+*.old
+
+/bin
+
+/*.jar
+/*.log
+

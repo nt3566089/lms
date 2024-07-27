@@ -1,0 +1,42 @@
+画面マスタ	画面マスタ	画面マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ拡張基本	列マスタ拡張基本
+SCREEN_CD	DICT_NM	SYSTEM_TYPE	ITEM_CD	DICT_NM	ITEM_TYPE	VISIBLE	EDITABLE	TEXT_ALIGN	NECESSARY	DISPLAY_REQUIRED	COL_CD	DICT_NM	COL_ORDER	COL_TYPE	VISIBLE	EDITABLE	TEXT_ALIGN	NECESSARY	COL_WIDTH	IN_COL_INDEX	IN_COL_DEFAULT_VALUE	COL_ORDER	COL_WIDTH
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	clientCd	荷主		1	1		1	1													
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerCd	取引先CD		1	1		0	1													
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerNm	取引先名称		1	1		0	1													
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	deliveryFlg	納品先フラグ		1	1		0	1													
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	vendorFlg	仕入先フラグ		1	1		0	1													
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	onetimeFlg	ワンタイムフラグ		1	1		0	1													
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	depositFlg	預託先フラグ		1	1		0	1													
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	customerCd	取引先CD	1	text	1	0		0	160			1	160
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	customerNm	取引先名称	2	text	1	0		0	300			2	300
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	customerAbbr	取引先略称	3	text	1	0		0	250			3	250
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	deliveryFlg	納品先フラグCD	4	text	1	0		0	140			4	165
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	bclassDtlByDeliveryFlg.vdict.dictNm	納品先フラグ名称	5	text	1	0		0	140			5	160
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	vendorFlg	仕入先フラグCD	6	text	1	0		0	140			6	160
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	bclassDtlByVendorFlg.vdict.dictNm	仕入先フラグ名称	7	text	1	0		0	140			7	160
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	onetimeFlg	ワンタイムフラグCD	8	text	1	0		0	170			8	170
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	bclassDtlByOnetimeFlg.vdict.dictNm	ワンタイムフラグ名称	9	text	1	0		0	170			9	170
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	depositFlg	預託先フラグCD	10	text	1	0		0	140			10	190
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	bclassDtlByDepositFlg.vdict.dictNm	預託先フラグ名称	11	text	1	0		0	140			11	200
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	zipCd	郵便番号	12	text	1	0		0	125			12	125
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	address1	住所1	13	text	1	0		0	300			13	300
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	address2	住所2	14	text	1	0		0	300			14	300
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	address3	住所3	15	text	1	0		0	300			15	300
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	telNo	電話番号	16	text	1	0		0	250			16	250
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	centerCd	社内入荷センタCD	17	text	1	0		0	155			17	260
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	centerNm	社内入荷センタ名称	18	text	1	0		0	300			18	300
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	allocOrder	引当順序	19	number	1	0	right	0	75			19	171
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	shippingStopFlg	出荷停止フラグCD	20	text	1	0		0	155			20	200
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	bclassDtlByShippingStopFlg.vdict.dictNm	出荷停止フラグ名称	21	text	1	0		0	155			21	220
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	limitDtReverseFlg	期限日逆転防止フラグCD	22	text	1	0		0	205			22	260
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	bclassDtlByLimitDtReverseFlg.vdict.dictNm	期限日逆転防止フラグ名称	23	text	1	0		0	205			23	270
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	delFlg	削除フラグCD	24	text	1	0		0	125			24	160
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	bclassDtlByDelFlg.vdict.dictNm	削除フラグ名称	25	text	1	0		0	125			25	160
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	mclient.clientCd	荷主CD	26	text	1	0		0	125			26	
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	customerList	取引先マスタ一覧グリッド	grid	1	1		1	1	mclient.clientNm	荷主名称	27	text	1	0		0	300			27	
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	new	新規		1	1		0	1													
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	update	修正		1	1		0	1													
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	search	検索		1	1		0	1													
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	excelOutput	Excel出力		1	1		0	1													
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	delFlg	削除		1	1		0	1													
+CustomerMasterList	取引先マスタメンテナンス(一覧)	wms	copy	コピー		1	1		0	1													

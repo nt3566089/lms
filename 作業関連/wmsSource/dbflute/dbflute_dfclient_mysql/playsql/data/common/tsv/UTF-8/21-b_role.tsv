@@ -1,0 +1,12 @@
+ROLE_ID	ROLE_CD	DICT_ID
+1	NoSystemMaintenance	18
+2	NoWmsMasterMaintenance	168
+3	NoDaily	169
+4	ViewOnly	1988
+5	Workers	1989
+6	NoClientCenterEdit	1990
+7	NoCommonSetting	19
+8	NoViewShipping	2560
+9	NoTotalStockList	2561
+10	DepositViewOnly	2920
+11	NoViewDeposit	2921

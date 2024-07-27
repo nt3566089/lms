@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_MoG9cI-DEea1FotckvBLqw" id="_nN45YNtlEem0B8goRap_Cg" label="AmsMoveRequestsOutputApi" purpose="AMS移動指示データWebAPI連携" description="WebAPI(WMS)→JSON→WebAPI(AMS)" version="0.1" statusCode="" item="_MoG9co-DEea1FotckvBLqw" displayName="AmsMoveRequestsOutputApi">
+    <author href="../../talend.project#_w3NaQZaREearrO37QzOhcQ"/>
+    <additionalProperties xmi:id="_RDnM4BcsEeqLaK2GOeLj_g" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_RDnM4RcsEeqLaK2GOeLj_g" key="created_product_version" value="6.2.0.20160510_1709"/>
+    <additionalProperties xmi:id="_RDnM4hcsEeqLaK2GOeLj_g" key="created_date" value="2016-10-11T16:20:33.222+0900"/>
+    <additionalProperties xmi:id="_RDnM4xcsEeqLaK2GOeLj_g" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_RDnM5BcsEeqLaK2GOeLj_g" key="modified_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_RDnM5RcsEeqLaK2GOeLj_g" key="modified_date" value="2022-01-13T09:36:04.076+0900"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_nN8jwNtlEem0B8goRap_Cg" path="amsLinkage"/>
+  <TalendProperties:ProcessItem xmi:id="_MoG9co-DEea1FotckvBLqw" property="_MoG9cI-DEea1FotckvBLqw" state="_nN8jwNtlEem0B8goRap_Cg">
+    <process href="AmsMoveRequestsOutputApi_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

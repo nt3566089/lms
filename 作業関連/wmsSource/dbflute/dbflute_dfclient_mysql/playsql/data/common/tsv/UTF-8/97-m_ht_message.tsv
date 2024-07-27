@@ -1,0 +1,385 @@
+MESSAGE_ID	MESSAGE_NM
+70	[0]は数字8桁の日付(yyyyMMdd)を入力してください。
+71	[0] must be of the [/]date format YYYYMMDD.
+72	[0]请输入8位的数字日期(yyyyMMdd)。
+73	[0]は小数[1]桁以下で入力してください。
+74	[0] must be within [/][1] Decimal place(s).
+75	[0]请输入[1]位以下的小数。
+76	[0]は整数で入力してください。
+77	[0] must be an integer.
+78	[0]请输入整数。
+256	[0]は整数[1]桁以下で入力してください。
+257	[0] must be within [/][1] digits.
+258	[0]请输入[1]位以下的整数。
+310	[0]は[1]以下で入力してください。
+311	[0] must be less than or [/]equal to [1].
+312	[0]请输入[1]以下。
+316	[0]は[1]文字以下で入力してください。
+317	[0] must contain at most [/][1] characters.
+318	[0]请输入[1]文字以下。
+337	[0]は[1]以上で入力してください。
+338	[0] must be greater or [/]equal to [1].
+339	[0]请输入[1]以上。
+343	[0]は[1]文字以上で入力してください。
+344	[0] must contain at least [/][1] characters.
+345	[0]请输入[1]文字以上。
+460	[0]を入力してください。
+461	Please enter [0].
+462	[0]请输入。
+549	[0]は数値のみ入力可能です。
+550	[0] may only contain [/]Numbers.
+551	[0]仅可以输入数值。
+552	[0]は数字と-のみ入力可能です。
+553	"[0] may only contain [/]Numbers and ""-""."
+554	[0]仅可以输入数字和-。
+555	[0]は英字のみ入力可能です。
+556	"[0] may only contain [/]Numbers and ""-""."
+557	[0]仅可以输入字母。
+558	[0]は英字と-のみ入力可能です。
+559	"[0] may only contain [/]Alphabetic characters and ""-""."
+560	[0]仅可以输入字母和-。
+561	[0]は英数字のみ入力可能です。
+562	[0] may only contain [/]Alphanumeric characters.
+563	[0]仅可以输入字母数字。
+564	[0]は英数字と-のみ入力可能です。
+565	"[0] may only contain [/]Alphanumeric characters and ""-""."
+566	[0]仅可以输入字母数字和-。
+567	[0]は英数字と記号のみ入力可能です。
+568	[0] may only contain [/]Alphanumeric characters and symbols.
+569	[0]仅可以输入字母数字和记号。
+570	[0]は半角文字のみ入力可能です。
+571	[0] may only contain [/]Half-width characters.
+572	[0]仅可以输入半角文字。
+573	[0]は全角文字のみ入力可能です。
+574	[0] may only contain [/]Full-width characters.
+575	[0]仅可以输入全角文字。
+576	[0]は時刻のみ入力可能です。
+577	[0] may only contain [/]Time.
+578	[0]仅可以输入时刻。
+579	[0]は時刻のみ(HH:MM:SS)入力可能です。
+580	[0] may only contain [/]Time(HH:MM:SS).
+581	[0]仅可以输入时刻(HH:MM:SS)。
+1987	入力された入庫ラベルNo.は異なる商品、在庫区分、預託、ロット、期限日、仕入先で登録されているため使用できません。
+1988	The entered Receiving No. is [/]registered for a different inventory.
+1990	入力された入庫ラベルNo.は異なる商品、在庫区分、預託、ロット、期限日、仕入先、入庫日で登録されているため使用できません。
+1991	The entered Receiving No. is [/]registered for a different inventory.
+3376	出庫作業No／梱包Noが存在しません。
+3377	Pick No./Packing No. do not exist.
+3427	シリアルNo.([0])は異なる出庫作業No/梱包No([1])で登録済です。
+3428	Serial No. ([0]) has been registered [/]for a different Pick No./Packing No. [/]([1]).
+3550	入力したソースCDが伝票内に存在しません。
+3551	Item Code does not exist in [/]Receiving data.
+3553	入力したソースCDが伝票内に存在しません。
+3554	Item Code ([0]) does not [/]exist in Receiving data.
+3556	入力したソースCDが出庫作業No/梱包No内に存在しません。
+3557	Item Code does not exist in [/]Shipping data.
+3559	入力したソースCDが出庫作業No/梱包No内に存在しません。
+3560	Item Code ([0]) does not [/]exist in Shipping data.
+3562	入力した期限日が入荷限界日を過ぎています。
+3563	Expiration Date past [/]the Receiving Limit Date.
+3757	メニューの設定を確認してください。
+3758	Please check the menu definitions.
+3759	请确认菜单的设定。
+3760	セッションが切断されました。再度ログインしてください。
+3761	The session has been disconnected. [/]Please log in again.
+3762	会话已断开。请再次登录。
+3763	セッションが切断されました。
+3764	The session has been disconnected.
+3765	会话已断开。
+3766	再度ログインしてください。
+3767	Please log in again.
+3768	请再次登录。
+3769	中断データが存在します再開しますか？
+3770	Suspended data exists. Resume?
+3771	存在中断数据，要恢复吗？
+3772	対象の追跡Noは積込検品済です。
+3773	The specified Trace No. is [/]currently in Loading Inspection.
+3774	对象的跟踪No是装货检品完毕的。
+3775	選択したセンターと荷主を使う権限がありません。管理者に連絡してください。
+3776	You do not have authorization to use[/]the selected Center and Shipper.[/]Please contact a system admin.
+3777	没有使用选定的中心和货主的权限。请联系管理员。
+3778	検品未完了のデータは削除できません。
+3779	Cannot delete data that is [/]currently being inspected.
+3780	无法删除未完成验货的数据。
+3781	納品先は出荷指示に存在しません。
+3782	Ship-To does not exist in [/]Shipping Instruction.
+3783	交货方不存在于发货指示中。
+3784	該当データが存在しません。
+3785	Data was not found.
+3786	不存在相应的数据。
+3787	日付の入力が不正です(形式:yyyyMMdd)。
+3788	Date must be of the format yyyyMMdd.
+3789	日期输入不正确（格式:yyyyMMdd）。
+3790	配送コースCDが異なります。確認して下さい。
+3791	Carrier Service Level Code is different. [/]Please Confirm.
+3792	配送路线CD不同。请确认。
+3793	預託が選択されていません。
+3794	Consignment is not selected.
+3795	没有选择寄存。
+3796	エラーの伝票Noです。
+3797	The order for this Doc. No. [/]contains an error.
+3798	是错误的单据No。
+3799	該当の棚卸データは全て在庫調整済のため、棚卸入力できません。
+3800	Cannot do Inventory Count Entry.[/]All corresponding[/]Inventory Count data has already[/]been adjusted.
+3801	该盘点数据已全部调整为库存，无法进行盘点。
+3802	商品が異なります。
+3803	Item is different.
+3804	商品不同。
+3805	該当のアイテムの指示数を超えています。
+3806	Exceeded Instruction Quantity [/]for this Item.
+3807	超过了该项目的指示数。
+3808	商品をスキャンして下さい。
+3809	Please scan the Item.
+3810	请扫描商品。
+3811	該当のアイテムの数量を超えています。
+3812	Exceeded required quantity [/]for this Item.
+3813	超过了该项目的数量。
+3814	該当のアイテムの数量が不足です。
+3815	Have not met required quantity [/]for this item.
+3816	该项目数量不足。
+3817	該当のアイテムの残数を超えています。
+3818	Exceeded remaining quantity [/]for this item.
+3819	超过该项目的残数。
+3820	完了時、ソースCDをクリアして下さい。
+3821	Please clear the UPC before completing.
+3822	完成时，请清除代码CD。
+3823	仮ロケは入庫仮ロケーションを入力してください。
+3824	Enter a Temporary Put-away [/]Location as the Temporary Location.
+3825	临时库位处请输入入库临时库位。
+3826	ロケーションまたはソースCDまたは入庫ラベルNo.を入力してください。
+3827	Enter either a Location, [/]UPC, or a Receiving No.
+3828	库位或者代码CD处请输入入库标签No.
+3829	ログインできません。再度入力してください。
+3830	Could not log in. Please [/]re-enter your credentials.
+3831	无法登录。请再次输入
+3832	選択したセンターを使う権限がありません。管理者に連絡してください。
+3833	You do not have [/]authorization to use the selected Center. [/]Please contact a system administrator.
+3834	没有使用选中的中心的权限。请联系管理员。
+3835	選択した荷主を使う権限がありません。管理者に連絡してください。
+3836	You do not have [/]authorization to use the selected Shipper. [/]Please contact a system administrator.
+3837	没有使用选中的货主的权限。请联系管理员。
+3838	棚卸データ未作成。
+3839	Inventory Count data has not [/]been created.
+3840	盘点数据未作成。
+3841	出庫ロケと入庫ロケが同一です。
+3842	Source and destination [/]locations are the same
+3843	出库库位和入库库位相同。
+3844	対象の出庫作業Noが削除されました。
+3845	Specified Pick No. has been deleted.
+3846	对象的出库作业No被删除了。
+3847	出荷梱包Noを入力して下さい。
+3848	Please enter a Packing No.
+3849	请输入发货包装No。
+3850	すでに登録されています。
+3851	Printer is already registered.
+3852	已经登陆了。
+3853	プリンタグループを設定していません。
+3854	Printer Group has not been specified.
+3855	未设定打印机组。
+3856	プリンタを設定していません。
+3857	Printer has not been specified.
+3858	未设定打印机。
+3859	帳票レイアウトを設定していません。
+3860	Document Layout has not been specified.
+3861	未设定帐票布局。
+3862	トレイを設定していません。
+3863	Printer Tray has not been specified.
+3864	未设定支架。
+3865	処理区分が選択されていません。
+3866	Process Class has not been selected.
+3867	未选择处理区分。
+3868	完了時、数量をクリアして下さい。
+3869	Clear the quantity upon completion.
+3870	完成时，请清除数量。
+3871	数量は1以上で入力して下さい。
+3872	Quantity must be equal to or [/]greater than 1.
+3873	数量请输入1以上。
+3874	予定無し入荷が行われていません。
+3875	No items have been entered.
+3876	无预定不进行进货。
+3877	検品が行われていません。
+3878	Items have not been inspected.
+3879	没有进行检验。
+3880	検品数が予定数を超えています。
+3881	Inspected quantity exceeds [/]Plan quantity.
+3882	检品数超过了预定数。
+3883	該当のソースCD/商品CDが入庫実績データに存在しません。
+3884	UPC/Item Code does not exist [/]in the Put-away data.
+3885	该代码CD/商品CD不存在入库实绩数据。
+3886	該当のソースCD/商品CDの入庫数が0です。
+3887	Put-away quantity is zero for [/]the specified UPC/Item Code.
+3888	该代码CD/商品CD的入库数是0。
+3889	該当のソースCD/商品CDで取得した入庫実績データから仮ロケに入荷した在庫データが存在しません。
+3890	Inventory data of UPC/Item Code [/]received in the temporary location [/]does not exist.
+3891	从该代码CD/商品CD取得的入库实绩数据中临时库位中的收货的库存数据不存在。
+3892	該当のソースCD/商品CDの仮ロケに入荷した在庫データの在庫数が0です。
+3893	Inventory data of UPC/Item Code [/]received in the temporary location [/]is zero.
+3894	该代码CD/商品CD的临时库位中的收货库存数据的入库数为0。
+3895	該当のソースCD/商品CDが全て格納済です。
+3896	UPC/Item Code has already [/]been Put-away.
+3897	该代码CD/商品CD全部收纳完毕。
+3898	該当の仮ロケに入荷した在庫データが存在しません。
+3899	Inventory data of items [/]received in temporary location does [/]not exist.
+3900	该临时库位中的收货库存数据不存在。
+3901	該当のラベルNOに入荷した在庫データ（仮ロケ）が存在しません。
+3902	Inventory data of the Label [/]No. does not exist in the [/]temporary location.
+3903	在该标签NO中收货库存数据（临时库位）不存在。
+3904	該当のラベルNOに入荷した在庫データの在庫数が0です。
+3905	Inventory data of the [/]specified Label No. received is zero.
+3906	在该标签NO中收货库存数据的库存数是0。
+3907	該当の期限日が入庫実績データに存在しません。
+3908	Expiration Date does not [/]exist in the Put-away data.
+3909	该期限日不存在于入库实绩数据中。
+3910	該当の期限日の入庫数が0です。
+3911	Put-away quantity is zero [/]for the specified Expiration Date.
+3912	该期限日的入库数为0。
+3913	該当の期限日で取得した入庫実績データから仮ロケに入荷した在庫データが存在しません。
+3914	Inventory data of specified [/]Expiration Date received in the [/]temporary location does not exist.
+3915	从该期限日取得的入库实绩数据中暂时库位收货的库存数据不存在。
+3916	該当の期限日の仮ロケに入荷した在庫データの在庫数が0です。
+3917	Inventory data of specified [/]Expiration Date received in the [/]temporary location is zero.
+3918	在该期限日的临时库位中收货库存数据的库存数为0。
+3919	該当の期限日が全て格納済です。
+3920	Specified Expiration Date [/]has already been Put-away.
+3921	该日期的已经全部收纳完毕。
+3922	ロケは通常ロケーションを入力してください。
+3923	Please enter a normal location.
+3924	库位处请输入通常库位。
+3925	該当のロット、期限日が入庫実績データに存在しません。
+3926	Lot No., Expiration Date [/]does not exist in the Put-away data.
+3927	该批号、期限日不存在入库实绩数据。
+3928	該当のロット、期限日の入庫数が0です。
+3929	Put-away quantity is zero [/]for the specified Lot No., [/]Expiration Date.
+3930	该批号、期限日的入库数是0。
+3931	該当のロット、期限日で取得した入庫実績データから仮ロケに入荷した在庫データが存在しません。
+3932	Inventory does not exist in[/]temporary locations for the[/]Lot No. and Expiration Date specified.
+3933	从该批号、期限日取得的入库实绩数据中临时库位中的收货的库存数据不存在。
+3934	該当のロット、期限日の仮ロケに入荷した在庫データの在庫数が0です。
+3935	Inventory data of specified [/]Lot No., Expiration Date [/]received in the temporary location is zero.
+3936	该批号、期限日的临时库位中的收货库存数据的入库数为0。
+3937	該当のロット、期限日が全て格納済です。
+3938	Specified Lot No., Expiration Date [/]has already been Put-away.
+3939	该批号、期限日全部收纳完毕。
+3940	該当のロットが入庫実績データに存在しません。
+3941	Lot No. does not exist in [/]the Put-away data.
+3942	该批号不存在入库实绩数据。
+3943	該当のロットの入庫数が0です。
+3944	Put-away quantity is zero [/]for the specified Lot No.
+3945	该批号的入库数是0。
+3946	該当のロットで取得した入庫実績データから仮ロケに入荷した在庫データが存在しません。
+3947	Inventory data of specified [/]Lot No. received in the [/]temporary location does not exist.
+3948	从该批号取得的入库实绩数据中临时库位中的收货的库存数据不存在。
+3949	該当のロットの仮ロケに入荷した在庫データの在庫数が0です。
+3950	Inventory data of specified [/]Lot No. received in the [/]temporary location is zero.
+3951	该批号的临时库位中的收货库存数据的入库数为0。
+3952	該当のロットが全て格納済です。
+3953	Specified Lot No. has [/]already been Put-away.
+3954	该批号全部收纳完毕。
+3955	入荷数を超えて格納はできません。
+3956	Put-away quantity exceeds [/]receiving quantity.
+3957	收纳不能超过收货数。
+3958	該当の伝票No.が入庫実績データに存在しません。
+3959	Document No. does not exist [/]in the Put-away data.
+3960	该单据No.不存在入库实绩数据。
+3961	該当の伝票No.の入庫数が0です。
+3962	Put-away quantity is zero [/]for the specified Document No.
+3963	该单据No.的入库数是0。
+3964	該当の伝票No.で取得した入庫実績データから仮ロケに入荷した在庫データが存在しません。
+3965	Inventory data of specified [/]Document No. received in the [/]temporary location does not exist.
+3966	从单据No.取得的入库实绩数据中临时库位中的收货的库存数据不存在。
+3967	該当の伝票No.の仮ロケに入荷した在庫データの在庫数が0です。
+3968	Inventory data of specified [/]Document No. received in the [/]temporary location is zero.
+3969	该单据No.的临时库位中的收货库存数据的入库数为0。
+3970	該当の伝票No.が全て格納済です。
+3971	Specified Document No. has [/]already been Put-away.
+3972	该单据No.全部收纳完毕。
+3973	対象のケースピッキングNo.は強制確定済です。
+3974	Specified Case Picking No. [/]has already been confirmed.
+3975	对象箱分拣No.强制确定完毕。
+3976	データはすべて検品済です。
+3977	All data have already been inspected.
+3978	数据全部检验完毕。
+3979	対象の出庫作業No.は強制確定済です。
+3980	Specified Pick No. has [/]already been confirmed.
+3981	对象出库作业No.强制确定完毕。
+3982	対象の出荷梱包No.はすべて検品済です。
+3983	Specified Packing No. has [/]already been inspected.
+3984	对象发货包装No.全部检验完毕。
+3985	対象の出荷梱包No.が削除されました。
+3986	Specified Packing No. has [/]been deleted.
+3987	对象发货包装No.已被删除。
+3988	対象の出荷梱包No.は強制確定済です。
+3989	Specified Packing No. has [/]already been confirmed.
+3990	对象发货包装No.强制确定完毕。
+3991	対象の梱包Noは積込検品済です。
+3992	Specified Packing No. has [/]completed loading inspection.
+3993	对象包装No装货检验完毕。
+3994	未検品データが存在します。
+3995	Data that has not been [/]inspected exists.
+3996	存在未检验的数据。
+3997	対象の出庫作業No.はすべて検品済です。
+3998	Specified Pick No. has [/]already been inspected.
+3999	对象出库作业No.全部检验完毕。
+4000	対象の出庫作業No.は検品済です。
+4001	Specified Pick No. has [/]already been inspected.
+4002	对象出库作业No.检验完毕。
+4003	該当データが既にピック済です。
+4004	Specified data has already [/]been picked.
+4005	该数据已经分拣完毕。
+4006	対象のケースピッキングNo.はすべてピッキング済です。
+4007	Specified Case Picking No. [/]has already been picked.
+4008	对象箱分拣No.全部分拣完毕。
+4009	対象のケースピッキングNo.は削除されています。
+4010	Specified Case Picking No. [/]has already been deleted.
+4011	对象箱分拣No.已被删除。
+4012	対象の出庫作業No.はすべてピッキング済です。
+4013	Specified Pick No. has [/]already been picked.
+4014	对象出库作业No.全部分拣完毕。
+4018	対象の伝票が削除されました。
+4019	Specified document has been deleted.
+4020	对象单据已被删除。
+4021	該当の商品は検品済です。
+4022	Specified item has already [/]been inspected.
+4023	该商品已检验完毕。
+4024	該当の商品は検品数を超えています。
+4025	Specified item exceeds [/]inspected quantity.
+4026	该商品超过了检品数。
+4027	該当のラベルNO移動が全て完了しました
+4028	Transfer of specified Label [/]No. has been completed.
+4029	该标签NO移动已全部完成
+4030	該当商品はすべて移動完了しました。
+4031	Transfer of specified item [/]has been coompleted.
+4032	该商品全部移动完毕。
+4033	在庫区分マスタに在庫区分が存在しません。
+4034	Inventory Class does not [/]exist in Inventory Class Master.
+4035	在库存区分主数据中库存区分不存在。
+4036	在庫区分が選択されていません。
+4037	Please select an Inventory Class.
+4038	没有选择库存区分。
+4039	該当の入庫ラベルNo.は数量を超えています。
+4040	The required quantity has [/]been exceeded for this Receiving No.
+4041	该入库标签No.超过了数量。
+4042	該当の入庫ラベルNo.の数量が不足です。
+4043	The required quantity has [/]not been met for this Receiving No.
+4044	该入库标签No.的数量不足。
+4045	入庫ラベルNo.が異なります。
+4046	Receiving No. is incorrect.
+4047	入库标签No.不一样。
+4048	入庫ラベルNo.をスキャンして下さい。
+4049	Please scan a Receiving No.
+4050	请扫描入库标签No.
+4051	荷札/納品明細書出力エラー。PCで出力し直して下さい。検品は終了しています。
+4052	Failed to print Shipping [/]Tag. Reprint tag from PC. [/]Inspection has been completed.
+4053	货签/交货清单输出错误。请用PC重新输出。检品结束了。
+4054	取引先マスタに仕入先が存在しません。
+4055	Failed to print Shipping [/]Tag. Reprint tag from PC. [/]Inspection has been completed.
+4056	客户主数据中在供应商不存。
+4057	使用する荷材CDを入力してください。
+4058	Please enter Box Code to use.
+4059	请输入要使用的货物材料CD。
+4060	選択した預託の荷主が選択されていません。
+4061	Shipper is not selected in [/]the Consignment.
+4062	没有选择选定寄售的货主。
+4578	Customer with shipping hold[/] was included so it was[/] excluded from inspection.[/] Please inspect only customers[/] who can ship.
+4587	Another product ([0])[/] is being inspected.[/] Please inspect the product[/] under inspection first.
+4767	出荷確定済の為、作業を完了できません。

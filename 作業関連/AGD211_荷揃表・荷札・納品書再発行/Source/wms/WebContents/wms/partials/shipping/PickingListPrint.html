@@ -1,0 +1,53 @@
+<div ng-controller="PickingListPrint" owd-screen="PickingListPrint">
+	<form id="searchform" name="searchform" novalidate>
+		<owd-accordion> <owd-accordion-group is-open="isopen">
+		<fieldset>
+			<div class="row">
+				<owd-select id="centerCd" ng-model="searchCondition.mcenter.centerCd" owd-models="centerList" owd-repeat-key="centerCd" owd-repeat-value="centerNm" label-text="センタ"></owd-select>
+				<owd-select id="searchReferenceDt" ng-model="searchCondition.searchReferenceDt" owd-models="searchReferenceDtList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="検索基準日"></owd-select>
+				<owd-date id="dtFrom" ng-model="searchCondition.dtFrom" label-text="日付(From)"></owd-date>
+				<owd-date id="dtTo" ng-model="searchCondition.dtTo" label-text="日付(To)" owd-validate="fromToCheck(searchCondition.dtFrom, $value)" owd-validate-watch="'searchCondition.dtFrom'" owd-validate-message="fromToMessage"></owd-date>
+				<owd-select id="shippingSlipType" ng-model="searchCondition.shippingSlipType" owd-models="shippingSlipTypeList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="出荷帳票発行区分"></owd-select>
+				<owd-select id="printStatus" ng-model="searchCondition.printStatus" owd-models="printStatusList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="発行状況"></owd-select>
+				<owd-text id="deliveryCourseCd" ng-model="searchCondition.deliveryCourseCd" label-text="運送便CD" owd-add-button="deliveryCourse()" ng-blur="deliveryCourseCdBlur()">
+				    <owd-info ng-model="searchCondition.deliveryCourseNm"></owd-info>
+				</owd-text>
+				<owd-text id="carrierCd" ng-model="searchCondition.carrierCd" label-text="運送業者CD" owd-add-button="showCarrier()" ng-blur="carrierCdBlur()">
+					<owd-info ng-model="searchCondition.carrierNm"></owd-info>
+				</owd-text>
+				<owd-text id="nizoroeNo2From" ng-model="searchCondition.nizoroeNo2From" label-text="荷揃番号(From)" ng-blur="nizoroeNo2FromChange()"></owd-text>
+				<owd-text id="nizoroeNo2To" ng-model="searchCondition.nizoroeNo2To" label-text="荷揃番号(To)"></owd-text>
+				<owd-text id="daihyoNizoroeNo2From" ng-model="searchCondition.daihyoNizoroeNo2From" label-text="代表荷揃番号(From)" ng-blur="daihyoNizoroeNo2FromChange()"></owd-text>
+				<owd-text id="daihyoNizoroeNo2To" ng-model="searchCondition.daihyoNizoroeNo2To" label-text="代表荷揃番号(To)"></owd-text>
+				<owd-text id="clientShippingNo" ng-model="searchCondition.clientShippingNo" label-text="発注伝票番号"></owd-text>
+			</div>
+		</fieldset>
+		</owd-accordion-group> </owd-accordion>
+		<div class="row">
+		    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<owd-button id="search" class="btn-info" ng-disabled="searchform.$invalid" ng-click="search()">検索</owd-button>
+				<owd-button id="excelOutput" class="btn-info" ng-disabled="searchform.$invalid" ng-click="excelOutput()">Excel出力</owd-button>
+			</div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"  align="right">
+            	<div class="list-box">
+            		<div class="list-text wmslegend wmslegendcolorred"><owd-span id="emergencyTitle" label-text="緊急"></owd-span></div>
+            	</div>
+			</div>
+		</div>
+	</form>
+	<form id="issueform" name="issueform" novalidate>
+		<br>
+		<div owd-grid="gridOptions" id="pickingListPrintB" owd-form-name="searchform" owd-backcolor-option="getClassForRow(row)"></div>
+		<br>
+		<div id="content-footer"></div>
+		<div id="content-footer-control" class="container">
+			<div class="row">
+				<div class="col-xs-12">
+                	<div align="right">
+                    	<owd-button id="issue" class="btn-info" ng-disabled="!gridOptions.gridApi.selection.getSelectedRows().length || issueform.$invalid" ng-click="issue()">発行_</owd-button>
+                	</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>

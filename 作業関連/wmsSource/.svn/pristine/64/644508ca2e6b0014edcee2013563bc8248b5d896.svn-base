@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_tYdMYIRyEea94P-lLwuSqQ" id="_tYclUIRyEea94P-lLwuSqQ" label="ParAccelFilterColumns" version="0.1" item="_tYdMYoRyEea94P-lLwuSqQ">
+    <author href="../../../talend.project#_w3NaQZaREearrO37QzOhcQ"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_tYdMYYRyEea94P-lLwuSqQ" path="ParAccel/system"/>
+  <TalendProperties:SQLPatternItem xmi:id="_tYdMYoRyEea94P-lLwuSqQ" property="_tYdMYIRyEea94P-lLwuSqQ" state="_tYdMYYRyEea94P-lLwuSqQ" system="true" eltName="ParAccel">
+    <content href="ParAccelFilterColumns_0.1.item#/"/>
+  </TalendProperties:SQLPatternItem>
+</xmi:XMI>

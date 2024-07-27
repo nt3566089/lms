@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_3a5mINmYEee2o-9kUqgXbg" name="WAS連携作業予定ファイル" dataPackage="_3a6NMNmYEee2o-9kUqgXbg" Server="Localhost 127.0.0.1" FilePath="C:/TOS_DI-20160510_1709-V6.2.0/workspace/ONESLOGI_ETL/csvFiles/output/WasLinkedPlan.csv" Format="WINDOWS" Encoding="windows-31j" FieldSeparatorValue="&quot;,&quot;" RowSeparatorType="Custom String" RowSeparatorValue="&quot;\r\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_3a6NMNmYEee2o-9kUqgXbg" name="default" dataManager="_3a5mINmYEee2o-9kUqgXbg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_3a6NMdmYEee2o-9kUqgXbg" id="_s_mE4NmYEee2o-9kUqgXbg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ulnLANmZEee2o-9kUqgXbg" name="作業日" label="作業日" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vGGB4NmZEee2o-9kUqgXbg" name="センタCD" label="センタCD" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uob1gNmZEee2o-9kUqgXbg" name="荷主CD" label="荷主CD" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_utXY0NmZEee2o-9kUqgXbg" name="作業CD" label="作業CD" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_uvNL4NmZEee2o-9kUqgXbg" name="作業数" label="作業数" talendType="id_String"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

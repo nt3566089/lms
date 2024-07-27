@@ -1,0 +1,132 @@
+package routines;
+
+import java.math.BigDecimal;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class BigDecimalRoutines {
+
+    /**
+     * 引数の末尾0を除去し、小数第4位以下を切り捨てする
+     *
+     * {talendTypes} BigDecimal
+     *
+     * {Category} BigDecimal
+     *
+     * {param} BigDecimal
+     *
+     * {example} stripTrailingZeros(123.000)
+     */
+
+    public static BigDecimal stripTrailingZeros(BigDecimal decimal) {
+    	if (isZero(decimal)) {
+    		return BigDecimal.ZERO;
+    	}
+    	return decimal.stripTrailingZeros();        
+    }
+   
+    /**
+     * 小数を指定の桁数で切り捨てする
+     *
+     * {talendTypes} BigDecimal
+     *
+     * {Category} BigDecimal
+     *
+     * {param} BigDecimal,integer
+     *
+     * {example} roundDown(123.1234, 3)
+     */
+
+    public static BigDecimal roundDown(BigDecimal decimal, int val) {
+    	return decimal.setScale(val, BigDecimal.ROUND_DOWN);
+    }
+
+	/**
+	 * "0"かどうかを返す
+	 * @param val
+	 * @return val == 0の場合true、それ以外はfalse
+	 */
+	public static boolean isZero(Object val) {
+		return isEqual(val, BigDecimal.ZERO);
+	}
+	/**
+	 * left == right かどうかを返す
+	 * @param left
+	 * @param right
+	 * @return left == rightの場合true、それ以外はfalse
+	 */
+	public static boolean isEqual(Object left, Object right) {
+
+		if (left == null && right == null) {
+			return true;
+		}
+
+		if (left == null || right == null) {
+			return false;
+		}
+
+		return compare(left, right) == 0;
+	}
+	
+	/**
+	 * 値の比較
+	 * left == right の場合は 0
+	 * left < right の場合は -1
+	 * left > right の場合は 1
+	 * @param left
+	 * @param right
+	 * @return left == right の場合は 0、left < right の場合は -1、left > right の場合は 1
+	 */
+	public static int compare(Object left, Object right) {
+		BigDecimal leftBd = toBigDecimal(left);
+		BigDecimal rightBd = toBigDecimal(right);
+
+		return leftBd.compareTo(rightBd);
+	}
+	
+	/**
+	 * 引数をBigDecimalに変換
+	 * @param val
+	 * @return val値のBigDecimal
+	 */
+	public static BigDecimal toBigDecimal(Object val) {
+
+		if (val == null) {
+			throw new NullPointerException("Argument(val) is null");
+		}
+
+		if (val instanceof BigDecimal) {
+			return (BigDecimal) val;
+		}
+
+		if (val instanceof String) {
+			return new BigDecimal((String) val);
+		}
+
+		if (val instanceof Long) {
+			return new BigDecimal((Long) val);
+		}
+
+		if (val instanceof Integer) {
+			return new BigDecimal((Integer) val);
+		}
+
+		throw new IllegalArgumentException("Argument(val) cannot do longValue.(Other than String, Long, Integer, BigDecimal)");
+	}
+}
