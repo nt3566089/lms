@@ -1,0 +1,41 @@
+画面マスタ	画面マスタ	画面マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ拡張基本	列マスタ拡張基本
+SCREEN_CD	DICT_NM	SYSTEM_TYPE	ITEM_CD	DICT_NM	ITEM_TYPE	VISIBLE	EDITABLE	TEXT_ALIGN	NECESSARY	DISPLAY_REQUIRED	COL_CD	DICT_NM	COL_ORDER	COL_TYPE	VISIBLE	EDITABLE	TEXT_ALIGN	NECESSARY	COL_WIDTH	IN_COL_INDEX	IN_COL_DEFAULT_VALUE	COL_ORDER	COL_WIDTH
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	productNm	商品名称		1	1		1	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	productAbbr	商品略称		1	1		1	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	janCd	JANCD		1	1		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	clientCd	荷主		0	0		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	productCd	商品CD		1	1		1	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	delFlg	削除		1	1		1	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	register	登録		1	1		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	product	商品マスタメンテナンスグリッド	grid	1	1		0	1	mshape.shapeCd	荷姿	1	text	1	0		0	150			1	150
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	product	商品マスタメンテナンスグリッド	grid	1	1		0	1	mshape.vdictByShapeDictId.dictNm	荷姿名称	2	text	1	0		0	300			2	300
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	product	商品マスタメンテナンスグリッド	grid	1	1		0	1	mproductShapeList[0].unitNum	入数	3	number	1	1	right	1	85			3	85
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	product	商品マスタメンテナンスグリッド	grid	1	1		0	1	mproductShapeList[0].unitNumUnit	入数単位	4	text	1	0		0	150			4	85
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	product	商品マスタメンテナンスグリッド	grid	1	1		0	1	mproductShapeList[0].length	縦(mm)	5	number	1	1	right	0	90			5	120
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	product	商品マスタメンテナンスグリッド	grid	1	1		0	1	mproductShapeList[0].width	横(mm)	6	number	1	1	right	0	90			6	120
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	product	商品マスタメンテナンスグリッド	grid	1	1		0	1	mproductShapeList[0].height	高さ(mm)	7	number	1	1	right	0	110			7	110
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	product	商品マスタメンテナンスグリッド	grid	1	1		0	1	mproductShapeList[0].volume	容積(mm3)	8	number	1	1	right	0	190			8	190
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	product	商品マスタメンテナンスグリッド	grid	1	1		0	1	mproductShapeList[0].netWeight	商品重量(g)	9	number	1	1	right	0	125			9	140
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	product	商品マスタメンテナンスグリッド	grid	1	1		0	1	mproductShapeList[0].grossWeight	総重量(g)	10	number	1	1	right	0	110			10	150
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	lotManagFlg	ロット管理区分		1	1		1	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	limitDtManagFlg	期限日管理フラグ		1	1		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	receiveLimitNum	入荷期限日限界日数		1	1		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	shippingLimitNum	出荷期限日限界日数		1	1		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	ocrDateFormat	OCR日付形式		1	1		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	prodDtManagFlg	製造日管理フラグ		1	1		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	prodDtLimitDaysRcv	入荷製造日限界日数		1	1		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	prodDtLimitDaysShp	出荷製造日限界日数		1	1		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	logiSpecialTypeCd	物流特殊区分		1	1		1	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	recomendLocationCd	推奨ロケーションCD		1	1		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	recomendLocationTypeCd	推奨ロケーション区分		1	1		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	innerJanCd	インナーJANCD		1	1		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	floorRefStockNum	フロア基準在庫		1	1		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	insuranceFlg	保険品フラグ		1	0		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	unitNum	単位名称		1	0		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	noOkinawaFlightFlg	沖縄航空便不可フラグ		1	0		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	logiAttentionTypeCd	物流注意区分		1	0		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	heavyItemFlg	重量フラグ		1	0		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	largeItemFlg	大物フラグ		1	0		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	sizeNm	サイズ名称		1	0		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	evaluationUnitPrice	評価単価		1	0		0	1													
+ProductMasterEdit	商品マスタメンテナンス(編集)	wms	oldJanCd	旧JANCD		1	0		0	1													

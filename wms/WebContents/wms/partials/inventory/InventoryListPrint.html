@@ -1,0 +1,49 @@
+<div ng-controller="InventoryListPrint" owd-screen="InventoryListPrint">
+		<form id="diffform" name="diffform" novalidate>
+			<owd-label id="inventoryDiffListOut" label-text="差異リスト出力"></owd-label>
+			<div class="well">
+				<div class="row">
+						<owd-select id="centerCd" ng-model="head.mcenter.centerCd" owd-models="centerList" owd-repeat-key="centerCd" owd-repeat-value="centerNm" label-text="センタ"></owd-select>
+						<owd-select id="depositCd" ng-model="body.mcustomerByDepositId.customerCd" owd-models="depositStockTypeList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="所有者"></owd-select>
+						<owd-date id="inventoryInstDt" ng-model="head.inventoryInstDt" label-text="棚卸指示日"></owd-date>
+						<owd-select id="inventoryPrintType" ng-model="head.inventoryPrintType" owd-models="inventoryPrintTypeList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="棚卸帳票発行区分"></owd-select>
+						<owd-text id="fromLocationCd" ng-model="body.fromLocationCd" label-text="ロケーション(From)" owd-add-button="showLocation(1)" ng-blur="locationCdBlur(1)">
+							<owd-info ng-model="body.fromLocationNm"></owd-info>
+						</owd-text>
+						<owd-text id="toLocationCd" ng-model="body.toLocationCd" label-text="ロケーション(To)" owd-add-button="showLocation(2)"  ng-blur="locationCdBlur(2)" owd-validate="fromToCheck(body.fromLocationCd, $value)" owd-validate-watch="'body.fromLocationCd'" owd-validate-message="fromToMessage">
+							<owd-info ng-model="body.toLocationNm"></owd-info>
+						</owd-text>
+						<owd-select id="areaCd" ng-model="body.areaCd" owd-models="areaCdList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="エリア"></owd-select>
+						<owd-text id="inventoryUserCd" ng-model="head.inventoryUserCd" label-text="棚卸担当者" owd-add-button="showUser()" ng-blur="userCdBlur()">
+							<owd-info ng-model="head.userNm"></owd-info>
+						</owd-text>
+						<owd-select id="inventoryListPrintType" ng-model="head.inventoryListPrintType" owd-models="inventoryListPrintTypeList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="棚卸リスト発行区分"></owd-select>
+						<owd-select id="inventoryDiff" ng-model="head.inventoryDiff" owd-models="inventoryDiffList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="棚卸差異"></owd-select>
+				</div>
+				<div class="row">
+					<div class="col-xs-6" align="left">
+						<owd-button id="inventoryDiffListPrint" class="btn-info" ng-disabled="diffform.$invalid" ng-click="issue1()">差異リスト発行</owd-button>
+					</div>
+				</div>
+			</div>
+		</form>
+	<form id="outlistform" name="outlistform" novalidate>
+			<owd-label id="inventoryRecordOut" label-text="実績表出力"></owd-label>
+			<div class="well">
+				<div class="row">
+					<owd-select id="centerCd_R" ng-model="headR.mcenter.centerCd" owd-models="centerList" owd-repeat-key="centerCd" owd-repeat-value="centerNm" label-text="センタ"></owd-select>
+					<owd-select id="depositCd_R" ng-model="bodyR.mcustomerByDepositId.customerCd" owd-models="depositStockTypeList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="所有者"></owd-select>
+					<owd-date id="inventoryInstDt_R" ng-model="headR.inventoryInstDt" label-text="棚卸指示日"></owd-date>
+					<owd-select id="inventoryPrintType_R" ng-model="headR.inventoryPrintType" owd-models="inventoryPrintTypeListR" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="棚卸帳票発行区分"></owd-select>
+					<owd-select id="inventoryDiff_R" ng-model="headR.inventoryDiff" owd-models="inventoryDiffList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="棚卸差異"></owd-select>
+					<owd-select id="diffPriceHiddenFlg" ng-model="headR.diffPriceHiddenFlg" owd-models="diffPriceHiddenList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="差異金額非表示"></owd-select>
+				</div>
+				<div class="row">
+					<div class="col-xs-6" align="left">
+						<owd-button id="inventoryRecordPrint" class="btn-info" ng-disabled="outlistform.$invalid" ng-click="issue2()">実績表発行</owd-button>
+					</div>
+				</div>
+			</div>
+	</form>
+	
+</div>

@@ -1,0 +1,39 @@
+<div ng-controller="InventoryCreate" owd-screen="InventoryCreate">
+	<form id="createform" name="createform" novalidate>
+		<div class="well">
+			<div class="row">
+				<!-- 荷主センタ変更対応 2017.02.10 sja Start -->
+				<!--
+				<owd-select id="centerCd" ng-model="conditionH.mcenter.centerCd" owd-models="centerList" owd-repeat-key="centerCd" owd-repeat-value="centerNm" label-text="センタ"></owd-select>
+				-->
+				<owd-select id="centerCd" ng-model="conditionH.mcenter.centerCd" owd-models="centerList" owd-repeat-key="centerCd" owd-repeat-value="centerNm" label-text="センタ" ng-change="centerChange()"></owd-select>
+				<!-- 荷主センタ変更対応 2017.02.10 sja End -->
+				<owd-select id="clientCd" ng-model="conditionH.mclient.clientCd" owd-models="clientList" owd-repeat-key="clientCd" owd-repeat-value="clientNm" label-text="荷主" ng-focus="clientFocus()" ng-change="clientChange()" ng-blur="clientBlur()"></owd-select>
+				<owd-select id="warehouseCd" ng-model="conditionB.mwarehouse.warehouseCd" owd-models="warehouseList" owd-repeat-key="warehouseCd" owd-repeat-value="warehouseNm" label-text="倉庫" ng-focus="warehouseFocus()" ng-change="warehouseChange()" ng-blur="warehouseBlur()"></owd-select>
+				<owd-date id="inventoryDt" ng-model="conditionH.inventoryDt" label-text="棚卸日"  owd-validate="inventoryDtCheck($value)"  owd-validate-message="inventoryDtMessage" ></owd-date>
+				<owd-select id="depositCd" ng-model="conditionB.mcustomerByDepositId.customerCd" owd-models="depositStockTypeList" owd-repeat-key="mCustomer.customerCd" owd-repeat-value="mCustomer.customerNm" label-text="預託"></owd-select>
+				<owd-select id="stockTypeCd" ng-model="conditionB.mstockType.stockTypeCd" owd-models="stockTypeList" owd-repeat-key="stockTypeCd" owd-repeat-value="stockTypeNm" label-text="在庫区分"></owd-select>
+				<owd-text id="fromLocationCd" ng-model="conditionI.fromLocationCd" label-text="ロケーション(From)" owd-add-button="showLocation(1)" ng-blur="locationCdBlur(1)">
+					<owd-info ng-model="conditionI.fromLocationNm"></owd-info>
+				</owd-text>
+				<owd-text id="toLocationCd" ng-model="conditionI.toLocationCd" label-text="ロケーション(To)" owd-add-button="showLocation(2)" ng-blur="locationCdBlur(2)" owd-validate="fromToCheck(conditionI.fromLocationCd, $value)" owd-validate-watch="'conditionI.fromLocationCd'" owd-validate-message="fromToMessage">
+					<owd-info ng-model="conditionI.toLocationNm"></owd-info>
+				</owd-text>
+				<owd-select id="zoneCd" ng-model="conditionI.mzone.zoneCd" owd-models="zoneList" owd-repeat-key="zoneCd" owd-repeat-value="zoneNm" label-text="ゾーン"></owd-select>
+				<owd-date id="fromStockInoutDt" ng-model="conditionI.fromStockInoutDt" label-text="受払日(From)"></owd-date>
+				<owd-date id="toStockInoutDt" ng-model="conditionI.toStockInoutDt" label-text="受払日(To)" owd-validate="fromToDtCheck(conditionI.fromStockInoutDt, $value)" owd-validate-watch="'conditionI.fromStockInoutDt'" owd-validate-message="fromToDtMessage"></owd-date>
+				<owd-select id="stockTarget" ng-model="conditionI.stockExistOnlyFlg" owd-models="stockTargetList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="在庫数＞０のみ" owd-remove-blank></owd-select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12" align="right">
+				<!-- 棚卸データ削除ボータン追加 2017.07.18 aungtun Start -->
+				<!-- 検索項目にエラーがある場合は、ボタンを押せなくするように修正 2018.04.12 shimizu Start -->
+				<owd-button id="InventoryDelete"   class="btn-danger" ng-disabled="createform.$invalid" ng-click="deletedata()">棚卸データ削除</owd-button>
+				<!-- 検索項目にエラーがある場合は、ボタンを押せなくするように修正 2018.04.12 shimizu End -->
+				<!-- 棚卸データ削除ボータン追加 2017.07.18 aungtun End -->
+				<owd-button id="register" class="btn-success"  ng-disabled="createform.$invalid" ng-click="register()">棚卸データ作成</owd-button>
+			</div>
+		</div>
+	</form>
+</div>

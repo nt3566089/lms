@@ -1,0 +1,25 @@
+画面マスタ	画面マスタ	画面マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ拡張基本	列マスタ拡張基本
+SCREEN_CD	DICT_NM	SYSTEM_TYPE	ITEM_CD	DICT_NM	ITEM_TYPE	VISIBLE	EDITABLE	TEXT_ALIGN	NECESSARY	DISPLAY_REQUIRED	COL_CD	DICT_NM	COL_ORDER	COL_TYPE	VISIBLE	EDITABLE	TEXT_ALIGN	NECESSARY	COL_WIDTH	IN_COL_INDEX	IN_COL_DEFAULT_VALUE	COL_ORDER	COL_WIDTH
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	centerCd	センタ		1	0		0	1													
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	salesOrgCd	販売組織CD		1	1		0	1													
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	accountCd	得意先		1	1		0	1													
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	productCd	商品CD		1	1		0	1													
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	depositJanCd	預りJANCD		1	1		0	1													
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	delFlg	削除		1	1		0	1													
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	depositProductMasterList	預り商品マスタメンテナンス(一覧)グリッド	grid	1	1		0	1	msalesOrg.salesOrgCd	販売組織CD	1	text	1	0		0	90			1	110
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	depositProductMasterList	預り商品マスタメンテナンス(一覧)グリッド	grid	1	1		0	1	msalesOrg.tenhanshaNm1	販売組織名称	2	text	1	0		0	200			2	200
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	depositProductMasterList	預り商品マスタメンテナンス(一覧)グリッド	grid	1	1		0	1	accountCd	得意先CD	3	text	1	0		0	90			3	110
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	depositProductMasterList	預り商品マスタメンテナンス(一覧)グリッド	grid	1	1		0	1	mcustomer.customerNm	得意先名称	4	text	1	0		0	200			4	200
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	depositProductMasterList	預り商品マスタメンテナンス(一覧)グリッド	grid	1	1		0	1	mproduct.productCd	商品CD	5	text	1	0		0	90			5	110
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	depositProductMasterList	預り商品マスタメンテナンス(一覧)グリッド	grid	1	1		0	1	mproduct.productNm	商品名称	6	text	1	0		0	350			6	350
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	depositProductMasterList	預り商品マスタメンテナンス(一覧)グリッド	grid	1	1		0	1	depositJanCd	預りJANCD	7	text	1	0		0	150			7	170
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	depositProductMasterList	預り商品マスタメンテナンス(一覧)グリッド	grid	1	1		0	1	idManagTypeCd	個体管理区分CD	8	text	1	0		0	90			8	110
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	depositProductMasterList	預り商品マスタメンテナンス(一覧)グリッド	grid	1	1		0	1	idManagTypeNm	個体管理区分名称	9	text	1	0		0	300			9	300
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	depositProductMasterList	預り商品マスタメンテナンス(一覧)グリッド	grid	1	1		0	1	delFlg	削除フラグCD	10	text	1	0		0	90			10	110
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	depositProductMasterList	預り商品マスタメンテナンス(一覧)グリッド	grid	1	1		0	1	delFlgNm	削除フラグ名称	11	text	1	0		0	125			11	150
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	depositProductMasterList	預り商品マスタメンテナンス(一覧)グリッド	grid	1	1		0	1	centerCd	センタCD	12	text	1	0		0	90			12	110
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	depositProductMasterList	預り商品マスタメンテナンス(一覧)グリッド	grid	1	1		0	1	centerNm	センタ名称	13	text	1	0		0	200			13	200
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	register	新規		1	1		0	1													
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	update	修正		1	1		0	1													
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	excelOutput	Excel出力		1	1		0	1													
+DepositProductMasterList	預り商品マスタメンテナンス(一覧)	wms	search	検索		1	1		0	1													

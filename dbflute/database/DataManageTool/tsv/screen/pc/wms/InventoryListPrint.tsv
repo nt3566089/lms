@@ -1,0 +1,22 @@
+画面マスタ	画面マスタ	画面マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ拡張基本	列マスタ拡張基本
+SCREEN_CD	DICT_NM	SYSTEM_TYPE	ITEM_CD	DICT_NM	ITEM_TYPE	VISIBLE	EDITABLE	TEXT_ALIGN	NECESSARY	DISPLAY_REQUIRED	COL_CD	DICT_NM	COL_ORDER	COL_TYPE	VISIBLE	EDITABLE	TEXT_ALIGN	NECESSARY	COL_WIDTH	IN_COL_INDEX	IN_COL_DEFAULT_VALUE	COL_ORDER	COL_WIDTH
+InventoryListPrint	棚卸関連リスト発行	wms	inventoryDiffListOut	差異リスト出力		1	0		0	1													
+InventoryListPrint	棚卸関連リスト発行	wms	centerCd	センタ		1	0		0	1													
+InventoryListPrint	棚卸関連リスト発行	wms	depositCd	所有者		1	1		0	1													
+InventoryListPrint	棚卸関連リスト発行	wms	inventoryInstDt	棚卸指示日		1	1		1	1													
+InventoryListPrint	棚卸関連リスト発行	wms	inventoryPrintType	棚卸帳票発行区分		1	1		1	1													
+InventoryListPrint	棚卸関連リスト発行	wms	fromLocationCd	ロケーションCD(From)		1	1		0	1													
+InventoryListPrint	棚卸関連リスト発行	wms	toLocationCd	ロケーションCD(To)		1	1		0	1													
+InventoryListPrint	棚卸関連リスト発行	wms	areaCd	エリア		1	1		0	1													
+InventoryListPrint	棚卸関連リスト発行	wms	inventoryUserCd	棚卸担当者		1	1		0	1													
+InventoryListPrint	棚卸関連リスト発行	wms	inventoryListPrintType	棚卸リスト発行区分		1	1		0	1													
+InventoryListPrint	棚卸関連リスト発行	wms	inventoryDiff	棚卸差異		1	1		0	1													
+InventoryListPrint	棚卸関連リスト発行	wms	inventoryDiffListPrint	差異リスト発行		1	1		0	1													
+InventoryListPrint	棚卸関連リスト発行	wms	inventoryRecordOut	実績表出力		1	0		0	1													
+InventoryListPrint	棚卸関連リスト発行	wms	centerCd_R	センタ		1	0		0	1													
+InventoryListPrint	棚卸関連リスト発行	wms	depositCd_R	所有者		1	1		0	1													
+InventoryListPrint	棚卸関連リスト発行	wms	inventoryInstDt_R	棚卸指示日		1	1		1	1													
+InventoryListPrint	棚卸関連リスト発行	wms	inventoryPrintType_R	棚卸帳票発行区分		1	1		1	1													
+InventoryListPrint	棚卸関連リスト発行	wms	inventoryDiff_R	棚卸差異		1	1		0	1													
+InventoryListPrint	棚卸関連リスト発行	wms	diffPriceHiddenFlg	差異金額非表示		1	1		0	1													
+InventoryListPrint	棚卸関連リスト発行	wms	inventoryRecordPrint	実績表発行		1	1		0	1													

@@ -1,0 +1,80 @@
+SCREEN_CD	DICT_NM	ITEM_CD	DICT_NM	ROLE_CD	DICT_NM	VISIBLE	EDITABLE	ROLE_CD	DICT_NM	VISIBLE	EDITABLE	ROLE_CD	DICT_NM	VISIBLE	EDITABLE
+ClientMaster	荷主マスタメンテナンス	addRow	行追加	NoClientCenterEdit	荷主センタ編集不可	0		Workers	管理作業者権限		0	ViewOnly	閲覧許可		
+ClientMaster	荷主マスタメンテナンス	removeRow	行削除	NoClientCenterEdit	荷主センタ編集不可	0		Workers	管理作業者権限		0	ViewOnly	閲覧許可		
+ClientMaster	荷主マスタメンテナンス	register	登録	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限		0	ViewOnly	閲覧許可		
+CenterMasterList	センタマスタメンテナンス(一覧)	register	新規	NoClientCenterEdit	荷主センタ編集不可	0	0	Workers	管理作業者権限	0	0	ViewOnly	閲覧許可		
+CenterMasterList	センタマスタメンテナンス(一覧)	update	修正	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限	0	0	ViewOnly	閲覧許可		
+CenterMasterList	センタマスタメンテナンス(一覧)	delFlg	削除	NoClientCenterEdit	荷主センタ編集不可	0	0	Workers	管理作業者権限			ViewOnly	閲覧許可		
+CenterMasterEdit	センタマスタメンテナンス(編集)	delFlg	削除	NoClientCenterEdit	荷主センタ編集不可	0	0	Workers	管理作業者権限			ViewOnly	閲覧許可		
+CenterMasterEdit	センタマスタメンテナンス(編集)	addRow	行追加	NoClientCenterEdit	荷主センタ編集不可	0	0	Workers	管理作業者権限			ViewOnly	閲覧許可		
+CenterMasterEdit	センタマスタメンテナンス(編集)	removeRow	行削除	NoClientCenterEdit	荷主センタ編集不可	0	0	Workers	管理作業者権限			ViewOnly	閲覧許可		
+CenterMasterEdit	センタマスタメンテナンス(編集)	new	新規	NoClientCenterEdit	荷主センタ編集不可	0		Workers	管理作業者権限			ViewOnly	閲覧許可		
+ParameterMasterEdit	パラメータマスタメンテナンス(編集)	delFlg	削除	NoClientCenterEdit	荷主センタ編集不可	0		Workers	管理作業者権限			ViewOnly	閲覧許可		
+WarehouseMaster	倉庫マスタメンテナンス	addRow	行追加	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限		0	ViewOnly	閲覧許可		
+WarehouseMaster	倉庫マスタメンテナンス	removeRow	行削除	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限		0	ViewOnly	閲覧許可		
+WarehouseMaster	倉庫マスタメンテナンス	register	登録	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限		0	ViewOnly	閲覧許可		
+EcOrderList	EC受注データ一覧	invoiceCreate	EC送り状データ出力	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	0
+EcOrderList	EC受注データ一覧	deliveryCourseShippingList	配送コース別出荷一覧	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	0
+EcOrderList	EC受注データ一覧	shippingInstList	出庫指示一覧	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	0
+EcOrderList	EC受注データ一覧	productShippingList	商品別出荷一覧	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	0
+EcOrderList	EC受注データ一覧	instUpdate	指示修正	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	0
+EcOrderList	EC受注データ一覧	statementOut	納品書	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	0
+EcOrderList	EC受注データ一覧	orderCancel	受注キャンセル	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	0
+EcOrderList	EC受注データ一覧	errorDelete	受注エラー削除	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	0
+SlipNoReceiveList	伝票別入荷一覧	reportPrint	入荷予定リスト	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+SlipNoReceiveList	伝票別入荷一覧	receivePlanDelete	入荷予定削除	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+SlipNoReceiveList	伝票別入荷一覧	receivePlanInput	入荷予定修正	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+SlipNoReceiveList	伝票別入荷一覧	errorCheck	エラーチェック	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+SlipNoReceiveList	伝票別入荷一覧	receiveInput	入荷実績入力	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+SlipNoReceiveList	伝票別入荷一覧	productLabel	商品ラベル	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ProductReceiveList	商品別入荷一覧	receivePlanInput	入荷予定修正	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ProductReceiveList	商品別入荷一覧	receiveInput	入荷実績入力	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ProductReceiveList	商品別入荷一覧	productLabel	商品ラベル	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ReceivePartList	入荷未完了一覧	receiveDeliveryStatus	入荷納品ステータス	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ReceivePartList	入荷未完了一覧	processStatus	入荷納品ステータス	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ReceivePartList	入荷未完了一覧	receivePlanDt	入荷予定日	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ReceivePartList	入荷未完了一覧	register	登録	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ReceivePartList	入荷未完了一覧	instruction	指示	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+DeliveryCourseShippingList	配送コース別出荷一覧	shippingInst	出庫指示	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+DeliveryCourseShippingList	配送コース別出荷一覧	shippingInstDelete	出庫指示解除	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+DeliveryCourseShippingList	配送コース別出荷一覧	stwList	積込リスト	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ShippingInstList	出庫指示一覧	dateBatch	日付	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ShippingInstList	出庫指示一覧	checkDtBatch	選択行更新(日付一括変更)	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ShippingInstList	出庫指示一覧	checkdeliveryCourseBatch	選択行更新(配送コースCD一括変更)	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ShippingInstList	出庫指示一覧	indicator	出庫指示	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ShippingInstList	出庫指示一覧	indicatingCancel	出庫指示解除	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ShippingInstList	出庫指示一覧	pickingListPrint	ピッキングリスト	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ShippingInstList	出庫指示一覧	shippingWorkRefUpdate	出庫作業メッセージ登録	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ShippingInstList	出庫指示一覧	indicatorCancel	出荷指示キャンセル	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ShippingInstList	出庫指示一覧	errorDelete	エラーデータ削除	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ShippingInstList	出庫指示一覧	errorCheck	エラーチェック	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ShippingInstList	出庫指示一覧	deliveryCourseCdBatch	配送コースCD	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ShippingInstList	出庫指示一覧	workShippingDtFlg	作業日/出荷日	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ShippingInstList	出庫指示一覧	pieceShippingInspectCancel	出荷検品解除	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ShippingInstDetail	出荷指示明細	shippingUpdate	実績訂正	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ProductShippingList	商品別出荷一覧	workShippingDtFlg	作業日/出荷日	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ProductShippingList	商品別出荷一覧	workShippingDt	日付	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ProductShippingList	商品別出荷一覧	workShippingDtUpdate	選択行更新(日付一括変更)	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ProductShippingList	商品別出荷一覧	zipCd	郵便番号	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ProductShippingList	商品別出荷一覧	zipCdUpdate	選択行更新(郵便番号一括変更)	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ProductShippingList	商品別出荷一覧	deliveryCourseCdUpd	配送コースCD	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ProductShippingList	商品別出荷一覧	deliveryCourseCdUpdate	選択行更新(配送コースCD一括変更)	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ProductShippingList	商品別出荷一覧	instUpdate	指示修正	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ShippingConfirmList	出荷確定一覧	compulsory	強制確定	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ShippingConfirmList	出荷確定一覧	confirmCancel	出荷確定解除	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ShippingConfirmList	出荷確定一覧	confirm	出荷確定	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+StockList	在庫問合せ	stockAdj	在庫調整	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	0
+StockList	在庫問合せ	stockMove	在庫移動	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	0
+StockList	在庫問合せ	storeLabelPrint	入庫ラベル	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	0
+StockList	在庫問合せ	stockBulkMove	在庫一括移動指示	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	0
+StockMoveList	在庫移動一覧	register	完了	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+StockMoveList	在庫移動一覧	cancel	取消	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+StockMoveList	在庫移動一覧	lblcancel	取消	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+StockMoveList	在庫移動一覧	listPrint	指示書	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+ReplenishInstList	補充指示一覧	replenishInst	補充指示	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	
+SerialNoList	シリアルNo.一覧	supplyCustomerCdBatch	納品先CD	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	0
+SerialNoList	シリアルNo.一覧	pickingWorkNoBatch	出庫作業No./出荷梱包No.	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	0
+SerialNoList	シリアルNo.一覧	shippingDtBatch	出荷日	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	0
+SerialNoList	シリアルNo.一覧	checkShippingBatch	出荷情報更新	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	0
+SerialNoList	シリアルNo.一覧	dataDelete	削除	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	0
+SerialNoList	シリアルNo.一覧	shippingInfoClear	出荷情報クリア	NoClientCenterEdit	荷主センタ編集不可			Workers	管理作業者権限			ViewOnly	閲覧許可	0	0

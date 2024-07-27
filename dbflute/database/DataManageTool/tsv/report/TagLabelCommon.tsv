@@ -1,0 +1,9 @@
+REPORT_CD	REPORT_NM	REPORT_LAYOUT_NM	REPORT_LAYOUT_DATA	UPDATABLE	ATTRIBUTE1	ATTRIBUTE2	ATTRIBUTE3	ATTRIBUTE4	ATTRIBUTE5	AUTO_PRINT_TARGET_FLG	DEL_FLG	ITEM_CD	DICT_NM	ITEM_TYPE	VISIBLE	ITEM_FORMAT
+TagLabelCommon	汎用荷札new	汎用荷札new	../../../../../../reports/shipping/TagLabelCommon.jrxml	1						1	0	lblDispatch	【発送元】	String	1	
+TagLabelCommon	汎用荷札new	汎用荷札new	../../../../../../reports/shipping/TagLabelCommon.jrxml	1						1	0	lblWorkDt	出荷日	String	1	
+TagLabelCommon	汎用荷札new	汎用荷札new	../../../../../../reports/shipping/TagLabelCommon.jrxml	1						1	0	lblInvoiceSummary	摘要：	String	1	
+TagLabelCommon	汎用荷札new	汎用荷札new	../../../../../../reports/shipping/TagLabelCommon.jrxml	1						1	0	lblBoxNo	通番：	String	1	
+TagLabelCommon	汎用荷札new	汎用荷札new	../../../../../../reports/shipping/TagLabelCommon.jrxml	1						1	0	lblDelivDt	指定配達日	String	1	
+TagLabelCommon	汎用荷札new	汎用荷札new	../../../../../../reports/shipping/TagLabelCommon.jrxml	1						1	0	lblAgain	再	String	1	
+TagLabelCommon	汎用荷札new	汎用荷札new	../../../../../../reports/shipping/TagLabelCommon.jrxml	1						1	0	lblDelivtz	配達時間	String	1	
+TagLabelCommon	汎用荷札new	汎用荷札new	../../../../../../reports/shipping/TagLabelCommon.jrxml	1						1	0	lblCodFee	代引金額	Decimal	1	

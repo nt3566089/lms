@@ -1,0 +1,16 @@
+REPORT_CD	REPORT_NM	REPORT_LAYOUT_NM	REPORT_LAYOUT_DATA	UPDATABLE	ATTRIBUTE1	ATTRIBUTE2	ATTRIBUTE3	ATTRIBUTE4	ATTRIBUTE5	AUTO_PRINT_TARGET_FLG	DEL_FLG	ITEM_CD	DICT_NM	ITEM_TYPE	VISIBLE	ITEM_FORMAT
+InventoryStockDiffList	棚卸在庫差異表	棚卸在庫差異表	../../../../../../reports/inventory/InventoryStockDiffList.jrxml	1						0	0	lblCenter	センタ	String	1	
+InventoryStockDiffList	棚卸在庫差異表	棚卸在庫差異表	../../../../../../reports/inventory/InventoryStockDiffList.jrxml	1						0	0	lblLocation	ロケーション	String	1	
+InventoryStockDiffList	棚卸在庫差異表	棚卸在庫差異表	../../../../../../reports/inventory/InventoryStockDiffList.jrxml	1						0	0	lblTitle	棚卸在庫差異表	String	1	
+InventoryStockDiffList	棚卸在庫差異表	棚卸在庫差異表	../../../../../../reports/inventory/InventoryStockDiffList.jrxml	1						0	0	lblPage	PAGE:	String	1	
+InventoryStockDiffList	棚卸在庫差異表	棚卸在庫差異表	../../../../../../reports/inventory/InventoryStockDiffList.jrxml	1						0	0	lblLimitDt	期限日	String	1	
+InventoryStockDiffList	棚卸在庫差異表	棚卸在庫差異表	../../../../../../reports/inventory/InventoryStockDiffList.jrxml	1						0	0	lblProdDt	製造日	String	1	
+InventoryStockDiffList	棚卸在庫差異表	棚卸在庫差異表	../../../../../../reports/inventory/InventoryStockDiffList.jrxml	1						0	0	lblLot	ロット	String	1	
+InventoryStockDiffList	棚卸在庫差異表	棚卸在庫差異表	../../../../../../reports/inventory/InventoryStockDiffList.jrxml	1						0	0	lblCaseNum	ケース数	String	1	
+InventoryStockDiffList	棚卸在庫差異表	棚卸在庫差異表	../../../../../../reports/inventory/InventoryStockDiffList.jrxml	1						0	0	lblInventoryNum	棚卸数	String	1	
+InventoryStockDiffList	棚卸在庫差異表	棚卸在庫差異表	../../../../../../reports/inventory/InventoryStockDiffList.jrxml	1						0	0	lblchargeNum	在庫数	String	1	
+InventoryStockDiffList	棚卸在庫差異表	棚卸在庫差異表	../../../../../../reports/inventory/InventoryStockDiffList.jrxml	1						0	0	lblDiffNum	棚卸差異数	String	1	
+InventoryStockDiffList	棚卸在庫差異表	棚卸在庫差異表	../../../../../../reports/inventory/InventoryStockDiffList.jrxml	1						0	0	lblInventoryUserNm	棚卸担当者	String	1	
+InventoryStockDiffList	棚卸在庫差異表	棚卸在庫差異表	../../../../../../reports/inventory/InventoryStockDiffList.jrxml	1						0	0	lblArea	エリア	String	1	
+InventoryStockDiffList	棚卸在庫差異表	棚卸在庫差異表	../../../../../../reports/inventory/InventoryStockDiffList.jrxml	1						0	0	lbltotal	合計	String	1	
+InventoryStockDiffList	棚卸在庫差異表	棚卸在庫差異表	../../../../../../reports/inventory/InventoryStockDiffList.jrxml	1						0	0	lblNoScan	未スキャン入荷ラベル	String	1	

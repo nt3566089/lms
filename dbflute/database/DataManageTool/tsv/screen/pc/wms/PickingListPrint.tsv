@@ -1,0 +1,55 @@
+画面マスタ	画面マスタ	画面マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ拡張基本	列マスタ拡張基本
+SCREEN_CD	DICT_NM	SYSTEM_TYPE	ITEM_CD	DICT_NM	ITEM_TYPE	VISIBLE	EDITABLE	TEXT_ALIGN	NECESSARY	DISPLAY_REQUIRED	COL_CD	DICT_NM	COL_ORDER	COL_TYPE	VISIBLE	EDITABLE	TEXT_ALIGN	NECESSARY	COL_WIDTH	IN_COL_INDEX	IN_COL_DEFAULT_VALUE	COL_ORDER	COL_WIDTH
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	centerCd	センタ		1	0		0	1													
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	searchReferenceDt	検索基準日		1	1		1	1													
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	dtFrom	日付(From)		1	1		1	1													
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	dtTo	日付(To)		1	1		1	1													
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	shippingSlipType	出荷帳票発行区分		1	1		1	1													
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	printStatus	発行状況		1	0		0	1													
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	deliveryCourseCd	運送便CD		1	1		0	1													
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	carrierCd	運送業者CD		1	1		0	1													
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	nizoroeNo2From	荷揃番号(From)		1	1		0	1													
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	nizoroeNo2To	荷揃番号(To)		1	1		0	1													
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	daihyoNizoroeNo2From	代表荷揃番号(From)		1	1		0	1													
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	daihyoNizoroeNo2To	代表荷揃番号(To)		1	1		0	1													
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	clientShippingNo	発注伝票番号		1	1		0	1													
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	search	検索		1	1		0	1													
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	excelOutput	Excel出力		1	1		0	1													
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	emergencyTitle	緊急		1	0		0	1													
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	nizoroeNo2	荷揃番号	1	text	1	0		0	170			1	170
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	daihyoNizoroeNo2	代表荷揃番号	2	text	1	0		0	170			2	170
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	supplyCustomerNm	送り先名称	3	text	1	0		0	200			3	200
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	deliveryCourseCd	運送便CD	4	text	1	0		0	150			4	150
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	deliveryCourseNm	運送便名称	5	text	1	0		0	200			5	200
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	carrierCd	運送業者CD	6	text	1	0		0	150			6	150
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	carrierNm	運送業者名称	7	text	1	0		0	200			7	200
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	kohaiContractorCd	ユーザCD	8	text	1	0		0	150			8	150
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	kohaiContractorNm	ユーザ名称	9	text	1	0		0	200			9	200
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	shippingDt	出荷指示日	10	date	1	0		0	150			10	150
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	workDt	作業日	11	date	1	0		0	150			11	150
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	shippingFixedDt	出荷日	12	date	1	0		0	150			12	150
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	clientShippingNo	発注伝票番号	13	text	1	0		0	170			13	170
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	processTypeCd	出荷処理区分CD	14	text	1	0		0	170			14	170
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	processTypeNm	出荷処理区分名称	15	text	1	0		0	170			15	170
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	shippingTypeCd	出荷区分CD	16	text	1	0		0	120			16	120
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	shippingTypeNm	出荷区分名称	17	text	1	0		0	150			17	150
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	slipCnt	伝票枚数	18	number	1	0	right	0	120			18	120
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	lineCnt	行数	19	number	1	0	right	0	120			19	120
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	itemCnt	アイテム数	20	number	1	0	right	0	120			20	120
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	instNum	総バラ数	21	number	1	0	right	0	120			21	120
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	packingNum	梱包数	22	number	1	0	right	0	120			22	120
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	nizoroeOutNm	荷揃表発行	23	text	1	0		0	150			23	150
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	nizoroeOutDt	荷揃表発行日時	24	datetime	1	0		0	200			24	200
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	tagOutNm	荷札発行	25	text	1	0		0	150			25	150
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	tagOutDt	荷札発行日時	26	datetime	1	0		0	200			26	200
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	delivOutNm	納品書発行	27	text	1	0		0	150			27	150
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	delivOutDt	納品書発行日時	28	datetime	1	0		0	200			28	200
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	pllOutNm	梱包明細発行	29	text	1	0		0	150			29	150
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	pllOutDt	梱包明細発行日時	30	datetime	1	0		0	200			30	200
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	indvSupplyOutNm	個人別支給明細発行	31	text	1	0		0	200			31	200
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	indvSupplyOutDt	個人別支給明細発行日時	32	datetime	1	0		0	300			32	300
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	indvLabelOutNm	個別貼り付けラベル発行	33	text	1	0		0	200			33	200
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	indvLabelOutDt	個別貼り付けラベル発行日時	34	datetime	1	0		0	275			34	275
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	centerCd	センタCD	35	text	1	0		0	150			35	150
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	pickingListPrintB	荷揃表・荷札・納品書再発行グリッド	grid	1	0		0	1	centerNm	センタ名称	36	text	1	0		0	200			36	200
+PickingListPrint	荷揃表・荷札・納品書再発行	wms	issue	発行		1	1		0	1													

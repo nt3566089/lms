@@ -1,0 +1,12 @@
+ROLE_CD	DICT_NM
+NoSystemMaintenance	システム管理不可
+NoWmsMasterMaintenance	WMSマスタ管理不可
+NoDaily	日次締処理不可
+ViewOnly	閲覧許可
+Workers	管理作業者権限
+NoClientCenterEdit	荷主センタ編集不可
+NoCommonSetting	共通設定不可
+NoViewShipping	出荷閲覧不可
+NoTotalStockList	トータル在庫問合せ不可
+DepositViewOnly	預託閲覧許可
+NoViewDeposit	預託閲覧不可

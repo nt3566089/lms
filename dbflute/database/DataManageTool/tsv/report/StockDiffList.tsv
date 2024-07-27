@@ -1,0 +1,19 @@
+REPORT_CD	REPORT_NM	REPORT_LAYOUT_NM	REPORT_LAYOUT_DATA	UPDATABLE	ATTRIBUTE1	ATTRIBUTE2	ATTRIBUTE3	ATTRIBUTE4	ATTRIBUTE5	AUTO_PRINT_TARGET_FLG	DEL_FLG	ITEM_CD	DICT_NM	ITEM_TYPE	VISIBLE	ITEM_FORMAT
+StockDiffList	在庫差異確認表	在庫差異確認表	../../../../../../reports/inventory/StockDiffList.jrxml	1						0	0	lblCenter	センタ	String	1	
+StockDiffList	在庫差異確認表	在庫差異確認表	../../../../../../reports/inventory/StockDiffList.jrxml	1						0	0	lblLocation	ロケーション	String	1	
+StockDiffList	在庫差異確認表	在庫差異確認表	../../../../../../reports/inventory/StockDiffList.jrxml	1						0	0	lblInput	入力者	String	1	
+StockDiffList	在庫差異確認表	在庫差異確認表	../../../../../../reports/inventory/StockDiffList.jrxml	1						0	0	lblTitle	在庫差異確認表	String	1	
+StockDiffList	在庫差異確認表	在庫差異確認表	../../../../../../reports/inventory/StockDiffList.jrxml	1						0	0	lblPage	PAGE:	String	1	
+StockDiffList	在庫差異確認表	在庫差異確認表	../../../../../../reports/inventory/StockDiffList.jrxml	1						0	0	lblLimitDt	期限日	String	1	
+StockDiffList	在庫差異確認表	在庫差異確認表	../../../../../../reports/inventory/StockDiffList.jrxml	1						0	0	lblProdDt	製造日	String	1	
+StockDiffList	在庫差異確認表	在庫差異確認表	../../../../../../reports/inventory/StockDiffList.jrxml	1						0	0	lblLot	ロット	String	1	
+StockDiffList	在庫差異確認表	在庫差異確認表	../../../../../../reports/inventory/StockDiffList.jrxml	1						0	0	lblCaseNum	ケース数	String	1	
+StockDiffList	在庫差異確認表	在庫差異確認表	../../../../../../reports/inventory/StockDiffList.jrxml	1						0	0	lblInventoryNum	棚卸数	String	1	
+StockDiffList	在庫差異確認表	在庫差異確認表	../../../../../../reports/inventory/StockDiffList.jrxml	1						0	0	lblchargeNum	在庫数	String	1	
+StockDiffList	在庫差異確認表	在庫差異確認表	../../../../../../reports/inventory/StockDiffList.jrxml	1						0	0	lblDiffNum	棚卸差異数	String	1	
+StockDiffList	在庫差異確認表	在庫差異確認表	../../../../../../reports/inventory/StockDiffList.jrxml	1						0	0	lblInventoryUserNm	棚卸担当者	String	1	
+StockDiffList	在庫差異確認表	在庫差異確認表	../../../../../../reports/inventory/StockDiffList.jrxml	1						0	0	lblInventoryUpdUser	棚卸数変更	String	1	
+StockDiffList	在庫差異確認表	在庫差異確認表	../../../../../../reports/inventory/StockDiffList.jrxml	1						0	0	lblArea	エリア	String	1	
+StockDiffList	在庫差異確認表	在庫差異確認表	../../../../../../reports/inventory/StockDiffList.jrxml	1						0	0	lblmodNum	修正前数量	String	1	
+StockDiffList	在庫差異確認表	在庫差異確認表	../../../../../../reports/inventory/StockDiffList.jrxml	1						0	0	lbltotal	合計	String	1	
+StockDiffList	在庫差異確認表	在庫差異確認表	../../../../../../reports/inventory/StockDiffList.jrxml	1						0	0	lblSalesOrg	販売組織/ユーザ	String	1	

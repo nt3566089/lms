@@ -1,0 +1,96 @@
+<div ng-controller="InventoryInput" owd-screen="InventoryInput">
+	<form id="inputform" name="inputform" novalidate>
+	<!-- [#2719] アコーディオン拡張版の適用 2017.09.25 fujiwara Start  -->
+		<owd-accordion>
+			<owd-accordion-group is-open="isopen">
+	<!-- [#2719] アコーディオン拡張版の適用 2017.09.25 fujiwara End  -->
+
+				<fieldset>
+					<div class="row">
+						<!-- 荷主センタ変更対応 2017.02.14 sja Start -->
+						<!--
+
+						<owd-select id="centerCd" ng-model="conditionH.mcenter.centerCd" owd-models="centerList" owd-repeat-key="centerCd" owd-repeat-value="centerNm" label-text="センタ"></owd-select>
+
+						-->
+						<owd-select id="centerCd" ng-model="conditionH.mcenter.centerCd" owd-models="centerList" owd-repeat-key="centerCd" owd-repeat-value="centerNm" label-text="センタ" ng-change="centerChange()"></owd-select>
+
+						<!-- 荷主センタ変更対応 2017.02.14 sja End -->
+
+						<owd-select id="clientCd" ng-model="conditionH.mclient.clientCd" owd-models="clientList" owd-repeat-key="clientCd" owd-repeat-value="clientNm" label-text="荷主" ng-focus="clientFocus()" ng-change="clientChange()" ng-blur="clientBlur()"></owd-select>
+						<owd-select id="warehouseCd" ng-model="conditionB.mwarehouse.warehouseCd" owd-models="warehouseList" owd-repeat-key="warehouseCd" owd-repeat-value="warehouseNm" label-text="倉庫" ng-focus="warehouseFocus()" ng-change="warehouseChange()" ng-blur="warehouseBlur()"></owd-select>
+						<owd-date id="inventoryDt" ng-model="conditionH.inventoryDt" label-text="棚卸日"></owd-date>
+						<owd-select id="depositCd" ng-model="conditionB.mcustomerByDepositId.customerCd" owd-models="depositStockTypeList" owd-repeat-key="mCustomer.customerCd" owd-repeat-value="mCustomer.customerNm" label-text="預託"></owd-select>
+						<owd-select id="stockTypeCd" ng-model="conditionB.mstockType.stockTypeCd" owd-models="stockTypeList" owd-repeat-key="stockTypeCd" owd-repeat-value="stockTypeNm" label-text="在庫区分"></owd-select>
+						<owd-text id="fromLocationCd" ng-model="conditionI.fromLocationCd" label-text="ロケーション(From)" owd-add-button="showLocation(1)" ng-blur="locationCdBlur(1)">
+							<owd-info ng-model="conditionI.fromLocationNm"></owd-info>
+						</owd-text>
+						<owd-text id="toLocationCd" ng-model="conditionI.toLocationCd" label-text="ロケーション(To)" owd-add-button="showLocation(2)" ng-blur="locationCdBlur(2)" owd-validate="fromToCheck(conditionI.fromLocationCd, $value)" owd-validate-watch="'conditionI.fromLocationCd'" owd-validate-message="fromToMessage">
+							<owd-info ng-model="conditionI.toLocationNm"></owd-info>
+						</owd-text>
+						<!-- [横並-188] ゾーンの順位をロケーション後ろに変更 2014.12.06 許 Start -->
+						<owd-select id="zoneCd" ng-model="conditionI.mzone.zoneCd" owd-models="zoneList" owd-repeat-key="zoneCd" owd-repeat-value="zoneNm" label-text="ゾーン"></owd-select>
+						<!-- [横並-188] ゾーンの順位をロケーション後ろに変更 2014.12.06 許 End -->
+						<owd-text id="productCd" ng-model="conditionB.mproduct.productCd" label-text="商品" owd-add-button="showProduct()" ng-blur="productCdBlur()">
+							<owd-info ng-model="conditionB.mproduct.productNm"></owd-info>
+						</owd-text>
+						<owd-text id="storeLabelNo" ng-model="conditionB.storeLabelNo" label-text="入庫ラベルNo."></owd-text>
+						<!-- [ON推-品向-247] 空白→全件表示※空白行を追加する必要に修正 2014.12.01 衛 Start -->
+						<owd-select id="stockTakingInput" ng-model="conditionI.stockTakingInput" owd-models="stockTakingInputList" owd-repeat-key="classCd"  owd-repeat-value="classNm" label-text="棚卸入力有"></owd-select>
+						<!-- [ON推-品向-247] 空白→全件表示※空白行を追加する必要に修正 2014.12.01 衛 End -->
+						<owd-select id="unmatch" ng-model="conditionI.unmatch" owd-models="unmatchList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="アンマッチ有"  owd-remove-blank></owd-select>
+					</div>
+				</fieldset>
+	<!-- [#2719] アコーディオン拡張版の適用 2017.09.25 fujiwara Start  -->
+			</owd-accordion-group>
+		</owd-accordion>
+	<!-- [#2719] アコーディオン拡張版の適用 2017.09.25 fujiwara End  -->
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<owd-button id="search" class="btn-info" ng-disabled="inputform.$invalid" ng-click="search()">検索</owd-button>
+				<owd-button id="excelOutput" class="btn-info" ng-disabled="inputform.$invalid" ng-click="excelOutput()">Excel出力</owd-button>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" align="right">
+            	<div class="list-box">
+            	<!-- [#1415] パッケージ仕様書 - 項目仕様シート自動生成ツール導入による変更 2017.04.03 kawana Start -->
+					<table border="1">
+						<!-- ※trタグ削除禁止※-->
+						<!-- 非表示にしているがパッケージ仕様書の項目仕様作成ツールでひろうために残している -->
+						<tr hidden="">
+							<td class="wmslegend wmslegendwhite"><owd-span id="inventroyParcentTitle" label-text="進捗率"></owd-span></td>
+						</tr>
+						<tr>
+							<td class="wmslegend wmslegendpink"><owd-info id="inventroyParcent" ng-model="inventroyParcent"></owd-info></td>
+						</tr>
+					</table>
+            	<!-- [#1415] パッケージ仕様書 - 項目仕様シート自動生成ツール導入による変更 2017.04.03 kawana End -->
+				</div>
+			</div>
+		</div>
+		<br>
+		<!-- <div owd-grid="gridOptions" owd-dblclick-option="gridDblClick(row)" id="inventoryList" owd-select-options="gridSelectOptions" owd-button-options="gridButtonOptions" owd-event-options="gridEventOptions" owd-form-name="inputform" owd-backcolor-option="getClassForRow(row)"></div> -->
+		<!-- [#2799][Ver3.0] unit of measure 対応 2017.11.13 honma Mod Start -->
+		<div owd-grid="gridOptions" owd-dblclick-option="gridDblClick(row)" id="inventoryList" owd-select-options="gridSelectOptions" owd-button-options="gridButtonOptions" owd-event-options="gridEventOptions" owd-multitext-options="multiTextOptions" owd-grid-multitext-options="gridMultiTextOptions"  owd-form-name="inputform"></div>
+		<!-- [#2799][Ver3.0] unit of measure 対応 2017.11.13 honma Mod End -->
+		<br>
+		<div id="content-footer"></div>
+		<div id="content-footer-button" class="container">
+			<div class="row">
+				<div class="col-xs-6" style="overflow-x:auto;overflow-y:hidden;">
+				<!-- [ON推-品向-379] 明細行にエラーがあると「登録」ボタンでなく、「追加」ボタンが押下不可になる。 2014.12.02 KI Start -->
+					<owd-button id="addRow" class="btn-info" ng-click="addRow()">行追加</owd-button>
+					<!-- [ON推-品向-379] 明細行にエラーがあると「登録」ボタンでなく、「追加」ボタンが押下不可になる。 2014.12.02 KI End -->
+					<owd-button id="removeRow" class="btn-danger" ng-click="removeRow()">行削除</owd-button>
+				</div>
+				<div class="col-xs-6" align="right" style="overflow-x:auto;overflow-y:hidden;">
+				<!-- [ON推-品向-444] 活性化に修正 2014.12.16 KI Start -->
+					<!-- [#1059] ng-disabledの2重定義を修正 2017.03.09 kawana Start -->
+					<owd-button id="stockAdjust" class="btn-info" ng-disabled="!gridOptions.gridApi.selection.getSelectedRows().length" ng-click="stockAdjust()">在庫調整</owd-button>
+					<!-- [#1059] ng-disabledの2重定義を修正 2017.03.09 kawana End -->
+					<owd-button id="register" class="btn-success" ng-click="register()">登録</owd-button>
+				<!-- [ON推-品向-444] 活性化に修正 2014.12.16 KI End -->
+				</div>
+			</div>
+		</div>
+	</form>
+</div>

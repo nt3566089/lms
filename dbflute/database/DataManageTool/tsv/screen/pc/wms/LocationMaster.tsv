@@ -1,0 +1,48 @@
+画面マスタ	画面マスタ	画面マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ拡張基本	列マスタ拡張基本
+SCREEN_CD	DICT_NM	SYSTEM_TYPE	ITEM_CD	DICT_NM	ITEM_TYPE	VISIBLE	EDITABLE	TEXT_ALIGN	NECESSARY	DISPLAY_REQUIRED	COL_CD	DICT_NM	COL_ORDER	COL_TYPE	VISIBLE	EDITABLE	TEXT_ALIGN	NECESSARY	COL_WIDTH	IN_COL_INDEX	IN_COL_DEFAULT_VALUE	COL_ORDER	COL_WIDTH
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	centerCd	センタ		1	1		1	1													
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	warehouseCd	倉庫		1	1		0	1													
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	zoneCd	ゾーン		1	1		0	1													
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationCd	ロケーションCD		1	1		0	1													
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	pickingLocationFlg	ピックロケフラグ		1	1		0	1													
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	delFlg	削除		1	1		0	1													
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	search	検索		1	1		0	1													
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	locationCd	ロケーションCD	1	text	1	0		0	200			1	200
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	locationNm	ロケーション名称	2	text	1	0		0	250			2	250
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	mzone.mwarehouse.warehouseCd	倉庫CD	3	text	1	0		0	120			3	150
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	mzone.mwarehouse.warehouseNm	倉庫名称	4	text	1	0		0	300			4	300
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	mzone.zoneCd	ゾーンCD	5	text	1	0		0	120			5	120
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	mzone.zoneNm	ゾーン名称	6	text	1	0		0	300			6	300
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	locationType	ロケーション種別CD	7	text	1	0		0	220			7	220
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	bclassDtlByLocationType.vdict.dictNm	ロケーション種別名称	8	text	1	0		0	220			8	220
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	pickingLocationFlg	ピックロケフラグ	9	text	1	0		0	140			9	160
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	bclassDtlByPickingLocationFlg.vdict.dictNm	ピックロケフラグ名称	10	text	1	0		0	240			10	240
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	allocNgFlg	引当禁止フラグ	11	text	1	0		0	130			11	160
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	bclassDtlByAllocNgFlg.vdict.dictNm	引当禁止フラグ名称	12	text	1	0		0	150			12	200
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	pickingOrder	ピッキング順序	13	number	1	0	right	0	125			13	125
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	allocOrder	引当順序	14	number	1	0	right	0	75			14	160
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	mproduct.mclient.clientCd	補充荷主CD	15	text	1	0		0	110			15	
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	mproduct.mclient.clientNm	補充荷主名称	16	text	1	0		0	110			16	
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	mproduct.productCd	補充商品CD	17	text	1	0		0	170			17	170
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	mproduct.productNm	補充商品名称	18	text	1	0		0	170			18	170
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	mstockType.stockTypeCd	補充在庫区分CD	19	text	1	0		0	170			19	250
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	mstockType.vdict.dictNm	補充在庫区分名称	20	text	1	0		0	170			20	250
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	mcustomer.customerCd	補充預託CD	21	text	1	0		0	110			21	240
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	mcustomer.customerNm	補充預託名称	22	text	1	0		0	110			22	240
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	mproductShapeByReplenishPProductShapeId.mshapeGrpDtl.mshape.shapeCd	補充点荷姿CD	23	text	1	0		0	300			23	300
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	mproductShapeByReplenishPProductShapeId.mshapeGrpDtl.mshape.vdictByShapeDictId.dictNm	補充点荷姿名称	24	text	1	0		0	300			24	300
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	replenishPNum	補充点	25	number	1	0	right	0	170			25	170
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	mproductShapeByMaxStoreProductShapeId.mshapeGrpDtl.mshape.shapeCd	最大格納数商品荷姿CD	26	text	1	0		0	300			26	300
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	mproductShapeByMaxStoreProductShapeId.mshapeGrpDtl.mshape.vdictByShapeDictId.dictNm	最大格納数商品荷姿名称	27	text	1	0		0	300			27	300
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	maxStoreNum	最大格納数	28	number	1	0	right	0	170			28	170
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	delFlg	削除フラグCD	29	text	1	0		0	110			29	160
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	bclassDtlByDelFlg.vdict.dictNm	削除フラグ名称	30	text	1	0		0	110			30	160
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	mcenter.centerCd	センタCD	31	text	1	0		0	220			31	
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	locationList	ロケーションマスタメンテナンスグリッド	grid	1	1		0	1	mcenter.centerNm	センタ名称	32	text	1	0		0	220			32	
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	excelOutput	Excel出力		1	1		0	1													
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	replenishProductCd	補充商品CD		1	1		0	1													
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	replenishProductCdUnset	補充商品CD未設定		1	1		0	1													
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	excelUpload	ファイル取込		1	1		1	1													
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	new	新規		1	1		0	1													
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	update	修正		1	1		0	1													
+LocationMaster	ロケーションマスタメンテナンス(一覧)	wms	copy	コピー		1	1		0	1													

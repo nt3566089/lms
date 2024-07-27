@@ -1,0 +1,55 @@
+画面マスタ	画面マスタ	画面マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	項目マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ	列マスタ拡張基本	列マスタ拡張基本
+SCREEN_CD	DICT_NM	SYSTEM_TYPE	ITEM_CD	DICT_NM	ITEM_TYPE	VISIBLE	EDITABLE	TEXT_ALIGN	NECESSARY	DISPLAY_REQUIRED	COL_CD	DICT_NM	COL_ORDER	COL_TYPE	VISIBLE	EDITABLE	TEXT_ALIGN	NECESSARY	COL_WIDTH	IN_COL_INDEX	IN_COL_DEFAULT_VALUE	COL_ORDER	COL_WIDTH
+InventoryInput	棚卸入力	wms	centerCd	センタ		1	1		1	1													
+InventoryInput	棚卸入力	wms	clientCd	荷主		1	1		1	1													
+InventoryInput	棚卸入力	wms	warehouseCd	倉庫		1	1		0	0													
+InventoryInput	棚卸入力	wms	inventoryDt	棚卸日		1	1		1	1													
+InventoryInput	棚卸入力	wms	depositCd	預託		1	1		0	0													
+InventoryInput	棚卸入力	wms	stockTypeCd	在庫区分		1	1		0	0													
+InventoryInput	棚卸入力	wms	fromLocationCd	ロケーションCD(From)		1	1		0	0													
+InventoryInput	棚卸入力	wms	toLocationCd	ロケーションCD(To)		1	1		0	0													
+InventoryInput	棚卸入力	wms	zoneCd	ゾーン		1	1		0	0													
+InventoryInput	棚卸入力	wms	productCd	商品CD		1	1		0	0													
+InventoryInput	棚卸入力	wms	storeLabelNo	入庫ラベルNo.		1	1		0	0													
+InventoryInput	棚卸入力	wms	stockTakingInput	棚卸入力有		1	1		0	0													
+InventoryInput	棚卸入力	wms	unmatch	アンマッチ有		1	1		0	1													
+InventoryInput	棚卸入力	wms	search	検索		1	1		0	1													
+InventoryInput	棚卸入力	wms	excelOutput	Excel出力		1	1		0	1													
+InventoryInput	棚卸入力	wms	inventroyParcentTitle	進捗率		1	0		0	1													
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	mlocation.locationNm	ロケーション名称	1	text	1	0		0	250			1	250
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	mproduct.productCd	商品CD	2	text	1	0		0	245			2	245
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	mproduct.janCd	ソースCD	3	text	1	0		0	205			3	205
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	mproduct.productNm	商品名称	4	text	1	0		0	300			4	300
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	productUnit	商品単位	5	text	1	0		0	90			5	90
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	unitNumBreakdown	入数内訳	6	text	1	0	right	0	220			6	220
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	inventoryNum	棚卸数量	7	calcnumber	1	1	right	0	290			7	290
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	inventoryNumMultiText	棚卸数量荷姿	8	number	0	1	right	0	110			8	110
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	chargeNum	棚卸前引当可能数	9	number	1	0	right	0	140			9	200
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	allocNum	棚卸前引当済数	10	number	1	0	right	0	125			10	200
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	moveNum	棚卸前作業中数	11	number	1	0	right	0	125			11	200
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	inventoryBeforeBreakdown	棚卸前内訳	12	text	1	0	right	1	200			12	200
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	lot	ロット	13	text	1	0		0	170			13	170
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	limitDt	期限日	14	date	1	0		0	150			14	150
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	storeLabelNo	入庫ラベルNo.	15	text	1	0		0	140			15	140
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	storeDt	入庫日	16	date	1	0		0	150			16	150
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	mstockType.stockTypeCd	在庫区分CD	17	text	1	0		0	110			17	190
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	mstockType.vdict.dictNm	在庫区分名称	18	text	1	0		0	110			18	190
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	mcustomerByDepositId.customerCd	預託CD	19	text	1	0		0	160			19	160
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	mcustomerByDepositId.customerNm	預託名称	20	text	1	0		0	300			20	300
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	mcustomerBySupplierId.customerCd	仕入先CD	21	text	1	0		0	200			21	200
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	mcustomerBySupplierId.customerNm	仕入先名称	22	text	1	0		0	300			22	300
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	histAddUser	入力者	23	text	1	0		0	160			23	160
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	inputDt	入力日時	24	datetime	1	0		0	180			24	180
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	bclassDtlByStockAdjustFlg.vdict.dictNm	棚卸調整入力	25	text	1	0		0	160			25	160
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	mwarehouse.warehouseCd	倉庫CD	26	text	1	0		0	85			26	160
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	mwarehouse.warehouseNm	倉庫名称	27	text	1	0		0	300			27	300
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	mlocation.mzone.zoneCd	ゾーンCD	28	text	1	0		0	90			28	120
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	mlocation.mzone.zoneNm	ゾーン名称	29	text	1	0		0	170			29	170
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	tinventoryH.mclient.clientCd	荷主CD	30	text	1	0		0	200			30	
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	tinventoryH.mclient.clientNm	荷主名称	31	text	1	0		0	200			31	
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	tinventoryH.mcenter.centerCd	センタCD	32	text	1	0		0	200			32	
+InventoryInput	棚卸入力	wms	inventoryList	棚卸入力グリッド	grid	1	1		0	1	tinventoryH.mcenter.centerNm	センタ名称	33	text	1	0		0	200			33	
+InventoryInput	棚卸入力	wms	addRow	行追加		1	1		0	1													
+InventoryInput	棚卸入力	wms	removeRow	行削除		1	1		0	1													
+InventoryInput	棚卸入力	wms	stockAdjust	在庫調整		1	1		0	1													
+InventoryInput	棚卸入力	wms	register	登録		1	1		0	1													

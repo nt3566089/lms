@@ -1,0 +1,1206 @@
+CLASS_CD	CLASS_COMMENT	SYSTEM_TYPE	CLASS_DTL_CD	DICT_NM	VIEW_ORDER	DEFAULT_FLG	CLASS_GRP_CD	CLASS_GRP_COMMENT	USE_FLG	DEFAULT_FLG	CLASS_GRP_CD	CLASS_GRP_COMMENT	USE_FLG	DEFAULT_FLG	CLASS_GRP_CD	CLASS_GRP_COMMENT	USE_FLG	DEFAULT_FLG
+AFTER_DELIV_SLIP_OUT_TGT	検品後納品明細出力対象	base	1	ECお買上明細	1	0												
+AFTER_DELIV_SLIP_OUT_TGT	検品後納品明細出力対象	base	2	納品明細	2	0												
+AFTER_TAG_OUT_FLG	検品後荷札出力フラグ	base	0	出力しない	1	1												
+AFTER_TAG_OUT_FLG	検品後荷札出力フラグ	base	1	バラ出荷検品後に出力	2	0												
+AFTER_TAG_OUT_FLG	検品後荷札出力フラグ	base	2	ケース出荷検品後に出力	3	0												
+AFTER_TAG_OUT_FLG	検品後荷札出力フラグ	base	3	バラ・ケース出荷検品後に出力	4	0												
+ALL_SHIPPING_FLG	全数出庫フラグ	base	0	部分出庫	1	0												
+ALL_SHIPPING_FLG	全数出庫フラグ	base	1	全数出庫	2	0												
+ALLC_NG_DISPLAY	引当不可フラグ表示	base	0	表示	1	0												
+ALLC_NG_DISPLAY	引当不可フラグ表示	base	1	非表示	2	0												
+ALLC_NG_FLG	引当禁止フラグ	base	0	引当可能	1	0												
+ALLC_NG_FLG	引当禁止フラグ	base	1	引当禁止	2	0												
+ALLOC_SORT_KEY	引当ソートキー	base	lot	ロット	1	0												
+ALLOC_SORT_KEY	引当ソートキー	base	lotOrder	ロットソート順	2	0												
+ALLOC_SORT_KEY	引当ソートキー	wms	limitDt	期限日	3	0												
+ALLOC_SORT_KEY	引当ソートキー	wms	zoneCd	ゾーンCD	4	0												
+ALLOC_SORT_KEY	引当ソートキー	wms	locationCd	ロケーションCD	5	0												
+ALLOC_SORT_KEY	引当ソートキー	wms	locationOrder	ロケーション引当順序	6	0												
+ALLOC_SORT_KEY	引当ソートキー	wms	storeLabelNo	入庫ラベルNo.	7	0												
+ALLOC_SORT_KEY	引当ソートキー	wms	storeDt	入庫日	8	0												
+ARRIVAL_STORE_FORMAT	着店CDフォーマット	base	YMTFMT	ヤマト用変換フォーマット	1	0												
+ARRIVAL_STORE_FORMAT	着店CDフォーマット	base	YUPKFMT	ゆうパック用変換フォーマット	2	0												
+AUTO_EMG_SET_FLG	自動緊急フラグ設定フラグ	base	0	未使用	1	0												
+AUTO_EMG_SET_FLG	自動緊急フラグ設定フラグ	base	1	使用	2	0												
+AUTO_EMG_SET_TGT	自動緊急フラグ判断対象	base	1	積込予定時刻	1	0												
+AUTO_EMG_SET_TGT	自動緊急フラグ判断対象	base	2	出荷予定時刻	2	0												
+AUTO_PRINT_TARGET_FLG	自動印刷対象フラグ	base	0	自動印刷対象外	1	1												
+AUTO_PRINT_TARGET_FLG	自動印刷対象フラグ	base	1	自動印刷対象	2	0												
+AUTO_SHIP_INST_FLG	自動出庫指示フラグ	base	0	未使用	1	0												
+AUTO_SHIP_INST_FLG	自動出庫指示フラグ	base	1	使用	2	0												
+BARCODE_TYPE	バーコード種別	base	CODE39	CODE39	1	0												
+BARCODE_TYPE	バーコード種別	base	CODE128	CODE128	2	0												
+BARCODE_TYPE	バーコード種別	base	CODABAR	CODABAR(NW-7)	3	0												
+BARCODE_TYPE	バーコード種別	base	JAN	JAN(8or13)	4	0												
+BARCODE_TYPE	バーコード種別	base	ITF	ITF	5	0												
+BATCH_PROGRESS_FLG	バッチ処理中フラグ	base	1	処理中	2	0												
+BATCH_PROGRESS_FLG	バッチ処理中フラグ	base	0	非処理中	1	0												
+BOX_SELECT_SKIP	荷材選択スキップ	base	0	スキップしない	1	1												
+BOX_SELECT_SKIP	荷材選択スキップ	base	1	スキップする	2	0												
+CANCEL_DATA_DISPLAY	キャンセルデータ表示	base	0	表示しない	1	1												
+CANCEL_DATA_DISPLAY	キャンセルデータ表示	base	1	全件表示	2	0												
+CASE_PIC_FLG	ケースピッキングフラグ	base	0	ケースピック無	1	0												
+CASE_PIC_FLG	ケースピッキングフラグ	base	1	ケースピック有	2	1												
+CENTER_CLIENT_CLS	センタ・荷主区分	base	1	センタ	1	0												
+CENTER_CLIENT_CLS	センタ・荷主区分	base	2	荷主	2	0												
+CENTER_TRANSIT_FLG	センタ間移動フラグ	base	0	通常	0	0												
+CENTER_TRANSIT_FLG	センタ間移動フラグ	base	1	センタ間移動	1	0												
+CHARACTER_CD	文字コード	base	MS932	MS932	1	0												
+CHARACTER_CD	文字コード	base	UTF8	UTF8	2	0												
+CHARGE_QTY_0_DISPLAY	引当可能数0非表示	base	0	0表示	1	1												
+CHARGE_QTY_0_DISPLAY	引当可能数0非表示	base	1	0非表示	2	0												
+CHECK_DIGIT	チェックディジット	base	0	チェックディジット無	1	0												
+CHECK_DIGIT	チェックディジット	base	7	7DR方式	2	0												
+COD_CLS	元着区分	base	1	元払	1	0												
+COD_CLS	元着区分	base	2	着払	2	0												
+COD_TYPE	元／着払／代引文字	base	0	元払	1	0												
+COD_TYPE	元／着払／代引文字	base	1	着払	2	0												
+COD_TYPE	元／着払／代引文字	base	2	代引	3	0												
+CODE_FLG	複数番号の有無	base	0	複数番号無	1	0												
+CODE_FLG	複数番号の有無	base	1	複数番号有(個別番号の1)	2	0												
+CODE_FLG	複数番号の有無	base	2	複数番号有(個別番号の2)	3	0												
+CODE_FLG	複数番号の有無	base	3	複数番号有(個別番号の3)	4	0												
+CODE_TYPE	個別番号の種別	base	0	大口事業所	1	0												
+CODE_TYPE	個別番号の種別	base	1	私書箱	2	0												
+COL_TYPE	列型	base	text	テキスト	1	0												
+COL_TYPE	列型	base	number	数値	2	0												
+COL_TYPE	列型	base	date	日付	3	0												
+COL_TYPE	列型	base	datetime	日時	4	0												
+COL_TYPE	列型	base	dropdown	コンボボックス	5	0												
+COL_TYPE	列型	base	checkbox	チェックボックス	6	0												
+COL_TYPE	列型	base	calcnumber	計算数値	7	0												
+COMMENT_FLG	コメント1有無	base	0	コメント1無	0	0												
+COMMENT_FLG	コメント1有無	base	1	コメント1有	1	0												
+COMPANY_FLG	大口事業所フラグ	base	0	通常郵便番号	1	0												
+COMPANY_FLG	大口事業所フラグ	base	1	大口事業所	2	0												
+COOL_CLS	クール区分	base	0	通常	1	0												
+COOL_CLS	クール区分	base	1	クール冷凍	2	0												
+COOL_CLS	クール区分	base	2	クール冷蔵	3	0												
+COOL_TYPE	保冷種別	base	0	保冷なし	1	0												
+COOL_TYPE	保冷種別	base	1	チルド	2	0												
+COOL_TYPE	保冷種別	base	2	冷凍	3	0												
+CORRECT_TYPE	赤黒区分	base	0	黒	1	0												
+CORRECT_TYPE	赤黒区分	base	1	赤	2	0												
+DATA_INPUT_COMMIT_TYPE	コミット区分	base	0	一括コミット	1	1												
+DATA_INPUT_COMMIT_TYPE	コミット区分	base	1	随時コミット	2	0												
+DATA_INPUT_OPERATION_TYPE	処理区分	base	0	アップロード	1	0												
+DATA_INPUT_OPERATION_TYPE	処理区分	base	1	ワーク取込	2	0												
+DATA_INPUT_OPERATION_TYPE	処理区分	base	2	データ移行	3	0												
+DATA_INPUT_OPERATION_TYPE	処理区分	base	3	ダウンロード	4	0												
+DATA_INPUT_PROCESS_TYPE	処理区分	base	0	追記のみ	1	1												
+DATA_INPUT_PROCESS_TYPE	処理区分	base	1	全削除後追記	2	0												
+DATA_INPUT_RANGE	取込対象	base	0	全件	1	1												
+DATA_INPUT_RANGE	取込対象	base	1	未処理のみ	2	0												
+DATA_INPUT_RANGE	取込対象	base	2	エラーのみ	3	0												
+DATA_INPUT_TYPE	取込種類	base	01	商品マスタ取込	1	0												
+DATA_INPUT_TYPE	取込種類	base	02	商品荷姿マスタ取込	2	0												
+DATA_INPUT_TYPE	取込種類	base	03	取引先マスタ取込	3	0												
+DATA_INPUT_TYPE	取込種類	base	04	ロケーションマスタ取込	4	0												
+DATA_INPUT_TYPE	取込種類	base	05	在庫データ取込	5	0												
+DATA_INPUT_TYPE	取込種類	base	06	着店マスタ取込(ヤマト運輸)	6	0												
+DATA_INPUT_TYPE	取込種類	base	07	着店マスタ取込(日本郵政)	7	0												
+DATA_INPUT_TYPE	取込種類	base	08	郵便番号マスタ取込	8	0												
+DATA_INPUT_TYPE	取込種類	base	09	郵便番号マスタ(大口事業所)取込	9	0												
+DATA_TYPE	データ型	base	text	テキスト	1	0												
+DATA_TYPE	データ型	base	number	数値	2	0												
+DATA_TYPE	データ型	base	date	日付	3	0												
+DATA_TYPE	データ型	base	datetime	日時	4	0												
+DATA_TYPE	データ型	base	time	時刻	4	0												
+DEFAULT	デフォルト	base	0	デフォルトでない	1	1												
+DEFAULT	デフォルト	base	1	デフォルト	2	0												
+DEFAULT_FLG	デフォルトフラグ	base	0	デフォルトでない	1	0												
+DEFAULT_FLG	デフォルトフラグ	base	1	デフォルト	2	0												
+DEL_FLG	削除フラグ	base	0	未削除	1	1												
+DEL_FLG	削除フラグ	base	1	削除済	2	0												
+DELETE_DATA_DISPLAY	削除データ表示	base	0	表示しない	1	1												
+DELETE_DATA_DISPLAY	削除データ表示	base	1	全件表示	2	0												
+DELIV_MATCH_FLG	送付先一致フラグ	base	0	不一致	1	0												
+DELIV_MATCH_FLG	送付先一致フラグ	base	1	一致	2	0												
+DELIV_TZ	納品時間帯	base	A	午前中	1	0												
+DELIV_TZ	納品時間帯	base	B	12時～14時	2	0												
+DELIV_TZ	納品時間帯	base	C	14時～16時	3	0												
+DELIV_TZ	納品時間帯	base	D	16時～18時	4	0												
+DELIV_TZ	納品時間帯	base	E	18時～20時	5	0												
+DELIV_TZ	納品時間帯	base	F	18時～21時	6	0												
+DELIV_TZ	納品時間帯	base	G	19時～21時	7	0												
+DELIV_TZ	納品時間帯	base	H	20時～21時	8	0												
+DELIV_TZ	納品時間帯	base	I	午前10時まで	9	0												
+DELIV_TZ	納品時間帯	base	J	午後5時まで	10	0												
+DELIVERY_FLG	納品先フラグ	base	1	使用	2	0												
+DELIVERY_FLG	納品先フラグ	base	0	未使用	1	0												
+DEPOSIT_FLG	預託先フラグ	base	1	使用	2	0												
+DEPOSIT_FLG	預託先フラグ	base	0	未使用	1	0												
+DISPLAY_REQUIRED	表示必須	base	0	任意	1	0												
+DISPLAY_REQUIRED	表示必須	base	1	必須	2	0												
+DT_CLS	日付区分	base	0	取込日	1	1												
+DT_CLS	日付区分	base	1	出荷日	2	0												
+DT_CLS	日付区分	base	2	作業日	3	0												
+EDITABLE	編集可否	base	0	編集不可	1	0												
+EDITABLE	編集可否	base	1	編集可	2	1												
+EMERGENCY_DISPLAY	緊急表示区分	base	0	全件表示	1	1												
+EMERGENCY_DISPLAY	緊急表示区分	base	1	緊急のみ	2	0												
+EMERGENCY_FLG	緊急フラグ	base	0	通常	1	1												
+EMERGENCY_FLG	緊急フラグ	base	1	緊急	2	0												
+ERROR_FLG	エラーフラグ	base	0	エラー無	1	0												
+ERROR_FLG	エラーフラグ	base	1	エラー有	2	0												
+ERROR_PROCESS_MET	エラー処理方法	base	0	全て取込まない	1	1												
+ERROR_PROCESS_MET	エラー処理方法	base	1	エラー以外を取り込む	2	0												
+FIXED_POINT	定点切れ	base	0	定点切れのみ表示	1	0												
+FORCE_FIXED_FLG	強制確定フラグ	base	0	通常確定	1	0												
+FORCE_FIXED_FLG	強制確定フラグ	base	1	強制確定	2	0												
+FOREIGN_FLG	外貨フラグ	base	0	内貨	1	0												
+FOREIGN_FLG	外貨フラグ	base	1	外貨	2	0												
+GIFT_FLG	ギフトフラグ	base	0	ギフト指定無	1	0												
+GIFT_FLG	ギフトフラグ	base	1	ギフト指定有	2	0												
+GIFT_STATEMENT_TYPE	ギフト用納品書種別	base	0	通常	1	0												
+GIFT_STATEMENT_TYPE	ギフト用納品書種別	base	1	金額非表示	2	0												
+GIFT_STATEMENT_TYPE	ギフト用納品書種別	base	2	明細非表示	3	0												
+HT_CHAR_READ_FLG	HT文字認識使用フラグ	base	0	未使用	1	1												
+HT_CHAR_READ_FLG	HT文字認識使用フラグ	base	1	使用	2	0												
+IMPORT_FLG	取込みフラグ	base	0	未取込	1	0												
+IMPORT_FLG	取込みフラグ	base	1	取込済	2	0												
+INFO_FLG	終了したお知らせの表示	base	0	表示する	1	0												
+INFO_FLG	終了したお知らせの表示	base	1	表示しない	2	1												
+INOUT_TYPE	入出庫区分	base	0	入庫	1	0												
+INOUT_TYPE	入出庫区分	base	1	出庫	2	0												
+INPUT_LIMIT	入力文字制限	base	^[0-9]*$	数字のみ	1	0												
+INPUT_LIMIT	入力文字制限	base	^[0-9\-]*$	数字と-のみ(電話番号等)	2	0												
+INPUT_LIMIT	入力文字制限	base	^[a-zA-Z]*$	英字のみ	3	0												
+INPUT_LIMIT	入力文字制限	base	^[a-zA-Z\-]*$	英字と-のみ	4	0												
+INPUT_LIMIT	入力文字制限	base	^[0-9a-zA-Z]*$	英数字のみ	5	0												
+INPUT_LIMIT	入力文字制限	base	^[0-9a-zA-Z\-]*$	英数字と-のみ	6	0												
+INPUT_LIMIT	入力文字制限	base	^[!-~]*$	英数字と記号(半角カタカナ,SPを除く)	7	0												
+INPUT_LIMIT	入力文字制限	base	^[ -~｡-ﾟ]*$	半角文字のみ	8	0												
+INPUT_LIMIT	入力文字制限	base	^[^ -~｡-ﾟ]*$	全角文字のみ	9	0												
+INPUT_LIMIT	入力文字制限	base	^([0-1][0-9]|[2][0-3]):[0-5][0-9]$	時刻のみ(hh24:mm)	10	0												
+INPUT_LIMIT	入力文字制限	base	^([0-1][0-9]|[2][0-3]):[0-5][0-9]:[0-5][0-9]$	時刻のみ(hh24:mm:ss)	11	0												
+INPUT_TYPE	入力区分	base	00	画面入力	1	0												
+INPUT_TYPE	入力区分	base	10	アップロード	2	0												
+INPUT_TYPE	入力区分	base	20	EDI	3	0												
+INPUT_TYPE	入力区分	base	30	HT	4	0												
+INSPECTION_FLG	検品フラグ	base	0	未検品	1	0												
+INSPECTION_FLG	検品フラグ	base	1	検品済	2	0												
+INSPECTION_FLG	検品フラグ	base	7	検品作業中	7	0												
+INVENTORY_LOCATION_PRODUCT	比較条件差異	base	0	商品単位の差異	1	0												
+INVENTORY_LOCATION_PRODUCT	比較条件差異	base	1	ロケーション単位の差異	2	1												
+INVOICE_CREATE_FLG	送り状データ出力フラグ	base	0	未出力	1	1												
+INVOICE_CREATE_FLG	送り状データ出力フラグ	base	1	出力済	2	0												
+ITEM_TYPE	項目型	base	text	テキスト	1	0												
+ITEM_TYPE	項目型	base	number	数値	2	0												
+ITEM_TYPE	項目型	base	date	日付	3	0												
+ITEM_TYPE	項目型	base	datetime	日時	4	0												
+ITEM_TYPE	項目型	base	dropdown	コンボボックス	5	0												
+ITEM_TYPE	項目型	base	checkbox	チェックボックス	6	0												
+ITEM_TYPE	項目型	base	grid	グリッド	7	0												
+LAST_FLG	最新フラグ	base	0	最新でない	1	0												
+LAST_FLG	最新フラグ	base	1	最新	2	0												
+LIMIT_DT_MANAG_FLG	期限日管理フラグ	base	1	管理する	2	0												
+LIMIT_DT_MANAG_FLG	期限日管理フラグ	base	0	管理しない	1	0												
+LIMIT_DT_REVERSE_FLG	期限日逆転防止フラグ	base	1	管理する	2	0												
+LIMIT_DT_REVERSE_FLG	期限日逆転防止フラグ	base	0	管理しない	1	0												
+LIMIT_MESSAGE_CD	制限メッセージCD	base	inputLimitCheckNumericOnlyError	数字のみメッセージCD	1	0												
+LIMIT_MESSAGE_CD	制限メッセージCD	base	inputLimitCheckNumericAndHyphenOnlyError	数字と-のみ(電話番号等)メッセージCD	2	0												
+LIMIT_MESSAGE_CD	制限メッセージCD	base	inputLimitCheckAlphabetOnlyError	英字のみメッセージCD	3	0												
+LIMIT_MESSAGE_CD	制限メッセージCD	base	inputLimitCheckAlphabetAndHyphenOnlyError	英字と-のみメッセージCD	4	0												
+LIMIT_MESSAGE_CD	制限メッセージCD	base	inputLimitCheckAlphabetAndNumericOnlyError	英数字のみメッセージCD	5	0												
+LIMIT_MESSAGE_CD	制限メッセージCD	base	inputLimitCheckAlphabetAndNumericAndHyphenOnlyError	英数字と-のみメッセージCD	6	0												
+LIMIT_MESSAGE_CD	制限メッセージCD	base	inputLimitCheckAlphabetAndNumericAndSymbolOnlyError	英数字と記号(半角カタカナ,SPを除く)メッセージCD	7	0												
+LIMIT_MESSAGE_CD	制限メッセージCD	base	inputLimitCheckHalfWidthOnlyError	半角文字のみメッセージCD	8	0												
+LIMIT_MESSAGE_CD	制限メッセージCD	base	inputLimitCheckFullWidthOnlyError	全角文字のみメッセージCD	9	0												
+LIMIT_MESSAGE_CD	制限メッセージCD	base	inputLimitCheckTimeOnlyError	時刻のみ(hh24:mm)メッセージCD	10	0												
+LIMIT_MESSAGE_CD	制限メッセージCD	base	inputLimitCheckTimeHHMMSSOnlyError	時刻のみ(hh24:mm:ss)メッセージCD	11	0												
+LINE_FEED_CD	改行コード	base	1	CRLF	1	0												
+LINE_FEED_CD	改行コード	base	2	CR	2	0												
+LINE_FEED_CD	改行コード	base	3	LF	3	0												
+LIST_OUT_FLG	リスト発行フラグ	base	0	未発行	1	0												
+LIST_OUT_FLG	リスト発行フラグ	base	1	発行済	2	0												
+LIST_OUT_KBN	発行区分	base	0	未発行	1	1												
+LIST_OUT_KBN	発行区分	base	1	発行済	2	0												
+LIST_OUT_KBN	発行区分	base	2	全件	3	0												
+LIST_OUT_FLG_DISP	リスト発行フラグ(一覧表示用)	base	0	未発行	1	0												
+LIST_OUT_FLG_DISP	リスト発行フラグ(一覧表示用)	base	1	発行済	2	0												
+LIST_OUT_FLG_DISP	リスト発行フラグ(一覧表示用)	base	2	一部発行済	3	0												
+LOADING_FLG	積込フラグ	base	0	未検品	1	0												
+LOADING_FLG	積込フラグ	base	1	検品済	2	0												
+LOCATION_TYPE	ロケーション種別	base	00	通常ロケーション	1	0												
+LOCATION_TYPE	ロケーション種別	base	01	入庫仮ロケーション	2	0												
+LOCKOUT	ロックアウト	base	0	アンロック	1	0												
+LOCKOUT	ロックアウト	base	1	ロックアウト	2	0												
+LOG_DTL_STATUS	ログ明細ステータス	base	1	情報	1	0												
+LOG_DTL_STATUS	ログ明細ステータス	base	2	警告	2	0												
+LOG_DTL_STATUS	ログ明細ステータス	base	3	エラー	3	0												
+LOG_DTL_TYPE	ログ明細種別	base	1	セクション開始ログ	1	0												
+LOG_DTL_TYPE	ログ明細種別	base	2	セクション終了ログ	2	0												
+LOG_DTL_TYPE	ログ明細種別	base	3	明細ログ	3	0												
+LOG_DTL_TYPE	ログ明細種別	base	4	基盤出力ログ	4	0												
+LOG_STATUS	ログステータス	base	1	処理中	1	0												
+LOG_STATUS	ログステータス	base	2	正常終了	2	0												
+LOG_STATUS	ログステータス	base	3	異常終了	3	0												
+LOT_MANAG_FLG	ロット管理フラグ	base	1	管理する	2	0												
+LOT_MANAG_FLG	ロット管理フラグ	base	0	管理しない	1	0												
+LOT_REVERSE_FLG	ロット逆転防止フラグ	base	1	管理する	2	0												
+LOT_REVERSE_FLG	ロット逆転防止フラグ	base	0	管理しない	1	0												
+MERGE_CLS	入庫No.マージ区分	base	00	マージしない	1	0												
+MERGE_CLS	入庫No.マージ区分	base	01	ピックロケのみ自動マージ	2	0												
+MERGE_CLS	入庫No.マージ区分	base	02	自動マージ	3	0												
+MERGE_FLG	名寄せ有無	base	0	名寄せ無	0	0												
+MERGE_FLG	名寄せ有無	base	1	名寄せ有	1	0												
+MESSAGE_TYPE	属性	base	error	エラー	1	0												
+MESSAGE_TYPE	属性	base	warn	警告	2	0												
+MESSAGE_TYPE	属性	base	info	情報	3	0												
+MESSAGE_TYPE	属性	base	confirm	確認	4	0												
+MIXED_FLG	混載フラグ	base	0	単品	0	0												
+MIXED_FLG	混載フラグ	base	1	混載	1	0												
+MOVE_INST_STATUS	在庫移動指示ステータス	base	00	未作業	1	0												
+MOVE_INST_STATUS	在庫移動指示ステータス	base	01	作業中	2	0												
+MOVE_INST_STATUS	在庫移動指示ステータス	base	02	完了	3	0												
+MOVE_INST_STATUS	在庫移動指示ステータス	base	99	取消	4	0												
+MULTI_PIC_CLS	マルチピック計算区分	base	0	マルチピック計算無	0	0												
+MULTI_PIC_CLS	マルチピック計算区分	base	1	マルチピック計算有	1	0												
+MULTI_PIC_FLG	マルチピック計算フラグ	base	0	計算無	1	0												
+MULTI_PIC_FLG	マルチピック計算フラグ	base	1	計算有	2	0												
+NECESSARY	必須	base	0	任意	1	0												
+NECESSARY	必須	base	1	必須	2	0												
+NO_ALLC_DISPLAY_FLG	未出庫全件表示区分	base	0	全件ではない	1	0												
+NO_ALLC_DISPLAY_FLG	未出庫全件表示区分	base	1	全件表示	2	1												
+NO_CONFIRMED_FLG	未確定のみ表示	base	0	全件表示	1	0												
+NO_CONFIRMED_FLG	未確定のみ表示	base	1	未確定のみ表示	2	1												
+NO_STOCK_CLS	下積み厳禁区分	base	0	無	1	0												
+NO_STOCK_CLS	下積み厳禁区分	base	1	有	2	0												
+NO_STOCK_OUT_FLG	欠品無のみ表示	base	0	欠品無のみ表示	1	1												
+NO_STOCK_OUT_FLG	欠品無のみ表示	base	1	欠品有のみ表示	2	0												
+NO_UPSIDE_DOWN_CLS	逆さま厳禁区分	base	0	無	1	0												
+NO_UPSIDE_DOWN_CLS	逆さま厳禁区分	base	1	有	2	0												
+NOT_COMPLETED_FLG	未完了のみ表示	base	0	全件表示	1	0												
+NOT_COMPLETED_FLG	未完了のみ表示	base	1	未完了のみ表示	2	1												
+ONETIME_FLG	ワンタイムフラグ	base	1	使用	2	0												
+ONETIME_FLG	ワンタイムフラグ	base	0	未使用	1	0												
+OVER_STORE_NUM_FLG	HT/SD過入荷可フラグ	base	0	不可	0	0												
+OVER_STORE_NUM_FLG	HT/SD過入荷可フラグ	base	1	可能	1	0												
+PACKING_CAL_CLS	梱包計算処理区分	base	0	梱包計算無	1	0												
+PACKING_CAL_CLS	梱包計算処理区分	base	1	容積と重量による梱包計算	2	0												
+PACKING_PROCESS_CLS	梱包方法	base	0	受取側考慮(出荷指示昇順)	1	0												
+PACKING_PROCESS_CLS	梱包方法	base	1	なるべく詰める(容積降順)	2	0												
+PACKING_SHOW_FLG	個数口表示フラグ	base	0	表示する	1	0												
+PACKING_SHOW_FLG	個数口表示フラグ	base	1	表示しない	2	0												
+PACKING_STATUS	梱包ステータス	base	10	未出荷	1	0	PACKING_STATUS_SELECT	プルダウン用梱包ステータス	1	0								
+PACKING_STATUS	梱包ステータス	base	15	出庫指示中	2	0	PACKING_STATUS_SELECT	プルダウン用梱包ステータス										
+PACKING_STATUS	梱包ステータス	base	20	出庫指示解除中	3	0	PACKING_STATUS_SELECT	プルダウン用梱包ステータス										
+PACKING_STATUS	梱包ステータス	base	25	出庫指示済	4	0	PACKING_STATUS_SELECT	プルダウン用梱包ステータス	1	0								
+PACKING_STATUS	梱包ステータス	base	30	ピッキング中	5	0	PACKING_STATUS_SELECT	プルダウン用梱包ステータス	1	0								
+PACKING_STATUS	梱包ステータス	base	35	ピッキング済	6	0	PACKING_STATUS_SELECT	プルダウン用梱包ステータス	1	0								
+PACKING_STATUS	梱包ステータス	base	40	出荷検品中	7	0	PACKING_STATUS_SELECT	プルダウン用梱包ステータス	1	0								
+PACKING_STATUS	梱包ステータス	base	45	出荷検品中断	8	0	PACKING_STATUS_SELECT	プルダウン用梱包ステータス	1	0								
+PACKING_STATUS	梱包ステータス	base	50	出荷検品済	9	0	PACKING_STATUS_SELECT	プルダウン用梱包ステータス	1	0								
+PACKING_STATUS	梱包ステータス	base	55	出荷確定済	10	0	PACKING_STATUS_SELECT	プルダウン用梱包ステータス	1	0								
+PACKING_STATUS	梱包ステータス	base	60	承認待ち	11	0	PACKING_STATUS_SELECT	プルダウン用梱包ステータス	1	0								
+PACKING_STATUS	梱包ステータス	base	90	キャンセル	12	0	PACKING_STATUS_SELECT	プルダウン用梱包ステータス										
+PACKING_STATUS	梱包ステータス	base	99	エラー有	13	0	PACKING_STATUS_SELECT	プルダウン用梱包ステータス	1	0								
+PASSWORD_RESET	パスワードリセット	base	0	強制しない	1	0												
+PASSWORD_RESET	パスワードリセット	base	1	強制する	2	0												
+PAST_STORE_DT_FLG	HT/SD過去日入力可フラグ	base	0	不可	0	0												
+PAST_STORE_DT_FLG	HT/SD過去日入力可フラグ	base	1	可能	1	0												
+PHYSICAL_DELETE	削除	base	1	削除	1	0												
+PIC_CLS	ピッキング方法	base	1	一次ピッキング	1	1												
+PIC_CLS	ピッキング方法	base	2	二次ピッキング	2	0												
+PIC_CLS	ピッキング方法	base	3	ケースピッキング	3	0												
+PIC_CLS	ピッキング方法	base	4	送り状・荷札	4	0												
+PIC_MTHD_RCMD_BREAK_KEY	最適ピック提案ブレイクキー	base	1	配送コース	1	0												
+PIC_MTHD_RCMD_BREAK_KEY	最適ピック提案ブレイクキー	base	2	運送業者	2	0												
+PIC_MTHD_RCMD_FLG	最適ピック提案フラグ	base	0	未使用	1	0												
+PIC_MTHD_RCMD_FLG	最適ピック提案フラグ	base	1	使用	2	0												
+PIC_MTHD_RCMD_LIST_OUT	最適ピックリスト出力フラグ	base	0	出力しない	1	0												
+PIC_MTHD_RCMD_LIST_OUT	最適ピックリスト出力フラグ	base	1	出力する	2	0												
+PICKING_FLG	出庫フラグ	base	0	未出庫	1	0												
+PICKING_FLG	出庫フラグ	base	1	出庫済	2	0												
+PICKING_FLG	出庫フラグ	base	7	出庫作業中	3	0												
+PICKING_LOCATION_FLG	ピックロケフラグ	base	1	ピックロケーション	2	0												
+PICKING_LOCATION_FLG	ピックロケフラグ	base	0	ピックロケーション以外	1	0												
+PICKING_STATUS	出庫ステータス	base	10	未出荷	1	0	PICKING_STATUS_SELECT	プルダウン用出庫ステータス	1	0								
+PICKING_STATUS	出庫ステータス	base	15	出庫指示中	2	0	PICKING_STATUS_SELECT	プルダウン用出庫ステータス										
+PICKING_STATUS	出庫ステータス	base	20	出庫指示解除中	3	0	PICKING_STATUS_SELECT	プルダウン用出庫ステータス										
+PICKING_STATUS	出庫ステータス	base	25	出庫指示済	4	0	PICKING_STATUS_SELECT	プルダウン用出庫ステータス	1	0								
+PICKING_STATUS	出庫ステータス	base	30	ピッキング中	5	0	PICKING_STATUS_SELECT	プルダウン用出庫ステータス	1	0								
+PICKING_STATUS	出庫ステータス	base	35	ピッキング済	6	0	PICKING_STATUS_SELECT	プルダウン用出庫ステータス	1	0								
+PICKING_STATUS	出庫ステータス	base	40	出荷検品中	7	0	PICKING_STATUS_SELECT	プルダウン用出庫ステータス	1	0								
+PICKING_STATUS	出庫ステータス	base	45	出荷検品中断	8	0	PICKING_STATUS_SELECT	プルダウン用出庫ステータス	1	0								
+PICKING_STATUS	出庫ステータス	base	50	出荷検品済	9	0	PICKING_STATUS_SELECT	プルダウン用出庫ステータス	1	0								
+PICKING_STATUS	出庫ステータス	base	55	出荷確定済	10	0	PICKING_STATUS_SELECT	プルダウン用出庫ステータス	1	0								
+PICKING_STATUS	出庫ステータス	base	60	承認待ち	11	0	PICKING_STATUS_SELECT	プルダウン用出庫ステータス	1	0								
+PICKING_STATUS	出庫ステータス	base	90	キャンセル	12	0	PICKING_STATUS_SELECT	プルダウン用出庫ステータス										
+PICKING_STATUS	出庫ステータス	base	99	エラー有	13	0	PICKING_STATUS_SELECT	プルダウン用出庫ステータス	1	0								
+PICKING_TYPE	ピッキング種別	wms	0	バラ	1	1												
+PICKING_TYPE	ピッキング種別	wms	1	ケース	2	0												
+POST_TYPE	郵便種別	base	0	ゆうパック	1	0												
+POST_TYPE	郵便種別	base	1	ゆうメール	2	0												
+POST_TYPE	郵便種別	base	2	通常(定型)	3	0												
+POST_TYPE	郵便種別	base	3	通常(定型外)	4	0												
+POST_TYPE	郵便種別	base	5	ポスパケット	5	0												
+POST_TYPE	郵便種別	base	6	宛名ラベル	6	0												
+PRINT_DATA_TYPE	印刷データタイプ	base	1	通常	1	1												
+PRINT_DATA_TYPE	印刷データタイプ	base	2	保護PDF	2	0												
+PRINT_ERROR_FLG	エラーのみ	base	0	全て	1	0												
+PRINT_ERROR_FLG	エラーのみ	base	1	エラーのみ	2	0												
+PRINT_QUEUE_STATUS	印刷キューステータス	base	0	未印刷	1	1												
+PRINT_QUEUE_STATUS	印刷キューステータス	base	1	印刷中	2	0												
+PRINT_RESULT_CLASS	印刷結果区分	base	0	印刷成功	1	1												
+PRINT_RESULT_CLASS	印刷結果区分	base	9	印刷失敗	2	0												
+PRINT_SERVICE_STATUS	印刷サービスステータス	base	0	サービス中	1	1												
+PRINT_SERVICE_STATUS	印刷サービスステータス	base	1	サービス停止中	2	0												
+PRINT_SERVICE_STATUS	印刷サービスステータス	base	2	シャットダウン中	3	0												
+PRINT_STATUS	印刷ステータス	base	0	未印刷	1	0												
+PRINT_STATUS	印刷ステータス	base	1	印刷中	2	0												
+PRINT_STATUS	印刷ステータス	base	2	印刷済	3	0												
+PRINT_STATUS	印刷ステータス	base	9	印刷失敗	4	0												
+PRINTED_FLG	再印刷有無	base	0	有	1	0												
+PRINTED_FLG	再印刷有無	base	1	無	2	0												
+PRIORITY_FLG	優先フラグ	base	0	優先指定無	1	0												
+PRIORITY_FLG	優先フラグ	base	1	優先指定有	2	0												
+PRODUCT_LABEL_JAN_BARCODE	商品ラベルソースCDバーコード種別	base	CODE39	CODE39	1	1												
+PRODUCT_LABEL_JAN_BARCODE	商品ラベルソースCDバーコード種別	base	CODE128	CODE128	2	0												
+PRODUCT_LABEL_JAN_BARCODE	商品ラベルソースCDバーコード種別	base	CODABAR	CODABAR(NW-7)	3	0												
+PRODUCT_LABEL_JAN_BARCODE	商品ラベルソースCDバーコード種別	base	JAN	JAN(8or13)	4	0												
+PRODUCT_LABEL_JAN_BARCODE	商品ラベルソースCDバーコード種別	base	ITF	ITF	5	0												
+PRODUCT_LABEL_OUT_UNIT	商品ラベル出力単位	base	0	1明細1枚	1	1												
+PRODUCT_LABEL_OUT_UNIT	商品ラベル出力単位	base	1	荷姿毎に1枚(在庫最小単位は全体で1枚)	2	0												
+PRODUCT_LABEL_OUT_UNIT	商品ラベル出力単位	base	2	在庫最小単位毎に1枚	3	0												
+PRODUCT_LABEL_PROD_BARCODE	商品ラベル商品CDバーコード種別	base	CODE39	CODE39	1	1												
+PRODUCT_LABEL_PROD_BARCODE	商品ラベル商品CDバーコード種別	base	CODE128	CODE128	2	0												
+PRODUCT_LABEL_PROD_BARCODE	商品ラベル商品CDバーコード種別	base	CODABAR	CODABAR(NW-7)	3	0												
+PRODUCT_LABEL_PROD_BARCODE	商品ラベル商品CDバーコード種別	base	JAN	JAN(8or13)	4	0												
+PRODUCT_LABEL_PROD_BARCODE	商品ラベル商品CDバーコード種別	base	ITF	ITF	5	0												
+PRODUCT_PART_PACKING	商品毎別梱包	base	0	不可	0	0												
+PRODUCT_PART_PACKING	商品毎別梱包	base	1	可能	1	0												
+PRODUCT_TYPE_CODE	商品種別コード	base	101	ゆうパック	1	0												
+PRODUCT_TYPE_CODE	商品種別コード	base	102	空港ゆうパック	2	0												
+PRODUCT_TYPE_CODE	商品種別コード	base	103	チルドゆうパック	3	0												
+PRODUCT_TYPE_CODE	商品種別コード	base	105	冷凍ゆうパック	4	0												
+PRODUCT_TYPE_CODE	商品種別コード	base	107	ゴルフゆうパック	5	0												
+PRODUCT_TYPE_CODE	商品種別コード	base	113	スキー・ホテル等ゆうパック	6	0												
+PRODUCT_TYPE_CODE	商品種別コード	base	201	着払ゆうパック	7	0												
+PRODUCT_TYPE_CODE	商品種別コード	base	202	着払ゆうパック(チルド)	8	0												
+PRODUCT_TYPE_CODE	商品種別コード	base	203	着払ゆうパック(冷凍)	9	0												
+PRODUCT_TYPE_CODE	商品種別コード	base	601	代金引換まとめ送金サービス	10	0												
+PRODUCT_TYPE_CODE	商品種別コード	base	603	代金引換まとめ送金サービス(チルド)	11	0												
+PRODUCT_TYPE_CODE	商品種別コード	base	605	代金引換まとめ送金サービス(冷凍)	12	0												
+PRODUCT_TYPE_CODE	商品種別コード	base	701	スキー・ホテル等ゆうパック(往路)	13	0												
+PRODUCT_TYPE_CODE	商品種別コード	base	702	空港ゆうパック(往路)	14	0												
+PRODUCT_TYPE_CODE	商品種別コード	base	703	スキー・ホテル等ゆうパック(復路)	15	0												
+PRODUCT_TYPE_CODE	商品種別コード	base	704	空港ゆうパック(復路)	16	0												
+PRODUCT_TYPE_CODE	商品種別コード	base	705	ゴルフゆうパック(往路)	17	0												
+PRODUCT_TYPE_CODE	商品種別コード	base	707	ゴルフゆうパック(復路)	18	0												
+QTY_0_DISPLAY	0非表示	base	0	0表示	1	0												
+QTY_0_DISPLAY	0非表示	base	1	0非表示	2	1												
+REASON_TYPE	変更理由	base	0	変更なし	1	0												
+REASON_TYPE	変更理由	base	1	市政・区政・町政・分区・政令指定都市施行	2	0												
+REASON_TYPE	変更理由	base	2	住居表示の実施	3	0												
+REASON_TYPE	変更理由	base	3	区画整理	4	0												
+REASON_TYPE	変更理由	base	4	郵便区調整等	5	0												
+REASON_TYPE	変更理由	base	5	訂正	6	0												
+REASON_TYPE	変更理由	base	6	廃止	7	0												
+RECEIVE_DELIVERY_STATUS	入荷納品ステータス	base	00	未完	1	0												
+RECEIVE_DELIVERY_STATUS	入荷納品ステータス	base	01	完納	2	0												
+RECEIVE_DELIVERY_STATUS	入荷納品ステータス	base	02	分納	3	0												
+RECEIVE_DELIVERY_STATUS	入荷納品ステータス	base	09	打切り	4	0												
+RECEIVE_FLG	入荷フラグ	base	0	入荷対象外	1	0												
+RECEIVE_FLG	入荷フラグ	base	1	入荷対象	2	0												
+RECEIVE_STATUS	入荷ステータス	base	01	未入荷	1	0	RECEIVE_STATUS_PRL	商品別入荷一覧プルダウン用入荷ステータス	1	0								
+RECEIVE_STATUS	入荷ステータス	base	02	入荷中	2	0	RECEIVE_STATUS_PRL	商品別入荷一覧プルダウン用入荷ステータス										
+RECEIVE_STATUS	入荷ステータス	base	03	入荷済	3	0	RECEIVE_STATUS_PRL	商品別入荷一覧プルダウン用入荷ステータス	1	0								
+RECEIVE_STATUS	入荷ステータス	base	90	入荷削除	4	0	RECEIVE_STATUS_PRL	商品別入荷一覧プルダウン用入荷ステータス	1	0								
+RECEIVE_STATUS	入荷ステータス	base	99	エラー有	5	0	RECEIVE_STATUS_PRL	商品別入荷一覧プルダウン用入荷ステータス	1	0								
+REPLENISH_ALLOC_CLS	補充ロケ割付区分	base	0	バッチ毎同一SKUは同一ロケに割付	1	0												
+REPLENISH_ALLOC_CLS	補充ロケ割付区分	base	1	補充毎に別ロケを割付	2	0												
+REPLENISH_PRODUCT_CD_UNSET	補充商品CD未設定	base	1	未設定のみ	1	0												
+REPLENISH_SEARCH_CLS	補充点検索区分	base	0	補充点以下	1	1												
+REPLENISH_SEARCH_CLS	補充点検索区分	base	1	補充可能	2	0												
+REPLENISH_SEARCH_CLS	補充点検索区分	base	2	全て	3	0												
+REPLENISH_UNIT_CLS	補充単位区分	base	0	必要数	1	0												
+REPLENISH_UNIT_CLS	補充単位区分	base	1	最大格納数荷姿切上	2	0												
+REPORT_LAYOUT_ITEM_TYPE	項目型	base	0	固定項目	1	0												
+REPORT_LAYOUT_ITEM_TYPE	項目型	base	1	出力項目	2	0												
+RESTOCK_TYPE	補充種別	base	0	定期	1	0												
+RESTOCK_TYPE	補充種別	base	1	緊急	2	0												
+RESULT_AFTER_PRODUCT_LABEL	実績入力後入庫/商品ラベル出力	base	0	出力しない	1	1												
+RESULT_AFTER_PRODUCT_LABEL	実績入力後入庫/商品ラベル出力	base	1	画面で実績入力後のみ出力	2	0												
+RESULT_AFTER_PRODUCT_LABEL	実績入力後入庫/商品ラベル出力	base	2	HT/SDで実績入力後のみ出力	3	0												
+RESULT_AFTER_PRODUCT_LABEL	実績入力後入庫/商品ラベル出力	base	3	出力する	4	0												
+REVERSE_VALID_FLG	期限日出荷制限フラグ	base	0	無効	1	0												
+REVERSE_VALID_FLG	期限日出荷制限フラグ	base	1	有効	2	0												
+SELECT	選択	base	0	選択しない	1	1												
+SELECT	選択	base	1	選択する	2	0												
+SELECT_PRINT_SERVICE_STATUS	印刷サービスステータス	base	0	サービス中	1	1												
+SELECT_PRINT_SERVICE_STATUS	印刷サービスステータス	base	1	サービス停止中	2	0												
+SERIAL_OPERATION_TYPE	処理区分	base	1	入荷	1	0												
+SERIAL_OPERATION_TYPE	処理区分	base	2	出荷	2	0												
+SERIAL_OPERATION_TYPE	処理区分	base	3	削除	3	0												
+TARGET_WINDOW	ターゲットウインドウ	base	0	同一ウインドウで開く	1	1												
+TARGET_WINDOW	ターゲットウインドウ	base	1	別ウインドウを新規で開く	2	0												
+TARGET_WINDOW	ターゲットウインドウ	base	2	別ウインドウを同一画面で開く	3	0												
+SETTLEMENT_TYPE	決済種別	base	0	指定なし	1	0												
+SETTLEMENT_TYPE	決済種別	base	1	全て可	2	0												
+SETTLEMENT_TYPE	決済種別	base	2	現金のみ	3	0												
+SETTLEMENT_TYPE	決済種別	base	5	ﾃﾞﾋﾞｯﾄ･ｸﾚｼﾞｯﾄ	4	0												
+SGL_ROW_INSP_AFTER_OUT_CLS	単行出荷検品荷札/納品明細出力区分	base	1	最初の商品検品後に出力	1	0												
+SGL_ROW_INSP_AFTER_OUT_CLS	単行出荷検品荷札/納品明細出力区分	base	2	随時出力	2	0												
+SGL_ROW_INSP_AFTER_OUT_CLS	単行出荷検品荷札/納品明細出力区分	base	3	最後の商品検品後に出力	3	0												
+SGL_ROW_PIC_FLG	単行ピックフラグ	base	0	単行ピック無	1	0												
+SGL_ROW_PIC_FLG	単行ピックフラグ	base	1	単行ピック有	2	0												
+SHEET_COLLATE	部単位印刷要否	base	0	ページ毎印刷	1	1												
+SHEET_COLLATE	部単位印刷要否	base	1	部単位で印刷	2	0												
+SHIPPING_FLG	出荷フラグ	base	0	出荷対象外	1	0												
+SHIPPING_FLG	出荷フラグ	base	1	出荷対象	2	0												
+SHIPPING_STATUS	出荷ステータス	base	10	未出荷	1	0	SHIPPING_STATUS_SELECT	プルダウン用出荷ステータス	1	0	SHIPPING_STATUS_EOL	EC受注データ一覧用出荷ステータス	1	0	SHIPPING_STATUS_WORKING	出庫指示後出荷ステータス		
+SHIPPING_STATUS	出荷ステータス	base	15	出庫指示中	2	0	SHIPPING_STATUS_SELECT	プルダウン用出荷ステータス			SHIPPING_STATUS_EOL	EC受注データ一覧用出荷ステータス			SHIPPING_STATUS_WORKING	出庫指示後出荷ステータス		
+SHIPPING_STATUS	出荷ステータス	base	20	出庫指示解除中	3	0	SHIPPING_STATUS_SELECT	プルダウン用出荷ステータス			SHIPPING_STATUS_EOL	EC受注データ一覧用出荷ステータス			SHIPPING_STATUS_WORKING	出庫指示後出荷ステータス		
+SHIPPING_STATUS	出荷ステータス	base	25	出庫指示済	4	0	SHIPPING_STATUS_SELECT	プルダウン用出荷ステータス	1	0	SHIPPING_STATUS_EOL	EC受注データ一覧用出荷ステータス	1	0	SHIPPING_STATUS_WORKING	出庫指示後出荷ステータス	1	0
+SHIPPING_STATUS	出荷ステータス	base	30	ピッキング中	5	0	SHIPPING_STATUS_SELECT	プルダウン用出荷ステータス	1	0	SHIPPING_STATUS_EOL	EC受注データ一覧用出荷ステータス	1	0	SHIPPING_STATUS_WORKING	出庫指示後出荷ステータス	1	0
+SHIPPING_STATUS	出荷ステータス	base	35	ピッキング済	6	0	SHIPPING_STATUS_SELECT	プルダウン用出荷ステータス	1	0	SHIPPING_STATUS_EOL	EC受注データ一覧用出荷ステータス	1	0	SHIPPING_STATUS_WORKING	出庫指示後出荷ステータス	1	0
+SHIPPING_STATUS	出荷ステータス	base	40	出荷検品中	7	0	SHIPPING_STATUS_SELECT	プルダウン用出荷ステータス	1	0	SHIPPING_STATUS_EOL	EC受注データ一覧用出荷ステータス	1	0	SHIPPING_STATUS_WORKING	出庫指示後出荷ステータス	1	0
+SHIPPING_STATUS	出荷ステータス	base	45	出荷検品中断	8	0	SHIPPING_STATUS_SELECT	プルダウン用出荷ステータス	1	0	SHIPPING_STATUS_EOL	EC受注データ一覧用出荷ステータス	1	0	SHIPPING_STATUS_WORKING	出庫指示後出荷ステータス	1	0
+SHIPPING_STATUS	出荷ステータス	base	50	出荷検品済	9	0	SHIPPING_STATUS_SELECT	プルダウン用出荷ステータス	1	0	SHIPPING_STATUS_EOL	EC受注データ一覧用出荷ステータス	1	0	SHIPPING_STATUS_WORKING	出庫指示後出荷ステータス	1	0
+SHIPPING_STATUS	出荷ステータス	base	55	出荷確定済	10	0	SHIPPING_STATUS_SELECT	プルダウン用出荷ステータス	1	0	SHIPPING_STATUS_EOL	EC受注データ一覧用出荷ステータス	1	0	SHIPPING_STATUS_WORKING	出庫指示後出荷ステータス	1	0
+SHIPPING_STATUS	出荷ステータス	base	60	承認待ち	11	0	SHIPPING_STATUS_SELECT	プルダウン用出荷ステータス	1	0	SHIPPING_STATUS_EOL	EC受注データ一覧用出荷ステータス	1	0	SHIPPING_STATUS_WORKING	出庫指示後出荷ステータス	1	0
+SHIPPING_STATUS	出荷ステータス	base	90	キャンセル	12	0	SHIPPING_STATUS_SELECT	プルダウン用出荷ステータス	1	0	SHIPPING_STATUS_EOL	EC受注データ一覧用出荷ステータス	1	0	SHIPPING_STATUS_WORKING	出庫指示後出荷ステータス		
+SHIPPING_STATUS	出荷ステータス	base	99	エラー有	13	0	SHIPPING_STATUS_SELECT	プルダウン用出荷ステータス	1	0	SHIPPING_STATUS_EOL	EC受注データ一覧用出荷ステータス	1	0	SHIPPING_STATUS_WORKING	出庫指示後出荷ステータス		
+SHIPPING_STOP_FLG	出荷停止フラグ	base	1	出荷停止	2	0												
+SHIPPING_STOP_FLG	出荷停止フラグ	base	0	出荷可能	1	0												
+SHORT_STOCK_DISPLAY	欠品表示区分	base	0	全件表示	1	1												
+SHORT_STOCK_DISPLAY	欠品表示区分	base	1	欠品のみ	2	0												
+SHP_CHECK_CLS	出荷検品区分	base	0	ピース検品	1	0												
+SHP_CHECK_CLS	出荷検品区分	base	1	ケース検品	2	0												
+SHP_CHECK_DISPLAY	未検品表示区分	base	0	全件表示	1	0												
+SHP_CHECK_DISPLAY	未検品表示区分	base	1	未検品のみ表示	2	1												
+SLIP_TYPE	送り状種別	base	0	発払い	1	0												
+SLIP_TYPE	送り状種別	base	2	コレクト	2	0												
+SLIP_TYPE	送り状種別	base	3	メール便	3	0												
+SLIP_TYPE	送り状種別	base	4	タイム	4	0												
+SLIP_TYPE	送り状種別	base	5	着払い	5	0												
+SLIP_TYPE	送り状種別	base	6	メール便速達サービス	6	0												
+SOUND_PLAY_FLG	操作音再生フラグ	base	0	再生しない	1	0												
+SOUND_PLAY_FLG	操作音再生フラグ	base	1	再生する	2	1												
+STOCK_ADJUST_FLG	在庫調整フラグ	base	0	在庫調整対象外	1	0												
+STOCK_ADJUST_FLG	在庫調整フラグ	base	1	在庫調整対象	2	0												
+STOCK_DISPLAY_FLD	在庫表示内容	base	0	商品順（日報なし）	1	1												
+STOCK_DISPLAY_FLD	在庫表示内容	base	1	商品順（日報あり）	2	0												
+STOCK_DISPLAY_FLD	在庫表示内容	base	2	ロケーション順（日報なし）	3	0												
+STOCK_DISPLAY_FLD	在庫表示内容	base	3	ロケーション順（日報あり）	4	0												
+STOCK_EXIST_ONLY_FLG	在庫有のみフラグ	base	0	全て	1	0												
+STOCK_EXIST_ONLY_FLG	在庫有のみフラグ	base	1	在庫有のみ	2	0												
+STOCK_MOVE_FLG	在庫調整フラグ	base	0	未調整	1	0												
+STOCK_MOVE_FLG	在庫調整フラグ	base	1	調整済	2	0												
+STOCK_NUM_0_DISPLAY	在庫数 0非表示	base	0	0表示	1	1												
+STOCK_NUM_0_DISPLAY	在庫数 0非表示	base	1	0非表示	2	0												
+STOCK_OUT_ALLOC_CLS	欠品時引当区分	base	0	引当可能数を引当	1	0												
+STOCK_OUT_ALLOC_CLS	欠品時引当区分	base	1	商品毎に0引当	2	0												
+STOCK_OUT_ALLOC_CLS	欠品時引当区分	base	2	納品先毎に0引当	3	0												
+STOCK_OUT_AUTO_INST_FLG	欠品時自動出庫指示フラグ	base	0	自動出庫指示に含めない	1	0												
+STOCK_OUT_AUTO_INST_FLG	欠品時自動出庫指示フラグ	base	1	自動出庫指示に含める	2	0												
+STOCK_OUT_FLG	欠品フラグ	base	0	欠品無	1	1												
+STOCK_OUT_FLG	欠品フラグ	base	1	欠品有	2	0												
+STOCK_OUT_INST_CXL_FLG	欠品時出庫指示取消フラグ	base	0	出庫指示を取消しない	1	0												
+STOCK_OUT_INST_CXL_FLG	欠品時出庫指示取消フラグ	base	1	出庫指示を取消	2	0												
+STOCK_OUT_INST_SPLIT_FLG	欠品時出荷指示分離フラグ	base	0	分離しない	1	0												
+STOCK_OUT_INST_SPLIT_FLG	欠品時出荷指示分離フラグ	base	1	分離する	2	0												
+STOCK_QTY_DISPLAY	在庫数表示	base	0	表示しない	1	0												
+STOCK_QTY_DISPLAY	在庫数表示	base	1	表示する	2	1												
+STOCK_TAKING_INPUT	棚卸データ有	base	1	棚卸入力有のみ表示	2	0												
+STOCK_TAKING_INPUT	棚卸データ有	base	0	棚卸入力無のみ表示	1	0												
+STOCK_TARGET	在庫対象	base	0	全部対象	1	0												
+STOCK_TARGET	在庫対象	base	1	引当可能数＋引当済数＞０	2	1												
+STORE_DT_FLG	入庫日管理フラグ	base	0	管理しない	1	0												
+STORE_DT_FLG	入庫日管理フラグ	base	1	管理する	2	0												
+STORE_FLG	格納フラグ	base	0	未格納	1	0												
+STORE_FLG	格納フラグ	base	1	格納	2	0												
+STORE_NO_DIVIDE_DISPLAY	入庫No.分割表示	base	0	表示しない	0	1												
+STORE_NO_DIVIDE_DISPLAY	入庫No.分割表示	base	1	表示する	1	0												
+STORE_NO_FLG	入庫No.管理フラグ	base	0	管理しない	1	0												
+STORE_NO_FLG	入庫No.管理フラグ	base	1	管理する	2	0												
+STORE_NO_MERGE_FLG	入庫No.マージフラグ	base	0	マージしない	1	0												
+STORE_NO_MERGE_FLG	入庫No.マージフラグ	base	1	マージする	2	0												
+SYSTEM_LOG_STATUS	システムログステータス	base	1	正常	1	0												
+SYSTEM_LOG_STATUS	システムログステータス	base	2	異常	2	0												
+SYSTEM_LOG_TYPE	システムログ種別	base	1	通常	1	0												
+SYSTEM_LOG_TYPE	システムログ種別	base	2	SQL(SELECT)	2	0												
+SYSTEM_LOG_TYPE	システムログ種別	base	3	SQL(INSERT)	3	0												
+SYSTEM_LOG_TYPE	システムログ種別	base	4	SQL(UPDATE)	4	0												
+SYSTEM_LOG_TYPE	システムログ種別	base	5	SQL(DELETE)	5	0												
+SYSTEM_LOG_TYPE	システムログ種別	base	6	SQL(OTHERS)	6	0												
+SYSTEM_TYPE	システム種別	base	base	基盤	1	0												
+SYSTEM_TYPE	システム種別	base	wms	WMS	2	1												
+TAG_DELIVERY_OUT_FLG	荷札納品書在中出力フラグ	base	0	出力しない	1	1												
+TAG_DELIVERY_OUT_FLG	荷札納品書在中出力フラグ	base	1	1枚目のみ出力	2	0												
+TAKING_SHIPPING_DT_FLG	作業日/出荷日/納品日区分	base	0	作業日	1	1												
+TAKING_SHIPPING_DT_FLG	作業日/出荷日/納品日区分	base	1	出荷日	2	0												
+TAKING_SHIPPING_DT_FLG	作業日/出荷日/納品日区分	base	2	納品日	3	0												
+TAKING_SHIPPING_FLG	作業日/出荷日区分	base	0	作業日	1	1												
+TAKING_SHIPPING_FLG	作業日/出荷日区分	base	1	出荷日	2	0												
+TEXT_ALIGN	表示位置	base	left	左寄せ	1	0												
+TEXT_ALIGN	表示位置	base	right	右寄せ	2	0												
+TEXT_ALIGN	表示位置	base	center	中央揃え	3	0												
+TOTAL_PIC_FLG	トータルピックフラグ	base	0	トータルピック無	1	0												
+TOTAL_PIC_FLG	トータルピックフラグ	base	1	トータルピック有	2	0												
+TRACKING_NUMBERING_UNIT	追跡番号採番単位	base	1	出庫作業No単位	1	1												
+TRACKING_NUMBERING_UNIT	追跡番号採番単位	base	2	梱包単位	2	0												
+TRANSIT_DISPLAY	積送中在庫のみ表示	base	0	全件表示	0	1												
+TRANSIT_DISPLAY	積送中在庫のみ表示	base	1	積送中在庫のみ表示	1	0												
+UNMATCH	アンマッチ有	base	1	アンマッチ有のみ表示	2	1												
+UNMATCH	アンマッチ有	base	0	全件表示	1	0												
+UPD_CD	修正コード	base	0	修正なし	1	0												
+UPD_CD	修正コード	base	1	新規追加	2	0												
+UPD_CD	修正コード	base	2	廃止	3	0												
+UPD_TYPE	更新区分	base	0	変更なし	1	0												
+UPD_TYPE	更新区分	base	1	変更あり	2	0												
+UPD_TYPE	更新区分	base	2	廃止	3	0												
+UPDATABLE	更新可否	base	0	更新不可	1	1												
+UPDATABLE	更新可否	base	1	更新可能	2	0												
+UPLOAD_TABLE_NM	アップロードテーブル名	base	tRakutenOrder	楽天RMS受注	1	0												
+UPLOAD_TABLE_NM	アップロードテーブル名	base	tAmazonOrder	Amazon受注	2	0												
+UPLOAD_TABLE_NM	アップロードテーブル名	base	tYahooOrder	Yahoo受注	3	0												
+USE_HT_SHIP_FLG	HT/SDケースピック使用フラグ	base	0	未使用	1	1												
+USE_HT_SHIP_FLG	HT/SDケースピック使用フラグ	base	1	使用	2	0												
+USER_EDITABLE	ユーザ編集可否	base	0	否	1	0												
+USER_EDITABLE	ユーザ編集可否	base	1	可	2	0												
+VENDOR_FLG	仕入先フラグ	base	1	使用	2	0												
+VENDOR_FLG	仕入先フラグ	base	0	未使用	1	0												
+VISIBLE	表示可否	base	0	非表示	1	0												
+VISIBLE	表示可否	base	1	表示	2	1												
+WORK_FLG	処理済フラグ	base	0	未処理	1	0												
+WORK_FLG	処理済フラグ	base	1	処理済	2	0												
+WORK_MESSAGE_FLG	作業メッセージ有無	base	0	メッセージ無	0	0												
+WORK_MESSAGE_FLG	作業メッセージ有無	base	1	メッセージ有	1	0												
+YAMATO_DELIV_TZ	ヤマト配達時間帯	base	0812	午前中	1	0												
+YAMATO_DELIV_TZ	ヤマト配達時間帯	base	1214	12時～14時	2	0												
+YAMATO_DELIV_TZ	ヤマト配達時間帯	base	1416	14時～16時	3	0												
+YAMATO_DELIV_TZ	ヤマト配達時間帯	base	1618	16時～18時	4	0												
+YAMATO_DELIV_TZ	ヤマト配達時間帯	base	1820	18時～20時	5	0												
+YAMATO_DELIV_TZ	ヤマト配達時間帯	base	1921	19時～21時	6	0												
+YAMATO_DELIV_TZ	ヤマト配達時間帯	base	2021	20時～21時	7	0												
+YAMATO_DELIV_TZ	ヤマト配達時間帯	base	0010	午前10時まで	8	0												
+YAMATO_DELIV_TZ	ヤマト配達時間帯	base	0017	午後5時まで	9	0												
+YUPACK_DELIV_TZ	ゆうパック配達時間帯	base	00	時間指定なし	1	0												
+YUPACK_DELIV_TZ	ゆうパック配達時間帯	base	51	午前中	2	0												
+YUPACK_DELIV_TZ	ゆうパック配達時間帯	base	52	12時～14時	3	0												
+YUPACK_DELIV_TZ	ゆうパック配達時間帯	base	53	14時～16時	4	0												
+YUPACK_DELIV_TZ	ゆうパック配達時間帯	base	54	16時～18時	5	0												
+YUPACK_DELIV_TZ	ゆうパック配達時間帯	base	55	18時～20時	6	0												
+YUPACK_DELIV_TZ	ゆうパック配達時間帯	base	57	19時～21時	7	0												
+YUPACK_DELIV_TZ	ゆうパック配達時間帯	base	56	20時～21時	8	0												
+ZIP_FLG	郵便番号フラグ	base	0	該当せず	1	0												
+ZIP_FLG	郵便番号フラグ	base	1	該当	2	0												
+RESULT_AFTER_PRODUCT_TARGET	実績入力後入庫/商品ラベル出力対象	base	1	入庫ラベル	1	1												
+RESULT_AFTER_PRODUCT_TARGET	実績入力後入庫/商品ラベル出力対象	base	2	商品ラベル	2	0												
+COPY_TARGET_TABLE	コピー対象テーブル	base	MCenterCol	センタ列マスタ	1	0												
+COPY_TARGET_TABLE	コピー対象テーブル	base	MCenterItem	センタ項目マスタ	2	0												
+COPY_TARGET_TABLE	コピー対象テーブル	base	MCenterScreen	センタ画面マスタ	3	0												
+COPY_TARGET_TABLE	コピー対象テーブル	base	MCarrierSlipSgw	佐川送り状マスタ	4	0												
+COPY_TARGET_TABLE	コピー対象テーブル	base	MCarrierSlipYmt	ヤマト送り状マスタ	5	0												
+COPY_TARGET_TABLE	コピー対象テーブル	base	MCarrierSlipYupk	ゆうパック送り状マスタ	6	0												
+INSPECTION_LABEL_OUT_FLG	検品ラベル出力	wms	0	出力しない	1	1												
+INSPECTION_LABEL_OUT_FLG	検品ラベル出力	wms	1	出力する	2	0												
+DECIMAL_PRODUCT_PACKING	小数管理商品梱包単位	wms	0	荷姿単位で1梱包	1	0												
+DECIMAL_PRODUCT_PACKING	小数管理商品梱包単位	wms	1	商品単位で1梱包	2	0												
+DECIMAL_EXIST_FLG	小数有無フラグ	wms	0	小数を含まない	1	1												
+DECIMAL_EXIST_FLG	小数有無フラグ	wms	1	小数を含む	2	0												
+CASE_PICK_FLG	ケースピッキング対象	wms	0	対象外	1	0												
+CASE_PICK_FLG	ケースピッキング対象	wms	1	対象	2	1												
+EM_REPLENISH_SHAPE_FLG	緊急補充ゾーン補充荷姿	wms	0	対象外	1	0												
+EM_REPLENISH_SHAPE_FLG	緊急補充ゾーン補充荷姿	wms	1	対象	2	1												
+WORK_STATUS	作業ステータス	wms	01	作業中	1	0												
+WORK_STATUS	作業ステータス	wms	02	正常終了	2	0												
+WORK_STATUS	作業ステータス	wms	03	基盤強制終了	3	0												
+WORK_LOG_OUT_FLG	作業実績出力フラグ	wms	0	未出力	1	0												
+WORK_LOG_OUT_FLG	作業実績出力フラグ	wms	1	出力済	2	0												
+ROLE_CONTROL_CLASS	権限制御区分	base	1	許可を指定	1	0												
+ROLE_CONTROL_CLASS	権限制御区分	base	2	拒否を指定	2	0												
+BOL_OUT_FLG	Bill of Lading出力フラグ	wms	0	未発行	1	0												
+BOL_OUT_FLG	Bill of Lading出力フラグ	wms	1	発行済	2	0												
+BOL_OUTPUT_TARGET_FLG	Bill of Lading出力対象フラグ	wms	0	対象外	1	0												
+BOL_OUTPUT_TARGET_FLG	Bill of Lading出力対象フラグ	wms	1	対象	2	1												
+PAYMENT_TERM	Payment Term	wms	PPD	PrePaid	1	0												
+PAYMENT_TERM	Payment Term	wms	PPB	PrePaid & Bill	2	0												
+PAYMENT_TERM	Payment Term	wms	COL	Collect	3	0												
+PAYMENT_TERM	Payment Term	wms	CO1	COD Bill FRT	4	0												
+PAYMENT_TERM	Payment Term	wms	CO2	COD NOT Bill FRT	5	0												
+PAYMENT_TERM	Payment Term	wms	3PL	3rd Party	6	0												
+CES_INTEGRATION_FLG	CES連携フラグ	wms	0	連携しない	1	0												
+CES_INTEGRATION_FLG	CES連携フラグ	wms	1	連携する	2	0												
+PACKING_SLIP_AUTO_OUTPUT_FLG	納品明細書自動発行フラグ	wms	0	発行しない	1	0												
+PACKING_SLIP_AUTO_OUTPUT_FLG	納品明細書自動発行フラグ	wms	1	発行する	2	0												
+FREIGHT_CLS	Freight Class	wms	01	50	1	0												
+FREIGHT_CLS	Freight Class	wms	02	55	2	0												
+FREIGHT_CLS	Freight Class	wms	03	60	3	0												
+FREIGHT_CLS	Freight Class	wms	04	65	4	0												
+FREIGHT_CLS	Freight Class	wms	05	70	5	0												
+FREIGHT_CLS	Freight Class	wms	06	77.5	6	0												
+FREIGHT_CLS	Freight Class	wms	07	85	7	0												
+FREIGHT_CLS	Freight Class	wms	08	92.5	8	0												
+FREIGHT_CLS	Freight Class	wms	09	100	9	0												
+FREIGHT_CLS	Freight Class	wms	10	110	10	0												
+FREIGHT_CLS	Freight Class	wms	11	125	11	0												
+FREIGHT_CLS	Freight Class	wms	12	150	12	0												
+FREIGHT_CLS	Freight Class	wms	13	175	13	0												
+FREIGHT_CLS	Freight Class	wms	14	200	14	0												
+FREIGHT_CLS	Freight Class	wms	15	250	15	0												
+FREIGHT_CLS	Freight Class	wms	16	300	16	0												
+FREIGHT_CLS	Freight Class	wms	17	400	17	0												
+FREIGHT_CLS	Freight Class	wms	18	500	18	0												
+SAT_DELIVERY_FLG	Saturday Delivery フラグCD	wms	1	Enable	1	0												
+SAT_DELIVERY_FLG	Saturday Delivery フラグCD	wms	0	Disable	2	0												
+RESIDENTIAL_DELIVERY_FLG	Residential Delivery フラグCD	wms	1	Enable	1	0												
+RESIDENTIAL_DELIVERY_FLG	Residential Delivery フラグCD	wms	0	Disable	2	0												
+COD_FLG	Collect On Delivery フラグCD	wms	1	Enable	1	0												
+COD_FLG	Collect On Delivery フラグCD	wms	0	Disable	2	0												
+SIGNATURE_REQUIRED_FLG	Signature Required フラグCD	wms	1	Enable	1	0												
+SIGNATURE_REQUIRED_FLG	Signature Required フラグCD	wms	0	Disable	2	0												
+SIGNATURE_RELEASE_FLG	Signature ReleaseフラグCD	wms	1	Enable	1	0												
+SIGNATURE_RELEASE_FLG	Signature ReleaseフラグCD	wms	0	Disable	2	0												
+CALL_BEFORE_DELIVERY_FLG	Call Before Delivery フラグCD	wms	1	Enable	1	0												
+CALL_BEFORE_DELIVERY_FLG	Call Before Delivery フラグCD	wms	0	Disable	2	0												
+FREEZABLE_PROTECTION_FLG	Freezable Protection フラグCD	wms	1	Enable	1	0												
+FREEZABLE_PROTECTION_FLG	Freezable Protection フラグCD	wms	0	Disable	2	0												
+GUARANTEED_PLUS_FLG	Guaranteed Plus フラグCD	wms	1	Enable	1	0												
+GUARANTEED_PLUS_FLG	Guaranteed Plus フラグCD	wms	0	Disable	2	0												
+RESIDENTIAL_PICKUP_FLG	Residential Pickup フラグCD	wms	1	Enable	1	0												
+RESIDENTIAL_PICKUP_FLG	Residential Pickup フラグCD	wms	0	Disable	2	0												
+DO_NOT_STACK_STACK_FLG	Do Not Stack Pallets フラグCD	wms	1	Enable	1	0												
+DO_NOT_STACK_STACK_FLG	Do Not Stack Pallets フラグCD	wms	0	Disable	2	0												
+LIMITED_ACCESS_DELIVERY_FLG	Limited Access Delivery フラグCD	wms	1	Enable	1	0												
+LIMITED_ACCESS_DELIVERY_FLG	Limited Access Delivery フラグCD	wms	0	Disable	2	0												
+LIMITED_ACCESS_PICKUP_FLG	Limited Access Pickup フラグCD	wms	1	Enable	1	0												
+LIMITED_ACCESS_PICKUP_FLG	Limited Access Pickup フラグCD	wms	0	Disable	2	0												
+OVER_SIZED_FLG	Over-Sized/Extreme Length フラグCD	wms	1	Enable	1	0												
+OVER_SIZED_FLG	Over-Sized/Extreme Length フラグCD	wms	0	Disable	2	0												
+POISON_FLG	Poison フラグCD	wms	1	Enable	1	0												
+POISON_FLG	Poison フラグCD	wms	0	Disable	2	0												
+FOOG_FLG	Food フラグCD	wms	1	Enable	1	0												
+FOOG_FLG	Food フラグCD	wms	0	Disable	2	0												
+LIFTGATE_DELIVERY_PREPAID_FLG	Liftgate at delivery フラグCD (Prepaid)	wms	1	Enable	1	0												
+LIFTGATE_DELIVERY_PREPAID_FLG	Liftgate at delivery フラグCD (Prepaid)	wms	0	Disable	2	0												
+LIFTGATE_DELIVERY_COLLECT_FLG	Liftgate at delivery フラグCD (Collect)	wms	1	Enable	1	0												
+LIFTGATE_DELIVERY_COLLECT_FLG	Liftgate at delivery フラグCD (Collect)	wms	0	Disable	2	0												
+LIFTGATE_PICKUP_PREPAID_FLG	Liftgate at pickup フラグCD (Prepaid)	wms	1	Enable	1	0												
+LIFTGATE_PICKUP_PREPAID_FLG	Liftgate at pickup フラグCD (Prepaid)	wms	0	Disable	2	0												
+LIFTGATE_PICKUP_COLLECT_FLG	Liftgate at pickup フラグCD (Collect)	wms	1	Enable	1	0												
+LIFTGATE_PICKUP_COLLECT_FLG	Liftgate at pickup フラグCD (Collect)	wms	0	Disable	2	0												
+INSIDE_DELIVERY_PREPAID_FLG	Inside Delivery フラグCD (Prepaid)	wms	1	Enable	1	0												
+INSIDE_DELIVERY_PREPAID_FLG	Inside Delivery フラグCD (Prepaid)	wms	0	Disable	2	0												
+INSIDE_DELIVERY_COLLECT_FLG	Inside Delivery フラグCD (Collect)	wms	1	Enable	1	0												
+INSIDE_DELIVERY_COLLECT_FLG	Inside Delivery フラグCD (Collect)	wms	0	Disable	2	0												
+INSIDE_PICKUP_PREPAID_FLG	Inside Pickup フラグCD (Prepaid)	wms	1	Enable	1	0												
+INSIDE_PICKUP_PREPAID_FLG	Inside Pickup フラグCD (Prepaid)	wms	0	Disable	2	0												
+INSIDE_PICKUP_COLLECT_FLG	Inside Pickup フラグCD (Collect)	wms	1	Enable	1	0												
+INSIDE_PICKUP_COLLECT_FLG	Inside Pickup フラグCD (Collect)	wms	0	Disable	2	0												
+RCMD_PICKING_CLS	提案ピッキング方法	wms	1	オーダーピッキング	1	0												
+RCMD_PICKING_CLS	提案ピッキング方法	wms	2	トータルピッキング＋摘み取り	2	0												
+RCMD_PICKING_CLS	提案ピッキング方法	wms	3	トータルピッキング＋種蒔き	3	0												
+RCMD_PICKING_CLS	提案ピッキング方法	wms	4	マルチピッキング	4	0												
+RCMD_PICKING_CLS	提案ピッキング方法	wms	5	単行ピッキング	5	0												
+RCMD_PICKING_CLS	提案ピッキング方法	wms	6	ケースピッキング	6	0												
+SGL_ROW_PIC_TARGET	単行ピッキング対象	wms	0	対象外	1	0												
+SGL_ROW_PIC_TARGET	単行ピッキング対象	wms	1	対象	2	0												
+CASE_PIC_TARGET	ケースピッキング対象	wms	0	対象外	1	0												
+CASE_PIC_TARGET	ケースピッキング対象	wms	1	対象	2	0												
+ATTENDANCE_LEAVING_REST	出退勤・休憩	wms	1	出勤	1	0												
+ATTENDANCE_LEAVING_REST	出退勤・休憩	wms	2	退勤	2	0												
+ATTENDANCE_LEAVING_REST	出退勤・休憩	wms	4	休憩開始	3	0												
+ATTENDANCE_LEAVING_REST	出退勤・休憩	wms	8	休憩終了	4	0												
+UPLOAD_ZIP_TYPE	郵便番号種別	wms	0	住所	1	1												
+UPLOAD_ZIP_TYPE	郵便番号種別	wms	1	事業所	2	0												
+FW_TYPE	FW	lms	1	特定品種	1	0												
+MCA_TYPE	MCA	lms	1	特定品種	1	0												
+ACCOUNT_FLG	得意先フラグ	lms	0	使用しない	1	0												
+ACCOUNT_FLG	得意先フラグ	lms	1	使用する	2	0												
+ALARM_REASON_CLS	アラーム区分	lms	01	荷揃対象データ無し	1	0												
+ALARM_REASON_CLS	アラーム区分	lms	02	戸配区分マスタ不一致	2	0												
+ALARM_REASON_CLS	アラーム区分	lms	03	論理在庫欠品	3	0												
+ALARM_REASON_CLS	アラーム区分	lms	04	運送業者登録無し(指定)	4	0												
+ALARM_REASON_CLS	アラーム区分	lms	05	運送業者該当無し(戸配)	5	0												
+ALARM_REASON_CLS	アラーム区分	lms	06	運送業者該当無し(店送り)	6	0												
+ALARM_REASON_CLS	アラーム区分	lms	07	運送業者該当無し(直送)	7	0												
+ALARM_REASON_CLS	アラーム区分	lms	08	運送業者休日振替(出荷日)	8	0												
+ALARM_REASON_CLS	アラーム区分	lms	09	運送業者休日(配送日)	9	0												
+ALARM_REASON_CLS	アラーム区分	lms	10	運送業者振替(大物)	10	0												
+ALARM_REASON_CLS	アラーム区分	lms	11	運送業者振替(重量物)	11	0												
+ALARM_REASON_CLS	アラーム区分	lms	12	荷揃処理エラー	12	0												
+ALARM_TYPE	アラーム種別	lms	0	エラー	1	0												
+ALARM_TYPE	アラーム種別	lms	1	警告	2	0												
+AREA_CLS	エリア	lms	0	0	1	0												
+AREA_CLS	エリア	lms	1	1	2	0												
+AREA_CLS	エリア	lms	2	2	3	0												
+ASSORT_STATUS	仕分状態	lms	0	ピッキング中	1	0												
+ASSORT_STATUS	仕分状態	lms	1	ピッキング完了	2	0												
+ASSORT_STATUS	仕分状態	lms	2	仕分完了	3	0												
+BASE_CLS	拠点区分	lms	2000	草加	1	0												
+BASE_CLS	拠点区分	lms	2300	越谷	2	0												
+BASE_CLS	拠点区分	lms	2400	リテイル小菅	3	0												
+BASE_CLS	拠点区分	lms	2500	リテイル越谷	4	0												
+BASE_CLS	拠点区分	lms	5000	東北ミドリ	5	0												
+BASE_CLS	拠点区分	lms	9998	ミドリロジ管轄3PL	6	0												
+BASE_CLS	拠点区分	lms	9999	ミドリロジ管轄外3PL	7	0												
+BOX_TYPE	荷材	lms	1	ダンボール	1	0												
+CARRIER_TYPE	運送業者	lms	JP	日本郵便	1	0												
+CARRIER_TYPE	運送業者	lms	YMT	ヤマト運輸	2	0												
+CARRIER_TYPE	運送業者	lms	SGW	佐川急便	3	0												
+CARRIER_TYPE_CD	運送会社区分	lms	1	ヤマト運輸	1	0												
+CARRIER_TYPE_CD	運送会社区分	lms	2	佐川急便	2	0												
+CARRIER_TYPE_CD	運送会社区分	lms	6	飛脚ゆうメール	3	0												
+CARRIER_TYPE_CD	運送会社区分	lms	7	ゆうパケット	4	0												
+CASE_TYPE_CD	ケース区分	lms	Y	ケース	1	0												
+CLOSING_DT	締め日	lms	0	20	1	0												
+COMPLETED_HIDDEN	完了非表示	lms	1	完了非表示	1	0												
+CONDITION	出力条件	lms	BLDL3350	0090	1	0												
+CONSTRACT	建設支店	lms	1	XXXX	1	0												
+CONSTRACT	建設支店	lms	2	XXXX	2	0												
+CS_PS_TYPE	ケース／バラ区分	lms	1	バラ	1	0												
+CS_PS_TYPE	ケース／バラ区分	lms	2	ケース	2	0												
+DEFAULT_STOCK_TYPE	在庫区分	lms	W100	通常在庫	1	0												
+DELIV_CENTER_FROM	拠点送り区分(出荷元)	lms	C001	草加物流センター	1	0												
+DELIV_CENTER_FROM	拠点送り区分(出荷元)	lms	C003	東北ミドリ	2	0												
+DELIV_CENTER_TO	拠点送り区分(出荷先)	lms	C001	草加物流センター	1	0												
+DELIV_CENTER_TO	拠点送り区分(出荷先)	lms	C002	越谷物流センター	2	0												
+DELIV_CENTER_TO	拠点送り区分(出荷先)	lms	C003	東北ミドリ	3	0												
+DELIV_CENTER_TO	拠点送り区分(出荷先)	lms	C004	リテイル越谷	4	0												
+DELIV_CENTER_TO	拠点送り区分(出荷先)	lms	C005	リテイル小菅	5	0												
+DELIVERY_DT_UNSPECIFIED	配達指定有無	lms	0	配達指定日無	1	0												
+DELIVERY_TIME_ZONE	配達時間帯	lms	A	午前中	1	0												
+DELIVERY_TIME_ZONE	配達時間帯	lms	B	12時～14時	2	0												
+DELIVERY_TIME_ZONE	配達時間帯	lms	C	14時～16時	3	0												
+DELIVERY_TIME_ZONE	配達時間帯	lms	D	16時～18時	4	0												
+DELIVERY_TIME_ZONE	配達時間帯	lms	E	18時～20時	5	0												
+DELIVERY_TIME_ZONE	配達時間帯	lms	F	18時～21時	6	0												
+DELIVERY_TIME_ZONE	配達時間帯	lms	G	19時～21時	7	0												
+DELIVERY_TIME_ZONE	配達時間帯	lms	H	20時～21時	8	0												
+DELIVERY_TIME_ZONE	配達時間帯	lms	I	午前10時まで	9	0												
+DELIVERY_TIME_ZONE	配達時間帯	lms	J	午後5時まで	10	0												
+DELIVERY_TYPE_SEND_CLS	配送種別送信対象区分	lms	2700	SGL柏SRC	1	0												
+DEPOSIT_ITEM_FLG	預り品	lms	1	預り品	1	0												
+DEPOSIT_TYPE	取引区分	lms	11	店預かり	2	0												
+DEPOSIT_TYPE	取引区分	lms	39	ユーザ預かり	3	0												
+DEPOSIT_TYPE	取引区分	lms	49	ユーザ預かり	4	0												
+DIFF_CLS	差異	lms	1	マイナスのみ	1	0												
+DIRECT_DELIVERY_TYPE_CD	直送区分	lms	1	直送	1	0												
+EC_ORDER	EC受注	lms	ZBB7	EC受注	1	0												
+EC_TYPE	EC区分	lms	1	通常計算	1	0												
+EC_TYPE	EC区分	lms	2	ECユーザ	2	0												
+EXECUTE_STATUS	実行ステータス	lms	01	実行中	1	0												
+EXECUTE_STATUS	実行ステータス	lms	02	正常終了	2	0												
+EXECUTE_STATUS	実行ステータス	lms	03	異常終了	3	0												
+FEE	手数料	lms	BLDL350N	540	1	0												
+FEE	手数料	lms	BLDL350K	540	2	0												
+FEE	手数料	lms	BLDL6760	500	3	0												
+FEE	手数料	lms	BLDL3350	540	4	0												
+FEE	手数料	lms	BLDL3390	300	5	0												
+FEE	手数料	lms	BLDL3310	300	6	0												
+FLOOR	フロア	lms	2002	4F	1	0												
+FLOOR	フロア	lms	2000	3F	2	0												
+FLOOR_CD	フロアCD	lms	01	1F	1	0												
+FLOOR_CD	フロアCD	lms	02	2F	2	0												
+FLOOR_CD	フロアCD	lms	03	3F	3	0												
+FLOOR_CD	フロアCD	lms	04	4F	4	0												
+FLOOR_CD	フロアCD	lms	05	5F	5	0												
+FLOOR_END_FLG	フロア完結	lms	0	完結しない	1	0												
+FLOOR_END_FLG	フロア完結	lms	1	完結する	2	0												
+FLOOR_TYPE_CD	フロア区分(保管場所区分)	lms	1	越谷３F	1	0												
+FLOOR_TYPE_CD	フロア区分(保管場所区分)	lms	3	越谷ユニフォームステーション出荷で３F保管商品の場合	2	0												
+FLOOR_TYPE_CD	フロア区分(保管場所区分)	lms	4	上記以外の場合	3	0												
+HAND_OVER_STATUS	引き渡しステータス	lms	0	引き渡し前	1	0												
+HAND_OVER_STATUS	引き渡しステータス	lms	1	引き渡し済	2	0												
+HAND_OVER_STATUS	引き渡しステータス	lms	2	出荷送信済	3	0												
+HANDLING_TYPE	取扱方法	lms	0	直送	1	0												
+HANDLING_TYPE	取扱方法	lms	1	納品	2	0												
+HANDLING_TYPE	取扱方法	lms	2	緊急	3	0												
+HEAVY_ITEM_FLG	重量フラグ	lms	0	使用しない	1	0												
+HEAVY_ITEM_FLG	重量フラグ	lms	1	使用する	2	0												
+HEAVY_ITEM_HADLING_FLG	重量取扱フラグ	lms	0	使用しない	1	0												
+HEAVY_ITEM_HADLING_FLG	重量取扱フラグ	lms	1	使用する	2	0												
+HINMOKU_GROUP_CD	品目グループ	lms	10	フットウエア(セフティ)	1	0	HINMOKU_GROUP_CD_FW	FWの品目グループ	1	0								
+HINMOKU_GROUP_CD	品目グループ	lms	20	フットウエア(ワーク)	2	0	HINMOKU_GROUP_CD_FW	FWの品目グループ	1	0								
+HINMOKU_GROUP_CD	品目グループ	lms	30	ユニフォーム	3	0												
+HINMOKU_GROUP_CD	品目グループ	lms	40	セフティ＆ヘルス	4	0	HINMOKU_GROUP_CD_YOUHIN	用品の品目グループ	1	0								
+HINMOKU_GROUP_CD	品目グループ	lms	45	ヘルメット	5	0												
+HINMOKU_GROUP_CD	品目グループ	lms	50	電気計測	6	0												
+HINMOKU_GROUP_CD	品目グループ	lms	60	クリーンシステム	7	0												
+HINMOKU_GROUP_CD	品目グループ	lms	70	メディカル	8	0												
+HOLIDAY_FLG	休日	lms	0	休日でない	1	0												
+HOLIDAY_FLG	休日	lms	1	休日	2	0												
+ID_MANAG_ABOLITION_TYPE_CD	個体管理廃止区分	lms	Y	この出庫日での管理を廃止する   	1	0												
+INSURANCE_FLG	保険品フラグ	lms	0	使用しない	1	0												
+INSURANCE_FLG	保険品フラグ	lms	1	使用する	2	0												
+INVENTORY_DATA_STATUS	棚卸データ状況	lms	00	未作成	1	0												
+INVENTORY_DATA_STATUS	棚卸データ状況	lms	01	作成済	2	0												
+INVENTORY_DIFF_CLS	棚卸差異	lms	01	差異ありのみ出力	1	0												
+INVENTORY_INPUT_CLS	棚卸入力有	lms	0	棚卸入力無のみ表示	1	0												
+INVENTORY_INPUT_CLS	棚卸入力有	lms	1	棚卸入力有のみ表示	2	0												
+INVENTORY_LIST_OUT_CLS	棚卸リスト発行区分	lms	01	未出力のロケのみ出力	1	0												
+INVENTORY_LIST_TYPE	棚卸帳票発行区分	lms	01	棚卸在庫差異表	1	0												
+INVENTORY_LIST_TYPE	棚卸帳票発行区分	lms	02	在庫差異確認表	2	0												
+INVENTORY_LIST_TYPE	棚卸帳票発行区分	lms	03	商品別棚卸実績表兼差異表	3	0												
+INVENTORY_LIST_TYPE	棚卸帳票発行区分	lms	04	商品別棚卸実績表(LOC表示あり)	4	0												
+IT_MANAG_TYPE	個体管理区分	lms	0	対象外	1	0												
+IT_MANAG_TYPE	個体管理区分	lms	1	個体管理スキャン対象外（ズボン）	2	0												
+IT_MANAG_TYPE	個体管理区分	lms	2	個体管理スキャン対象（上着）	3	0												
+ITEM_DENSAN	日本電産	lms	1	32	1	0												
+LARGE_ITEM_FLG	大物フラグ	lms	0	使用しない	1	0												
+LARGE_ITEM_FLG	大物フラグ	lms	1	使用する	2	0												
+LIMIT_DT_SPLIT_TYPE_CD	期限日割れ区分	lms	0	対象外	1	0												
+LIMIT_DT_SPLIT_TYPE_CD	期限日割れ区分	lms	1	確認対象	2	0												
+LIMIT_DT_SPLIT_TYPE_CD	期限日割れ区分	lms	3	禁止対象	3	0												
+LIMIT_DT_UNMATCH_TYPE_CD	期限日不一致区分	lms	0	対象外	1	0												
+LIMIT_DT_UNMATCH_TYPE_CD	期限日不一致区分	lms	1	確認対象	2	0												
+LIMIT_DT_UNMATCH_TYPE_CD	期限日不一致区分	lms	3	禁止対象	3	0												
+LOGI_ATTENTION_TYPE_CD	物流注意区分	lms	0	使用しない	1	0												
+LOGI_ATTENTION_TYPE_CD	物流注意区分	lms	1	使用する	2	0												
+LOGI_SPECIAL_TYPE_CD	物流特殊区分	lms	1	JAN1点読み対象	1	0												
+LOGI_WEIGHT_FLG	物流重量フラグ	lms	0	使用しない	1	0												
+LOGI_WEIGHT_FLG	物流重量フラグ	lms	1	使用する	2	0												
+LOT_SPLIT_TYPE_CD	ロット割れ区分	lms	0	対象外	1	0												
+LOT_SPLIT_TYPE_CD	ロット割れ区分	lms	1	確認対象	2	0												
+LOT_SPLIT_TYPE_CD	ロット割れ区分	lms	3	禁止対象	3	0												
+LOT_UNMATCH_TYPE_CD	ロット不一致区分	lms	0	対象外	1	0												
+LOT_UNMATCH_TYPE_CD	ロット不一致区分	lms	1	確認対象	2	0												
+LOT_UNMATCH_TYPE_CD	ロット不一致区分	lms	3	禁止対象	3	0												
+MAX_STORE_SHAPE	最大格納数商品荷姿	lms	1	バラ	1	0												
+MAX_STORE_SHAPE	最大格納数商品荷姿	lms	2	ケース	2	0												
+MEDICAL_MANAG_FLG	医療用管理フラグ	lms	0	使用しない	1	0												
+MEDICAL_MANAG_FLG	医療用管理フラグ	lms	1	使用する	2	0												
+MOVE_DIRECTION	移動方法	lms	01	外部倉庫から移動	1	0												
+MOVE_DIRECTION	移動方法	lms	02	外部倉庫へ移動	2	0												
+NATIONAL_HOLIDAY_CARRIER	祝日振替業者	lms	JP	日本郵便	1	0												
+NATIONAL_HOLIDAY_CARRIER	祝日振替業者	lms	YMT	ヤマト運輸	2	0												
+NATIONAL_HOLIDAY_CARRIER	祝日振替業者	lms	SGW	佐川急便	3	0												
+NATIONAL_HOLIDAY_FLG	祝日	lms	0	祝日でない	1	0												
+NATIONAL_HOLIDAY_FLG	祝日	lms	1	祝日	2	0												
+NIZOROE_PROCESS_ID	荷揃処理ID(共通)	lms	A1	出荷区分決定	1	0												
+NIZOROE_PROCESS_ID	荷揃処理ID(共通)	lms	B1	荷揃番号（出荷日等）	2	0												
+NIZOROE_PROCESS_ID	荷揃処理ID(共通)	lms	B2	荷揃番号（オーダID）	3	0												
+NIZOROE_PROCESS_ID	荷揃処理ID(共通)	lms	C1	帳簿引当	4	0												
+NIZOROE_PROCESS_ID	荷揃処理ID(共通)	lms	D1	運送業者出荷指示内判定	5	0												
+NIZOROE_PROCESS_ID	荷揃処理ID(共通)	lms	D2	運送業者マスタ判定	6	0												
+NIZOROE_PROCESS_ID	荷揃処理ID(共通)	lms	D3	運送業者（休日判定）	7	0												
+NIZOROE_PROCESS_ID	荷揃処理ID(共通)	lms	D4	運送業者（大物重量物判定）	8	0												
+NIZOROE_PROCESS_ID	荷揃処理ID(共通)	lms	D5	運送業者（保険品判定）	9	0												
+NIZOROE_PROCESS_ID	荷揃処理ID(共通)	lms	D6	運送業者（沖縄空港便不可判定）	10	0												
+NIZOROE_PROCESS_ID	荷揃処理ID(共通)	lms	D7	運送業者（配達不可地域判定）	11	0												
+NIZOROE_PROCESS_ID	荷揃処理ID(共通)	lms	E1	荷揃番号再採番	12	0												
+NIZOROE_PROCESS_ID_WMS	荷揃処理ID(WMS)	wms	A1	ロケーション在庫引当	1	0												
+NIZOROE_PROCESS_ID_WMS	荷揃処理ID(WMS)	wms	B1	運送業者再決定	2	0												
+NIZOROE_PROCESS_ID_WMS	荷揃処理ID(WMS)	wms	C1	ピッキングパターン決定	3	0												
+NIZOROE_PROCESS_ID_WMS	荷揃処理ID(WMS)	wms	C2	ピッキングパターン決定（得意先別）	4	0												
+NIZOROE_PROCESS_ID_WMS	荷揃処理ID(WMS)	wms	C3	ピッキングパターン決定（強制バラ）	5	0												
+NIZOROE_PROCESS_ID_WMS	荷揃処理ID(WMS)	wms	D1	荷揃番号採番（ピックフロア）	6	0												
+NIZOROE_PROCESS_ID_WMS	荷揃処理ID(WMS)	wms	D2	荷揃番号採番（FW10足）	7	0												
+NIZOROE_PROCESS_ID_WMS	荷揃処理ID(WMS)	wms	E1	代表荷揃番号採番（得意先別）	8	0												
+NIZOROE_PROCESS_ID_WMS	荷揃処理ID(WMS)	wms	E2	代表荷揃番号採番（出荷区分）	9	0												
+NIZOROE_TIME	荷揃処理時間	lms	1	午前7時	1	0												
+NIZOROE_TIME	荷揃処理時間	lms	2	午前10時	2	0												
+NIZOROE_TIME	荷揃処理時間	lms	3	午前11時	3	0												
+NIZOROE_TIME	荷揃処理時間	lms	4	午前12時	4	0												
+NIZOROE_TIME	荷揃処理時間	lms	5	午後3時	5	0												
+NIZOROE_TIME	荷揃処理時間	lms	6	午後4時	6	0												
+NIZOROE_TYPE	荷揃区分(共通)	lms	1	出荷区分決定	1	0												
+NIZOROE_TYPE	荷揃区分(共通)	lms	2	荷揃番号採番	2	0												
+NIZOROE_TYPE	荷揃区分(共通)	lms	3	帳簿引手	3	0												
+NIZOROE_TYPE	荷揃区分(共通)	lms	4	運送業者決定	4	0												
+NIZOROE_TYPE	荷揃区分(共通)	lms	5	荷揃番号再採番	5	0												
+NIZOROE_TYPE_WMS	荷揃区分(WMS)	wms	1	ロケーション在庫引当	1	0												
+NIZOROE_TYPE_WMS	荷揃区分(WMS)	wms	2	運送業者再決定	2	0												
+NIZOROE_TYPE_WMS	荷揃区分(WMS)	wms	3	ピッキングパターン決定	3	0												
+NIZOROE_TYPE_WMS	荷揃区分(WMS)	wms	4	荷揃番号採番_WMS	4	0												
+NIZOROE_TYPE_WMS	荷揃区分(WMS)	wms	5	代表荷揃番号採番	5	0												
+NO_OKINAWA_FLIGHT_FLG	沖縄航空便不可フラグ	lms	0	使用しない	1	0												
+NO_OKINAWA_FLIGHT_FLG	沖縄航空便不可フラグ	lms	1	使用する	2	0												
+OCR_DATE_FORMAT	OCR日付形式	lms	1	YYYY/MM/DD	1	0												
+OCR_DATE_FORMAT	OCR日付形式	lms	2	YY.MM.DD	2	0												
+OUTPUT_LIST_TYPE	出力帳票種別	lms	BLDL5050	【通常分】出荷日別ﾋﾟｯｷﾝｸﾞ状況一覧表	1	0												
+OUTPUT_MONTH	出力月	lms	1	1	1	0												
+OUTPUT_MONTH	出力月	lms	2	2	2	0												
+OUTPUT_MONTH	出力月	lms	3	3	3	0												
+OUTPUT_MONTH	出力月	lms	4	4	4	0												
+OUTPUT_MONTH	出力月	lms	5	5	5	0												
+OUTPUT_MONTH	出力月	lms	6	6	6	0												
+OUTPUT_MONTH	出力月	lms	7	7	7	0												
+OUTPUT_MONTH	出力月	lms	8	8	8	0												
+OUTPUT_MONTH	出力月	lms	9	9	9	0												
+OUTPUT_MONTH	出力月	lms	10	10	10	0												
+OUTPUT_MONTH	出力月	lms	11	11	11	0												
+OUTPUT_MONTH	出力月	lms	12	12	12	0												
+OUTPUT_STATUS	出力状況	lms	0	未出力	1	0												
+OUTPUT_STATUS	出力状況	lms	1	出力済	2	0												
+OUTPUT_STATUS	出力状況	lms	2	全て	3	0												
+PAYMENT_TYPE_CD	決済区分	lms	1	銀行振込 	1	0												
+PAYMENT_TYPE_CD	決済区分	lms	2	代金引換 	2	0												
+PAYMENT_TYPE_CD	決済区分	lms	3	ペイジー 	3	0												
+PAYMENT_TYPE_CD	決済区分	lms	4	モバイルSuica 	4	0												
+PAYMENT_TYPE_CD	決済区分	lms	6	YPOINT利用 	5	0												
+PAYMENT_TYPE_CD	決済区分	lms	7	クレジットカード 	6	0												
+PAYMENT_TYPE_CD	決済区分	lms	8	前払い(コンビニ銀行郵便局) 	7	0												
+PAYMENT_TYPE_CD	決済区分	lms	A	後払い(コンビニ銀行郵便局与信3万?) 	8	0												
+PAYMENT_TYPE_CD	決済区分	lms	B	後払い(コンビニ銀行郵便局与信10万?) 	9	0												
+PAYMENT_TYPE_CD	決済区分	lms	D	電子マネー 	10	0												
+PAYMENT_TYPE_CD	決済区分	lms	E	まとめてau支払い 	11	0												
+PAYMENT_TYPE_CD	決済区分	lms	F	ドコモケータイ払い 	12	0												
+PAYMENT_TYPE_CD	決済区分	lms	G	銀行ネット決済 )、出荷の際の納品書に印字する決済方法	13	0												
+PAYMENT_TYPE_CD	決済区分	lms	H	簡易請求書決済	14	0												
+PAYMENT_TYPE_CD	決済区分	lms	I	ＳＢケータイ払い	15	0												
+PAYMENT_TYPE_CD	決済区分	lms	J	全額ａｕポイント支払	16	0												
+PAYMENT_TYPE_CD	決済区分	lms	K	キャリア決済	17	0												
+PAYMENT_TYPE_CD	決済区分	lms	Q	ＰａｙＰａｙ	18	0												
+PICKING_PATTERN_CD	ピッキングパターンCD	lms	1	オーダーピッキング	1	0												
+PICKING_PATTERN_CD	ピッキングパターンCD	lms	2	トータルピッキング	2	0												
+PICKING_PATTERN_CD	ピッキングパターンCD	lms	3	ケースピッキング	3	0												
+PREFECTURE	都道府県	lms	01	北海道	1	0												
+PREFECTURE	都道府県	lms	02	青森県	2	0												
+PREFECTURE	都道府県	lms	03	岩手県	3	0												
+PREFECTURE	都道府県	lms	04	宮城県	4	0												
+PREFECTURE	都道府県	lms	05	秋田県	5	0												
+PREFECTURE	都道府県	lms	06	山形県	6	0												
+PREFECTURE	都道府県	lms	07	福島県	7	0												
+PREFECTURE	都道府県	lms	08	茨城県	8	0												
+PREFECTURE	都道府県	lms	09	栃木県	9	0												
+PREFECTURE	都道府県	lms	10	群馬県	10	0												
+PREFECTURE	都道府県	lms	11	埼玉県	11	0												
+PREFECTURE	都道府県	lms	12	千葉県	12	0												
+PREFECTURE	都道府県	lms	13	東京都	13	0												
+PREFECTURE	都道府県	lms	14	神奈川県	14	0												
+PREFECTURE	都道府県	lms	15	新潟県	15	0												
+PREFECTURE	都道府県	lms	16	富山県	16	0												
+PREFECTURE	都道府県	lms	17	石川県	17	0												
+PREFECTURE	都道府県	lms	18	福井県	18	0												
+PREFECTURE	都道府県	lms	19	山梨県	19	0												
+PREFECTURE	都道府県	lms	20	長野県	20	0												
+PREFECTURE	都道府県	lms	21	岐阜県	21	0												
+PREFECTURE	都道府県	lms	22	静岡県	22	0												
+PREFECTURE	都道府県	lms	23	愛知県	23	0												
+PREFECTURE	都道府県	lms	24	三重県	24	0												
+PREFECTURE	都道府県	lms	25	滋賀県	25	0												
+PREFECTURE	都道府県	lms	26	京都府	26	0												
+PREFECTURE	都道府県	lms	27	大阪府	27	0												
+PREFECTURE	都道府県	lms	28	兵庫県	28	0												
+PREFECTURE	都道府県	lms	29	奈良県	29	0												
+PREFECTURE	都道府県	lms	30	和歌山県	30	0												
+PREFECTURE	都道府県	lms	31	鳥取県	31	0												
+PREFECTURE	都道府県	lms	32	島根県	32	0												
+PREFECTURE	都道府県	lms	33	岡山県	33	0												
+PREFECTURE	都道府県	lms	34	広島県	34	0												
+PREFECTURE	都道府県	lms	35	山口県	35	0												
+PREFECTURE	都道府県	lms	36	徳島県	36	0												
+PREFECTURE	都道府県	lms	37	香川県	37	0												
+PREFECTURE	都道府県	lms	38	愛媛県	38	0												
+PREFECTURE	都道府県	lms	39	高知県	39	0												
+PREFECTURE	都道府県	lms	40	福岡県	40	0												
+PREFECTURE	都道府県	lms	41	佐賀県	41	0												
+PREFECTURE	都道府県	lms	42	長崎県	42	0												
+PREFECTURE	都道府県	lms	43	熊本県	43	0												
+PREFECTURE	都道府県	lms	44	大分県	44	0												
+PREFECTURE	都道府県	lms	45	宮崎県	45	0												
+PREFECTURE	都道府県	lms	46	鹿児島県	46	0												
+PREFECTURE	都道府県	lms	47	沖縄県	47	0												
+PREFECTURE	都道府県	lms	99	その他	48	0												
+PRICE_DIFF_HIDDEN	差異金額非表示	lms	01	差異金額を非表示	1	0												
+PROD_DT_MANAG_FLG	製造日管理フラグ	lms	0	使用しない	1	0												
+PROD_DT_MANAG_FLG	製造日管理フラグ	lms	1	使用する	2	0												
+PROD_DT_SPLIT_TYPE_CD	製造日割れ区分	lms	0	対象外	1	0												
+PROD_DT_SPLIT_TYPE_CD	製造日割れ区分	lms	1	確認対象	2	0												
+PROD_DT_SPLIT_TYPE_CD	製造日割れ区分	lms	3	禁止対象	3	0												
+PROD_DT_UNMATCH_TYPE_CD	製造日不一致区分	lms	0	対象外	1	0												
+PROD_DT_UNMATCH_TYPE_CD	製造日不一致区分	lms	1	確認対象	2	0												
+PROD_DT_UNMATCH_TYPE_CD	製造日不一致区分	lms	3	禁止対象	3	0												
+PRODUCT_CATEGORY_CONVERT_CLS	品種変換区分	lms	10	1	1	0												
+PRODUCT_CATEGORY_CONVERT_CLS	品種変換区分	lms	20	1	2	0												
+PRODUCT_CATEGORY_CONVERT_CLS	品種変換区分	lms	30	2	3	0												
+PRODUCT_CATEGORY_CONVERT_CLS	品種変換区分	lms	40	3	4	0												
+PRODUCT_CATEGORY_CONVERT_CLS	品種変換区分	lms	45	4	5	0												
+PRODUCT_CATEGORY_CONVERT_CLS	品種変換区分	lms	50	5	6	0												
+PRODUCT_CATEGORY_CONVERT_CLS	品種変換区分	lms	60	6	7	0												
+PRODUCT_CATEGORY_CONVERT_CLS	品種変換区分	lms	70	7	8	0												
+PRODUCT_CATEGORY_PLANT	品種区分変換	lms	01	P135	1	0												
+PRODUCT_CATEGORY_PLANT	品種区分変換	lms	02	P161	2	0												
+PRODUCT_CATEGORY_PLANT	品種区分変換	lms	03	P801	3	0												
+PRODUCT_CATEGORY_PLANT	品種区分変換	lms	04	P900	4	0												
+PRODUCT_CATEGORY_TYPE	品種区分	lms	01	FW	1	0												
+PRODUCT_CATEGORY_TYPE	品種区分	lms	02	SH	2	0												
+PRODUCT_CATEGORY_TYPE	品種区分	lms	03	UN	3	0												
+PRODUCT_CATEGORY_TYPE	品種区分	lms	04	HM	4	0												
+PRODUCT_CATEGORY_TYPE	品種区分	lms	05	DS	5	0												
+PRODUCT_CATEGORY_TYPE	品種区分	lms	06	CS	6	0												
+PRODUCT_CATEGORY_TYPE	品種区分	lms	07	MD	7	0												
+PRODUCT_STORE_STATUS	商品別入庫ステータス	lms	01	入荷済	1	0												
+PRODUCT_STORE_STATUS	商品別入庫ステータス	lms	02	格納済	2	0												
+PRODUCT_UNIT_CLS	商品単位	lms	0	全て	1	0												
+PRODUCT_UNIT_CLS	商品単位	lms	1	ケース	2	0												
+PRODUCT_UNIT_CLS	商品単位	lms	2	バラ	3	0												
+RECEIVE_REASON	入荷発生事由	lms	1	発注入荷	1	0												
+RECEIVE_REASON	入荷発生事由	lms	2	返品入荷	2	0												
+RECEIVE_REASON	入荷発生事由	lms	3	振替入荷	3	0												
+RECEIVE_REASON	入荷発生事由	lms	4	加工入荷	4	0												
+RECEIVE_REASON	入荷発生事由	lms	5	転送入荷	5	0												
+RECEIVE_REASON	入荷発生事由	lms	6	預り品入荷	6	0												
+RECEIVE_REASON_CONVERT	入荷発生事由変換	lms	1	01	1	0												
+RECEIVE_REASON_CONVERT	入荷発生事由変換	lms	2	02	2	0												
+RECEIVE_REASON_CONVERT	入荷発生事由変換	lms	3	03	3	0												
+RECEIVE_REASON_CONVERT	入荷発生事由変換	lms	4	04	4	0												
+RECEIVE_REASON_CONVERT	入荷発生事由変換	lms	5	05	5	0												
+RECEIVE_REASON_CONVERT	入荷発生事由変換	lms	6	06	6	0												
+RECEIVE_REASON_DEPOSIT_RECEIVE	入荷発生事由_預り品入荷	lms	6	預り品入荷	1	0												
+RECEIVE_STATUS_01	入荷ステータス_未入荷	lms	01	未入荷	1	0												
+RECOMMEND_LOCATION_TYPE_CD	推奨ロケーション区分	lms	1	マスタ設定値	1	0												
+RECOMMEND_LOCATION_TYPE_CD	推奨ロケーション区分	lms	2	前回ロケ	2	0												
+RELATED_PRODUCTS	関連商品	lms	01	FW関連商品	1	0												
+RELATED_PRODUCTS	関連商品	lms	02	SH関連商品	2	0												
+RELATED_PRODUCTS	関連商品	lms	03	UN関連商品	3	0												
+RELATED_PRODUCTS	関連商品	lms	04	HM関連商品	4	0												
+REMAIN_FLG	残数有フラグ	lms	0	残数無	1	0												
+REMAIN_FLG	残数有フラグ	lms	1	残数有	2	0												
+REPLENISH_SHAPE	補充荷姿	lms	1	バラ	1	0												
+REPLENISH_SHAPE	補充荷姿	lms	2	ケース	2	0												
+SAMPLE_CLS	サンプル区分	lms	1	サンプル品	1	0												
+SEARCH_REFERENCE_DT	検索基準日	lms	0	出荷指示日	1	0												
+SEARCH_REFERENCE_DT	検索基準日	lms	1	作業日	2	0												
+SEARCH_REFERENCE_DT	検索基準日	lms	2	出荷日	3	0												
+SERIAL_MANAG_FLG	シリアル管理フラグ	lms	0	使用しない	1	0												
+SERIAL_MANAG_FLG	シリアル管理フラグ	lms	1	使用する	2	0												
+SHAPE_GRP_TYPE_CD	荷姿グループ区分	lms	1	通常	1	0												
+SHAPE_GRP_TYPE_CD	荷姿グループ区分	lms	2	バラのみ	2	0												
+SHARED_PRODUCT_TYPE_CD	共有商品   	lms	Y	共有商品	1	0												
+SHIPPING_INSPECTION_HIDDEN	出荷検品済非表示	lms	0	出荷検品済を表示	1	0												
+SHIPPING_INSPECTION_HIDDEN	出荷検品済非表示	lms	1	出荷検品済を非表示	2	0												
+SHIPPING_INSPECTION_STATUS	出荷検品ステータス	lms	01	出荷未検品	1	0												
+SHIPPING_INSPECTION_STATUS	出荷検品ステータス	lms	02	出荷検品一部完了	2	0												
+SHIPPING_INSPECTION_STATUS	出荷検品ステータス	lms	03	出荷検品完了	3	0												
+SHIPPING_PROCESS_TYPE	出荷処理区分	lms	1	通常出荷	1	0												
+SHIPPING_PROCESS_TYPE	出荷処理区分	lms	2	緊急出荷	2	0												
+SHIPPING_PROCESS_TYPE	出荷処理区分	lms	3	商品振替渡し	3	0												
+SHIPPING_PROCESS_TYPE	出荷処理区分	lms	4	加工渡し	4	0												
+SHIPPING_PROCESS_TYPE	出荷処理区分	lms	5	転送出荷	5	0												
+SHIPPING_PROGRESS	出荷進捗ステータス	lms	01	未出荷	1	0												
+SHIPPING_PROGRESS	出荷進捗ステータス	lms	02	出荷済	2	0												
+SHIPPING_REASON	出荷発生事由	lms	1	通常　	1	0												
+SHIPPING_REASON	出荷発生事由	lms	2	緊急	2	0												
+SHIPPING_REASON	出荷発生事由	lms	3	商品振替渡し	3	0												
+SHIPPING_REASON	出荷発生事由	lms	4	加工渡し	4	0												
+SHIPPING_REASON	出荷発生事由	lms	5	転送出荷	5	0												
+SHIPPING_REASON_CONVERT	出荷発生事由変換	lms	1	11	1	0												
+SHIPPING_REASON_CONVERT	出荷発生事由変換	lms	2	XX	2	0												
+SHIPPING_REASON_CONVERT	出荷発生事由変換	lms	3	XX	3	0												
+SHIPPING_REASON_CONVERT	出荷発生事由変換	lms	4	XX	4	0												
+SHIPPING_REASON_CONVERT	出荷発生事由変換	lms	5	XX	5	0												
+SHIPPING_SLIP_TYPE	出荷帳票発行区分	lms	01	バラ荷揃表	1	0												
+SHIPPING_SLIP_TYPE	出荷帳票発行区分	lms	02	ケース荷揃表	2	0												
+SHIPPING_SLIP_TYPE	出荷帳票発行区分	lms	03	バラトータル荷揃表(戸配)	3	0												
+SHIPPING_SLIP_TYPE	出荷帳票発行区分	lms	04	ケース荷揃表(戸配)	4	0												
+SHIPPING_SLIP_TYPE	出荷帳票発行区分	lms	05	バラトータル荷揃表	5	0												
+SHIPPING_SLIP_TYPE	出荷帳票発行区分	lms	06	摘み取りリスト	6	0												
+SHIPPING_SLIP_TYPE	出荷帳票発行区分	lms	07	納品書	7	0												
+SHIPPING_SLIP_TYPE	出荷帳票発行区分	lms	08	荷札	8	0												
+SHIPPING_SLIP_TYPE	出荷帳票発行区分	lms	09	一体型伝票(荷札、納品書)	9	0												
+SHIPPING_SLIP_TYPE	出荷帳票発行区分	lms	10	梱包明細	10	0												
+SHIPPING_SLIP_TYPE	出荷帳票発行区分	lms	11	個別貼り付けラベル	11	0												
+SHIPPING_SLIP_TYPE	出荷帳票発行区分	lms	12	個人別支給明細	12	0												
+SHIPPING_TYPE	出荷区分	lms	01	直送	1	0												
+SHIPPING_TYPE	出荷区分	lms	02	戸配	2	0												
+SHIPPING_TYPE	出荷区分	lms	03	店送り	3	0												
+SHIPPING_WORK_TYPE	出荷作業区分	lms	01	ピッキング	1	0												
+SHIPPING_WORK_TYPE	出荷作業区分	lms	02	出荷検品	2	0												
+SHIPPING_WORK_TYPE	出荷作業区分	lms	03	棚卸	3	0												
+SLIP_TYPE2	伝票種別	lms	P	購買発注伝票（発注伝票タイプがZNB(標準購買発注)、ZUB(在庫転送オーダー)）	1	0												
+SLIP_TYPE2	伝票種別	lms	D1	出荷伝票（出荷伝票タイプがZCJ2(得意先返品))	2	0												
+SLIP_TYPE2	伝票種別	lms	D2	出荷伝票（出荷伝票タイプがZCJ5(在庫転送(返品))、ZCJ6(在庫転送(会社間返品)))	3	0												
+SLIP_TYPE2	伝票種別	lms	D3	仕入返品用（入庫予定では未使用）	4	0												
+SLIP_TYPE2	伝票種別	lms	D4	出荷伝票（受注伝票タイプがZBH2(預かり品入荷)の受注伝票を参照して登録された出荷伝票)	5	0												
+SPARE_TYPE_CD	予備区分	lms	Y	XXXX	1	0												
+SPECIFIED_NUM_OF_SHOES	指定足数	lms	10	運送業者再決定FW足数上限値	1	0												
+SPLIT_DELIVERY_TYPE_CD	分納区分	lms	1	不可	1	0												
+SPLIT_DELIVERY_TYPE_CD	分納区分	lms	0	可	2	0												
+STOCK_DIFFERENCE	在庫差異	lms	0	差異無	1	0												
+STOCK_DIFFERENCE	在庫差異	lms	1	差異有	2	0												
+STOCK_DISPLAY_TYPE	在庫表示内容	lms	0	商品順(日報なし)	1	0												
+STOCK_DISPLAY_TYPE	在庫表示内容	lms	1	商品順(日報あり)	2	0												
+STOCK_DISPLAY_TYPE	在庫表示内容	lms	2	ロケーション順(日報なし)	3	0												
+STOCK_DISPLAY_TYPE	在庫表示内容	lms	3	ロケーション順(日報あり)	4	0												
+STOCK_EXIST	他ロケ在庫ありを表示	lms	1	在庫ありのみ	1	0												
+STOCK_PROCESS_TYPE	在庫処理区分	lms	01	通常入荷	2	0												
+STOCK_PROCESS_TYPE	在庫処理区分	lms	02	返品入荷	3	0												
+STOCK_PROCESS_TYPE	在庫処理区分	lms	11	通常出荷	4	0												
+STOCK_PROCESS_TYPE	在庫処理区分	lms	12	返品出荷	5	0												
+STOCK_PROCESS_TYPE	在庫処理区分	lms	21	移動	6	0												
+STOCK_PROCESS_TYPE	在庫処理区分	lms	23	調整(－)	7	0												
+STOCK_PROCESS_TYPE	在庫処理区分	lms	24	調整(＋)	8	0												
+STOCK_PROCESS_TYPE	在庫処理区分	lms	25	入庫格納	9	0												
+STOCK_PROCESS_TYPE	在庫処理区分	lms	27	入庫No分割	10	0												
+STOCK_PROCESS_TYPE	在庫処理区分	lms	29	強制移動	11	0												
+STOCK_PROCESS_TYPE	在庫処理区分	lms	30	セット組指示	12	0												
+STOCK_PROCESS_TYPE	在庫処理区分	lms	31	セット解除指示	13	0												
+STOCK_PROCESS_TYPE	在庫処理区分	lms	32	定期補充	14	0												
+STOCK_PROCESS_TYPE	在庫処理区分	lms	33	緊急補充他	15	0												
+STOCK_REF_CLS	フロア基準在庫／ロケ基準在庫	lms	1	フロア基準在庫	1	0												
+STOCK_REF_CLS	フロア基準在庫／ロケ基準在庫	lms	2	ロケ基準在庫	2	0												
+STOCK_TAKING_STATUS	棚卸進捗状況	lms	10	作業中	1	0												
+STOCK_TAKING_STATUS	棚卸進捗状況	lms	20	確定済	2	0												
+STOCK_TAKING_STATUS	棚卸進捗状況	lms	30	実績送信済	3	0												
+STOCK_ZERO_DISPLAY	在庫数０表示	lms	0	0表示	1	0												
+STOCK_ZERO_DISPLAY	在庫数０表示	lms	1	0非表示	2	0												
+SUPPLIES_VARIETY_FLG	用品	lms	1	特定品種	1	0												
+TARGET_BASE	対象拠点	lms	1	00002000	1	0												
+TARGET_BASE	対象拠点	lms	2	00002300	2	0												
+TARGET_BASE	対象拠点	lms	3	00002100	3	0												
+TARGET_BASE	対象拠点	lms	4	00002700	4	0												
+TARGET_BASE	対象拠点	lms	5	00002200	5	0												
+TARGET_BASE	対象拠点	lms	6	00002600	6	0												
+TARGET_ITEM_CD	対象商品	lms	1	XXXX	1	0												
+TARGET_ITEM_CD	対象商品	lms	2	XXXX	2	0												
+TARGET_KOGUCHI_CD	対象戸口契約先	lms	BLDL3390	XXXX	1	0												
+TARGET_SALES_CD	対象販売組織	lms	BLDL3390	XXXX	1	0												
+TARGET_SALES_CD	対象販売組織	lms	BLDL3350	0090	2	0												
+UNIT_CLS	単位区分	lms	01	バラ	1	0												
+UNIT_CLS	単位区分	lms	02	ケース	2	0												
+URGENT_SHIPPING_TIME_ZONE	緊急出荷時間帯	lms	0	12:30	1	0												
+URGENT_SHIPPING_TIME_ZONE	緊急出荷時間帯	lms	1	15:00	2	0												
+WORK_TYPE	作業区分	lms	1	出荷	1	0												
+WORK_TYPE	作業区分	lms	2	良品返却	2	0												
+WORK_TYPE	作業区分	lms	3	廃棄返却	3	0												
+RECEIVE_LABEL_FLG	入荷ラベル使用フラグ	wms	0	未使用	1	0												
+RECEIVE_LABEL_FLG	入荷ラベル使用フラグ	wms	1	使用	2	0												
+RECEIVE_DT_UNMATCH_FLG	入荷日差異有	lms	0	入荷日差異無のみ表示	1	0												
+RECEIVE_DT_UNMATCH_FLG	入荷日差異有	lms	1	入荷日差異有のみ表示	2	0												
+PRINT_FLG	発行状況	lms	0	未発行	1	0												
+PRINT_FLG	発行状況	lms	1	発行済	2	0												
+RECEIVE_REMAIN_FLG	入荷残数有	lms	0	残数無のみ表示	1	0												
+RECEIVE_REMAIN_FLG	入荷残数有	lms	1	残数有のみ表示	2	0												
+SHIPPING_PICKED_HIDDEN	ピッキング済非表示	lms	1	ピッキング済を非表示	1	0												
+CARRIER_DATA_OUT_FLG	運送業者データ出力フラグ	lms	0	未出力	1	0												
+CARRIER_DATA_OUT_FLG	運送業者データ出力フラグ	lms	1	出力済	2	0												
+PLL_OUT_FLG	梱包明細出力フラグ	lms	0	未出力	1	0												
+PLL_OUT_FLG	梱包明細出力フラグ	lms	1	出力済	2	0												
+DEPOSITOR_CLS	所有者	wms	P135	ＦＷ統括部	1	0												
+DEPOSITOR_CLS	所有者	wms	P161	ヘルメット統括部	2	0												
+DEPOSITOR_CLS	所有者	wms	P801	エムシーアパレル株式会社	3	0												
+DEPOSITOR_CLS	所有者	wms	P900	ミドリ安全用品株式会社	4	0												
+DEPOSITOR_CLS	所有者	wms	9999	預り品	5	0												
+RPL_OUT_FLG	入荷予定リスト出力フラグ	lms	0	未発行	1	0												
+RPL_OUT_FLG	入荷予定リスト出力フラグ	lms	1	発行済	2	0												
+RECORD_SEND_FLG	実績送信フラグ	lms	0	未送信	1	0												
+RECORD_SEND_FLG	実績送信フラグ	lms	1	送信済	2	0												
+HAND_OVER_HIDDEN	引き渡し済非表示	lms	1	引き渡し前のみ表示	1	0												
+EXTERNAL_WAREHOUSE_FLG	外部倉庫フラグ	lms	0	通常倉庫	1	0												
+EXTERNAL_WAREHOUSE_FLG	外部倉庫フラグ	lms	1	外部倉庫	2	0												
+STANDARD_PLANT_CLS	通常品プラント	wms	P135	ＦＷ統括部	1	0												
+STANDARD_PLANT_CLS	通常品プラント	wms	P161	ヘルメット統括部	2	0												
+STANDARD_PLANT_CLS	通常品プラント	wms	P801	エムシーアパレル株式会社	3	0												
+STANDARD_PLANT_CLS	通常品プラント	wms	P900	ミドリ安全用品株式会社	4	0												
+LARGE_ITEM_HADLING_FLG	大物取扱フラグ	wms	0	使用しない	1	0												
+LARGE_ITEM_HADLING_FLG	大物取扱フラグ	wms	1	使用する	2	0												
+HOLIDAY_CARRIER_FLG	休日振替運送業者フラグ	wms	0	対象外	1	0												
+HOLIDAY_CARRIER_FLG	休日振替運送業者フラグ	wms	1	対象	2	0												
+OKINAWA_FLIGHT_FLG	沖縄航空便振替フラグ	wms	0	対象外	1	0												
+OKINAWA_FLIGHT_FLG	沖縄航空便振替フラグ	wms	1	対象	2	0												
+BASE_DEFAULT_CARRIER_FLG	拠点デフォルト運送業者フラグ	wms	0	対象外	1	0												
+BASE_DEFAULT_CARRIER_FLG	拠点デフォルト運送業者フラグ	wms	1	対象	2	0												
+SLIP_TYPE_CD	受渡表区分	wms	0	対象外	1	0												
+SLIP_TYPE_CD	受渡表区分	wms	1	対象	2	0												
+PROPER_FLG	正規フラグ	wms	0	対象外	1	0												
+PROPER_FLG	正規フラグ	wms	1	対象	2	0												
+CDL_OUT_FLG	運送業者引き渡し票出力フラ	lms	0	未発行	1	0												
+CDL_OUT_FLG	運送業者引き渡し票出力フラ	lms	1	発行済	2	0												
+ERROR_NUM	エラー件数	wms	20	20	1	0												

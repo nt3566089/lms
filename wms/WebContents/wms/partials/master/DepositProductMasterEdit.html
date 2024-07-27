@@ -1,0 +1,37 @@
+<div ng-controller="DepositProductMasterEdit" owd-screen="DepositProductMasterEdit">
+
+    <form id="inputform" name="inputform" novalidate>
+		<div class="well">
+		<fieldset>
+			<div class="row">
+			    <owd-select id="centerCd" ng-model="head.centerCd" owd-models="centerList" owd-repeat-key="centerCd" owd-repeat-value="centerNm" label-text="センタ"></owd-select>
+				<owd-text id="depositJanCd" ng-model="head.depositJanCd" label-text="預りJANCD"></owd-text>
+				<owd-select id="delFlg" ng-model="head.delFlg" owd-models="delFlgList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="削除"></owd-select>
+			</div>
+		</fieldset>
+		</div>
+		<div class="well">
+		<fieldset>
+			<div class="row">
+				<owd-text id="salesOrgCd" ng-model="head.msalesOrg.salesOrgCd" label-text="販売組織CD"></owd-text>
+				<owd-text id="accountCd" ng-model="head.accountCd" label-text="得意先" owd-add-button="showAccount()" ng-blur="accountCdBlur()">
+					<owd-info ng-model="head.accountNm"></owd-info>
+				</owd-text>
+				<owd-text id="productCd" ng-model="head.mproduct.productCd" label-text="商品CD" owd-add-button="showProduct()" ng-blur="productCdBlur()">
+					<owd-info ng-model="head.mproduct.productNm"></owd-info>
+				</owd-text>
+				<owd-select id="idManagTypeCd" ng-model="head.idManagTypeCd" owd-models="idManagTypeCdList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="個体管理区分"></owd-select>
+			</div>
+		</fieldset>
+		</div>
+			<br>
+			<div id="content-footer"></div>
+			<div id="content-footer-button" class="container">
+	        	<div class="row">
+	            	<div class="col-xs-12" align="right" style="overflow-x:auto;overflow-y:hidden;">
+	                	<owd-button id="register" class="btn-success" ng-click="register()">登録</owd-button>
+	            	</div>
+	        	</div>
+	         </div>
+	</form>
+</div>

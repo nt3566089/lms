@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project name="wmscore" default="all">
+
+    <path id="compile.classpath">
+        <fileset dir="../wms/WebContents/WEB-INF/lib">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+
+    <target depends="jar_proguard, copy_jar" name="all" />
+	<target depends="clean, jar, copy_jar" name="all_debug(not use proguard)" />
+
+    <target name="clean">
+        <delete dir="bin" />
+        <delete file="oneslogi-wms-core.jar" />
+        <delete file="../wms/WebContents/WEB-INF/lib/oneslogi-wms-core.jar" />
+    </target>
+
+    <target name="init">
+        <mkdir dir="bin" />
+        <copy todir="bin">
+            <fileset dir="resources">
+                <exclude name="**/*.java" />
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="compile">
+        <javac destdir="bin" includeantruntime="false" encoding="UTF-8">
+            <src path="src" />
+            <classpath refid="compile.classpath" />
+        </javac>
+    </target>
+
+    <target name="compile_debug">
+        <javac debug="true" debuglevel="source,lines,vars" destdir="bin" includeantruntime="false" encoding="UTF-8">
+            <src path="src" />
+            <classpath refid="compile.classpath" />
+        </javac>
+    </target>
+
+    <target name="jar" depends="init, compile_debug">
+        <jar basedir="bin" jarfile="oneslogi-wms-core.jar" />
+    </target>
+
+    <target name="jar_proguard" depends="clean, init, compile">
+        <taskdef resource="proguard/ant/task.properties" classpath="proguard/proguard.jar" />
+        <proguard configuration="proguard/proguardConfig.pro"/>
+    </target>
+
+    <target name="copy_jar">
+        <copy file="oneslogi-wms-core.jar" tofile="../wms/WebContents/WEB-INF/lib/oneslogi-wms-core.jar"/>
+    </target>
+
+</project>

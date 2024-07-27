@@ -1,0 +1,68 @@
+<div ng-controller="ProductMasterEdit" owd-screen="ProductMasterEdit">
+	<form id="inputform" name="inputform" novalidate>
+		<div class="well">
+			<div class="row">
+				<!-- ミドリ安全開 画面修正 2024.05.19 Jeongmin [S]  -->
+				<!--<owd-select id="clientCd" ng-model="head.mclient.clientCd" owd-models="clientList" owd-repeat-key="clientCd" owd-repeat-value="clientNm" label-text="荷主"></owd-select>-->
+				<!-- ミドリ安全開 画面修正 2024.05.19 Jeongmin [E]  -->
+				<owd-text id="productCd" ng-model="productSearch.productCd" label-text="商品CD"></owd-text>
+				<!-- [新WMS-110-004] 削除フラグの空の選択肢を削除 2015.07.14 kawana Start -->
+				<owd-select id="delFlg" ng-model="productSearch.delFlg" owd-models="delFlgList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="削除" owd-remove-blank></owd-select>
+				<!-- [新WMS-110-004] 削除フラグの空の選択肢を削除 2015.07.14 kawana End -->
+			</div>
+		</div>
+		<div class="well">
+			<div class="row">
+				<owd-text id="productNm" ng-model="productSearch.productNm" label-text="商品名称" ng-blur="productNmBlur()"></owd-text>
+				<owd-text id="productAbbr" ng-model="productSearch.productAbbr" label-text="商品略称"></owd-text>
+				<!-- [ON推-品向-389] JANCDを半角に変更 2014.12.02 kawana Start -->
+				<owd-text id="janCd" ng-model="productSearch.janCd" label-text="JANCD"></owd-text>
+				<!-- [ON推-品向-389] JANCDを半角に変更 2014.12.02 kawana End -->
+				<owd-select id="lotManagFlg" ng-model="productSearch.lotManagFlg" owd-models="lotManagFlgList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="ロット管理区分" ng-change="lotManagFlgChange()"></owd-select>
+				<!-- [EC-CT1-130] 不要な項目削除 2015.3.19 Sakata Start -->
+				<!-- [EC-CT1-130] 不要な項目削除 2015.3.19 Sakata End -->
+				<!-- ミドリ安全開 画面修正 2024.05.19 Jeongmin [S]  -->
+				<owd-select id="limitDtManagFlg" ng-model="productSearch.limitDtManagFlg" owd-models="limitDtManagFlgList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="期限日管理フラグ" ng-change="limitDtManagFlgChange()"></owd-select>
+				<owd-number id="receiveLimitNum" ng-model="productSearch.receiveLimitNum" label-text="入荷期限日限界日数"></owd-number>
+				<owd-number id="shippingLimitNum" ng-model="productSearch.shippingLimitNum" label-text="出荷期限日限界日数"></owd-number>
+				<owd-select id="ocrDateFormat" ng-model="productSearch.ocrDateFormat" owd-models="ocrDateFormatList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="OCR日付形式" ng-change="ocrDateFormatListChange()"></owd-select>
+				<owd-select id="prodDtManagFlg" ng-model="productSearch.prodDtManagFlg" owd-models="prodDtManagFlgList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="製造日管理フラグ" ng-change="prodDtManagFlgChange()"></owd-select>
+				<owd-number id="prodDtLimitDaysRcv" ng-model="productSearch.prodDtLimitDaysRcv" label-text="入荷製造日限界日数"></owd-number>
+				<owd-number id="prodDtLimitDaysShp" ng-model="productSearch.prodDtLimitDaysShp" label-text="出荷製造日限界日数"></owd-number>
+				<owd-select id="logiSpecialTypeCd" ng-model="productSearch.logiSpecialTypeCd" owd-models="logiSpecialTypeCdList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="物流特殊区分" ng-change="logiSpecialTypeCdChange()"></owd-select>
+				<owd-text id="recomendLocationCd" ng-model="productSearch.recomendLocationCd" label-text="推奨ロケーションCD"></owd-text>
+				<owd-select id="recomendLocationTypeCd" ng-model="productSearch.recomendLocationTypeCd" owd-models="recomendLocationTypeCdList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="推奨ロケーション区分" ng-change="recommendLocationTypeCdChange()"></owd-select>
+				<owd-text id="innerJanCd" ng-model="productSearch.innerJanCd" label-text="インナーJANCD"></owd-text>
+				<owd-number id="floorRefStockNum" ng-model="productSearch.floorRefStockNum" label-text="フロア基準在庫"></owd-number>
+				<owd-select id="insuranceFlg" ng-model="productSearch.insuranceFlg" owd-models="insuranceFlgList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="保険品フラグ" ng-change="insuranceFlgChange()"></owd-select>
+				<owd-number id="unitNum" ng-model="productSearch.unitNum" label-text="単位名称"></owd-number>
+				<owd-select id="noOkinawaFlightFlg" ng-model="productSearch.noOkinawaFlightFlg" owd-models="noOkinawaFlightFlgList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="沖縄航空便不可フラグ" ng-change="noOkinawaFlightFlgChange()"></owd-select>
+				<owd-select id="logiAttentionTypeCd" ng-model="productSearch.logiAttentionTypeCd" owd-models="logiAttentionTypeCdList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="物流注意区分" ng-change="logiAttentionTypeCdChange()"></owd-select>
+				<owd-select id="heavyItemFlg" ng-model="productSearch.heavyItemFlg" owd-models="heavyItemFlgList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="重量フラグ" ng-change="heavyItemFlgChange()"></owd-select>
+				<owd-select id="largeItemFlg" ng-model="productSearch.largeItemFlg" owd-models="largeItemFlgList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="大物フラグ" ng-change="largeItemFlgChange()"></owd-select>
+				<owd-text id="sizeNm" ng-model="productSearch.sizeNm" label-text="サイズ名称"></owd-text>
+				<owd-number id="evaluationUnitPrice" ng-model="productSearch.evaluationUnitPrice" label-text="評価単価"></owd-number>
+				<owd-text id="oldJanCd" ng-model="productSearch.oldJanCd" label-text="旧JANCD"></owd-text>
+				<!-- ミドリ安全開 画面修正 2024.05.19 Jeongmin [E]  -->
+			</div>
+		</div>
+		<!-- [#165][2.1.0-CT-019] 商品荷姿の削除機能を追加 2016.11.02 kawana Start -->
+		<!-- [#7006][OSS] 行選択機能を除外 2020.02.05 tsuboi Start -->
+		<div owd-grid="gridOptions" id="product" owd-button-options="gridButtonOptions" owd-event-options="gridEventOptions" owd-backcolor-option="getClassForRow(row)" owd-form-name="inputform"></div>
+		<!-- [#7006][OSS] 行選択機能を除外 2020.02.05 tsuboi End -->
+		<!-- [#165][2.1.0-CT-019] 商品荷姿の削除機能を追加 2016.11.02 kawana End -->
+		<br>
+		<div id="content-footer"></div>
+		<div id="content-footer-button" class="container">
+			<div class="row">
+				<div class="col-xs-6" style="overflow-x:auto;overflow-y:hidden;">
+				</div>
+				<div class="col-xs-6" align="right" style="overflow-x:auto;overflow-y:hidden;">
+					<!-- [Ver3.0][#3642] 必須項目が、全て入力された押下できるように変更 2018.02.15 shimizu Start -->
+					<owd-button id="register" class="btn-success" ng-click="register()" ng-disabled="inputform.$invalid">登録</owd-button>
+					<!-- [Ver3.0][#3642] 必須項目が、全て入力された押下できるように変更 2018.02.15 shimizu End -->
+				</div>
+			</div>
+		</div>
+	</form>
+</div>

@@ -1,0 +1,73 @@
+<div ng-controller="LocationMasterEdit" owd-screen="LocationMasterEdit">
+	<form id="searchinputform" name="searchinputform" novalidate>
+
+		<!-- [#1866][Ver2.2.0] ロケーションマスタメンテナンス（編集）- 項目「センタ追加」 2017.06.01 honma Mod Start -->
+		<div class="well">
+			<div class = "row">
+				<owd-select id="centerCd" ng-model="head.mcenter.centerCd" owd-models="centerList" owd-repeat-key="centerCd" owd-repeat-value="centerNm" label-text="センタ"></owd-select>
+				<owd-text   id="locationCd" ng-model="head.locationCd" label-text="ロケーションCD" ng-blur="locationCdBlur()"></owd-text>
+				<owd-select id="delFlg" ng-model="head.delFlg" owd-models="delFlgList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="削除"></owd-select>
+			</div>
+		</div>
+		<div class="well">
+			<div class = "row">
+				<owd-text   id="locationNm" ng-model="head.locationNm" label-text="ロケーション名称"></owd-text>
+				<owd-select id="warehouseCd" ng-model="head.mzone.mwarehouse.warehouseCd" owd-models="warehouseList" owd-repeat-key="warehouseCd" owd-repeat-value="warehouseNm" label-text="倉庫"></owd-select>
+				<owd-select id="zoneCd" ng-model="head.mzone.zoneCd" owd-models="setGridZoneList()" owd-repeat-key="zoneCd" owd-repeat-value="zoneNm" label-text="ゾーン"></owd-select>
+				<owd-select id="locationType" ng-model="head.locationType" owd-models="locationTypeList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="ロケーション種別"></owd-select>
+				<owd-select id="pickingLocationFlg" ng-model="head.pickingLocationFlg" owd-models="dictNmList" owd-repeat-key="classCd" owd-repeat-value="classNm" ng-blur="pickingLocationFlgBlur()" label-text="ピックロケフラグ"></owd-select>
+				<owd-select id="allocNgFlg" ng-model="head.allocNgFlg" owd-models="allocNgFlgList" owd-repeat-key="classCd" owd-repeat-value="classNm" label-text="引当禁止フラグ"></owd-select>
+				<owd-number id="pickingOrder" ng-model="head.pickingOrder" label-text="ピッキング順序"></owd-number>
+				<owd-number id="allocOrder" ng-model="head.allocOrder" label-text="引当順序"></owd-number>
+				<!-- [#3484] 補充商品を別枠に移動(ここから削除) 2018.02.27 kawana -->
+			</div>
+		</div>
+		<!-- [#3484] 補充商品を別枠に移動して荷主を追加 2018.02.27 kawana Start -->
+		<fieldset class="wmsfildsetwell">
+			<legend class="wmsfildsetwell-legend"><owd-span id="titleReplenish" label-text="補充商品"></owd-span></legend>
+			<div class="row">
+				<owd-select id="clientCd" ng-model="head.mproduct.mclient.clientCd" owd-models="clientList" owd-repeat-key="clientCd" owd-repeat-value="clientNm" ng-blur="clientBlur()" label-text="荷主" owd-remove-blank></owd-select>
+				<!-- [ＯＮ推_品向_1074] 補充商品名称は補充商品CD入力欄の下に表示する 2016.04.22 Zhang Start -->
+				<owd-text   id="productCd" ng-model="head.mproduct.productCd" owd-add-button="showProduct()" ng-blur="productCdBlur()" label-text="補充商品">
+					<owd-info   id="productNm" ng-model="head.mproduct.productNm"></owd-info>
+				</owd-text>
+				<!-- [ＯＮ推_品向_1074] 補充商品名称は補充商品CD入力欄の下に表示する 2016.04.22 Zhang End -->
+				<owd-select id="replenishStockTypeId" ng-model="head.mstockType.stockTypeCd" owd-models="stockTypeList" owd-repeat-key="stockTypeCd" owd-repeat-value="stockTypeNm" ng-blur="checkInput()" label-text="補充在庫区分"></owd-select>
+				<owd-select id="replenishDepositId" ng-model="head.mcustomer.customerCd" owd-models="replenishDepositList" owd-repeat-key="mCustomer.customerCd" owd-repeat-value="mCustomer.customerNm" ng-blur="checkInput()" label-text="補充預託"></owd-select>
+				<!-- [Ver3.0] unit of measure対応 2017.11.28 NING Start -->
+				<owd-select id="replenishPProductShapeId" ng-model="head.mproductShapeByReplenishPProductShapeId.mshapeGrpDtl.mshape.shapeCd" owd-models="shapeList" owd-repeat-key="shapeCd" owd-repeat-value="shapeNm" ng-blur="checkInput()" label-text="補充点荷姿"></owd-select>
+				<!-- [Ver3.0] unit of measure対応 2017.11.28 NING End -->
+				<!-- [ON推-品質問題点指摘（新ｿﾘV2-032）]修正対応 2016.07.28 chou Mod Start -->
+				<!-- [Ver3.0] unit of measure対応 2017.11.28 NING Start -->
+				<!-- [Ver3.0][#3981] 小数チェックを基盤側で行うため小数チェックメソッドを削除 2018.04.11 matsumoto Start -->
+				<owd-number id="replenishPNum" ng-model="head.replenishPNum" ng-blur="checkInput()" label-text="補充点"></owd-number>
+				<!-- [Ver3.0][#3981] 小数チェックを基盤側で行うため小数チェックメソッドを削除 2018.04.11 matsumoto End -->
+				<!-- [Ver3.0] unit of measure対応 2017.11.28 NING End -->
+				<!-- [ON推-品質問題点指摘（新ｿﾘV2-032）]修正対応 2016.07.28 chou Mod End -->
+				<!-- [Ver3.0] unit of measure対応 2017.11.28 NING Start -->
+				<owd-select id="maxStoreProductShapeId" ng-model="head.mproductShapeByMaxStoreProductShapeId.mshapeGrpDtl.mshape.shapeCd" owd-models="shapeList" owd-repeat-key="shapeCd" owd-repeat-value="shapeNm" ng-blur="checkInput()" label-text="最大格納数商品荷姿"></owd-select>
+				<!-- [Ver3.0] unit of measure対応 2017.11.28 NING End -->
+				<!-- [ON推-品質問題点指摘（新ｿﾘV2-032）]修正対応 2016.07.28 chou Mod Start -->
+				<!-- [Ver3.0] unit of measure対応 2017.11.28 NING Start -->
+				<!-- [Ver3.0][#3981] 小数チェックを基盤側で行うため小数チェックメソッドを削除 2018.04.11 matsumoto Start -->
+				<owd-number id="maxStoreNum" ng-model="head.maxStoreNum" ng-blur="checkInput()" label-text="最大格納数"></owd-number>
+				<!-- [Ver3.0][#3981] 小数チェックを基盤側で行うため小数チェックメソッドを削除 2018.04.11 matsumoto End -->
+				<!-- [Ver3.0] unit of measure対応 2017.11.28 NING End -->
+				<!-- [ON推-品質問題点指摘（新ｿﾘV2-032）]修正対応 2016.07.28 chou Mod End -->
+			</div>
+		</fieldset>
+		<!-- [#3484] 補充商品を別枠に移動して荷主を追加 2018.02.27 kawana End -->
+		<!-- [#1866][Ver2.2.0] ロケーションマスタメンテナンス（編集）- 項目「センタ追加」 2017.06.01 honma Mod End -->
+		<!-- [#]7234] brタグを削除 2020.03.12 ono del -->
+		<div id="content-footer"></div>
+		<div id="content-footer-button" class="container">
+        	<div class="row">
+            	<div class="col-xs-6" style="overflow-x:auto;overflow-y:hidden;">
+            	</div>
+            	<div class="col-xs-6" align="right" style="overflow-x:auto;overflow-y:hidden;">
+                	<owd-button id="register" class="btn-success" ng-click="register()" ng-disabled="searchinputform.$invalid">登録</owd-button>
+            	</div>
+        	</div>
+         </div>
+    </form>
+</div>

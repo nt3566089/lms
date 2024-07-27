@@ -1,0 +1,2934 @@
+﻿map:{
+
+    ##########ここからは区分値マスタの区分値定義
+    #区分値マスタ 検品後納品明細出力対象
+    ; AfterDelivSlipOutTgt = list:{
+        ; map:{topComment=検品後納品明細出力対象; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=ECお買上明細}
+        ; map:{code=2; name=$2; comment=納品明細}
+    }
+    #区分値マスタ 検品後荷札出力フラグ
+    ; AfterTagOutFlg = list:{
+        ; map:{topComment=検品後荷札出力フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=出力しない}
+        ; map:{code=1; name=$1; comment=バラ出荷検品後に出力}
+        ; map:{code=2; name=$2; comment=ケース出荷検品後に出力}
+        ; map:{code=3; name=$3; comment=バラ・ケース出荷検品後に出力}
+    }
+    #区分値マスタ 全数出庫フラグ
+    ; AllShippingFlg = list:{
+        ; map:{topComment=全数出庫フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=部分出庫}
+        ; map:{code=1; name=$1; comment=全数出庫}
+    }
+    #区分値マスタ 引当不可フラグ表示
+    ; AllcNgDisplay = list:{
+        ; map:{topComment=引当不可フラグ表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=表示}
+        ; map:{code=1; name=$1; comment=非表示}
+    }
+    #区分値マスタ 引当禁止フラグ
+    ; AllcNgFlg = list:{
+        ; map:{topComment=引当禁止フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=引当可能}
+        ; map:{code=1; name=$1; comment=引当禁止}
+    }
+    #区分値マスタ 引当ソートキー
+    ; AllocSortKey = list:{
+        ; map:{topComment=引当ソートキー; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=lot; name=$lot; comment=ロット}
+        ; map:{code=lotOrder; name=$lotOrder; comment=ロットソート順}
+        ; map:{code=limitDt; name=$limitDt; comment=期限日}
+        ; map:{code=zoneCd; name=$zoneCd; comment=ゾーンCD}
+        ; map:{code=locationCd; name=$locationCd; comment=ロケーションCD}
+        ; map:{code=locationOrder; name=$locationOrder; comment=ロケーション引当順序}
+        ; map:{code=storeLabelNo; name=$storeLabelNo; comment=入庫ラベルNo.}
+        ; map:{code=storeDt; name=$storeDt; comment=入庫日}
+    }
+    #区分値マスタ 着店CDフォーマット
+    ; ArrivalStoreFormat = list:{
+        ; map:{topComment=着店CDフォーマット; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=YMTFMT; name=$YMTFMT; comment=ヤマト用変換フォーマット}
+        ; map:{code=YUPKFMT; name=$YUPKFMT; comment=ゆうパック用変換フォーマット}
+    }
+    #区分値マスタ 自動緊急フラグ設定フラグ
+    ; AutoEmgSetFlg = list:{
+        ; map:{topComment=自動緊急フラグ設定フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未使用}
+        ; map:{code=1; name=$1; comment=使用}
+    }
+    #区分値マスタ 自動緊急フラグ判断対象
+    ; AutoEmgSetTgt = list:{
+        ; map:{topComment=自動緊急フラグ判断対象; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=積込予定時刻}
+        ; map:{code=2; name=$2; comment=出荷予定時刻}
+    }
+    #区分値マスタ 自動印刷対象フラグ
+    ; AutoPrintTargetFlg = list:{
+        ; map:{topComment=自動印刷対象フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=自動印刷対象外}
+        ; map:{code=1; name=$1; comment=自動印刷対象}
+    }
+    #区分値マスタ 自動出庫指示フラグ
+    ; AutoShipInstFlg = list:{
+        ; map:{topComment=自動出庫指示フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未使用}
+        ; map:{code=1; name=$1; comment=使用}
+    }
+    #区分値マスタ バーコード種別
+    ; BarcodeType = list:{
+        ; map:{topComment=バーコード種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=CODE39; name=$CODE39; comment=CODE39}
+        ; map:{code=CODE128; name=$CODE128; comment=CODE128}
+        ; map:{code=CODABAR; name=$CODABAR; comment=CODABAR(NW-7)}
+        ; map:{code=JAN; name=$JAN; comment=JAN(8or13)}
+        ; map:{code=ITF; name=$ITF; comment=ITF}
+    }
+    #区分値マスタ バッチ処理中フラグ
+    ; BatchProgressFlg = list:{
+        ; map:{topComment=バッチ処理中フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=処理中}
+        ; map:{code=0; name=$0; comment=非処理中}
+    }
+    #区分値マスタ 荷材選択スキップ
+    ; BoxSelectSkip = list:{
+        ; map:{topComment=荷材選択スキップ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=スキップしない}
+        ; map:{code=1; name=$1; comment=スキップする}
+    }
+    #区分値マスタ キャンセルデータ表示
+    ; CancelDataDisplay = list:{
+        ; map:{topComment=キャンセルデータ表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=表示しない}
+        ; map:{code=1; name=$1; comment=全件表示}
+    }
+    #区分値マスタ ケースピッキングフラグ
+    ; CasePicFlg = list:{
+        ; map:{topComment=ケースピッキングフラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=ケースピック無}
+        ; map:{code=1; name=$1; comment=ケースピック有}
+    }
+    #区分値マスタ センタ・荷主区分
+    ; CenterClientCls = list:{
+        ; map:{topComment=センタ・荷主区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=センタ}
+        ; map:{code=2; name=$2; comment=荷主}
+    }
+    #区分値マスタ センタ間移動フラグ
+    ; CenterTransitFlg = list:{
+        ; map:{topComment=センタ間移動フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=通常}
+        ; map:{code=1; name=$1; comment=センタ間移動}
+    }
+    #区分値マスタ 文字コード
+    ; CharacterCd = list:{
+        ; map:{topComment=文字コード; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=MS932; name=$MS932; comment=MS932}
+        ; map:{code=UTF8; name=$UTF8; comment=UTF8}
+    }
+    #区分値マスタ 引当可能数0非表示
+    ; ChargeQty0Display = list:{
+        ; map:{topComment=引当可能数0非表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=0表示}
+        ; map:{code=1; name=$1; comment=0非表示}
+    }
+    #区分値マスタ チェックディジット
+    ; CheckDigit = list:{
+        ; map:{topComment=チェックディジット; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=チェックディジット無}
+        ; map:{code=7; name=$7; comment=7DR方式}
+    }
+    #区分値マスタ 元着区分
+    ; CodCls = list:{
+        ; map:{topComment=元着区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=元払}
+        ; map:{code=2; name=$2; comment=着払}
+    }
+    #区分値マスタ 元／着払／代引文字
+    ; CodType = list:{
+        ; map:{topComment=元／着払／代引文字; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=元払}
+        ; map:{code=1; name=$1; comment=着払}
+        ; map:{code=2; name=$2; comment=代引}
+    }
+    #区分値マスタ 複数番号の有無
+    ; CodeFlg = list:{
+        ; map:{topComment=複数番号の有無; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=複数番号無}
+        ; map:{code=1; name=$1; comment=複数番号有(個別番号の1)}
+        ; map:{code=2; name=$2; comment=複数番号有(個別番号の2)}
+        ; map:{code=3; name=$3; comment=複数番号有(個別番号の3)}
+    }
+    #区分値マスタ 個別番号の種別
+    ; CodeType = list:{
+        ; map:{topComment=個別番号の種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=大口事業所}
+        ; map:{code=1; name=$1; comment=私書箱}
+    }
+    #区分値マスタ 列型
+    ; ColType = list:{
+        ; map:{topComment=列型; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=text; name=$text; comment=テキスト}
+        ; map:{code=number; name=$number; comment=数値}
+        ; map:{code=date; name=$date; comment=日付}
+        ; map:{code=datetime; name=$datetime; comment=日時}
+        ; map:{code=dropdown; name=$dropdown; comment=コンボボックス}
+        ; map:{code=checkbox; name=$checkbox; comment=チェックボックス}
+        ; map:{code=calcnumber; name=$calcnumber; comment=計算数値}
+    }
+    #区分値マスタ コメント1有無
+    ; CommentFlg = list:{
+        ; map:{topComment=コメント1有無; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=コメント1無}
+        ; map:{code=1; name=$1; comment=コメント1有}
+    }
+    #区分値マスタ 大口事業所フラグ
+    ; CompanyFlg = list:{
+        ; map:{topComment=大口事業所フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=通常郵便番号}
+        ; map:{code=1; name=$1; comment=大口事業所}
+    }
+    #区分値マスタ クール区分
+    ; CoolCls = list:{
+        ; map:{topComment=クール区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=通常}
+        ; map:{code=1; name=$1; comment=クール冷凍}
+        ; map:{code=2; name=$2; comment=クール冷蔵}
+    }
+    #区分値マスタ 保冷種別
+    ; CoolType = list:{
+        ; map:{topComment=保冷種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=保冷なし}
+        ; map:{code=1; name=$1; comment=チルド}
+        ; map:{code=2; name=$2; comment=冷凍}
+    }
+    #区分値マスタ 赤黒区分
+    ; CorrectType = list:{
+        ; map:{topComment=赤黒区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=黒}
+        ; map:{code=1; name=$1; comment=赤}
+    }
+    #区分値マスタ コミット区分
+    ; DataInputCommitType = list:{
+        ; map:{topComment=コミット区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=一括コミット}
+        ; map:{code=1; name=$1; comment=随時コミット}
+    }
+    #区分値マスタ 処理区分
+    ; DataInputOperationType = list:{
+        ; map:{topComment=処理区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=アップロード}
+        ; map:{code=1; name=$1; comment=ワーク取込}
+        ; map:{code=2; name=$2; comment=データ移行}
+        ; map:{code=3; name=$3; comment=ダウンロード}
+    }
+    #区分値マスタ 処理区分
+    ; DataInputProcessType = list:{
+        ; map:{topComment=処理区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=追記のみ}
+        ; map:{code=1; name=$1; comment=全削除後追記}
+    }
+    #区分値マスタ 取込対象
+    ; DataInputRange = list:{
+        ; map:{topComment=取込対象; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=全件}
+        ; map:{code=1; name=$1; comment=未処理のみ}
+        ; map:{code=2; name=$2; comment=エラーのみ}
+    }
+    #区分値マスタ 取込種類
+    ; DataInputType = list:{
+        ; map:{topComment=取込種類; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=商品マスタ取込}
+        ; map:{code=02; name=$02; comment=商品荷姿マスタ取込}
+        ; map:{code=03; name=$03; comment=取引先マスタ取込}
+        ; map:{code=04; name=$04; comment=ロケーションマスタ取込}
+        ; map:{code=05; name=$05; comment=在庫データ取込}
+        ; map:{code=06; name=$06; comment=着店マスタ取込(ヤマト運輸)}
+        ; map:{code=07; name=$07; comment=着店マスタ取込(日本郵政)}
+        ; map:{code=08; name=$08; comment=郵便番号マスタ取込}
+        ; map:{code=09; name=$09; comment=郵便番号マスタ(大口事業所)取込}
+    }
+    #区分値マスタ データ型
+    ; DataType = list:{
+        ; map:{topComment=データ型; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=text; name=$text; comment=テキスト}
+        ; map:{code=number; name=$number; comment=数値}
+        ; map:{code=date; name=$date; comment=日付}
+        ; map:{code=datetime; name=$datetime; comment=日時}
+        ; map:{code=time; name=$time; comment=時刻}
+    }
+    #区分値マスタ デフォルト
+    ; Default = list:{
+        ; map:{topComment=デフォルト; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=デフォルトでない}
+        ; map:{code=1; name=$1; comment=デフォルト}
+    }
+    #区分値マスタ デフォルトフラグ
+    ; DefaultFlg = list:{
+        ; map:{topComment=デフォルトフラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=デフォルトでない}
+        ; map:{code=1; name=$1; comment=デフォルト}
+    }
+    #区分値マスタ 削除フラグ
+    ; DelFlg = list:{
+        ; map:{topComment=削除フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未削除}
+        ; map:{code=1; name=$1; comment=削除済}
+    }
+    #区分値マスタ 削除データ表示
+    ; DeleteDataDisplay = list:{
+        ; map:{topComment=削除データ表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=表示しない}
+        ; map:{code=1; name=$1; comment=全件表示}
+    }
+    #区分値マスタ 送付先一致フラグ
+    ; DelivMatchFlg = list:{
+        ; map:{topComment=送付先一致フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=不一致}
+        ; map:{code=1; name=$1; comment=一致}
+    }
+    #区分値マスタ 納品時間帯
+    ; DelivTz = list:{
+        ; map:{topComment=納品時間帯; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=A; name=$A; comment=午前中}
+        ; map:{code=B; name=$B; comment=12時～14時}
+        ; map:{code=C; name=$C; comment=14時～16時}
+        ; map:{code=D; name=$D; comment=16時～18時}
+        ; map:{code=E; name=$E; comment=18時～20時}
+        ; map:{code=F; name=$F; comment=18時～21時}
+        ; map:{code=G; name=$G; comment=19時～21時}
+        ; map:{code=H; name=$H; comment=20時～21時}
+        ; map:{code=I; name=$I; comment=午前10時まで}
+        ; map:{code=J; name=$J; comment=午後5時まで}
+    }
+    #区分値マスタ 納品先フラグ
+    ; DeliveryFlg = list:{
+        ; map:{topComment=納品先フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=使用}
+        ; map:{code=0; name=$0; comment=未使用}
+    }
+    #区分値マスタ 預託先フラグ
+    ; DepositFlg = list:{
+        ; map:{topComment=預託先フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=使用}
+        ; map:{code=0; name=$0; comment=未使用}
+    }
+    #区分値マスタ 表示必須
+    ; DisplayRequired = list:{
+        ; map:{topComment=表示必須; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=任意}
+        ; map:{code=1; name=$1; comment=必須}
+    }
+    #区分値マスタ 日付区分
+    ; DtCls = list:{
+        ; map:{topComment=日付区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=取込日}
+        ; map:{code=1; name=$1; comment=出荷日}
+        ; map:{code=2; name=$2; comment=作業日}
+    }
+    #区分値マスタ 編集可否
+    ; Editable = list:{
+        ; map:{topComment=編集可否; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=編集不可}
+        ; map:{code=1; name=$1; comment=編集可}
+    }
+    #区分値マスタ 緊急表示区分
+    ; EmergencyDisplay = list:{
+        ; map:{topComment=緊急表示区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=全件表示}
+        ; map:{code=1; name=$1; comment=緊急のみ}
+    }
+    #区分値マスタ 緊急フラグ
+    ; EmergencyFlg = list:{
+        ; map:{topComment=緊急フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=通常}
+        ; map:{code=1; name=$1; comment=緊急}
+    }
+    #区分値マスタ エラーフラグ
+    ; ErrorFlg = list:{
+        ; map:{topComment=エラーフラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=エラー無}
+        ; map:{code=1; name=$1; comment=エラー有}
+    }
+    #区分値マスタ エラー処理方法
+    ; ErrorProcessMet = list:{
+        ; map:{topComment=エラー処理方法; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=全て取込まない}
+        ; map:{code=1; name=$1; comment=エラー以外を取り込む}
+    }
+    #区分値マスタ 定点切れ
+    ; FixedPoint = list:{
+        ; map:{topComment=定点切れ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=定点切れのみ表示}
+    }
+    #区分値マスタ 強制確定フラグ
+    ; ForceFixedFlg = list:{
+        ; map:{topComment=強制確定フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=通常確定}
+        ; map:{code=1; name=$1; comment=強制確定}
+    }
+    #区分値マスタ 外貨フラグ
+    ; ForeignFlg = list:{
+        ; map:{topComment=外貨フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=内貨}
+        ; map:{code=1; name=$1; comment=外貨}
+    }
+    #区分値マスタ ギフトフラグ
+    ; GiftFlg = list:{
+        ; map:{topComment=ギフトフラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=ギフト指定無}
+        ; map:{code=1; name=$1; comment=ギフト指定有}
+    }
+    #区分値マスタ ギフト用納品書種別
+    ; GiftStatementType = list:{
+        ; map:{topComment=ギフト用納品書種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=通常}
+        ; map:{code=1; name=$1; comment=金額非表示}
+        ; map:{code=2; name=$2; comment=明細非表示}
+    }
+    #区分値マスタ HT文字認識使用フラグ
+    ; HtCharReadFlg = list:{
+        ; map:{topComment=HT文字認識使用フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未使用}
+        ; map:{code=1; name=$1; comment=使用}
+    }
+    #区分値マスタ 取込みフラグ
+    ; ImportFlg = list:{
+        ; map:{topComment=取込みフラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未取込}
+        ; map:{code=1; name=$1; comment=取込済}
+    }
+    #区分値マスタ 終了したお知らせの表示
+    ; InfoFlg = list:{
+        ; map:{topComment=終了したお知らせの表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=表示する}
+        ; map:{code=1; name=$1; comment=表示しない}
+    }
+    #区分値マスタ 入出庫区分
+    ; InoutType = list:{
+        ; map:{topComment=入出庫区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=入庫}
+        ; map:{code=1; name=$1; comment=出庫}
+    }
+    #区分値マスタ 入力区分
+    ; InputType = list:{
+        ; map:{topComment=入力区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=00; name=$00; comment=画面入力}
+        ; map:{code=10; name=$10; comment=アップロード}
+        ; map:{code=20; name=$20; comment=EDI}
+        ; map:{code=30; name=$30; comment=HT}
+    }
+    #区分値マスタ 検品フラグ
+    ; InspectionFlg = list:{
+        ; map:{topComment=検品フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未検品}
+        ; map:{code=1; name=$1; comment=検品済}
+        ; map:{code=7; name=$7; comment=検品作業中}
+    }
+    #区分値マスタ 比較条件差異
+    ; InventoryLocationProduct = list:{
+        ; map:{topComment=比較条件差異; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=商品単位の差異}
+        ; map:{code=1; name=$1; comment=ロケーション単位の差異}
+    }
+    #区分値マスタ 送り状データ出力フラグ
+    ; InvoiceCreateFlg = list:{
+        ; map:{topComment=送り状データ出力フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未出力}
+        ; map:{code=1; name=$1; comment=出力済}
+    }
+    #区分値マスタ 項目型
+    ; ItemType = list:{
+        ; map:{topComment=項目型; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=text; name=$text; comment=テキスト}
+        ; map:{code=number; name=$number; comment=数値}
+        ; map:{code=date; name=$date; comment=日付}
+        ; map:{code=datetime; name=$datetime; comment=日時}
+        ; map:{code=dropdown; name=$dropdown; comment=コンボボックス}
+        ; map:{code=checkbox; name=$checkbox; comment=チェックボックス}
+        ; map:{code=grid; name=$grid; comment=グリッド}
+    }
+    #区分値マスタ 最新フラグ
+    ; LastFlg = list:{
+        ; map:{topComment=最新フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=最新でない}
+        ; map:{code=1; name=$1; comment=最新}
+    }
+    #区分値マスタ 期限日管理フラグ
+    ; LimitDtManagFlg = list:{
+        ; map:{topComment=期限日管理フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=管理する}
+        ; map:{code=0; name=$0; comment=管理しない}
+    }
+    #区分値マスタ 期限日逆転防止フラグ
+    ; LimitDtReverseFlg = list:{
+        ; map:{topComment=期限日逆転防止フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=管理する}
+        ; map:{code=0; name=$0; comment=管理しない}
+    }
+    #区分値マスタ 制限メッセージCD
+    ; LimitMessageCd = list:{
+        ; map:{topComment=制限メッセージCD; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=inputLimitCheckNumericOnlyError; name=$inputLimitCheckNumericOnlyError; comment=数字のみメッセージCD}
+        ; map:{code=inputLimitCheckNumericAndHyphenOnlyError; name=$inputLimitCheckNumericAndHyphenOnlyError; comment=数字と-のみ(電話番号等)メッセージCD}
+        ; map:{code=inputLimitCheckAlphabetOnlyError; name=$inputLimitCheckAlphabetOnlyError; comment=英字のみメッセージCD}
+        ; map:{code=inputLimitCheckAlphabetAndHyphenOnlyError; name=$inputLimitCheckAlphabetAndHyphenOnlyError; comment=英字と-のみメッセージCD}
+        ; map:{code=inputLimitCheckAlphabetAndNumericOnlyError; name=$inputLimitCheckAlphabetAndNumericOnlyError; comment=英数字のみメッセージCD}
+        ; map:{code=inputLimitCheckAlphabetAndNumericAndHyphenOnlyError; name=$inputLimitCheckAlphabetAndNumericAndHyphenOnlyError; comment=英数字と-のみメッセージCD}
+        ; map:{code=inputLimitCheckAlphabetAndNumericAndSymbolOnlyError; name=$inputLimitCheckAlphabetAndNumericAndSymbolOnlyError; comment=英数字と記号(半角カタカナ,SPを除く)メッセージCD}
+        ; map:{code=inputLimitCheckHalfWidthOnlyError; name=$inputLimitCheckHalfWidthOnlyError; comment=半角文字のみメッセージCD}
+        ; map:{code=inputLimitCheckFullWidthOnlyError; name=$inputLimitCheckFullWidthOnlyError; comment=全角文字のみメッセージCD}
+        ; map:{code=inputLimitCheckTimeOnlyError; name=$inputLimitCheckTimeOnlyError; comment=時刻のみ(hh24:mm)メッセージCD}
+        ; map:{code=inputLimitCheckTimeHHMMSSOnlyError; name=$inputLimitCheckTimeHHMMSSOnlyError; comment=時刻のみ(hh24:mm:ss)メッセージCD}
+    }
+    #区分値マスタ 改行コード
+    ; LineFeedCd = list:{
+        ; map:{topComment=改行コード; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=CRLF}
+        ; map:{code=2; name=$2; comment=CR}
+        ; map:{code=3; name=$3; comment=LF}
+    }
+    #区分値マスタ リスト発行フラグ
+    ; ListOutFlg = list:{
+        ; map:{topComment=リスト発行フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未発行}
+        ; map:{code=1; name=$1; comment=発行済}
+    }
+    #区分値マスタ 発行区分
+    ; ListOutKbn = list:{
+        ; map:{topComment=発行区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未発行}
+        ; map:{code=1; name=$1; comment=発行済}
+        ; map:{code=2; name=$2; comment=全件}
+    }
+    #区分値マスタ リスト発行フラグ(一覧表示用)
+    ; ListOutFlgDisp = list:{
+        ; map:{topComment=リスト発行フラグ(一覧表示用); codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未発行}
+        ; map:{code=1; name=$1; comment=発行済}
+        ; map:{code=2; name=$2; comment=一部発行済}
+    }
+    #区分値マスタ 積込フラグ
+    ; LoadingFlg = list:{
+        ; map:{topComment=積込フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未検品}
+        ; map:{code=1; name=$1; comment=検品済}
+    }
+    #区分値マスタ ロケーション種別
+    ; LocationType = list:{
+        ; map:{topComment=ロケーション種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=00; name=$00; comment=通常ロケーション}
+        ; map:{code=01; name=$01; comment=入庫仮ロケーション}
+    }
+    #区分値マスタ ロックアウト
+    ; Lockout = list:{
+        ; map:{topComment=ロックアウト; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=アンロック}
+        ; map:{code=1; name=$1; comment=ロックアウト}
+    }
+    #区分値マスタ ログ明細ステータス
+    ; LogDtlStatus = list:{
+        ; map:{topComment=ログ明細ステータス; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=情報}
+        ; map:{code=2; name=$2; comment=警告}
+        ; map:{code=3; name=$3; comment=エラー}
+    }
+    #区分値マスタ ログ明細種別
+    ; LogDtlType = list:{
+        ; map:{topComment=ログ明細種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=セクション開始ログ}
+        ; map:{code=2; name=$2; comment=セクション終了ログ}
+        ; map:{code=3; name=$3; comment=明細ログ}
+        ; map:{code=4; name=$4; comment=基盤出力ログ}
+    }
+    #区分値マスタ ログステータス
+    ; LogStatus = list:{
+        ; map:{topComment=ログステータス; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=処理中}
+        ; map:{code=2; name=$2; comment=正常終了}
+        ; map:{code=3; name=$3; comment=異常終了}
+    }
+    #区分値マスタ ロット管理フラグ
+    ; LotManagFlg = list:{
+        ; map:{topComment=ロット管理フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=管理する}
+        ; map:{code=0; name=$0; comment=管理しない}
+    }
+    #区分値マスタ ロット逆転防止フラグ
+    ; LotReverseFlg = list:{
+        ; map:{topComment=ロット逆転防止フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=管理する}
+        ; map:{code=0; name=$0; comment=管理しない}
+    }
+    #区分値マスタ 入庫No.マージ区分
+    ; MergeCls = list:{
+        ; map:{topComment=入庫No.マージ区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=00; name=$00; comment=マージしない}
+        ; map:{code=01; name=$01; comment=ピックロケのみ自動マージ}
+        ; map:{code=02; name=$02; comment=自動マージ}
+    }
+    #区分値マスタ 名寄せ有無
+    ; MergeFlg = list:{
+        ; map:{topComment=名寄せ有無; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=名寄せ無}
+        ; map:{code=1; name=$1; comment=名寄せ有}
+    }
+    #区分値マスタ 属性
+    ; MessageType = list:{
+        ; map:{topComment=属性; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=error; name=$error; comment=エラー}
+        ; map:{code=warn; name=$warn; comment=警告}
+        ; map:{code=info; name=$info; comment=情報}
+        ; map:{code=confirm; name=$confirm; comment=確認}
+    }
+    #区分値マスタ 混載フラグ
+    ; MixedFlg = list:{
+        ; map:{topComment=混載フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=単品}
+        ; map:{code=1; name=$1; comment=混載}
+    }
+    #区分値マスタ 在庫移動指示ステータス
+    ; MoveInstStatus = list:{
+        ; map:{topComment=在庫移動指示ステータス; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=00; name=$00; comment=未作業}
+        ; map:{code=01; name=$01; comment=作業中}
+        ; map:{code=02; name=$02; comment=完了}
+        ; map:{code=99; name=$99; comment=取消}
+    }
+    #区分値マスタ マルチピック計算区分
+    ; MultiPicCls = list:{
+        ; map:{topComment=マルチピック計算区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=マルチピック計算無}
+        ; map:{code=1; name=$1; comment=マルチピック計算有}
+    }
+    #区分値マスタ マルチピック計算フラグ
+    ; MultiPicFlg = list:{
+        ; map:{topComment=マルチピック計算フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=計算無}
+        ; map:{code=1; name=$1; comment=計算有}
+    }
+    #区分値マスタ 必須
+    ; Necessary = list:{
+        ; map:{topComment=必須; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=任意}
+        ; map:{code=1; name=$1; comment=必須}
+    }
+    #区分値マスタ 未出庫全件表示区分
+    ; NoAllcDisplayFlg = list:{
+        ; map:{topComment=未出庫全件表示区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=全件ではない}
+        ; map:{code=1; name=$1; comment=全件表示}
+    }
+    #区分値マスタ 未確定のみ表示
+    ; NoConfirmedFlg = list:{
+        ; map:{topComment=未確定のみ表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=全件表示}
+        ; map:{code=1; name=$1; comment=未確定のみ表示}
+    }
+    #区分値マスタ 下積み厳禁区分
+    ; NoStockCls = list:{
+        ; map:{topComment=下積み厳禁区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=無}
+        ; map:{code=1; name=$1; comment=有}
+    }
+    #区分値マスタ 欠品無のみ表示
+    ; NoStockOutFlg = list:{
+        ; map:{topComment=欠品無のみ表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=欠品無のみ表示}
+        ; map:{code=1; name=$1; comment=欠品有のみ表示}
+    }
+    #区分値マスタ 逆さま厳禁区分
+    ; NoUpsideDownCls = list:{
+        ; map:{topComment=逆さま厳禁区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=無}
+        ; map:{code=1; name=$1; comment=有}
+    }
+    #区分値マスタ 未完了のみ表示
+    ; NotCompletedFlg = list:{
+        ; map:{topComment=未完了のみ表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=全件表示}
+        ; map:{code=1; name=$1; comment=未完了のみ表示}
+    }
+    #区分値マスタ ワンタイムフラグ
+    ; OnetimeFlg = list:{
+        ; map:{topComment=ワンタイムフラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=使用}
+        ; map:{code=0; name=$0; comment=未使用}
+    }
+    #区分値マスタ HT/SD過入荷可フラグ
+    ; OverStoreNumFlg = list:{
+        ; map:{topComment=HT/SD過入荷可フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=不可}
+        ; map:{code=1; name=$1; comment=可能}
+    }
+    #区分値マスタ 梱包計算処理区分
+    ; PackingCalCls = list:{
+        ; map:{topComment=梱包計算処理区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=梱包計算無}
+        ; map:{code=1; name=$1; comment=容積と重量による梱包計算}
+    }
+    #区分値マスタ 梱包方法
+    ; PackingProcessCls = list:{
+        ; map:{topComment=梱包方法; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=受取側考慮(出荷指示昇順)}
+        ; map:{code=1; name=$1; comment=なるべく詰める(容積降順)}
+    }
+    #区分値マスタ 個数口表示フラグ
+    ; PackingShowFlg = list:{
+        ; map:{topComment=個数口表示フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=表示する}
+        ; map:{code=1; name=$1; comment=表示しない}
+    }
+    #区分値マスタ 梱包ステータス
+    ; PackingStatus = list:{
+        ; map:{topComment=梱包ステータス; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=10; name=$10; comment=未出荷}
+        ; map:{code=15; name=$15; comment=出庫指示中}
+        ; map:{code=20; name=$20; comment=出庫指示解除中}
+        ; map:{code=25; name=$25; comment=出庫指示済}
+        ; map:{code=30; name=$30; comment=ピッキング中}
+        ; map:{code=35; name=$35; comment=ピッキング済}
+        ; map:{code=40; name=$40; comment=出荷検品中}
+        ; map:{code=45; name=$45; comment=出荷検品中断}
+        ; map:{code=50; name=$50; comment=出荷検品済}
+        ; map:{code=55; name=$55; comment=出荷確定済}
+        ; map:{code=60; name=$60; comment=承認待ち}
+        ; map:{code=90; name=$90; comment=キャンセル}
+        ; map:{code=99; name=$99; comment=エラー有}
+    }
+    #区分値マスタ パスワードリセット
+    ; PasswordReset = list:{
+        ; map:{topComment=パスワードリセット; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=強制しない}
+        ; map:{code=1; name=$1; comment=強制する}
+    }
+    #区分値マスタ HT/SD過去日入力可フラグ
+    ; PastStoreDtFlg = list:{
+        ; map:{topComment=HT/SD過去日入力可フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=不可}
+        ; map:{code=1; name=$1; comment=可能}
+    }
+    #区分値マスタ 削除
+    ; PhysicalDelete = list:{
+        ; map:{topComment=削除; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=削除}
+    }
+    #区分値マスタ ピッキング方法
+    ; PicCls = list:{
+        ; map:{topComment=ピッキング方法; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=一次ピッキング}
+        ; map:{code=2; name=$2; comment=二次ピッキング}
+        ; map:{code=3; name=$3; comment=ケースピッキング}
+        ; map:{code=4; name=$4; comment=送り状・荷札}
+    }
+    #区分値マスタ 最適ピック提案ブレイクキー
+    ; PicMthdRcmdBreakKey = list:{
+        ; map:{topComment=最適ピック提案ブレイクキー; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=配送コース}
+        ; map:{code=2; name=$2; comment=運送業者}
+    }
+    #区分値マスタ 最適ピック提案フラグ
+    ; PicMthdRcmdFlg = list:{
+        ; map:{topComment=最適ピック提案フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未使用}
+        ; map:{code=1; name=$1; comment=使用}
+    }
+    #区分値マスタ 最適ピックリスト出力フラグ
+    ; PicMthdRcmdListOut = list:{
+        ; map:{topComment=最適ピックリスト出力フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=出力しない}
+        ; map:{code=1; name=$1; comment=出力する}
+    }
+    #区分値マスタ 出庫フラグ
+    ; PickingFlg = list:{
+        ; map:{topComment=出庫フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未出庫}
+        ; map:{code=1; name=$1; comment=出庫済}
+        ; map:{code=7; name=$7; comment=出庫作業中}
+    }
+    #区分値マスタ ピックロケフラグ
+    ; PickingLocationFlg = list:{
+        ; map:{topComment=ピックロケフラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=ピックロケーション}
+        ; map:{code=0; name=$0; comment=ピックロケーション以外}
+    }
+    #区分値マスタ 出庫ステータス
+    ; PickingStatus = list:{
+        ; map:{topComment=出庫ステータス; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=10; name=$10; comment=未出荷}
+        ; map:{code=15; name=$15; comment=出庫指示中}
+        ; map:{code=20; name=$20; comment=出庫指示解除中}
+        ; map:{code=25; name=$25; comment=出庫指示済}
+        ; map:{code=30; name=$30; comment=ピッキング中}
+        ; map:{code=35; name=$35; comment=ピッキング済}
+        ; map:{code=40; name=$40; comment=出荷検品中}
+        ; map:{code=45; name=$45; comment=出荷検品中断}
+        ; map:{code=50; name=$50; comment=出荷検品済}
+        ; map:{code=55; name=$55; comment=出荷確定済}
+        ; map:{code=60; name=$60; comment=承認待ち}
+        ; map:{code=90; name=$90; comment=キャンセル}
+        ; map:{code=99; name=$99; comment=エラー有}
+    }
+    #区分値マスタ ピッキング種別
+    ; PickingType = list:{
+        ; map:{topComment=ピッキング種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=バラ}
+        ; map:{code=1; name=$1; comment=ケース}
+    }
+    #区分値マスタ 郵便種別
+    ; PostType = list:{
+        ; map:{topComment=郵便種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=ゆうパック}
+        ; map:{code=1; name=$1; comment=ゆうメール}
+        ; map:{code=2; name=$2; comment=通常(定型)}
+        ; map:{code=3; name=$3; comment=通常(定型外)}
+        ; map:{code=5; name=$5; comment=ポスパケット}
+        ; map:{code=6; name=$6; comment=宛名ラベル}
+    }
+    #区分値マスタ 印刷データタイプ
+    ; PrintDataType = list:{
+        ; map:{topComment=印刷データタイプ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=通常}
+        ; map:{code=2; name=$2; comment=保護PDF}
+    }
+    #区分値マスタ エラーのみ
+    ; PrintErrorFlg = list:{
+        ; map:{topComment=エラーのみ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=全て}
+        ; map:{code=1; name=$1; comment=エラーのみ}
+    }
+    #区分値マスタ 印刷キューステータス
+    ; PrintQueueStatus = list:{
+        ; map:{topComment=印刷キューステータス; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未印刷}
+        ; map:{code=1; name=$1; comment=印刷中}
+    }
+    #区分値マスタ 印刷結果区分
+    ; PrintResultClass = list:{
+        ; map:{topComment=印刷結果区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=印刷成功}
+        ; map:{code=9; name=$9; comment=印刷失敗}
+    }
+    #区分値マスタ 印刷サービスステータス
+    ; PrintServiceStatus = list:{
+        ; map:{topComment=印刷サービスステータス; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=サービス中}
+        ; map:{code=1; name=$1; comment=サービス停止中}
+        ; map:{code=2; name=$2; comment=シャットダウン中}
+    }
+    #区分値マスタ 印刷ステータス
+    ; PrintStatus = list:{
+        ; map:{topComment=印刷ステータス; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未印刷}
+        ; map:{code=1; name=$1; comment=印刷中}
+        ; map:{code=2; name=$2; comment=印刷済}
+        ; map:{code=9; name=$9; comment=印刷失敗}
+    }
+    #区分値マスタ 再印刷有無
+    ; PrintedFlg = list:{
+        ; map:{topComment=再印刷有無; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=有}
+        ; map:{code=1; name=$1; comment=無}
+    }
+    #区分値マスタ 優先フラグ
+    ; PriorityFlg = list:{
+        ; map:{topComment=優先フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=優先指定無}
+        ; map:{code=1; name=$1; comment=優先指定有}
+    }
+    #区分値マスタ 商品ラベルソースCDバーコード種別
+    ; ProductLabelJanBarcode = list:{
+        ; map:{topComment=商品ラベルソースCDバーコード種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=CODE39; name=$CODE39; comment=CODE39}
+        ; map:{code=CODE128; name=$CODE128; comment=CODE128}
+        ; map:{code=CODABAR; name=$CODABAR; comment=CODABAR(NW-7)}
+        ; map:{code=JAN; name=$JAN; comment=JAN(8or13)}
+        ; map:{code=ITF; name=$ITF; comment=ITF}
+    }
+    #区分値マスタ 商品ラベル出力単位
+    ; ProductLabelOutUnit = list:{
+        ; map:{topComment=商品ラベル出力単位; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=1明細1枚}
+        ; map:{code=1; name=$1; comment=荷姿毎に1枚(在庫最小単位は全体で1枚)}
+        ; map:{code=2; name=$2; comment=在庫最小単位毎に1枚}
+    }
+    #区分値マスタ 商品ラベル商品CDバーコード種別
+    ; ProductLabelProdBarcode = list:{
+        ; map:{topComment=商品ラベル商品CDバーコード種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=CODE39; name=$CODE39; comment=CODE39}
+        ; map:{code=CODE128; name=$CODE128; comment=CODE128}
+        ; map:{code=CODABAR; name=$CODABAR; comment=CODABAR(NW-7)}
+        ; map:{code=JAN; name=$JAN; comment=JAN(8or13)}
+        ; map:{code=ITF; name=$ITF; comment=ITF}
+    }
+    #区分値マスタ 商品毎別梱包
+    ; ProductPartPacking = list:{
+        ; map:{topComment=商品毎別梱包; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=不可}
+        ; map:{code=1; name=$1; comment=可能}
+    }
+    #区分値マスタ 商品種別コード
+    ; ProductTypeCode = list:{
+        ; map:{topComment=商品種別コード; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=101; name=$101; comment=ゆうパック}
+        ; map:{code=102; name=$102; comment=空港ゆうパック}
+        ; map:{code=103; name=$103; comment=チルドゆうパック}
+        ; map:{code=105; name=$105; comment=冷凍ゆうパック}
+        ; map:{code=107; name=$107; comment=ゴルフゆうパック}
+        ; map:{code=113; name=$113; comment=スキー・ホテル等ゆうパック}
+        ; map:{code=201; name=$201; comment=着払ゆうパック}
+        ; map:{code=202; name=$202; comment=着払ゆうパック(チルド)}
+        ; map:{code=203; name=$203; comment=着払ゆうパック(冷凍)}
+        ; map:{code=601; name=$601; comment=代金引換まとめ送金サービス}
+        ; map:{code=603; name=$603; comment=代金引換まとめ送金サービス(チルド)}
+        ; map:{code=605; name=$605; comment=代金引換まとめ送金サービス(冷凍)}
+        ; map:{code=701; name=$701; comment=スキー・ホテル等ゆうパック(往路)}
+        ; map:{code=702; name=$702; comment=空港ゆうパック(往路)}
+        ; map:{code=703; name=$703; comment=スキー・ホテル等ゆうパック(復路)}
+        ; map:{code=704; name=$704; comment=空港ゆうパック(復路)}
+        ; map:{code=705; name=$705; comment=ゴルフゆうパック(往路)}
+        ; map:{code=707; name=$707; comment=ゴルフゆうパック(復路)}
+    }
+    #区分値マスタ 0非表示
+    ; Qty0Display = list:{
+        ; map:{topComment=0非表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=0表示}
+        ; map:{code=1; name=$1; comment=0非表示}
+    }
+    #区分値マスタ 変更理由
+    ; ReasonType = list:{
+        ; map:{topComment=変更理由; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=変更なし}
+        ; map:{code=1; name=$1; comment=市政・区政・町政・分区・政令指定都市施行}
+        ; map:{code=2; name=$2; comment=住居表示の実施}
+        ; map:{code=3; name=$3; comment=区画整理}
+        ; map:{code=4; name=$4; comment=郵便区調整等}
+        ; map:{code=5; name=$5; comment=訂正}
+        ; map:{code=6; name=$6; comment=廃止}
+    }
+    #区分値マスタ 入荷納品ステータス
+    ; ReceiveDeliveryStatus = list:{
+        ; map:{topComment=入荷納品ステータス; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=00; name=$00; comment=未完}
+        ; map:{code=01; name=$01; comment=完納}
+        ; map:{code=02; name=$02; comment=分納}
+        ; map:{code=09; name=$09; comment=打切り}
+    }
+    #区分値マスタ 入荷フラグ
+    ; ReceiveFlg = list:{
+        ; map:{topComment=入荷フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=入荷対象外}
+        ; map:{code=1; name=$1; comment=入荷対象}
+    }
+    #区分値マスタ 入荷ステータス
+    ; ReceiveStatus = list:{
+        ; map:{topComment=入荷ステータス; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=未入荷}
+        ; map:{code=02; name=$02; comment=入荷中}
+        ; map:{code=03; name=$03; comment=入荷済}
+        ; map:{code=90; name=$90; comment=入荷削除}
+        ; map:{code=99; name=$99; comment=エラー有}
+    }
+    #区分値マスタ 補充ロケ割付区分
+    ; ReplenishAllocCls = list:{
+        ; map:{topComment=補充ロケ割付区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=バッチ毎同一SKUは同一ロケに割付}
+        ; map:{code=1; name=$1; comment=補充毎に別ロケを割付}
+    }
+    #区分値マスタ 補充商品CD未設定
+    ; ReplenishProductCdUnset = list:{
+        ; map:{topComment=補充商品CD未設定; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=未設定のみ}
+    }
+    #区分値マスタ 補充点検索区分
+    ; ReplenishSearchCls = list:{
+        ; map:{topComment=補充点検索区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=補充点以下}
+        ; map:{code=1; name=$1; comment=補充可能}
+        ; map:{code=2; name=$2; comment=全て}
+    }
+    #区分値マスタ 補充単位区分
+    ; ReplenishUnitCls = list:{
+        ; map:{topComment=補充単位区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=必要数}
+        ; map:{code=1; name=$1; comment=最大格納数荷姿切上}
+    }
+    #区分値マスタ 項目型
+    ; ReportLayoutItemType = list:{
+        ; map:{topComment=項目型; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=固定項目}
+        ; map:{code=1; name=$1; comment=出力項目}
+    }
+    #区分値マスタ 補充種別
+    ; RestockType = list:{
+        ; map:{topComment=補充種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=定期}
+        ; map:{code=1; name=$1; comment=緊急}
+    }
+    #区分値マスタ 実績入力後入庫/商品ラベル出力
+    ; ResultAfterProductLabel = list:{
+        ; map:{topComment=実績入力後入庫/商品ラベル出力; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=出力しない}
+        ; map:{code=1; name=$1; comment=画面で実績入力後のみ出力}
+        ; map:{code=2; name=$2; comment=HT/SDで実績入力後のみ出力}
+        ; map:{code=3; name=$3; comment=出力する}
+    }
+    #区分値マスタ 期限日出荷制限フラグ
+    ; ReverseValidFlg = list:{
+        ; map:{topComment=期限日出荷制限フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=無効}
+        ; map:{code=1; name=$1; comment=有効}
+    }
+    #区分値マスタ 選択
+    ; Select = list:{
+        ; map:{topComment=選択; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=選択しない}
+        ; map:{code=1; name=$1; comment=選択する}
+    }
+    #区分値マスタ 印刷サービスステータス
+    ; SelectPrintServiceStatus = list:{
+        ; map:{topComment=印刷サービスステータス; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=サービス中}
+        ; map:{code=1; name=$1; comment=サービス停止中}
+    }
+    #区分値マスタ 処理区分
+    ; SerialOperationType = list:{
+        ; map:{topComment=処理区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=入荷}
+        ; map:{code=2; name=$2; comment=出荷}
+        ; map:{code=3; name=$3; comment=削除}
+    }
+    #区分値マスタ ターゲットウインドウ
+    ; TargetWindow = list:{
+        ; map:{topComment=ターゲットウインドウ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=同一ウインドウで開く}
+        ; map:{code=1; name=$1; comment=別ウインドウを新規で開く}
+        ; map:{code=2; name=$2; comment=別ウインドウを同一画面で開く}
+    }
+    #区分値マスタ 決済種別
+    ; SettlementType = list:{
+        ; map:{topComment=決済種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=指定なし}
+        ; map:{code=1; name=$1; comment=全て可}
+        ; map:{code=2; name=$2; comment=現金のみ}
+        ; map:{code=5; name=$5; comment=ﾃﾞﾋﾞｯﾄ･ｸﾚｼﾞｯﾄ}
+    }
+    #区分値マスタ 単行出荷検品荷札/納品明細出力区分
+    ; SglRowInspAfterOutCls = list:{
+        ; map:{topComment=単行出荷検品荷札/納品明細出力区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=最初の商品検品後に出力}
+        ; map:{code=2; name=$2; comment=随時出力}
+        ; map:{code=3; name=$3; comment=最後の商品検品後に出力}
+    }
+    #区分値マスタ 単行ピックフラグ
+    ; SglRowPicFlg = list:{
+        ; map:{topComment=単行ピックフラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=単行ピック無}
+        ; map:{code=1; name=$1; comment=単行ピック有}
+    }
+    #区分値マスタ 部単位印刷要否
+    ; SheetCollate = list:{
+        ; map:{topComment=部単位印刷要否; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=ページ毎印刷}
+        ; map:{code=1; name=$1; comment=部単位で印刷}
+    }
+    #区分値マスタ 出荷フラグ
+    ; ShippingFlg = list:{
+        ; map:{topComment=出荷フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=出荷対象外}
+        ; map:{code=1; name=$1; comment=出荷対象}
+    }
+    #区分値マスタ 出荷ステータス
+    ; ShippingStatus = list:{
+        ; map:{topComment=出荷ステータス; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=10; name=$10; comment=未出荷}
+        ; map:{code=15; name=$15; comment=出庫指示中}
+        ; map:{code=20; name=$20; comment=出庫指示解除中}
+        ; map:{code=25; name=$25; comment=出庫指示済}
+        ; map:{code=30; name=$30; comment=ピッキング中}
+        ; map:{code=35; name=$35; comment=ピッキング済}
+        ; map:{code=40; name=$40; comment=出荷検品中}
+        ; map:{code=45; name=$45; comment=出荷検品中断}
+        ; map:{code=50; name=$50; comment=出荷検品済}
+        ; map:{code=55; name=$55; comment=出荷確定済}
+        ; map:{code=60; name=$60; comment=承認待ち}
+        ; map:{code=90; name=$90; comment=キャンセル}
+        ; map:{code=99; name=$99; comment=エラー有}
+    }
+    #区分値マスタ 出荷停止フラグ
+    ; ShippingStopFlg = list:{
+        ; map:{topComment=出荷停止フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=出荷停止}
+        ; map:{code=0; name=$0; comment=出荷可能}
+    }
+    #区分値マスタ 欠品表示区分
+    ; ShortStockDisplay = list:{
+        ; map:{topComment=欠品表示区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=全件表示}
+        ; map:{code=1; name=$1; comment=欠品のみ}
+    }
+    #区分値マスタ 出荷検品区分
+    ; ShpCheckCls = list:{
+        ; map:{topComment=出荷検品区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=ピース検品}
+        ; map:{code=1; name=$1; comment=ケース検品}
+    }
+    #区分値マスタ 未検品表示区分
+    ; ShpCheckDisplay = list:{
+        ; map:{topComment=未検品表示区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=全件表示}
+        ; map:{code=1; name=$1; comment=未検品のみ表示}
+    }
+    #区分値マスタ 送り状種別
+    ; SlipType = list:{
+        ; map:{topComment=送り状種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=発払い}
+        ; map:{code=2; name=$2; comment=コレクト}
+        ; map:{code=3; name=$3; comment=メール便}
+        ; map:{code=4; name=$4; comment=タイム}
+        ; map:{code=5; name=$5; comment=着払い}
+        ; map:{code=6; name=$6; comment=メール便速達サービス}
+    }
+    #区分値マスタ 操作音再生フラグ
+    ; SoundPlayFlg = list:{
+        ; map:{topComment=操作音再生フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=再生しない}
+        ; map:{code=1; name=$1; comment=再生する}
+    }
+    #区分値マスタ 在庫調整フラグ
+    ; StockAdjustFlg = list:{
+        ; map:{topComment=在庫調整フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=在庫調整対象外}
+        ; map:{code=1; name=$1; comment=在庫調整対象}
+    }
+    #区分値マスタ 在庫表示内容
+    ; StockDisplayFld = list:{
+        ; map:{topComment=在庫表示内容; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=商品順（日報なし）}
+        ; map:{code=1; name=$1; comment=商品順（日報あり）}
+        ; map:{code=2; name=$2; comment=ロケーション順（日報なし）}
+        ; map:{code=3; name=$3; comment=ロケーション順（日報あり）}
+    }
+    #区分値マスタ 在庫有のみフラグ
+    ; StockExistOnlyFlg = list:{
+        ; map:{topComment=在庫有のみフラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=全て}
+        ; map:{code=1; name=$1; comment=在庫有のみ}
+    }
+    #区分値マスタ 在庫調整フラグ
+    ; StockMoveFlg = list:{
+        ; map:{topComment=在庫調整フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未調整}
+        ; map:{code=1; name=$1; comment=調整済}
+    }
+    #区分値マスタ 在庫数 0非表示
+    ; StockNum0Display = list:{
+        ; map:{topComment=在庫数 0非表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=0表示}
+        ; map:{code=1; name=$1; comment=0非表示}
+    }
+    #区分値マスタ 欠品時引当区分
+    ; StockOutAllocCls = list:{
+        ; map:{topComment=欠品時引当区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=引当可能数を引当}
+        ; map:{code=1; name=$1; comment=商品毎に0引当}
+        ; map:{code=2; name=$2; comment=納品先毎に0引当}
+    }
+    #区分値マスタ 欠品時自動出庫指示フラグ
+    ; StockOutAutoInstFlg = list:{
+        ; map:{topComment=欠品時自動出庫指示フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=自動出庫指示に含めない}
+        ; map:{code=1; name=$1; comment=自動出庫指示に含める}
+    }
+    #区分値マスタ 欠品フラグ
+    ; StockOutFlg = list:{
+        ; map:{topComment=欠品フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=欠品無}
+        ; map:{code=1; name=$1; comment=欠品有}
+    }
+    #区分値マスタ 欠品時出庫指示取消フラグ
+    ; StockOutInstCxlFlg = list:{
+        ; map:{topComment=欠品時出庫指示取消フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=出庫指示を取消しない}
+        ; map:{code=1; name=$1; comment=出庫指示を取消}
+    }
+    #区分値マスタ 欠品時出荷指示分離フラグ
+    ; StockOutInstSplitFlg = list:{
+        ; map:{topComment=欠品時出荷指示分離フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=分離しない}
+        ; map:{code=1; name=$1; comment=分離する}
+    }
+    #区分値マスタ 在庫数表示
+    ; StockQtyDisplay = list:{
+        ; map:{topComment=在庫数表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=表示しない}
+        ; map:{code=1; name=$1; comment=表示する}
+    }
+    #区分値マスタ 棚卸データ有
+    ; StockTakingInput = list:{
+        ; map:{topComment=棚卸データ有; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=棚卸入力有のみ表示}
+        ; map:{code=0; name=$0; comment=棚卸入力無のみ表示}
+    }
+    #区分値マスタ 在庫対象
+    ; StockTarget = list:{
+        ; map:{topComment=在庫対象; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=全部対象}
+        ; map:{code=1; name=$1; comment=引当可能数＋引当済数＞０}
+    }
+    #区分値マスタ 入庫日管理フラグ
+    ; StoreDtFlg = list:{
+        ; map:{topComment=入庫日管理フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=管理しない}
+        ; map:{code=1; name=$1; comment=管理する}
+    }
+    #区分値マスタ 格納フラグ
+    ; StoreFlg = list:{
+        ; map:{topComment=格納フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未格納}
+        ; map:{code=1; name=$1; comment=格納}
+    }
+    #区分値マスタ 入庫No.分割表示
+    ; StoreNoDivideDisplay = list:{
+        ; map:{topComment=入庫No.分割表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=表示しない}
+        ; map:{code=1; name=$1; comment=表示する}
+    }
+    #区分値マスタ 入庫No.管理フラグ
+    ; StoreNoFlg = list:{
+        ; map:{topComment=入庫No.管理フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=管理しない}
+        ; map:{code=1; name=$1; comment=管理する}
+    }
+    #区分値マスタ 入庫No.マージフラグ
+    ; StoreNoMergeFlg = list:{
+        ; map:{topComment=入庫No.マージフラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=マージしない}
+        ; map:{code=1; name=$1; comment=マージする}
+    }
+    #区分値マスタ システムログステータス
+    ; SystemLogStatus = list:{
+        ; map:{topComment=システムログステータス; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=正常}
+        ; map:{code=2; name=$2; comment=異常}
+    }
+    #区分値マスタ システムログ種別
+    ; SystemLogType = list:{
+        ; map:{topComment=システムログ種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=通常}
+        ; map:{code=2; name=$2; comment=SQL(SELECT)}
+        ; map:{code=3; name=$3; comment=SQL(INSERT)}
+        ; map:{code=4; name=$4; comment=SQL(UPDATE)}
+        ; map:{code=5; name=$5; comment=SQL(DELETE)}
+        ; map:{code=6; name=$6; comment=SQL(OTHERS)}
+    }
+    #区分値マスタ システム種別
+    ; SystemType = list:{
+        ; map:{topComment=システム種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=base; name=$base; comment=基盤}
+        ; map:{code=wms; name=$wms; comment=WMS}
+    }
+    #区分値マスタ 荷札納品書在中出力フラグ
+    ; TagDeliveryOutFlg = list:{
+        ; map:{topComment=荷札納品書在中出力フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=出力しない}
+        ; map:{code=1; name=$1; comment=1枚目のみ出力}
+    }
+    #区分値マスタ 作業日/出荷日/納品日区分
+    ; TakingShippingDtFlg = list:{
+        ; map:{topComment=作業日/出荷日/納品日区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=作業日}
+        ; map:{code=1; name=$1; comment=出荷日}
+        ; map:{code=2; name=$2; comment=納品日}
+    }
+    #区分値マスタ 作業日/出荷日区分
+    ; TakingShippingFlg = list:{
+        ; map:{topComment=作業日/出荷日区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=作業日}
+        ; map:{code=1; name=$1; comment=出荷日}
+    }
+    #区分値マスタ 表示位置
+    ; TextAlign = list:{
+        ; map:{topComment=表示位置; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=left; name=$left; comment=左寄せ}
+        ; map:{code=right; name=$right; comment=右寄せ}
+        ; map:{code=center; name=$center; comment=中央揃え}
+    }
+    #区分値マスタ トータルピックフラグ
+    ; TotalPicFlg = list:{
+        ; map:{topComment=トータルピックフラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=トータルピック無}
+        ; map:{code=1; name=$1; comment=トータルピック有}
+    }
+    #区分値マスタ 追跡番号採番単位
+    ; TrackingNumberingUnit = list:{
+        ; map:{topComment=追跡番号採番単位; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=出庫作業No単位}
+        ; map:{code=2; name=$2; comment=梱包単位}
+    }
+    #区分値マスタ 積送中在庫のみ表示
+    ; TransitDisplay = list:{
+        ; map:{topComment=積送中在庫のみ表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=全件表示}
+        ; map:{code=1; name=$1; comment=積送中在庫のみ表示}
+    }
+    #区分値マスタ アンマッチ有
+    ; Unmatch = list:{
+        ; map:{topComment=アンマッチ有; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=アンマッチ有のみ表示}
+        ; map:{code=0; name=$0; comment=全件表示}
+    }
+    #区分値マスタ 修正コード
+    ; UpdCd = list:{
+        ; map:{topComment=修正コード; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=修正なし}
+        ; map:{code=1; name=$1; comment=新規追加}
+        ; map:{code=2; name=$2; comment=廃止}
+    }
+    #区分値マスタ 更新区分
+    ; UpdType = list:{
+        ; map:{topComment=更新区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=変更なし}
+        ; map:{code=1; name=$1; comment=変更あり}
+        ; map:{code=2; name=$2; comment=廃止}
+    }
+    #区分値マスタ 更新可否
+    ; Updatable = list:{
+        ; map:{topComment=更新可否; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=更新不可}
+        ; map:{code=1; name=$1; comment=更新可能}
+    }
+    #区分値マスタ アップロードテーブル名
+    ; UploadTableNm = list:{
+        ; map:{topComment=アップロードテーブル名; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=tRakutenOrder; name=$tRakutenOrder; comment=楽天RMS受注}
+        ; map:{code=tAmazonOrder; name=$tAmazonOrder; comment=Amazon受注}
+        ; map:{code=tYahooOrder; name=$tYahooOrder; comment=Yahoo受注}
+    }
+    #区分値マスタ HT/SDケースピック使用フラグ
+    ; UseHtShipFlg = list:{
+        ; map:{topComment=HT/SDケースピック使用フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未使用}
+        ; map:{code=1; name=$1; comment=使用}
+    }
+    #区分値マスタ ユーザ編集可否
+    ; UserEditable = list:{
+        ; map:{topComment=ユーザ編集可否; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=否}
+        ; map:{code=1; name=$1; comment=可}
+    }
+    #区分値マスタ 仕入先フラグ
+    ; VendorFlg = list:{
+        ; map:{topComment=仕入先フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=使用}
+        ; map:{code=0; name=$0; comment=未使用}
+    }
+    #区分値マスタ 表示可否
+    ; Visible = list:{
+        ; map:{topComment=表示可否; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=非表示}
+        ; map:{code=1; name=$1; comment=表示}
+    }
+    #区分値マスタ 処理済フラグ
+    ; WorkFlg = list:{
+        ; map:{topComment=処理済フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未処理}
+        ; map:{code=1; name=$1; comment=処理済}
+    }
+    #区分値マスタ 作業メッセージ有無
+    ; WorkMessageFlg = list:{
+        ; map:{topComment=作業メッセージ有無; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=メッセージ無}
+        ; map:{code=1; name=$1; comment=メッセージ有}
+    }
+    #区分値マスタ ヤマト配達時間帯
+    ; YamatoDelivTz = list:{
+        ; map:{topComment=ヤマト配達時間帯; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0812; name=$0812; comment=午前中}
+        ; map:{code=1214; name=$1214; comment=12時～14時}
+        ; map:{code=1416; name=$1416; comment=14時～16時}
+        ; map:{code=1618; name=$1618; comment=16時～18時}
+        ; map:{code=1820; name=$1820; comment=18時～20時}
+        ; map:{code=1921; name=$1921; comment=19時～21時}
+        ; map:{code=2021; name=$2021; comment=20時～21時}
+        ; map:{code=0010; name=$0010; comment=午前10時まで}
+        ; map:{code=0017; name=$0017; comment=午後5時まで}
+    }
+    #区分値マスタ ゆうパック配達時間帯
+    ; YupackDelivTz = list:{
+        ; map:{topComment=ゆうパック配達時間帯; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=00; name=$00; comment=時間指定なし}
+        ; map:{code=51; name=$51; comment=午前中}
+        ; map:{code=52; name=$52; comment=12時～14時}
+        ; map:{code=53; name=$53; comment=14時～16時}
+        ; map:{code=54; name=$54; comment=16時～18時}
+        ; map:{code=55; name=$55; comment=18時～20時}
+        ; map:{code=57; name=$57; comment=19時～21時}
+        ; map:{code=56; name=$56; comment=20時～21時}
+    }
+    #区分値マスタ 郵便番号フラグ
+    ; ZipFlg = list:{
+        ; map:{topComment=郵便番号フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=該当せず}
+        ; map:{code=1; name=$1; comment=該当}
+    }
+    #区分値マスタ 実績入力後入庫/商品ラベル出力対象
+    ; ResultAfterProductTarget = list:{
+        ; map:{topComment=実績入力後入庫/商品ラベル出力対象; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=入庫ラベル}
+        ; map:{code=2; name=$2; comment=商品ラベル}
+    }
+    #区分値マスタ コピー対象テーブル
+    ; CopyTargetTable = list:{
+        ; map:{topComment=コピー対象テーブル; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=MCenterCol; name=$MCenterCol; comment=センタ列マスタ}
+        ; map:{code=MCenterItem; name=$MCenterItem; comment=センタ項目マスタ}
+        ; map:{code=MCenterScreen; name=$MCenterScreen; comment=センタ画面マスタ}
+        ; map:{code=MCarrierSlipSgw; name=$MCarrierSlipSgw; comment=佐川送り状マスタ}
+        ; map:{code=MCarrierSlipYmt; name=$MCarrierSlipYmt; comment=ヤマト送り状マスタ}
+        ; map:{code=MCarrierSlipYupk; name=$MCarrierSlipYupk; comment=ゆうパック送り状マスタ}
+    }
+    #区分値マスタ 検品ラベル出力
+    ; InspectionLabelOutFlg = list:{
+        ; map:{topComment=検品ラベル出力; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=出力しない}
+        ; map:{code=1; name=$1; comment=出力する}
+    }
+    #区分値マスタ 小数管理商品梱包単位
+    ; DecimalProductPacking = list:{
+        ; map:{topComment=小数管理商品梱包単位; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=荷姿単位で1梱包}
+        ; map:{code=1; name=$1; comment=商品単位で1梱包}
+    }
+    #区分値マスタ 小数有無フラグ
+    ; DecimalExistFlg = list:{
+        ; map:{topComment=小数有無フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=小数を含まない}
+        ; map:{code=1; name=$1; comment=小数を含む}
+    }
+    #区分値マスタ ケースピッキング対象
+    ; CasePickFlg = list:{
+        ; map:{topComment=ケースピッキング対象; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=対象外}
+        ; map:{code=1; name=$1; comment=対象}
+    }
+    #区分値マスタ 緊急補充ゾーン補充荷姿
+    ; EmReplenishShapeFlg = list:{
+        ; map:{topComment=緊急補充ゾーン補充荷姿; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=対象外}
+        ; map:{code=1; name=$1; comment=対象}
+    }
+    #区分値マスタ 作業ステータス
+    ; WorkStatus = list:{
+        ; map:{topComment=作業ステータス; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=作業中}
+        ; map:{code=02; name=$02; comment=正常終了}
+        ; map:{code=03; name=$03; comment=基盤強制終了}
+    }
+    #区分値マスタ 作業実績出力フラグ
+    ; WorkLogOutFlg = list:{
+        ; map:{topComment=作業実績出力フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未出力}
+        ; map:{code=1; name=$1; comment=出力済}
+    }
+    #区分値マスタ 権限制御区分
+    ; RoleControlClass = list:{
+        ; map:{topComment=権限制御区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=許可を指定}
+        ; map:{code=2; name=$2; comment=拒否を指定}
+    }
+    #区分値マスタ Bill of Lading出力フラグ
+    ; BolOutFlg = list:{
+        ; map:{topComment=Bill of Lading出力フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未発行}
+        ; map:{code=1; name=$1; comment=発行済}
+    }
+    #区分値マスタ Bill of Lading出力対象フラグ
+    ; BolOutputTargetFlg = list:{
+        ; map:{topComment=Bill of Lading出力対象フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=対象外}
+        ; map:{code=1; name=$1; comment=対象}
+    }
+    #区分値マスタ Payment Term
+    ; PaymentTerm = list:{
+        ; map:{topComment=Payment Term; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=PPD; name=$PPD; comment=PrePaid}
+        ; map:{code=PPB; name=$PPB; comment=PrePaid & Bill}
+        ; map:{code=COL; name=$COL; comment=Collect}
+        ; map:{code=CO1; name=$CO1; comment=COD Bill FRT}
+        ; map:{code=CO2; name=$CO2; comment=COD NOT Bill FRT}
+        ; map:{code=3PL; name=$3PL; comment=3rd Party}
+    }
+    #区分値マスタ CES連携フラグ
+    ; CesIntegrationFlg = list:{
+        ; map:{topComment=CES連携フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=連携しない}
+        ; map:{code=1; name=$1; comment=連携する}
+    }
+    #区分値マスタ 納品明細書自動発行フラグ
+    ; PackingSlipAutoOutputFlg = list:{
+        ; map:{topComment=納品明細書自動発行フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=発行しない}
+        ; map:{code=1; name=$1; comment=発行する}
+    }
+    #区分値マスタ Freight Class
+    ; FreightCls = list:{
+        ; map:{topComment=Freight Class; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=50}
+        ; map:{code=02; name=$02; comment=55}
+        ; map:{code=03; name=$03; comment=60}
+        ; map:{code=04; name=$04; comment=65}
+        ; map:{code=05; name=$05; comment=70}
+        ; map:{code=06; name=$06; comment=77.5}
+        ; map:{code=07; name=$07; comment=85}
+        ; map:{code=08; name=$08; comment=92.5}
+        ; map:{code=09; name=$09; comment=100}
+        ; map:{code=10; name=$10; comment=110}
+        ; map:{code=11; name=$11; comment=125}
+        ; map:{code=12; name=$12; comment=150}
+        ; map:{code=13; name=$13; comment=175}
+        ; map:{code=14; name=$14; comment=200}
+        ; map:{code=15; name=$15; comment=250}
+        ; map:{code=16; name=$16; comment=300}
+        ; map:{code=17; name=$17; comment=400}
+        ; map:{code=18; name=$18; comment=500}
+    }
+    #区分値マスタ Saturday Delivery フラグCD
+    ; SatDeliveryFlg = list:{
+        ; map:{topComment=Saturday Delivery フラグCD; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Residential Delivery フラグCD
+    ; ResidentialDeliveryFlg = list:{
+        ; map:{topComment=Residential Delivery フラグCD; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Collect On Delivery フラグCD
+    ; CodFlg = list:{
+        ; map:{topComment=Collect On Delivery フラグCD; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Signature Required フラグCD
+    ; SignatureRequiredFlg = list:{
+        ; map:{topComment=Signature Required フラグCD; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Signature ReleaseフラグCD
+    ; SignatureReleaseFlg = list:{
+        ; map:{topComment=Signature ReleaseフラグCD; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Call Before Delivery フラグCD
+    ; CallBeforeDeliveryFlg = list:{
+        ; map:{topComment=Call Before Delivery フラグCD; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Freezable Protection フラグCD
+    ; FreezableProtectionFlg = list:{
+        ; map:{topComment=Freezable Protection フラグCD; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Guaranteed Plus フラグCD
+    ; GuaranteedPlusFlg = list:{
+        ; map:{topComment=Guaranteed Plus フラグCD; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Residential Pickup フラグCD
+    ; ResidentialPickupFlg = list:{
+        ; map:{topComment=Residential Pickup フラグCD; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Do Not Stack Pallets フラグCD
+    ; DoNotStackStackFlg = list:{
+        ; map:{topComment=Do Not Stack Pallets フラグCD; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Limited Access Delivery フラグCD
+    ; LimitedAccessDeliveryFlg = list:{
+        ; map:{topComment=Limited Access Delivery フラグCD; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Limited Access Pickup フラグCD
+    ; LimitedAccessPickupFlg = list:{
+        ; map:{topComment=Limited Access Pickup フラグCD; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Over-Sized/Extreme Length フラグCD
+    ; OverSizedFlg = list:{
+        ; map:{topComment=Over-Sized/Extreme Length フラグCD; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Poison フラグCD
+    ; PoisonFlg = list:{
+        ; map:{topComment=Poison フラグCD; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Food フラグCD
+    ; FoogFlg = list:{
+        ; map:{topComment=Food フラグCD; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Liftgate at delivery フラグCD (Prepaid)
+    ; LiftgateDeliveryPrepaidFlg = list:{
+        ; map:{topComment=Liftgate at delivery フラグCD (Prepaid); codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Liftgate at delivery フラグCD (Collect)
+    ; LiftgateDeliveryCollectFlg = list:{
+        ; map:{topComment=Liftgate at delivery フラグCD (Collect); codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Liftgate at pickup フラグCD (Prepaid)
+    ; LiftgatePickupPrepaidFlg = list:{
+        ; map:{topComment=Liftgate at pickup フラグCD (Prepaid); codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Liftgate at pickup フラグCD (Collect)
+    ; LiftgatePickupCollectFlg = list:{
+        ; map:{topComment=Liftgate at pickup フラグCD (Collect); codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Inside Delivery フラグCD (Prepaid)
+    ; InsideDeliveryPrepaidFlg = list:{
+        ; map:{topComment=Inside Delivery フラグCD (Prepaid); codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Inside Delivery フラグCD (Collect)
+    ; InsideDeliveryCollectFlg = list:{
+        ; map:{topComment=Inside Delivery フラグCD (Collect); codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Inside Pickup フラグCD (Prepaid)
+    ; InsidePickupPrepaidFlg = list:{
+        ; map:{topComment=Inside Pickup フラグCD (Prepaid); codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ Inside Pickup フラグCD (Collect)
+    ; InsidePickupCollectFlg = list:{
+        ; map:{topComment=Inside Pickup フラグCD (Collect); codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=Enable}
+        ; map:{code=0; name=$0; comment=Disable}
+    }
+    #区分値マスタ 提案ピッキング方法
+    ; RcmdPickingCls = list:{
+        ; map:{topComment=提案ピッキング方法; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=オーダーピッキング}
+        ; map:{code=2; name=$2; comment=トータルピッキング＋摘み取り}
+        ; map:{code=3; name=$3; comment=トータルピッキング＋種蒔き}
+        ; map:{code=4; name=$4; comment=マルチピッキング}
+        ; map:{code=5; name=$5; comment=単行ピッキング}
+        ; map:{code=6; name=$6; comment=ケースピッキング}
+    }
+    #区分値マスタ 単行ピッキング対象
+    ; SglRowPicTarget = list:{
+        ; map:{topComment=単行ピッキング対象; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=対象外}
+        ; map:{code=1; name=$1; comment=対象}
+    }
+    #区分値マスタ ケースピッキング対象
+    ; CasePicTarget = list:{
+        ; map:{topComment=ケースピッキング対象; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=対象外}
+        ; map:{code=1; name=$1; comment=対象}
+    }
+    #区分値マスタ 出退勤・休憩
+    ; AttendanceLeavingRest = list:{
+        ; map:{topComment=出退勤・休憩; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=出勤}
+        ; map:{code=2; name=$2; comment=退勤}
+        ; map:{code=4; name=$4; comment=休憩開始}
+        ; map:{code=8; name=$8; comment=休憩終了}
+    }
+    #区分値マスタ 郵便番号種別
+    ; UploadZipType = list:{
+        ; map:{topComment=郵便番号種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=住所}
+        ; map:{code=1; name=$1; comment=事業所}
+    }
+    #区分値マスタ FW
+    ; FwType = list:{
+        ; map:{topComment=FW; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=特定品種}
+    }
+    #区分値マスタ MCA
+    ; McaType = list:{
+        ; map:{topComment=MCA; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=特定品種}
+    }
+    #区分値マスタ 得意先フラグ
+    ; AccountFlg = list:{
+        ; map:{topComment=得意先フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=使用しない}
+        ; map:{code=1; name=$1; comment=使用する}
+    }
+    #区分値マスタ アラーム区分
+    ; AlarmReasonCls = list:{
+        ; map:{topComment=アラーム区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=荷揃対象データ無し}
+        ; map:{code=02; name=$02; comment=戸配区分マスタ不一致}
+        ; map:{code=03; name=$03; comment=論理在庫欠品}
+        ; map:{code=04; name=$04; comment=運送業者登録無し(指定)}
+        ; map:{code=05; name=$05; comment=運送業者該当無し(戸配)}
+        ; map:{code=06; name=$06; comment=運送業者該当無し(店送り)}
+        ; map:{code=07; name=$07; comment=運送業者該当無し(直送)}
+        ; map:{code=08; name=$08; comment=運送業者休日振替(出荷日)}
+        ; map:{code=09; name=$09; comment=運送業者休日(配送日)}
+        ; map:{code=10; name=$10; comment=運送業者振替(大物)}
+        ; map:{code=11; name=$11; comment=運送業者振替(重量物)}
+        ; map:{code=12; name=$12; comment=荷揃処理エラー}
+    }
+    #区分値マスタ アラーム種別
+    ; AlarmType = list:{
+        ; map:{topComment=アラーム種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=エラー}
+        ; map:{code=1; name=$1; comment=警告}
+    }
+    #区分値マスタ エリア
+    ; AreaCls = list:{
+        ; map:{topComment=エリア; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=0}
+        ; map:{code=1; name=$1; comment=1}
+        ; map:{code=2; name=$2; comment=2}
+    }
+    #区分値マスタ 仕分状態
+    ; AssortStatus = list:{
+        ; map:{topComment=仕分状態; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=ピッキング中}
+        ; map:{code=1; name=$1; comment=ピッキング完了}
+        ; map:{code=2; name=$2; comment=仕分完了}
+    }
+    #区分値マスタ 拠点区分
+    ; BaseCls = list:{
+        ; map:{topComment=拠点区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=2000; name=$2000; comment=草加}
+        ; map:{code=2300; name=$2300; comment=越谷}
+        ; map:{code=2400; name=$2400; comment=リテイル小菅}
+        ; map:{code=2500; name=$2500; comment=リテイル越谷}
+        ; map:{code=5000; name=$5000; comment=東北ミドリ}
+        ; map:{code=9998; name=$9998; comment=ミドリロジ管轄3PL}
+        ; map:{code=9999; name=$9999; comment=ミドリロジ管轄外3PL}
+    }
+    #区分値マスタ 荷材
+    ; BoxType = list:{
+        ; map:{topComment=荷材; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=ダンボール}
+    }
+    #区分値マスタ 運送業者
+    ; CarrierType = list:{
+        ; map:{topComment=運送業者; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=JP; name=$JP; comment=日本郵便}
+        ; map:{code=YMT; name=$YMT; comment=ヤマト運輸}
+        ; map:{code=SGW; name=$SGW; comment=佐川急便}
+    }
+    #区分値マスタ 運送会社区分
+    ; CarrierTypeCd = list:{
+        ; map:{topComment=運送会社区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=ヤマト運輸}
+        ; map:{code=2; name=$2; comment=佐川急便}
+        ; map:{code=6; name=$6; comment=飛脚ゆうメール}
+        ; map:{code=7; name=$7; comment=ゆうパケット}
+    }
+    #区分値マスタ ケース区分
+    ; CaseTypeCd = list:{
+        ; map:{topComment=ケース区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=Y; name=$Y; comment=ケース}
+    }
+    #区分値マスタ 締め日
+    ; ClosingDt = list:{
+        ; map:{topComment=締め日; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=20}
+    }
+    #区分値マスタ 完了非表示
+    ; CompletedHidden = list:{
+        ; map:{topComment=完了非表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=完了非表示}
+    }
+    #区分値マスタ 出力条件
+    ; Condition = list:{
+        ; map:{topComment=出力条件; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=BLDL3350; name=$BLDL3350; comment=0090}
+    }
+    #区分値マスタ 建設支店
+    ; Constract = list:{
+        ; map:{topComment=建設支店; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=XXXX}
+        ; map:{code=2; name=$2; comment=XXXX}
+    }
+    #区分値マスタ ケース／バラ区分
+    ; CsPsType = list:{
+        ; map:{topComment=ケース／バラ区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=バラ}
+        ; map:{code=2; name=$2; comment=ケース}
+    }
+    #区分値マスタ 在庫区分
+    ; DefaultStockType = list:{
+        ; map:{topComment=在庫区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=W100; name=$W100; comment=通常在庫}
+    }
+    #区分値マスタ 拠点送り区分(出荷元)
+    ; DelivCenterFrom = list:{
+        ; map:{topComment=拠点送り区分(出荷元); codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=C001; name=$C001; comment=草加物流センター}
+        ; map:{code=C003; name=$C003; comment=東北ミドリ}
+    }
+    #区分値マスタ 拠点送り区分(出荷先)
+    ; DelivCenterTo = list:{
+        ; map:{topComment=拠点送り区分(出荷先); codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=C001; name=$C001; comment=草加物流センター}
+        ; map:{code=C002; name=$C002; comment=越谷物流センター}
+        ; map:{code=C003; name=$C003; comment=東北ミドリ}
+        ; map:{code=C004; name=$C004; comment=リテイル越谷}
+        ; map:{code=C005; name=$C005; comment=リテイル小菅}
+    }
+    #区分値マスタ 配達指定有無
+    ; DeliveryDtUnspecified = list:{
+        ; map:{topComment=配達指定有無; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=配達指定日無}
+    }
+    #区分値マスタ 配達時間帯
+    ; DeliveryTimeZone = list:{
+        ; map:{topComment=配達時間帯; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=A; name=$A; comment=午前中}
+        ; map:{code=B; name=$B; comment=12時～14時}
+        ; map:{code=C; name=$C; comment=14時～16時}
+        ; map:{code=D; name=$D; comment=16時～18時}
+        ; map:{code=E; name=$E; comment=18時～20時}
+        ; map:{code=F; name=$F; comment=18時～21時}
+        ; map:{code=G; name=$G; comment=19時～21時}
+        ; map:{code=H; name=$H; comment=20時～21時}
+        ; map:{code=I; name=$I; comment=午前10時まで}
+        ; map:{code=J; name=$J; comment=午後5時まで}
+    }
+    #区分値マスタ 配送種別送信対象区分
+    ; DeliveryTypeSendCls = list:{
+        ; map:{topComment=配送種別送信対象区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=2700; name=$2700; comment=SGL柏SRC}
+    }
+    #区分値マスタ 預り品
+    ; DepositItemFlg = list:{
+        ; map:{topComment=預り品; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=預り品}
+    }
+    #区分値マスタ 取引区分
+    ; DepositType = list:{
+        ; map:{topComment=取引区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=11; name=$11; comment=店預かり}
+        ; map:{code=39; name=$39; comment=ユーザ預かり}
+        ; map:{code=49; name=$49; comment=ユーザ預かり}
+    }
+    #区分値マスタ 差異
+    ; DiffCls = list:{
+        ; map:{topComment=差異; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=マイナスのみ}
+    }
+    #区分値マスタ 直送区分
+    ; DirectDeliveryTypeCd = list:{
+        ; map:{topComment=直送区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=直送}
+    }
+    #区分値マスタ EC受注
+    ; EcOrder = list:{
+        ; map:{topComment=EC受注; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=ZBB7; name=$ZBB7; comment=EC受注}
+    }
+    #区分値マスタ EC区分
+    ; EcType = list:{
+        ; map:{topComment=EC区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=通常計算}
+        ; map:{code=2; name=$2; comment=ECユーザ}
+    }
+    #区分値マスタ 実行ステータス
+    ; ExecuteStatus = list:{
+        ; map:{topComment=実行ステータス; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=実行中}
+        ; map:{code=02; name=$02; comment=正常終了}
+        ; map:{code=03; name=$03; comment=異常終了}
+    }
+    #区分値マスタ 手数料
+    ; Fee = list:{
+        ; map:{topComment=手数料; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=BLDL350N; name=$BLDL350N; comment=540}
+        ; map:{code=BLDL350K; name=$BLDL350K; comment=540}
+        ; map:{code=BLDL6760; name=$BLDL6760; comment=500}
+        ; map:{code=BLDL3350; name=$BLDL3350; comment=540}
+        ; map:{code=BLDL3390; name=$BLDL3390; comment=300}
+        ; map:{code=BLDL3310; name=$BLDL3310; comment=300}
+    }
+    #区分値マスタ フロア
+    ; Floor = list:{
+        ; map:{topComment=フロア; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=2002; name=$2002; comment=4F}
+        ; map:{code=2000; name=$2000; comment=3F}
+    }
+    #区分値マスタ フロアCD
+    ; FloorCd = list:{
+        ; map:{topComment=フロアCD; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=1F}
+        ; map:{code=02; name=$02; comment=2F}
+        ; map:{code=03; name=$03; comment=3F}
+        ; map:{code=04; name=$04; comment=4F}
+        ; map:{code=05; name=$05; comment=5F}
+    }
+    #区分値マスタ フロア完結
+    ; FloorEndFlg = list:{
+        ; map:{topComment=フロア完結; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=完結しない}
+        ; map:{code=1; name=$1; comment=完結する}
+    }
+    #区分値マスタ フロア区分(保管場所区分)
+    ; FloorTypeCd = list:{
+        ; map:{topComment=フロア区分(保管場所区分); codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=越谷３F}
+        ; map:{code=3; name=$3; comment=越谷ユニフォームステーション出荷で３F保管商品の場合}
+        ; map:{code=4; name=$4; comment=上記以外の場合}
+    }
+    #区分値マスタ 引き渡しステータス
+    ; HandOverStatus = list:{
+        ; map:{topComment=引き渡しステータス; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=引き渡し前}
+        ; map:{code=1; name=$1; comment=引き渡し済}
+        ; map:{code=2; name=$2; comment=出荷送信済}
+    }
+    #区分値マスタ 取扱方法
+    ; HandlingType = list:{
+        ; map:{topComment=取扱方法; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=直送}
+        ; map:{code=1; name=$1; comment=納品}
+        ; map:{code=2; name=$2; comment=緊急}
+    }
+    #区分値マスタ 重量フラグ
+    ; HeavyItemFlg = list:{
+        ; map:{topComment=重量フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=使用しない}
+        ; map:{code=1; name=$1; comment=使用する}
+    }
+    #区分値マスタ 重量取扱フラグ
+    ; HeavyItemHadlingFlg = list:{
+        ; map:{topComment=重量取扱フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=使用しない}
+        ; map:{code=1; name=$1; comment=使用する}
+    }
+    #区分値マスタ 品目グループ
+    ; HinmokuGroupCd = list:{
+        ; map:{topComment=品目グループ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=10; name=$10; comment=フットウエア(セフティ)}
+        ; map:{code=20; name=$20; comment=フットウエア(ワーク)}
+        ; map:{code=30; name=$30; comment=ユニフォーム}
+        ; map:{code=40; name=$40; comment=セフティ＆ヘルス}
+        ; map:{code=45; name=$45; comment=ヘルメット}
+        ; map:{code=50; name=$50; comment=電気計測}
+        ; map:{code=60; name=$60; comment=クリーンシステム}
+        ; map:{code=70; name=$70; comment=メディカル}
+    }
+    #区分値マスタ 休日
+    ; HolidayFlg = list:{
+        ; map:{topComment=休日; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=休日でない}
+        ; map:{code=1; name=$1; comment=休日}
+    }
+    #区分値マスタ 個体管理廃止区分
+    ; IdManagAbolitionTypeCd = list:{
+        ; map:{topComment=個体管理廃止区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=Y; name=$Y; comment=この出庫日での管理を廃止する   }
+    }
+    #区分値マスタ 保険品フラグ
+    ; InsuranceFlg = list:{
+        ; map:{topComment=保険品フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=使用しない}
+        ; map:{code=1; name=$1; comment=使用する}
+    }
+    #区分値マスタ 棚卸データ状況
+    ; InventoryDataStatus = list:{
+        ; map:{topComment=棚卸データ状況; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=00; name=$00; comment=未作成}
+        ; map:{code=01; name=$01; comment=作成済}
+    }
+    #区分値マスタ 棚卸差異
+    ; InventoryDiffCls = list:{
+        ; map:{topComment=棚卸差異; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=差異ありのみ出力}
+    }
+    #区分値マスタ 棚卸入力有
+    ; InventoryInputCls = list:{
+        ; map:{topComment=棚卸入力有; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=棚卸入力無のみ表示}
+        ; map:{code=1; name=$1; comment=棚卸入力有のみ表示}
+    }
+    #区分値マスタ 棚卸リスト発行区分
+    ; InventoryListOutCls = list:{
+        ; map:{topComment=棚卸リスト発行区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=未出力のロケのみ出力}
+    }
+    #区分値マスタ 棚卸帳票発行区分
+    ; InventoryListType = list:{
+        ; map:{topComment=棚卸帳票発行区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=棚卸在庫差異表}
+        ; map:{code=02; name=$02; comment=在庫差異確認表}
+        ; map:{code=03; name=$03; comment=商品別棚卸実績表兼差異表}
+        ; map:{code=04; name=$04; comment=商品別棚卸実績表(LOC表示あり)}
+    }
+    #区分値マスタ 個体管理区分
+    ; ItManagType = list:{
+        ; map:{topComment=個体管理区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=対象外}
+        ; map:{code=1; name=$1; comment=個体管理スキャン対象外（ズボン）}
+        ; map:{code=2; name=$2; comment=個体管理スキャン対象（上着）}
+    }
+    #区分値マスタ 日本電産
+    ; ItemDensan = list:{
+        ; map:{topComment=日本電産; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=32}
+    }
+    #区分値マスタ 大物フラグ
+    ; LargeItemFlg = list:{
+        ; map:{topComment=大物フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=使用しない}
+        ; map:{code=1; name=$1; comment=使用する}
+    }
+    #区分値マスタ 期限日割れ区分
+    ; LimitDtSplitTypeCd = list:{
+        ; map:{topComment=期限日割れ区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=対象外}
+        ; map:{code=1; name=$1; comment=確認対象}
+        ; map:{code=3; name=$3; comment=禁止対象}
+    }
+    #区分値マスタ 期限日不一致区分
+    ; LimitDtUnmatchTypeCd = list:{
+        ; map:{topComment=期限日不一致区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=対象外}
+        ; map:{code=1; name=$1; comment=確認対象}
+        ; map:{code=3; name=$3; comment=禁止対象}
+    }
+    #区分値マスタ 物流注意区分
+    ; LogiAttentionTypeCd = list:{
+        ; map:{topComment=物流注意区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=使用しない}
+        ; map:{code=1; name=$1; comment=使用する}
+    }
+    #区分値マスタ 物流特殊区分
+    ; LogiSpecialTypeCd = list:{
+        ; map:{topComment=物流特殊区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=JAN1点読み対象}
+    }
+    #区分値マスタ 物流重量フラグ
+    ; LogiWeightFlg = list:{
+        ; map:{topComment=物流重量フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=使用しない}
+        ; map:{code=1; name=$1; comment=使用する}
+    }
+    #区分値マスタ ロット割れ区分
+    ; LotSplitTypeCd = list:{
+        ; map:{topComment=ロット割れ区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=対象外}
+        ; map:{code=1; name=$1; comment=確認対象}
+        ; map:{code=3; name=$3; comment=禁止対象}
+    }
+    #区分値マスタ ロット不一致区分
+    ; LotUnmatchTypeCd = list:{
+        ; map:{topComment=ロット不一致区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=対象外}
+        ; map:{code=1; name=$1; comment=確認対象}
+        ; map:{code=3; name=$3; comment=禁止対象}
+    }
+    #区分値マスタ 最大格納数商品荷姿
+    ; MaxStoreShape = list:{
+        ; map:{topComment=最大格納数商品荷姿; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=バラ}
+        ; map:{code=2; name=$2; comment=ケース}
+    }
+    #区分値マスタ 医療用管理フラグ
+    ; MedicalManagFlg = list:{
+        ; map:{topComment=医療用管理フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=使用しない}
+        ; map:{code=1; name=$1; comment=使用する}
+    }
+    #区分値マスタ 移動方法
+    ; MoveDirection = list:{
+        ; map:{topComment=移動方法; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=外部倉庫から移動}
+        ; map:{code=02; name=$02; comment=外部倉庫へ移動}
+    }
+    #区分値マスタ 祝日振替業者
+    ; NationalHolidayCarrier = list:{
+        ; map:{topComment=祝日振替業者; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=JP; name=$JP; comment=日本郵便}
+        ; map:{code=YMT; name=$YMT; comment=ヤマト運輸}
+        ; map:{code=SGW; name=$SGW; comment=佐川急便}
+    }
+    #区分値マスタ 祝日
+    ; NationalHolidayFlg = list:{
+        ; map:{topComment=祝日; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=祝日でない}
+        ; map:{code=1; name=$1; comment=祝日}
+    }
+    #区分値マスタ 荷揃処理ID(共通)
+    ; NizoroeProcessId = list:{
+        ; map:{topComment=荷揃処理ID(共通); codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=A1; name=$A1; comment=出荷区分決定}
+        ; map:{code=B1; name=$B1; comment=荷揃番号（出荷日等）}
+        ; map:{code=B2; name=$B2; comment=荷揃番号（オーダID）}
+        ; map:{code=C1; name=$C1; comment=帳簿引当}
+        ; map:{code=D1; name=$D1; comment=運送業者出荷指示内判定}
+        ; map:{code=D2; name=$D2; comment=運送業者マスタ判定}
+        ; map:{code=D3; name=$D3; comment=運送業者（休日判定）}
+        ; map:{code=D4; name=$D4; comment=運送業者（大物重量物判定）}
+        ; map:{code=D5; name=$D5; comment=運送業者（保険品判定）}
+        ; map:{code=D6; name=$D6; comment=運送業者（沖縄空港便不可判定）}
+        ; map:{code=D7; name=$D7; comment=運送業者（配達不可地域判定）}
+        ; map:{code=E1; name=$E1; comment=荷揃番号再採番}
+    }
+    #区分値マスタ 荷揃処理ID(WMS)
+    ; NizoroeProcessIdWms = list:{
+        ; map:{topComment=荷揃処理ID(WMS); codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=A1; name=$A1; comment=ロケーション在庫引当}
+        ; map:{code=B1; name=$B1; comment=運送業者再決定}
+        ; map:{code=C1; name=$C1; comment=ピッキングパターン決定}
+        ; map:{code=C2; name=$C2; comment=ピッキングパターン決定（得意先別）}
+        ; map:{code=C3; name=$C3; comment=ピッキングパターン決定（強制バラ）}
+        ; map:{code=D1; name=$D1; comment=荷揃番号採番（ピックフロア）}
+        ; map:{code=D2; name=$D2; comment=荷揃番号採番（FW10足）}
+        ; map:{code=E1; name=$E1; comment=代表荷揃番号採番（得意先別）}
+        ; map:{code=E2; name=$E2; comment=代表荷揃番号採番（出荷区分）}
+    }
+    #区分値マスタ 荷揃処理時間
+    ; NizoroeTime = list:{
+        ; map:{topComment=荷揃処理時間; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=午前7時}
+        ; map:{code=2; name=$2; comment=午前10時}
+        ; map:{code=3; name=$3; comment=午前11時}
+        ; map:{code=4; name=$4; comment=午前12時}
+        ; map:{code=5; name=$5; comment=午後3時}
+        ; map:{code=6; name=$6; comment=午後4時}
+    }
+    #区分値マスタ 荷揃区分(共通)
+    ; NizoroeType = list:{
+        ; map:{topComment=荷揃区分(共通); codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=出荷区分決定}
+        ; map:{code=2; name=$2; comment=荷揃番号採番}
+        ; map:{code=3; name=$3; comment=帳簿引手}
+        ; map:{code=4; name=$4; comment=運送業者決定}
+        ; map:{code=5; name=$5; comment=荷揃番号再採番}
+    }
+    #区分値マスタ 荷揃区分(WMS)
+    ; NizoroeTypeWms = list:{
+        ; map:{topComment=荷揃区分(WMS); codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=ロケーション在庫引当}
+        ; map:{code=2; name=$2; comment=運送業者再決定}
+        ; map:{code=3; name=$3; comment=ピッキングパターン決定}
+        ; map:{code=4; name=$4; comment=荷揃番号採番_WMS}
+        ; map:{code=5; name=$5; comment=代表荷揃番号採番}
+    }
+    #区分値マスタ 沖縄航空便不可フラグ
+    ; NoOkinawaFlightFlg = list:{
+        ; map:{topComment=沖縄航空便不可フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=使用しない}
+        ; map:{code=1; name=$1; comment=使用する}
+    }
+    #区分値マスタ OCR日付形式
+    ; OcrDateFormat = list:{
+        ; map:{topComment=OCR日付形式; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=YYYY/MM/DD}
+        ; map:{code=2; name=$2; comment=YY.MM.DD}
+    }
+    #区分値マスタ 出力帳票種別
+    ; OutputListType = list:{
+        ; map:{topComment=出力帳票種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=BLDL5050; name=$BLDL5050; comment=【通常分】出荷日別ﾋﾟｯｷﾝｸﾞ状況一覧表}
+    }
+    #区分値マスタ 出力月
+    ; OutputMonth = list:{
+        ; map:{topComment=出力月; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=1}
+        ; map:{code=2; name=$2; comment=2}
+        ; map:{code=3; name=$3; comment=3}
+        ; map:{code=4; name=$4; comment=4}
+        ; map:{code=5; name=$5; comment=5}
+        ; map:{code=6; name=$6; comment=6}
+        ; map:{code=7; name=$7; comment=7}
+        ; map:{code=8; name=$8; comment=8}
+        ; map:{code=9; name=$9; comment=9}
+        ; map:{code=10; name=$10; comment=10}
+        ; map:{code=11; name=$11; comment=11}
+        ; map:{code=12; name=$12; comment=12}
+    }
+    #区分値マスタ 出力状況
+    ; OutputStatus = list:{
+        ; map:{topComment=出力状況; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未出力}
+        ; map:{code=1; name=$1; comment=出力済}
+        ; map:{code=2; name=$2; comment=全て}
+    }
+    #区分値マスタ 決済区分
+    ; PaymentTypeCd = list:{
+        ; map:{topComment=決済区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=銀行振込 }
+        ; map:{code=2; name=$2; comment=代金引換 }
+        ; map:{code=3; name=$3; comment=ペイジー }
+        ; map:{code=4; name=$4; comment=モバイルSuica }
+        ; map:{code=6; name=$6; comment=YPOINT利用 }
+        ; map:{code=7; name=$7; comment=クレジットカード }
+        ; map:{code=8; name=$8; comment=前払い(コンビニ銀行郵便局) }
+        ; map:{code=A; name=$A; comment=後払い(コンビニ銀行郵便局与信3万?) }
+        ; map:{code=B; name=$B; comment=後払い(コンビニ銀行郵便局与信10万?) }
+        ; map:{code=D; name=$D; comment=電子マネー }
+        ; map:{code=E; name=$E; comment=まとめてau支払い }
+        ; map:{code=F; name=$F; comment=ドコモケータイ払い }
+        ; map:{code=G; name=$G; comment=銀行ネット決済 )、出荷の際の納品書に印字する決済方法}
+        ; map:{code=H; name=$H; comment=簡易請求書決済}
+        ; map:{code=I; name=$I; comment=ＳＢケータイ払い}
+        ; map:{code=J; name=$J; comment=全額ａｕポイント支払}
+        ; map:{code=K; name=$K; comment=キャリア決済}
+        ; map:{code=Q; name=$Q; comment=ＰａｙＰａｙ}
+    }
+    #区分値マスタ ピッキングパターンCD
+    ; PickingPatternCd = list:{
+        ; map:{topComment=ピッキングパターンCD; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=オーダーピッキング}
+        ; map:{code=2; name=$2; comment=トータルピッキング}
+        ; map:{code=3; name=$3; comment=ケースピッキング}
+    }
+    #区分値マスタ 都道府県
+    ; Prefecture = list:{
+        ; map:{topComment=都道府県; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=北海道}
+        ; map:{code=02; name=$02; comment=青森県}
+        ; map:{code=03; name=$03; comment=岩手県}
+        ; map:{code=04; name=$04; comment=宮城県}
+        ; map:{code=05; name=$05; comment=秋田県}
+        ; map:{code=06; name=$06; comment=山形県}
+        ; map:{code=07; name=$07; comment=福島県}
+        ; map:{code=08; name=$08; comment=茨城県}
+        ; map:{code=09; name=$09; comment=栃木県}
+        ; map:{code=10; name=$10; comment=群馬県}
+        ; map:{code=11; name=$11; comment=埼玉県}
+        ; map:{code=12; name=$12; comment=千葉県}
+        ; map:{code=13; name=$13; comment=東京都}
+        ; map:{code=14; name=$14; comment=神奈川県}
+        ; map:{code=15; name=$15; comment=新潟県}
+        ; map:{code=16; name=$16; comment=富山県}
+        ; map:{code=17; name=$17; comment=石川県}
+        ; map:{code=18; name=$18; comment=福井県}
+        ; map:{code=19; name=$19; comment=山梨県}
+        ; map:{code=20; name=$20; comment=長野県}
+        ; map:{code=21; name=$21; comment=岐阜県}
+        ; map:{code=22; name=$22; comment=静岡県}
+        ; map:{code=23; name=$23; comment=愛知県}
+        ; map:{code=24; name=$24; comment=三重県}
+        ; map:{code=25; name=$25; comment=滋賀県}
+        ; map:{code=26; name=$26; comment=京都府}
+        ; map:{code=27; name=$27; comment=大阪府}
+        ; map:{code=28; name=$28; comment=兵庫県}
+        ; map:{code=29; name=$29; comment=奈良県}
+        ; map:{code=30; name=$30; comment=和歌山県}
+        ; map:{code=31; name=$31; comment=鳥取県}
+        ; map:{code=32; name=$32; comment=島根県}
+        ; map:{code=33; name=$33; comment=岡山県}
+        ; map:{code=34; name=$34; comment=広島県}
+        ; map:{code=35; name=$35; comment=山口県}
+        ; map:{code=36; name=$36; comment=徳島県}
+        ; map:{code=37; name=$37; comment=香川県}
+        ; map:{code=38; name=$38; comment=愛媛県}
+        ; map:{code=39; name=$39; comment=高知県}
+        ; map:{code=40; name=$40; comment=福岡県}
+        ; map:{code=41; name=$41; comment=佐賀県}
+        ; map:{code=42; name=$42; comment=長崎県}
+        ; map:{code=43; name=$43; comment=熊本県}
+        ; map:{code=44; name=$44; comment=大分県}
+        ; map:{code=45; name=$45; comment=宮崎県}
+        ; map:{code=46; name=$46; comment=鹿児島県}
+        ; map:{code=47; name=$47; comment=沖縄県}
+        ; map:{code=99; name=$99; comment=その他}
+    }
+    #区分値マスタ 差異金額非表示
+    ; PriceDiffHidden = list:{
+        ; map:{topComment=差異金額非表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=差異金額を非表示}
+    }
+    #区分値マスタ 製造日管理フラグ
+    ; ProdDtManagFlg = list:{
+        ; map:{topComment=製造日管理フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=使用しない}
+        ; map:{code=1; name=$1; comment=使用する}
+    }
+    #区分値マスタ 製造日割れ区分
+    ; ProdDtSplitTypeCd = list:{
+        ; map:{topComment=製造日割れ区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=対象外}
+        ; map:{code=1; name=$1; comment=確認対象}
+        ; map:{code=3; name=$3; comment=禁止対象}
+    }
+    #区分値マスタ 製造日不一致区分
+    ; ProdDtUnmatchTypeCd = list:{
+        ; map:{topComment=製造日不一致区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=対象外}
+        ; map:{code=1; name=$1; comment=確認対象}
+        ; map:{code=3; name=$3; comment=禁止対象}
+    }
+    #区分値マスタ 品種変換区分
+    ; ProductCategoryConvertCls = list:{
+        ; map:{topComment=品種変換区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=10; name=$10; comment=1}
+        ; map:{code=20; name=$20; comment=1}
+        ; map:{code=30; name=$30; comment=2}
+        ; map:{code=40; name=$40; comment=3}
+        ; map:{code=45; name=$45; comment=4}
+        ; map:{code=50; name=$50; comment=5}
+        ; map:{code=60; name=$60; comment=6}
+        ; map:{code=70; name=$70; comment=7}
+    }
+    #区分値マスタ 品種区分変換
+    ; ProductCategoryPlant = list:{
+        ; map:{topComment=品種区分変換; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=P135}
+        ; map:{code=02; name=$02; comment=P161}
+        ; map:{code=03; name=$03; comment=P801}
+        ; map:{code=04; name=$04; comment=P900}
+    }
+    #区分値マスタ 品種区分
+    ; ProductCategoryType = list:{
+        ; map:{topComment=品種区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=FW}
+        ; map:{code=02; name=$02; comment=SH}
+        ; map:{code=03; name=$03; comment=UN}
+        ; map:{code=04; name=$04; comment=HM}
+        ; map:{code=05; name=$05; comment=DS}
+        ; map:{code=06; name=$06; comment=CS}
+        ; map:{code=07; name=$07; comment=MD}
+    }
+    #区分値マスタ 商品別入庫ステータス
+    ; ProductStoreStatus = list:{
+        ; map:{topComment=商品別入庫ステータス; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=入荷済}
+        ; map:{code=02; name=$02; comment=格納済}
+    }
+    #区分値マスタ 商品単位
+    ; ProductUnitCls = list:{
+        ; map:{topComment=商品単位; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=全て}
+        ; map:{code=1; name=$1; comment=ケース}
+        ; map:{code=2; name=$2; comment=バラ}
+    }
+    #区分値マスタ 入荷発生事由
+    ; ReceiveReason = list:{
+        ; map:{topComment=入荷発生事由; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=発注入荷}
+        ; map:{code=2; name=$2; comment=返品入荷}
+        ; map:{code=3; name=$3; comment=振替入荷}
+        ; map:{code=4; name=$4; comment=加工入荷}
+        ; map:{code=5; name=$5; comment=転送入荷}
+        ; map:{code=6; name=$6; comment=預り品入荷}
+    }
+    #区分値マスタ 入荷発生事由変換
+    ; ReceiveReasonConvert = list:{
+        ; map:{topComment=入荷発生事由変換; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=01}
+        ; map:{code=2; name=$2; comment=02}
+        ; map:{code=3; name=$3; comment=03}
+        ; map:{code=4; name=$4; comment=04}
+        ; map:{code=5; name=$5; comment=05}
+        ; map:{code=6; name=$6; comment=06}
+    }
+    #区分値マスタ 入荷発生事由_預り品入荷
+    ; ReceiveReasonDepositReceive = list:{
+        ; map:{topComment=入荷発生事由_預り品入荷; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=6; name=$6; comment=預り品入荷}
+    }
+    #区分値マスタ 入荷ステータス_未入荷
+    ; ReceiveStatus01 = list:{
+        ; map:{topComment=入荷ステータス_未入荷; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=未入荷}
+    }
+    #区分値マスタ 推奨ロケーション区分
+    ; RecommendLocationTypeCd = list:{
+        ; map:{topComment=推奨ロケーション区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=マスタ設定値}
+        ; map:{code=2; name=$2; comment=前回ロケ}
+    }
+    #区分値マスタ 関連商品
+    ; RelatedProducts = list:{
+        ; map:{topComment=関連商品; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=FW関連商品}
+        ; map:{code=02; name=$02; comment=SH関連商品}
+        ; map:{code=03; name=$03; comment=UN関連商品}
+        ; map:{code=04; name=$04; comment=HM関連商品}
+    }
+    #区分値マスタ 残数有フラグ
+    ; RemainFlg = list:{
+        ; map:{topComment=残数有フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=残数無}
+        ; map:{code=1; name=$1; comment=残数有}
+    }
+    #区分値マスタ 補充荷姿
+    ; ReplenishShape = list:{
+        ; map:{topComment=補充荷姿; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=バラ}
+        ; map:{code=2; name=$2; comment=ケース}
+    }
+    #区分値マスタ サンプル区分
+    ; SampleCls = list:{
+        ; map:{topComment=サンプル区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=サンプル品}
+    }
+    #区分値マスタ 検索基準日
+    ; SearchReferenceDt = list:{
+        ; map:{topComment=検索基準日; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=出荷指示日}
+        ; map:{code=1; name=$1; comment=作業日}
+        ; map:{code=2; name=$2; comment=出荷日}
+    }
+    #区分値マスタ シリアル管理フラグ
+    ; SerialManagFlg = list:{
+        ; map:{topComment=シリアル管理フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=使用しない}
+        ; map:{code=1; name=$1; comment=使用する}
+    }
+    #区分値マスタ 荷姿グループ区分
+    ; ShapeGrpTypeCd = list:{
+        ; map:{topComment=荷姿グループ区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=通常}
+        ; map:{code=2; name=$2; comment=バラのみ}
+    }
+    #区分値マスタ 共有商品   
+    ; SharedProductTypeCd = list:{
+        ; map:{topComment=共有商品   ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=Y; name=$Y; comment=共有商品}
+    }
+    #区分値マスタ 出荷検品済非表示
+    ; ShippingInspectionHidden = list:{
+        ; map:{topComment=出荷検品済非表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=出荷検品済を表示}
+        ; map:{code=1; name=$1; comment=出荷検品済を非表示}
+    }
+    #区分値マスタ 出荷検品ステータス
+    ; ShippingInspectionStatus = list:{
+        ; map:{topComment=出荷検品ステータス; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=出荷未検品}
+        ; map:{code=02; name=$02; comment=出荷検品一部完了}
+        ; map:{code=03; name=$03; comment=出荷検品完了}
+    }
+    #区分値マスタ 出荷処理区分
+    ; ShippingProcessType = list:{
+        ; map:{topComment=出荷処理区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=通常出荷}
+        ; map:{code=2; name=$2; comment=緊急出荷}
+        ; map:{code=3; name=$3; comment=商品振替渡し}
+        ; map:{code=4; name=$4; comment=加工渡し}
+        ; map:{code=5; name=$5; comment=転送出荷}
+    }
+    #区分値マスタ 出荷進捗ステータス
+    ; ShippingProgress = list:{
+        ; map:{topComment=出荷進捗ステータス; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=未出荷}
+        ; map:{code=02; name=$02; comment=出荷済}
+    }
+    #区分値マスタ 出荷発生事由
+    ; ShippingReason = list:{
+        ; map:{topComment=出荷発生事由; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=通常　}
+        ; map:{code=2; name=$2; comment=緊急}
+        ; map:{code=3; name=$3; comment=商品振替渡し}
+        ; map:{code=4; name=$4; comment=加工渡し}
+        ; map:{code=5; name=$5; comment=転送出荷}
+    }
+    #区分値マスタ 出荷発生事由変換
+    ; ShippingReasonConvert = list:{
+        ; map:{topComment=出荷発生事由変換; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=11}
+        ; map:{code=2; name=$2; comment=XX}
+        ; map:{code=3; name=$3; comment=XX}
+        ; map:{code=4; name=$4; comment=XX}
+        ; map:{code=5; name=$5; comment=XX}
+    }
+    #区分値マスタ 出荷帳票発行区分
+    ; ShippingSlipType = list:{
+        ; map:{topComment=出荷帳票発行区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=バラ荷揃表}
+        ; map:{code=02; name=$02; comment=ケース荷揃表}
+        ; map:{code=03; name=$03; comment=バラトータル荷揃表(戸配)}
+        ; map:{code=04; name=$04; comment=ケース荷揃表(戸配)}
+        ; map:{code=05; name=$05; comment=バラトータル荷揃表}
+        ; map:{code=06; name=$06; comment=摘み取りリスト}
+        ; map:{code=07; name=$07; comment=納品書}
+        ; map:{code=08; name=$08; comment=荷札}
+        ; map:{code=09; name=$09; comment=一体型伝票(荷札、納品書)}
+        ; map:{code=10; name=$10; comment=梱包明細}
+        ; map:{code=11; name=$11; comment=個別貼り付けラベル}
+        ; map:{code=12; name=$12; comment=個人別支給明細}
+    }
+    #区分値マスタ 出荷区分
+    ; ShippingType = list:{
+        ; map:{topComment=出荷区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=直送}
+        ; map:{code=02; name=$02; comment=戸配}
+        ; map:{code=03; name=$03; comment=店送り}
+    }
+    #区分値マスタ 出荷作業区分
+    ; ShippingWorkType = list:{
+        ; map:{topComment=出荷作業区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=ピッキング}
+        ; map:{code=02; name=$02; comment=出荷検品}
+        ; map:{code=03; name=$03; comment=棚卸}
+    }
+    #区分値マスタ 伝票種別
+    ; SlipType2 = list:{
+        ; map:{topComment=伝票種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=P; name=$P; comment=購買発注伝票（発注伝票タイプがZNB(標準購買発注)、ZUB(在庫転送オーダー)）}
+        ; map:{code=D1; name=$D1; comment=出荷伝票（出荷伝票タイプがZCJ2(得意先返品))}
+        ; map:{code=D2; name=$D2; comment=出荷伝票（出荷伝票タイプがZCJ5(在庫転送(返品))、ZCJ6(在庫転送(会社間返品)))}
+        ; map:{code=D3; name=$D3; comment=仕入返品用（入庫予定では未使用）}
+        ; map:{code=D4; name=$D4; comment=出荷伝票（受注伝票タイプがZBH2(預かり品入荷)の受注伝票を参照して登録された出荷伝票)}
+    }
+    #区分値マスタ 予備区分
+    ; SpareTypeCd = list:{
+        ; map:{topComment=予備区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=Y; name=$Y; comment=XXXX}
+    }
+    #区分値マスタ 指定足数
+    ; SpecifiedNumOfShoes = list:{
+        ; map:{topComment=指定足数; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=10; name=$10; comment=運送業者再決定FW足数上限値}
+    }
+    #区分値マスタ 分納区分
+    ; SplitDeliveryTypeCd = list:{
+        ; map:{topComment=分納区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=不可}
+        ; map:{code=0; name=$0; comment=可}
+    }
+    #区分値マスタ 在庫差異
+    ; StockDifference = list:{
+        ; map:{topComment=在庫差異; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=差異無}
+        ; map:{code=1; name=$1; comment=差異有}
+    }
+    #区分値マスタ 在庫表示内容
+    ; StockDisplayType = list:{
+        ; map:{topComment=在庫表示内容; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=商品順(日報なし)}
+        ; map:{code=1; name=$1; comment=商品順(日報あり)}
+        ; map:{code=2; name=$2; comment=ロケーション順(日報なし)}
+        ; map:{code=3; name=$3; comment=ロケーション順(日報あり)}
+    }
+    #区分値マスタ 他ロケ在庫ありを表示
+    ; StockExist = list:{
+        ; map:{topComment=他ロケ在庫ありを表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=在庫ありのみ}
+    }
+    #区分値マスタ 在庫処理区分
+    ; StockProcessType = list:{
+        ; map:{topComment=在庫処理区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=通常入荷}
+        ; map:{code=02; name=$02; comment=返品入荷}
+        ; map:{code=11; name=$11; comment=通常出荷}
+        ; map:{code=12; name=$12; comment=返品出荷}
+        ; map:{code=21; name=$21; comment=移動}
+        ; map:{code=23; name=$23; comment=調整(－)}
+        ; map:{code=24; name=$24; comment=調整(＋)}
+        ; map:{code=25; name=$25; comment=入庫格納}
+        ; map:{code=27; name=$27; comment=入庫No分割}
+        ; map:{code=29; name=$29; comment=強制移動}
+        ; map:{code=30; name=$30; comment=セット組指示}
+        ; map:{code=31; name=$31; comment=セット解除指示}
+        ; map:{code=32; name=$32; comment=定期補充}
+        ; map:{code=33; name=$33; comment=緊急補充他}
+    }
+    #区分値マスタ フロア基準在庫／ロケ基準在庫
+    ; StockRefCls = list:{
+        ; map:{topComment=フロア基準在庫／ロケ基準在庫; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=フロア基準在庫}
+        ; map:{code=2; name=$2; comment=ロケ基準在庫}
+    }
+    #区分値マスタ 棚卸進捗状況
+    ; StockTakingStatus = list:{
+        ; map:{topComment=棚卸進捗状況; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=10; name=$10; comment=作業中}
+        ; map:{code=20; name=$20; comment=確定済}
+        ; map:{code=30; name=$30; comment=実績送信済}
+    }
+    #区分値マスタ 在庫数０表示
+    ; StockZeroDisplay = list:{
+        ; map:{topComment=在庫数０表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=0表示}
+        ; map:{code=1; name=$1; comment=0非表示}
+    }
+    #区分値マスタ 用品
+    ; SuppliesVarietyFlg = list:{
+        ; map:{topComment=用品; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=特定品種}
+    }
+    #区分値マスタ 対象拠点
+    ; TargetBase = list:{
+        ; map:{topComment=対象拠点; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=00002000}
+        ; map:{code=2; name=$2; comment=00002300}
+        ; map:{code=3; name=$3; comment=00002100}
+        ; map:{code=4; name=$4; comment=00002700}
+        ; map:{code=5; name=$5; comment=00002200}
+        ; map:{code=6; name=$6; comment=00002600}
+    }
+    #区分値マスタ 対象商品
+    ; TargetItemCd = list:{
+        ; map:{topComment=対象商品; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=XXXX}
+        ; map:{code=2; name=$2; comment=XXXX}
+    }
+    #区分値マスタ 対象戸口契約先
+    ; TargetKoguchiCd = list:{
+        ; map:{topComment=対象戸口契約先; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=BLDL3390; name=$BLDL3390; comment=XXXX}
+    }
+    #区分値マスタ 対象販売組織
+    ; TargetSalesCd = list:{
+        ; map:{topComment=対象販売組織; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=BLDL3390; name=$BLDL3390; comment=XXXX}
+        ; map:{code=BLDL3350; name=$BLDL3350; comment=0090}
+    }
+    #区分値マスタ 単位区分
+    ; UnitCls = list:{
+        ; map:{topComment=単位区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=バラ}
+        ; map:{code=02; name=$02; comment=ケース}
+    }
+    #区分値マスタ 緊急出荷時間帯
+    ; UrgentShippingTimeZone = list:{
+        ; map:{topComment=緊急出荷時間帯; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=12:30}
+        ; map:{code=1; name=$1; comment=15:00}
+    }
+    #区分値マスタ 作業区分
+    ; WorkType = list:{
+        ; map:{topComment=作業区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=出荷}
+        ; map:{code=2; name=$2; comment=良品返却}
+        ; map:{code=3; name=$3; comment=廃棄返却}
+    }
+    #区分値マスタ 入荷ラベル使用フラグ
+    ; ReceiveLabelFlg = list:{
+        ; map:{topComment=入荷ラベル使用フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未使用}
+        ; map:{code=1; name=$1; comment=使用}
+    }
+    #区分値マスタ 入荷日差異有
+    ; ReceiveDtUnmatchFlg = list:{
+        ; map:{topComment=入荷日差異有; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=入荷日差異無のみ表示}
+        ; map:{code=1; name=$1; comment=入荷日差異有のみ表示}
+    }
+    #区分値マスタ 発行状況
+    ; PrintFlg = list:{
+        ; map:{topComment=発行状況; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未発行}
+        ; map:{code=1; name=$1; comment=発行済}
+    }
+    #区分値マスタ 入荷残数有
+    ; ReceiveRemainFlg = list:{
+        ; map:{topComment=入荷残数有; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=残数無のみ表示}
+        ; map:{code=1; name=$1; comment=残数有のみ表示}
+    }
+    #区分値マスタ ピッキング済非表示
+    ; ShippingPickedHidden = list:{
+        ; map:{topComment=ピッキング済非表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=ピッキング済を非表示}
+    }
+    #区分値マスタ 運送業者データ出力フラグ
+    ; CarrierDataOutFlg = list:{
+        ; map:{topComment=運送業者データ出力フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未出力}
+        ; map:{code=1; name=$1; comment=出力済}
+    }
+    #区分値マスタ 梱包明細出力フラグ
+    ; PllOutFlg = list:{
+        ; map:{topComment=梱包明細出力フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未出力}
+        ; map:{code=1; name=$1; comment=出力済}
+    }
+    #区分値マスタ 所有者
+    ; DepositorCls = list:{
+        ; map:{topComment=所有者; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=P135; name=$P135; comment=ＦＷ統括部}
+        ; map:{code=P161; name=$P161; comment=ヘルメット統括部}
+        ; map:{code=P801; name=$P801; comment=エムシーアパレル株式会社}
+        ; map:{code=P900; name=$P900; comment=ミドリ安全用品株式会社}
+        ; map:{code=9999; name=$9999; comment=預り品}
+    }
+    #区分値マスタ 入荷予定リスト出力フラグ
+    ; RplOutFlg = list:{
+        ; map:{topComment=入荷予定リスト出力フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未発行}
+        ; map:{code=1; name=$1; comment=発行済}
+    }
+    #区分値マスタ 実績送信フラグ
+    ; RecordSendFlg = list:{
+        ; map:{topComment=実績送信フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未送信}
+        ; map:{code=1; name=$1; comment=送信済}
+    }
+    #区分値マスタ 引き渡し済非表示
+    ; HandOverHidden = list:{
+        ; map:{topComment=引き渡し済非表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=引き渡し前のみ表示}
+    }
+    #区分値マスタ 外部倉庫フラグ
+    ; ExternalWarehouseFlg = list:{
+        ; map:{topComment=外部倉庫フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=通常倉庫}
+        ; map:{code=1; name=$1; comment=外部倉庫}
+    }
+    #区分値マスタ 通常品プラント
+    ; StandardPlantCls = list:{
+        ; map:{topComment=通常品プラント; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=P135; name=$P135; comment=ＦＷ統括部}
+        ; map:{code=P161; name=$P161; comment=ヘルメット統括部}
+        ; map:{code=P801; name=$P801; comment=エムシーアパレル株式会社}
+        ; map:{code=P900; name=$P900; comment=ミドリ安全用品株式会社}
+    }
+    #区分値マスタ 大物取扱フラグ
+    ; LargeItemHadlingFlg = list:{
+        ; map:{topComment=大物取扱フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=使用しない}
+        ; map:{code=1; name=$1; comment=使用する}
+    }
+    #区分値マスタ 休日振替運送業者フラグ
+    ; HolidayCarrierFlg = list:{
+        ; map:{topComment=休日振替運送業者フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=対象外}
+        ; map:{code=1; name=$1; comment=対象}
+    }
+    #区分値マスタ 沖縄航空便振替フラグ
+    ; OkinawaFlightFlg = list:{
+        ; map:{topComment=沖縄航空便振替フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=対象外}
+        ; map:{code=1; name=$1; comment=対象}
+    }
+    #区分値マスタ 拠点デフォルト運送業者フラグ
+    ; BaseDefaultCarrierFlg = list:{
+        ; map:{topComment=拠点デフォルト運送業者フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=対象外}
+        ; map:{code=1; name=$1; comment=対象}
+    }
+    #区分値マスタ 受渡表区分
+    ; SlipTypeCd = list:{
+        ; map:{topComment=受渡表区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=対象外}
+        ; map:{code=1; name=$1; comment=対象}
+    }
+    #区分値マスタ 正規フラグ
+    ; ProperFlg = list:{
+        ; map:{topComment=正規フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=対象外}
+        ; map:{code=1; name=$1; comment=対象}
+    }
+    #区分値マスタ 運送業者引き渡し票出力フラ
+    ; CdlOutFlg = list:{
+        ; map:{topComment=運送業者引き渡し票出力フラ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=未発行}
+        ; map:{code=1; name=$1; comment=発行済}
+    }
+    #区分値マスタ エラー件数
+    ; ErrorNum = list:{
+        ; map:{topComment=エラー件数; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=20; name=$20; comment=20}
+    }
+    ##########ここまでは区分値マスタの区分値定義
+    ##########ここからはセンタ区分値マスタの区分値定義
+    #センタ区分値マスタ 一次ピッキングリスト
+    ; CenterPicListCls1 = list:{
+        ; map:{topComment=一次ピッキングリスト; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=オーダーピッキングリスト}
+        ; map:{code=1; name=$1; comment=トータルピッキングリスト}
+        ; map:{code=4; name=$4; comment=ケースピッキングリスト}
+        ; map:{code=5; name=$5; comment=マルチピッキングリスト}
+        ; map:{code=6; name=$6; comment=単行ピッキングリスト}
+    }
+    #センタ区分値マスタ 二次ピッキングリスト
+    ; CenterPicListCls2 = list:{
+        ; map:{topComment=二次ピッキングリスト; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=2; name=$2; comment=摘み取りリスト}
+        ; map:{code=3; name=$3; comment=種蒔きリスト}
+    }
+    #センタ区分値マスタ 送り状・荷札
+    ; CenterPicListCls3 = list:{
+        ; map:{topComment=送り状・荷札; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=送り状＋バラ・ケース荷札}
+        ; map:{code=2; name=$2; comment=送り状＋バラ荷札}
+        ; map:{code=3; name=$3; comment=送り状＋ケース荷札}
+        ; map:{code=4; name=$4; comment=送り状}
+        ; map:{code=5; name=$5; comment=バラ・ケース荷札}
+        ; map:{code=6; name=$6; comment=バラ荷札}
+        ; map:{code=7; name=$7; comment=ケース荷札}
+    }
+    #センタ区分値マスタ 佐川配達時間帯
+    ; CenterSagawaDelivTz = list:{
+        ; map:{topComment=佐川配達時間帯; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=午前中}
+        ; map:{code=04; name=$04; comment=18時～21時}
+        ; map:{code=12; name=$12; comment=12時～14時}
+        ; map:{code=14; name=$14; comment=14時～16時}
+        ; map:{code=16; name=$16; comment=16時～18時}
+        ; map:{code=18; name=$18; comment=18時～20時}
+        ; map:{code=19; name=$19; comment=19時～21時}
+    }
+    #センタ区分値マスタ 便種(商品)
+    ; CenterTransportTypeItem = list:{
+        ; map:{topComment=便種(商品); codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=001; name=$001; comment=指定なし}
+        ; map:{code=002; name=$002; comment=飛脚クール便(冷蔵)}
+        ; map:{code=003; name=$003; comment=飛脚クール便(冷凍)}
+    }
+    #センタ区分値マスタ 荷姿コード
+    ; CenterSlipShapeCd = list:{
+        ; map:{topComment=荷姿コード; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=001; name=$001; comment=箱類}
+        ; map:{code=002; name=$002; comment=バッグ類}
+        ; map:{code=003; name=$003; comment=スーツケース}
+        ; map:{code=004; name=$004; comment=封筒類}
+        ; map:{code=005; name=$005; comment=ゴルフバッグ}
+        ; map:{code=006; name=$006; comment=スキー}
+        ; map:{code=007; name=$007; comment=スノーボード}
+        ; map:{code=008; name=$008; comment=その他}
+    }
+    #センタ区分値マスタ 便種(スピードで選択)
+    ; CenterTransportTypeSpeed = list:{
+        ; map:{topComment=便種(スピードで選択); codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=000; name=$000; comment=飛脚宅配便}
+        ; map:{code=001; name=$001; comment=飛脚スーパー便}
+        ; map:{code=002; name=$002; comment=飛脚即配便}
+        ; map:{code=003; name=$003; comment=飛脚航空便(翌日中配達)}
+        ; map:{code=004; name=$004; comment=飛脚航空便(翌日午前中配達)}
+        ; map:{code=005; name=$005; comment=飛脚ジャストタイム便}
+    }
+    #センタ区分値マスタ 指定シール
+    ; CenterSealType = list:{
+        ; map:{topComment=指定シール; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=001; name=$001; comment=飛脚クール便(冷蔵)}
+        ; map:{code=002; name=$002; comment=飛脚クール便(冷凍)}
+        ; map:{code=003; name=$003; comment=飛脚スーパー便}
+        ; map:{code=004; name=$004; comment=営止めサービス}
+        ; map:{code=005; name=$005; comment=配達指定日}
+        ; map:{code=007; name=$007; comment=時間帯指定(５時間帯)}
+        ; map:{code=008; name=$008; comment=eコレクト(現金決済)}
+        ; map:{code=009; name=$009; comment=eコレクト(デビット／クレジット決済)}
+        ; map:{code=010; name=$010; comment=eコレクト(なんでも決済)}
+        ; map:{code=011; name=$011; comment=取扱注意}
+        ; map:{code=012; name=$012; comment=貴重品}
+        ; map:{code=013; name=$013; comment=天地無用}
+        ; map:{code=014; name=$014; comment=飛脚即配便}
+        ; map:{code=016; name=$016; comment=時間帯指定(午前中)}
+        ; map:{code=017; name=$017; comment=飛脚航空便}
+        ; map:{code=018; name=$018; comment=飛脚ジャストタイム便}
+        ; map:{code=019; name=$019; comment=時間帯指定(６時間帯(オプション)}
+    }
+    #センタ区分値マスタ データ種別
+    ; CenterTagClass = list:{
+        ; map:{topComment=データ種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=01; name=$01; comment=ヤマト(通常)}
+        ; map:{code=02; name=$02; comment=ヤマト(保冷・・・冷蔵)}
+        ; map:{code=11; name=$11; comment=佐川(通常)}
+        ; map:{code=12; name=$12; comment=佐川(保冷・・・冷蔵)}
+        ; map:{code=21; name=$21; comment=ゆうパック(通常)}
+        ; map:{code=22; name=$22; comment=ゆうパック(保冷・・・冷蔵)}
+    }
+    #センタ区分値マスタ 送り状データ種別
+    ; CenterTagDataType = list:{
+        ; map:{topComment=送り状データ種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=B2}
+        ; map:{code=2; name=$2; comment=E飛伝2}
+        ; map:{code=3; name=$3; comment=E飛伝Pro}
+        ; map:{code=4; name=$4; comment=ゆうパックプリントR(発送予定)}
+        ; map:{code=5; name=$5; comment=ゆうパックプリントR(発送履歴)}
+        ; map:{code=6; name=$6; comment=発送確定データフォーマット}
+        ; map:{code=7; name=$7; comment=大口FDデータフォーマット}
+    }
+    #センタ区分値マスタ 送り状種別
+    ; CenterTagType = list:{
+        ; map:{topComment=送り状種別; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=汎用荷札}
+        ; map:{code=2; name=$2; comment=ヤマト宅急便(発払)荷札}
+        ; map:{code=3; name=$3; comment=ヤマト宅急便(コレクト)荷札}
+        ; map:{code=4; name=$4; comment=佐川荷札(WebAPI)}
+        ; map:{code=5; name=$5; comment=ゆうパック荷札}
+        ; map:{code=6; name=$6; comment=ゆうパケット荷札}
+    }
+    #センタ区分値マスタ 送り状種別(代引時、2枚目以降)
+    ; CenterTagTypeAfter = list:{
+        ; map:{topComment=送り状種別(代引時、2枚目以降); codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=汎用荷札}
+        ; map:{code=2; name=$2; comment=ヤマト宅急便(発払)荷札}
+        ; map:{code=3; name=$3; comment=ヤマト宅急便(コレクト)荷札}
+        ; map:{code=4; name=$4; comment=佐川荷札(WebAPI)}
+        ; map:{code=5; name=$5; comment=ゆうパック荷札}
+        ; map:{code=6; name=$6; comment=ゆうパケット荷札}
+    }
+    #センタ区分値マスタ WebAPI便種コード
+    ; CenterApiBinsyuCode = list:{
+        ; map:{topComment=WebAPI便種コード; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=000; name=$000; comment=陸便}
+        ; map:{code=030; name=$030; comment=航空便}
+        ; map:{code=140; name=$140; comment=クール冷蔵}
+        ; map:{code=141; name=$141; comment=クール冷蔵(航空便)}
+        ; map:{code=150; name=$150; comment=クール冷凍}
+        ; map:{code=151; name=$151; comment=クール冷凍(航空便)}
+    }
+    #センタ区分値マスタ WebAPI代引フラグ
+    ; CenterApiDaibikiFlg = list:{
+        ; map:{topComment=WebAPI代引フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=通常の送り状を発行}
+        ; map:{code=1; name=$1; comment=代金引換の送り状を発行}
+    }
+    #センタ区分値マスタ WebAPI代引支払方法区分
+    ; CenterApiDaibikiType = list:{
+        ; map:{topComment=WebAPI代引支払方法区分; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=なんでも決済}
+        ; map:{code=1; name=$1; comment=現金}
+        ; map:{code=2; name=$2; comment=クレジットカード・デビットカード}
+    }
+    #センタ区分値マスタ WebAPI営止フラグ
+    ; CenterApiEidomeFlg = list:{
+        ; map:{topComment=WebAPI営止フラグ; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=0; name=$0; comment=営業所止めを行いません}
+        ; map:{code=1; name=$1; comment=営業所止めにします}
+    }
+    #センタ区分値マスタ WebAPI重量コード
+    ; CenterApiWeightCd = list:{
+        ; map:{topComment=WebAPI重量コード; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=60; name=$60; comment=2Kg(サイズ60)}
+        ; map:{code=80; name=$80; comment=5Kg(サイズ80)}
+        ; map:{code=100; name=$100; comment=10Kg(サイズ100)}
+        ; map:{code=140; name=$140; comment=20Kg(サイズ140)}
+        ; map:{code=160; name=$160; comment=30Kg(サイズ160)}
+    }
+    #センタ区分値マスタ 発行対象のみ表示
+    ; CenterOutputTargetFlg = list:{
+        ; map:{topComment=発行対象のみ表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=発行対象のみ}
+    }
+    #センタ区分値マスタ 未発行のみ表示
+    ; CenterPrintCondition = list:{
+        ; map:{topComment=未発行のみ表示; codeType=String ; isCheckImplicitSet=false}
+        ; map:{code=1; name=$1; comment=未発行のみ表示}
+    }
+    ##########ここまではセンタ区分値マスタの区分値定義
+
+}

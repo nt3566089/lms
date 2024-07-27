@@ -1,0 +1,44 @@
+REPORT_ID	REPORT_CD	REPORT_NM
+1	BarcodeLabel	バーコードラベル
+2	BillOfLading	Bill of Lading
+3	CasePickingList	ケースピッキングリスト
+4	ClassLabel	汎用ラベル
+5	CommercialInvoice	CommercialInvoice
+6	CommonInvoiceList	共通送り状
+7	CommonTagLabel	汎用荷札
+8	ConwaBillofLading	Conwa Bill of Lading
+9	ConwayShippingLabel	Conway Shipping Label
+10	DeliverySlipList	納品明細
+11	EcDeliverySlipList	ECお買上明細
+12	EMReplenishLabel	緊急補充ラベル
+13	InspectionLabel	検品ラベル
+14	InventoryDiffList	棚卸差異リスト
+15	InventoryStockDiffList	棚卸在庫差異表
+16	InventoryWorkList	棚卸作業リスト
+17	LocationBarcodeList	ロケーションバーコードリスト
+18	MoveLabel	搬送ラベル
+19	MultiPickingList	マルチピッキングリスト
+20	OrderPickingList	オーダーピッキングリスト
+21	PackingSlipList	PackingSlip
+22	PLPickingList	摘み取りリスト
+23	ProductInventoryDiffList	商品別棚卸実績表兼差異表
+24	ProductInventoryListLoc	商品別棚卸実績表(LOC表示あり)
+25	ProductLabel	商品ラベル
+26	ReceivePlanList	入荷予定リスト
+27	RGReplenishLabel	定期補充ラベル
+28	SagawaTagLabel	佐川急便荷札
+29	SingleRowPickingList	単行ピッキングリスト
+30	SLPickingList	種蒔きリスト
+31	StockDiffList	在庫差異確認表
+32	StockListSample	在庫リスト(サンプル)
+33	StockSetInstList	セット組指示書
+34	StockSetReleaseList	セット解除指示書
+35	StoreLabel	入庫ラベル
+36	StwList	積込リスト
+37	TagLabelCommon	汎用荷札new
+38	TagLabelYamato	荷札ヤマト
+39	TotalPickingList	トータルピッキングリスト
+40	YamatoCollectTagLabel	ヤマト宅急便(コレクト)荷札
+41	YamatoDeliveryTagLabel	ヤマト宅急便(発払)荷札
+42	YuPacketTagLabel	ゆうパケット荷札
+43	YuPackTagLabel	ゆうパック荷札
